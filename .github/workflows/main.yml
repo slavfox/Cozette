@@ -1,0 +1,22 @@
+name: Build fonts
+
+on:
+  push:
+    tags:
+    - '*'
+
+jobs:
+  deploy:
+    name: Make release
+    runs-on: ubuntu-latest
+    container:
+      image: "Dockerfile"
+      volumes:
+      - ${{ GITHUB_WORKSPACE }}/Cozette8:/cozette/
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: ncipollo/release-action@v1
+      with:
+        artifacts: ${{ GITHUB_WORKSPACE }}/Cozette8/build/*
+        token: ${{ secrets.GITHUB_TOKEN }}
