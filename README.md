@@ -34,8 +34,11 @@ where Cozette is so far, in the order the features are going to be implemented:
 - [x] ASCII
 - [x] Powerline
 - [ ] Build scripts to handle exporting
-- [ ] Box-drawing
-- [ ] Braille
+- [x] Box-drawing (mostly)
+- [x] Braille
+- [ ] Nerdfonts:
+  - [x] nf-seti-*
+  - [ ] nf-dev-*
 - [ ] TTF version
 - [ ] Bold version
 - [ ] Italic version
