@@ -10,13 +10,16 @@ jobs:
     name: Make release
     runs-on: ubuntu-latest
     container:
-      image: "Dockerfile"
-      volumes:
-      - ${{ GITHUB_WORKSPACE }}/Cozette8:/cozette/
-
+      image: archlinux/base
     steps:
     - uses: actions/checkout@v2
+    - name: Install fontforge
+      run: pacman -S --noconfirm fontforge
+    - name: Build fonts
+        fontforge -lang ff -c 'Open("Cozette8/Cozette8.sfd"); Generate("cozette.otb")'
+        fontforge -lang ff -c 'Open("Cozette8/Cozette8.sfd"); Generate("cozette.ttf")'
+        fontforge -lang ff -c 'Open("Cozette8/Cozette8.sfd"); Generate("cozette.bdf")'
     - uses: ncipollo/release-action@v1
       with:
-        artifacts: ${{ GITHUB_WORKSPACE }}/Cozette8/build/*
+        artifacts: "*.otb, *.ttf, *.bdf"
         token: ${{ secrets.GITHUB_TOKEN }}
