@@ -6,12 +6,14 @@ on:
     - '*'
 
 jobs:
-  deploy:
+  build:
     name: Make release
     runs-on: ubuntu-latest
     container:
       image: archlinux/base
     steps:
+    - name: Install deps
+      run: pacman -S --noconfirm git tar
     - uses: actions/checkout@v2
     - name: Install fontforge
       run: pacman -S --noconfirm fontforge
