@@ -13,7 +13,8 @@ jobs:
       image: archlinux/base
     steps:
     - name: Install dependencies
-      run: pacman -S --noconfirm git tar
+      run: |
+        pacman -Sy --noconfirm base git tar
     - uses: actions/checkout@v2
     - name: Install fontforge
       run: pacman -S --noconfirm fontforge
