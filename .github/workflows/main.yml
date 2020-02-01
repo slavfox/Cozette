@@ -12,7 +12,7 @@ jobs:
     container:
       image: archlinux/base
     steps:
-    - name: Install deps
+    - name: Install dependencies
       run: pacman -S --noconfirm git tar
     - uses: actions/checkout@v2
     - name: Install fontforge
