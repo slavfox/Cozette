@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1580508375
-ModificationTime: 1580518930
+ModificationTime: 1580522274
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -50,12 +50,12 @@ NameList: AGL For New Fonts
 DisplaySize: 10
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 34 34 13
+WinInfo: 72 36 11
 OnlyBitmaps: 1
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 687865 343932 229288 0 1048576 229288 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 1114117 380
+BeginChars: 1114117 392
 
 StartChar: uni0000
 Encoding: 0 0 0
@@ -3085,8 +3085,104 @@ VWidth: 0
 Flags: W
 LayerCount: 2
 EndChar
+
+StartChar: tcaron
+Encoding: 357 357 380
+Width: 656
+VWidth: 0
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: Tcaron
+Encoding: 356 356 381
+Width: 656
+VWidth: 0
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni0162
+Encoding: 354 354 382
+Width: 656
+VWidth: 0
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni0163
+Encoding: 355 355 383
+Width: 656
+VWidth: 0
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: ohungarumlaut
+Encoding: 337 337 384
+Width: 656
+VWidth: 0
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: Ohungarumlaut
+Encoding: 336 336 385
+Width: 656
+VWidth: 0
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: Obreve
+Encoding: 334 334 386
+Width: 656
+VWidth: 0
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: Omacron
+Encoding: 332 332 387
+Width: 656
+VWidth: 0
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: obreve
+Encoding: 335 335 388
+Width: 656
+VWidth: 0
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: omacron
+Encoding: 333 333 389
+Width: 656
+VWidth: 0
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: eng
+Encoding: 331 331 390
+Width: 656
+VWidth: 0
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: Eng
+Encoding: 330 330 391
+Width: 656
+VWidth: 0
+Flags: W
+LayerCount: 2
+EndChar
 EndChars
-BitmapFont: 10 381 10 0 1
+BitmapFont: 10 392 10 0 1
 BDFStartProperties: 19
 FONT 1 "-windows-Cozette-medium-r-normal--10-80-96-96-c-70-ISO10646-1"
 SIZE 1 "8 96 96"
@@ -3386,7 +3482,7 @@ BDFChar: 136 710 7 1 5 6 8
 BDFChar: 137 8240 7 1 6 0 8
 5bLXZ+@)l)-ia5I
 BDFChar: 138 352 7 1 5 0 9
-:`s_5J8bc"Li<=o
+:`oaWLk'FMLi<=o
 BDFChar: 139 8249 7 1 3 1 5
 +@(HB+92BA
 BDFChar: 140 338 7 1 5 0 7
@@ -3869,5 +3965,29 @@ BDFChar: 378 350 7 1 5 -2 7
 E/9$`#RH6*&7>J<
 BDFChar: 379 351 7 1 5 -2 5
 G^s`=#k/BZ
+BDFChar: 380 357 7 1 5 0 8
+&5YX]5X7S"2uipY
+BDFChar: 381 356 7 1 5 0 9
+:`oc5+<VdL+<UXa
+BDFChar: 382 354 7 1 5 -2 7
+p`L\%+<VdL&24(a
+BDFChar: 383 355 7 1 5 -2 7
+5X=g(5X7Ro&24(a
+BDFChar: 384 337 7 1 5 0 7
+-r9n_Lkpk+
+BDFChar: 385 336 7 1 5 0 9
+-r9n_LkpkCLi<=o
+BDFChar: 386 334 7 1 5 0 9
+:iHDRLkpkCLi<=o
+BDFChar: 387 332 7 1 5 0 9
+Duaj5LkpkCLi<=o
+BDFChar: 388 335 7 1 5 0 7
+:iHDRLkpk+
+BDFChar: 389 333 7 1 5 0 6
+Duaj5Lkp!M
+BDFChar: 390 331 7 1 5 -2 5
+YfMWVLkl<J
+BDFChar: 391 330 7 1 5 -2 7
+YfMWVLkpkC#S6t9
 EndBitmapFont
 EndSplineFont
