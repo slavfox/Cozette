@@ -10,10 +10,7 @@ small - which prompted me to make Cozette.
 
 # Installation
 
-It's 2:47 AM and I'm tired, so right now the only format Cozette is
-available in is FontForge's `.sfd`. You figure out how to generate a font
-file in the format you want from that. I'm going to add some scripts to
-build the distributable fonts tomorrow. 
+[Check the Releases](https://github.com/slavfox/Cozette/releases)!
 
 # Unicode support 
 
