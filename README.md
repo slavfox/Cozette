@@ -14,11 +14,11 @@ small - which prompted me to make Cozette.
 
 # Unicode support 
 
-As of now, these are the characters supported by Cozette:
+As of release 1.0, these are the characters included in Cozette:
 
 ![characters.png](./img/characters.png)
 
-However, supporting as many characters as possible is an important objective
+Supporting as many characters as possible is, however, an important objective
 for this font, as I'd, ideally, like it to be able to display anything I
 might need it to. If you want any additional characters added, just submit
 an issue and I'll do my best.
@@ -30,13 +30,13 @@ where Cozette is so far, in the order the features are going to be implemented:
  
 - [x] ASCII
 - [x] Powerline
-- [ ] Build scripts to handle exporting
+- [x] Build scripts to handle exporting
 - [x] Box-drawing (mostly)
 - [x] Braille
 - [ ] Nerdfonts:
   - [x] nf-seti-*
   - [ ] nf-dev-*
-- [ ] TTF version
+- [ ] "True" TTF version
 - [ ] Bold version
 - [ ] Italic version
 - [ ] Ligatures
