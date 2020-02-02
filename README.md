@@ -10,9 +10,18 @@ small - which prompted me to make Cozette.
 
 # Installation
 
-[Check the Releases](https://github.com/slavfox/Cozette/releases)!
+[You can get Cozette over at the Releases tab](https://github.com/slavfox/Cozette/releases)!
 
-# Unicode support 
+If you're on Linux, the preferred format is `.otb` or `.ttf`. To install the
+font, just throw it in your fonts directory (you probably want to follow your
+distro's instructions).
+
+If you're on Mac, download the `.dfont` and install it with `Font Book.app`.
+
+If you're on Windows,
+[follow the instructions from here](https://wiki.archlinux.org/index.php/installation_guide).
+
+# Unicode support
 
 As of release 1.0, these are the characters included in Cozette:
 
@@ -27,7 +36,7 @@ an issue and I'll do my best.
 
 The eventual goal is feature (and character range)-parity with Creep. Here's
 where Cozette is so far, in the order the features are going to be implemented:
- 
+
 - [x] ASCII
 - [x] Powerline
 - [x] Build scripts to handle exporting
@@ -36,7 +45,9 @@ where Cozette is so far, in the order the features are going to be implemented:
 - [ ] Nerdfonts:
   - [x] nf-seti-*
   - [ ] nf-dev-*
+- [ ] Glyph map generation (so I don't have to keep `characters.png` up to date)
 - [ ] "True" TTF version
+  - [  ] Windows support
 - [ ] Bold version
 - [ ] Italic version
 - [ ] Ligatures
