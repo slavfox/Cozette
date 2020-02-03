@@ -5,7 +5,7 @@ FamilyName: Cozette
 Weight: Medium
 Copyright: Copyright 2020 Slavfox. Licensed MIT.
 UComments: "2020-1-31: Created with FontForge (http://fontforge.org)"
-Version: 001.001
+Version: 001.002
 ItalicAngle: 0
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1580508375
-ModificationTime: 1580671894
+ModificationTime: 1580727407
 PfmFamily: 49
 TTFWeight: 400
 TTFWidth: 5
@@ -52,12 +52,12 @@ NameList: AGL For New Fonts
 DisplaySize: 10
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 9696 32 14
+WinInfo: 9440 32 14
 OnlyBitmaps: 1
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 8388608 0 687865 343932 229288 0 1048576 229288 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 1114112 958
+BeginChars: 1114112 960
 
 StartChar: uni0000
 Encoding: 0 0 0
@@ -7721,8 +7721,24 @@ VWidth: 0
 Flags: W
 LayerCount: 2
 EndChar
+
+StartChar: uniE712
+Encoding: 59154 59154 958
+Width: 700
+VWidth: 0
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: H18533
+Encoding: 9679 9679 959
+Width: 700
+VWidth: 0
+Flags: W
+LayerCount: 2
+EndChar
 EndChars
-BitmapFont: 10 958 8 2 1
+BitmapFont: 10 960 8 2 1
 BDFStartProperties: 19
 FONT 1 "-slavfox-Cozette-medium-r-normal--10-80-96-96-M-6-ISO10646-1"
 SIZE 16 "8 96 96"
@@ -9661,5 +9677,9 @@ BDFChar: 956 59153 7 0 5 0 7
 #S;CYq"T5Q
 BDFChar: 957 9889 7 1 5 0 6
 &7E:m(be2T
+BDFChar: 958 59154 7 0 6 0 7
+4B?o+I`AC8
+BDFChar: 959 9679 7 1 5 1 5
+E;95'Du]k<
 EndBitmapFont
 EndSplineFont

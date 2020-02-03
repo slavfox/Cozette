@@ -9,6 +9,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.2.0] - 2020-02-03
+
+### Added
+
+#### Glyphs
+
+- nf-dev-linux (U+E712) for vim statusbars on Linuces
+- U+25CF BLACK CIRCLE for git prompts
+
+#### Other
+
+- Added notes on Ubuntu to the Installation section of the README
+
 ## [1.1.0] - 2020-02-02
 
 ### Added
@@ -34,6 +47,7 @@ Still broken on Windows.
 - Braille
 - nf-seti
 
-[unreleased]: https://github.com/slavfox/Cozette/compare/v1.1.0...HEAD
+[unreleased]: https://github.com/slavfox/Cozette/compare/v1.2.0...HEAD
+[1.1.0]: https://github.com/slavfox/Cozette/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/slavfox/Cozette/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/slavfox/Cozette/compare/v0.1.2...v1.0.0

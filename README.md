@@ -10,11 +10,16 @@ small - which prompted me to make Cozette.
 
 # Installation
 
+**Note:** vscode doesn't support bitmap fonts. Until Cozette has a vectorized
+version, it won't work in vscode.
+
 [You can get Cozette over at the Releases tab](https://github.com/slavfox/Cozette/releases)!
 
 If you're on Linux, the preferred format is `.otb` or `.ttf`. To install the
 font, just throw it in your fonts directory (you probably want to follow your
-distro's instructions).
+distro's instructions). On Ubuntu, if you don't want to reconsider your distro
+choice, you might need to
+[specifically enable bitmap fonts](https://bugs.launchpad.net/ubuntu/+source/fontconfig/+bug/1560114).
 
 If you're on Mac, download the `.dfont` and install it with `Font Book.app`.
 
