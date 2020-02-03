@@ -1,4 +1,7 @@
+from pathlib import Path
+from cozette_builder.imagegen import save_sample, save_charlist
 
+SAMPLE_TEXT = """
 $BLUE$┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 ┃ $MAGENTA$♡$NC$        $FG$Cozette$NC$        $MAGENTA$♡$BLUE$ ┃
 ┡━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
@@ -32,3 +35,17 @@ $BLUE$┏━━━━━━━━━━━━━━━━━━━━━━━�
      úpěl ďábelské ódy.
 
           $FG$♠ ♣ $MAGENTA$♥ ♦
+"""
+REPO_ROOT = Path(__file__).resolve().parent
+
+def save_images():
+    bdfpath = REPO_ROOT / "Cozette8" / "Cozette-10.bdf"
+
+    save_charlist(bdfpath, REPO_ROOT / "img" / "characters.png")
+
+    save_sample(
+        "Clozette", SAMPLE_TEXT, REPO_ROOT / "img" / "sample.png",
+    )
+
+if __name__ == "__main__":
+    save_images()
