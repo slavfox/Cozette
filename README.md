@@ -1,4 +1,7 @@
 # Cozette
+
+![Build fonts](https://github.com/slavfox/Cozette/workflows/Build%20fonts/badge.svg?event=push)
+
 A bitmap programming font optimized for coziness.
 
 ![sample.png](img/sample.png)
@@ -52,7 +55,7 @@ where Cozette is so far, in the order the features are going to be implemented:
   - [ ] nf-dev-*
 - [ ] Glyph map generation (so I don't have to keep `characters.png` up to date)
 - [ ] "True" TTF version
-  - [  ] Windows support
+  - [ ] Windows support
 - [ ] Bold version
 - [ ] Italic version
 - [ ] Ligatures
