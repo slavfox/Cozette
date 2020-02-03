@@ -7,6 +7,30 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+#### Glyphs
+
+- Four variations on a `+`:
+
+  - U+2719 OUTLINED GREEK CROSS
+  - U+271A HEAVY GREEK CROSS
+  - U+271B OPEN CENTRE CROSS
+  - U+271C HEAVY OPEN CENTRE CROSS
+
+  These should come in handy for git prompts and the like.
+
+### Fixed
+
+#### Glyphs
+
+- Repositioned some (Powerline and Devicons) icon glyphs so that they're
+  vertically centered within the line instead of starting at the font baseline.
+  This is mostly relevant for tall prompt icons like the git branch symbol,
+  which now looks better in the context of a prompt.
+- Made nf-dev-linux lose some weight to make it more recognizable as
+  Tux.
+
 ---
 
 ## [1.2.0] - 2020-02-03

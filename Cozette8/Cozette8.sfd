@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1580508375
-ModificationTime: 1580727407
+ModificationTime: 1580735394
 PfmFamily: 49
 TTFWeight: 400
 TTFWidth: 5
@@ -52,12 +52,12 @@ NameList: AGL For New Fonts
 DisplaySize: 10
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 9440 32 14
+WinInfo: 9664 32 14
 OnlyBitmaps: 1
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 8388608 0 687865 343932 229288 0 1048576 229288 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 1114112 960
+BeginChars: 1114112 964
 
 StartChar: uni0000
 Encoding: 0 0 0
@@ -7737,8 +7737,40 @@ VWidth: 0
 Flags: W
 LayerCount: 2
 EndChar
+
+StartChar: uni271A
+Encoding: 10010 10010 960
+Width: 700
+VWidth: 0
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni271B
+Encoding: 10011 10011 961
+Width: 700
+VWidth: 0
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni271C
+Encoding: 10012 10012 962
+Width: 700
+VWidth: 0
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni2719
+Encoding: 10009 10009 963
+Width: 700
+VWidth: 0
+Flags: W
+LayerCount: 2
+EndChar
 EndChars
-BitmapFont: 10 960 8 2 1
+BitmapFont: 10 964 8 2 1
 BDFStartProperties: 19
 FONT 1 "-slavfox-Cozette-medium-r-normal--10-80-96-96-M-6-ISO10646-1"
 SIZE 16 "8 96 96"
@@ -8027,9 +8059,9 @@ BDFChar: 131 8222 7 1 5 -2 1
 fLSPp
 BDFChar: 132 8230 7 1 5 0 0
 VuQet
-BDFChar: 133 8224 7 1 5 0 8
+BDFChar: 133 8224 7 1 5 -1 7
 +<^G%+<VdL+92BA
-BDFChar: 134 8225 7 1 5 0 8
+BDFChar: 134 8225 7 1 5 -1 7
 +<^G%+<^G%+92BA
 BDFChar: 135 710 7 1 5 6 8
 +Adjo
@@ -8427,11 +8459,11 @@ BDFChar: 331 309 7 1 5 -2 8
 &1@N4&.fBa&.mb"
 BDFChar: 332 451 7 3 3 0 6
 J:N0#J,k*"
-BDFChar: 333 57504 7 1 5 0 9
+BDFChar: 333 57504 7 1 5 -2 7
 J<7:&OJ"jhJ:IV"
-BDFChar: 334 57505 7 1 5 0 9
+BDFChar: 334 57505 7 1 5 -2 7
 J:N0#n,Q!m=@`Dl
-BDFChar: 335 57506 7 1 5 0 7
+BDFChar: 335 57506 7 1 5 -1 6
 E)9C+f\#uo
 BDFChar: 336 57520 7 0 6 -3 9
 JAC+4q#(-hq!d4WJ,fQL
@@ -8445,7 +8477,7 @@ BDFChar: 340 57524 7 1 6 -3 9
 r-UUH$j6P5$lhBWqu?]s
 BDFChar: 341 57525 7 0 5 -3 9
 r:od>^jlE8^u4_Wqu?]s
-BDFChar: 342 57507 7 1 5 0 9
+BDFChar: 342 57507 7 1 5 -2 7
 @$#o#?iW`2=@`Dl
 BDFChar: 343 10006 7 1 5 1 5
 f_BF\fDkmO
@@ -9587,7 +9619,7 @@ BDFChar: 911 58901 7 0 6 0 6
 .")#1rd6*o
 BDFChar: 912 58900 7 0 6 0 7
 'GQ!E./Zn<
-BDFChar: 913 58898 7 1 5 1 7
+BDFChar: 913 58898 7 1 5 0 6
 p]0d`p]04P
 BDFChar: 914 58904 7 0 6 1 5
 -q&YT-ia5I
@@ -9595,17 +9627,17 @@ BDFChar: 915 58915 7 0 6 0 7
 &.fEP3&k_B
 BDFChar: 916 58899 7 1 5 1 5
 i;!*Bp](9o
-BDFChar: 917 58919 7 0 6 0 8
+BDFChar: 917 58919 7 0 6 -1 7
 \pRInI/\M@HiO-H
-BDFChar: 918 58897 7 0 6 0 8
+BDFChar: 918 58897 7 0 6 -1 7
 epMjmrd;<V2uipY
-BDFChar: 919 58896 7 1 5 0 9
+BDFChar: 919 58896 7 1 5 -2 7
 J3ZBpq"XW'E,YdW
 BDFChar: 920 58911 7 0 6 0 5
 TWV*lW2K[r
 BDFChar: 921 58943 8 0 0 0 0
 z
-BDFChar: 922 58887 7 0 6 0 9
+BDFChar: 922 58887 7 0 6 -2 7
 `lu6RroOE>`eFHn
 BDFChar: 923 58903 7 0 6 0 7
 &3,(:mdBLp
@@ -9621,13 +9653,13 @@ BDFChar: 928 58879 7 1 5 1 5
 i;!*Bp](9o
 BDFChar: 929 58916 7 0 6 1 6
 &3(4hmR.$T
-BDFChar: 930 58914 7 0 6 0 7
+BDFChar: 930 58914 7 0 6 -1 6
 k3i0BG^M+j
-BDFChar: 931 58890 7 0 5 0 9
+BDFChar: 931 58890 7 0 5 -2 7
 3(.<,q"T*Xb_,rr
 BDFChar: 932 58912 7 0 6 0 6
 FH1J.qYG:6
-BDFChar: 933 58889 7 0 6 0 8
+BDFChar: 933 58889 7 0 6 -1 7
 6u76uI/\LQ&-)\1
 BDFChar: 934 58895 7 0 6 2 3
 \nh?H
@@ -9637,15 +9669,15 @@ BDFChar: 936 58888 7 0 6 0 6
 FS;m:>Z?pf
 BDFChar: 937 58886 7 0 6 0 6
 3#MM3^+_MH
-BDFChar: 938 58884 7 0 6 0 8
+BDFChar: 938 58884 7 0 6 -1 7
 "<:T!\8Z]^GQ7^D
 BDFChar: 939 58917 7 0 6 0 5
 CfIF7<,;O7
-BDFChar: 940 58883 7 0 6 0 9
+BDFChar: 940 58883 7 0 6 -2 7
 *+FMqQp<2V:ga8'
 BDFChar: 941 58880 7 0 6 -3 9
 !X&c7#\YV;+<VdlJ,fQL
-BDFChar: 942 58908 7 0 6 0 9
+BDFChar: 942 58908 7 0 6 -2 7
 ":,8M)I,D7R$[jR
 BDFChar: 943 58920 7 0 6 1 5
 mSHSD>Q=a(
@@ -9678,8 +9710,16 @@ BDFChar: 956 59153 7 0 5 0 7
 BDFChar: 957 9889 7 1 5 0 6
 &7E:m(be2T
 BDFChar: 958 59154 7 0 6 0 7
-4B?o+I`AC8
+3)k9!I)`16
 BDFChar: 959 9679 7 1 5 1 5
 E;95'Du]k<
+BDFChar: 960 10010 7 0 6 0 6
+3&pp:r\uk;
+BDFChar: 961 10011 7 1 5 1 5
++<];Z+92BA
+BDFChar: 962 10012 7 0 6 0 6
+3&npt`],pX
+BDFChar: 963 10009 7 0 6 0 6
+3%43HmO1$p
 EndBitmapFont
 EndSplineFont
