@@ -1,5 +1,5 @@
 from pathlib import Path
-from cozette_builder.imagegen import save_sample, save_charlist
+from cozette_builder.imagegen import save_sample, save_charlist, Sample
 
 SAMPLE_TEXT = """
 $BLUE$┏━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -38,14 +38,18 @@ $BLUE$┏━━━━━━━━━━━━━━━━━━━━━━━�
 """
 REPO_ROOT = Path(__file__).resolve().parent
 
+
 def save_images():
     bdfpath = REPO_ROOT / "Cozette8" / "Cozette-10.bdf"
 
     save_charlist(bdfpath, REPO_ROOT / "img" / "characters.png")
 
     save_sample(
-        "Clozette", SAMPLE_TEXT, REPO_ROOT / "img" / "sample.png",
+        "Clozette",
+        Sample(SAMPLE_TEXT, 30, 32),
+        REPO_ROOT / "img" / "sample.png",
     )
+
 
 if __name__ == "__main__":
     save_images()

@@ -1,9 +1,10 @@
 import subprocess
-from typing import Tuple, Dict, Optional
+from typing import Tuple, Dict, Optional, NamedTuple
 from shlex import quote
 from pathlib import Path
+from unicodedata import east_asian_width as charwidth
 from cozette_builder.bdf.bdffont import BdfFont
-import textwrap
+import platform
 import tempfile
 
 Color = Tuple[int, int, int]
@@ -31,10 +32,51 @@ default_palette: Palette = dict(
     nc=None,
 )
 
+
+class Sample(NamedTuple):
+    text: str
+    width: int
+    height: int
+
+
+def wrap_text(src: str, width=79) -> Sample:
+    sample_h = 1
+    running_w = 0
+    idx = 0
+    linebreaks = []
+    while idx < len(src):
+        if running_w >= width:
+            linebreaks.append(idx - 1)
+            running_w = 0
+            sample_h += 1
+        if any(
+            (h := f"${color}$") == src[idx : len(h)]
+            for color in default_palette.keys()
+        ):
+            idx += len(h)
+        else:
+            running_w += 1 if charwidth(src[idx]) != "W" else 2
+            idx += 1
+    for idx in reversed(linebreaks):
+        src = src[:idx] + "\n" + src[idx:]
+    return Sample(src, width, sample_h)
+
+
+def read_sample(src_path: Path) -> Sample:
+    with src_path.open() as f:
+        src = f.read()
+    stripped = src
+    for color in default_palette.keys():
+        stripped = stripped.replace(f"${color.upper()}$", "")
+    lines = stripped.splitlines()
+    h, w = len(lines), max(len(line) for line in lines)
+    return Sample(src, w, h)
+
+
 # Todo: rewrite this to use files instead of a string
 def save_sample(
     font: str,
-    sample: str,
+    sample: Sample,
     output_path: Path,
     fgcolor: str = "#abb2bf",
     bgcolor: str = "#282c34",
@@ -42,10 +84,8 @@ def save_sample(
 ):
     if palette is None:
         palette = default_palette
-    colored, stripped = colored_and_stripped_text(sample, palette)
-
-    lines = stripped.splitlines()
-    h, w = len(lines), max(len(line) for line in lines)
+    colored = color_text(sample.text, palette)
+    print(colored)
     with tempfile.NamedTemporaryFile("w", delete=False) as f:
         f.write(colored)
         fp = f.name
@@ -64,7 +104,7 @@ def save_sample(
             "-fa",
             font,
             "-geometry",
-            f"{w}x{h}",
+            f"{sample.width}x{sample.height}",
             "-dc",
             "-e",
             f"bash -c {cmd}",
@@ -81,9 +121,8 @@ def color_escape_seq(color: Color = None):
     return f"\033[38;2;{color[0]};{color[1]};{color[2]}m"
 
 
-def colored_and_stripped_text(text: str, palette: Palette) -> Tuple[str, str]:
+def color_text(text: str, palette: Palette) -> str:
     colored_text = text
-    stripped_text = text
     for color in palette.keys():
         # The PyCharm MyPy plugin throws a fit at `palette.get(color)` because
         # it doesn't know that palette.get returns an Optional[Color], PyCharm
@@ -95,11 +134,7 @@ def colored_and_stripped_text(text: str, palette: Palette) -> Tuple[str, str]:
         colored_text = colored_text.replace(
             f"${color.upper()}$", color_escape_seq(palette[color])
         )
-        stripped_text = stripped_text.replace(f"${color.upper()}$", "")
-    return colored_text, stripped_text
-
-
-# Todo: write a fill() that ignores character codes
+    return colored_text
 
 
 def save_charlist(bdf_font: Path, output_path: Path):
@@ -107,17 +142,9 @@ def save_charlist(bdf_font: Path, output_path: Path):
         bdf = BdfFont.from_bdf(f)
     save_sample(
         "Clozette",
-        textwrap.fill(
+        wrap_text(
             "".join(
-                chr(c)
-                for c in bdf.codepoints
-                if c >= 32
-                and c
-                not in (
-                    127,
-                    # dumb as shit workaround for a weird bug
-                    0x26A1,
-                )
+                chr(c) for c in bdf.codepoints if c >= 32 and c not in (127,)
             )
         ),
         output_path,
