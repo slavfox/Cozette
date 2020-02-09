@@ -3,7 +3,7 @@ from typing import Tuple, Dict, Optional, NamedTuple
 from shlex import quote
 from pathlib import Path
 from unicodedata import east_asian_width as charwidth
-from cozette_builder.bdf.bdffont import BdfFont
+from cozette_builder.bdffont import BdfFont
 import platform
 import tempfile
 

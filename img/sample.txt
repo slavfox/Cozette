@@ -31,4 +31,4 @@ $BLUE$┏━━━━━━━━━━━━━━━━━━━━━━━�
     Příliš žluťoučký kůň
      úpěl ďábelské ódy.
 
-          $FG$♠ ♣ $MAGENTA$♥ ♦
+           $FG$♠ $MAGENTA$♥ $FG$♣ $MAGENTA$♦

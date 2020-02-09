@@ -9,7 +9,8 @@ from typing import (
     TextIO,
     Tuple,
 )
-import numpy as np
+import numpy as np  # type: ignore
+from fontTools.pens.ttGlyphPen import TTGlyphPen
 
 Bit = Union[Literal[1], Literal[0]]
 
@@ -29,7 +30,7 @@ class BdfGlyph:
         self.bits: np.array = np.pad(bits, [[0, 0], [bbx.x, 0]])[
             bbx.y : bbx.y + bbx.h, bbx.x : bbx.x + bbx.w
         ]
-        self.meta = meta
+        self.metadata = meta
 
     @classmethod
     def from_str(cls, s: str, meta: Dict[str, str]) -> BdfGlyph:
@@ -51,8 +52,24 @@ class BdfGlyph:
             "".join("#" if ch else " " for ch in line) for line in self.bits
         )
 
+    def draw(self, ppp: float):
+        pen = TTGlyphPen(None)
+        for y, row in reversed(enumerate(self.bits)):
+            for x, col in enumerate(row):
+                if col:
+                    pen.moveTo((x * ppp, y * ppp))
+                    pen.lineTo(((x + 1) * ppp, y * ppp))
+                    pen.lineTo(((x + 1) * ppp, (y + 1) * ppp))
+                    pen.lineTo((x * ppp, (y + 1) * ppp))
+                    pen.lineTo((x * ppp, y * ppp))
+                    pen.closePath()
+        return pen.glyph()
 
-def parse_char(bdfstream: TextIO):
+    def meta(self, k) -> List[str]:
+        return self.metadata[k].strip().strip('"').strip().split()
+
+
+def parse_char(bdfstream: TextIO) -> Tuple[Dict[str, str], List[int]]:
     specs = {}
     while not (line := bdfstream.readline()).startswith("BITMAP"):
         parts = line.split(maxsplit=1)
@@ -64,15 +81,19 @@ def parse_char(bdfstream: TextIO):
 
 
 class BdfFont:
-    def __init__(self, metadata: List[str], glyphs: Dict[int, BdfGlyph]):
-        self.metadata: List[str] = metadata
+    def __init__(self, metadata: Dict[str, str], glyphs: Dict[int, BdfGlyph]):
+        self.metadata: Dict[str, str] = metadata
         self.glyphs: Dict[int, BdfGlyph] = glyphs
 
     @classmethod
     def from_bdf(cls, bdfstream: TextIO):
-        metadata = []
+        metadata = {}
         while not (line := bdfstream.readline()).startswith("CHARS "):
-            metadata.append(line)
+            try:
+                meta, val = line.split(maxsplit=1)
+                metadata[meta] = val
+            except ValueError:
+                pass
         glyphs = {}
         for i in range(int(line.split()[1])):
             meta, char = parse_char(bdfstream)
@@ -86,3 +107,6 @@ class BdfFont:
     @property
     def str_codepoints(self) -> Tuple[str, ...]:
         return tuple(f"U+{i:X}" for i in self.glyphs)
+
+    def meta(self, k) -> List[str]:
+        return self.metadata[k].strip().strip('"').strip().split()
