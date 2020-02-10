@@ -1,16 +1,18 @@
 from __future__ import annotations
+
 from typing import (
+    Dict,
     Iterable,
-    Union,
+    List,
     Literal,
     NamedTuple,
-    Dict,
-    List,
     TextIO,
     Tuple,
+    Union,
 )
+
 import numpy as np  # type: ignore
-from fontTools.pens.ttGlyphPen import TTGlyphPen
+from fontTools.pens.ttGlyphPen import TTGlyphPen  # type: ignore
 
 Bit = Union[Literal[1], Literal[0]]
 
@@ -27,9 +29,7 @@ class BdfGlyph:
 
         self.bbx = bbx = BBX(*[int(s) for s in meta["BBX"].split()])
         # this is probably wrong
-        self.bits: np.array = np.pad(bits, [[0, 0], [bbx.x, 0]])[
-            bbx.y : bbx.y + bbx.h, bbx.x : bbx.x + bbx.w
-        ]
+        self.bits: np.array = bits[0 : bbx.h, 0 : bbx.w]
         self.metadata = meta
 
     @classmethod
@@ -54,26 +54,39 @@ class BdfGlyph:
 
     def draw(self, ppp: float):
         pen = TTGlyphPen(None)
-        for y, row in reversed(enumerate(self.bits)):
+        for y, row in enumerate(reversed(self.bits)):
             for x, col in enumerate(row):
                 if col:
-                    pen.moveTo((x * ppp, y * ppp))
-                    pen.lineTo(((x + 1) * ppp, y * ppp))
-                    pen.lineTo(((x + 1) * ppp, (y + 1) * ppp))
-                    pen.lineTo((x * ppp, (y + 1) * ppp))
-                    pen.lineTo((x * ppp, y * ppp))
+                    pen.moveTo(
+                        ((x + self.bbx.x) * ppp, (y + self.bbx.y) * ppp)
+                    )
+                    pen.lineTo(
+                        ((x + self.bbx.x + 1) * ppp, (y + self.bbx.y) * ppp)
+                    )
+                    pen.lineTo(
+                        (
+                            (x + self.bbx.x + 1) * ppp,
+                            (y + self.bbx.y + 1) * ppp,
+                        )
+                    )
+                    pen.lineTo(
+                        ((x + self.bbx.x) * ppp, (y + self.bbx.y + 1) * ppp)
+                    )
+                    pen.lineTo(
+                        ((x + self.bbx.x) * ppp, (y + self.bbx.y) * ppp)
+                    )
                     pen.closePath()
         return pen.glyph()
 
     def meta(self, k) -> List[str]:
-        return self.metadata[k].strip().strip('"').strip().split()
+        return self.metadata[k].strip('"').strip().split()
 
 
 def parse_char(bdfstream: TextIO) -> Tuple[Dict[str, str], List[int]]:
     specs = {}
     while not (line := bdfstream.readline()).startswith("BITMAP"):
         parts = line.split(maxsplit=1)
-        specs[parts[0]] = parts[1]
+        specs[parts[0]] = parts[1].strip()
     bitmap = []
     while not (line := bdfstream.readline()).startswith("ENDCHAR"):
         bitmap.append(int(line.strip(), 16))
@@ -90,8 +103,8 @@ class BdfFont:
         metadata = {}
         while not (line := bdfstream.readline()).startswith("CHARS "):
             try:
-                meta, val = line.split(maxsplit=1)
-                metadata[meta] = val
+                k, val = line.split(maxsplit=1)
+                metadata[k] = val.strip()
             except ValueError:
                 pass
         glyphs = {}
@@ -109,4 +122,4 @@ class BdfFont:
         return tuple(f"U+{i:X}" for i in self.glyphs)
 
     def meta(self, k) -> List[str]:
-        return self.metadata[k].strip().strip('"').strip().split()
+        return self.metadata[k].strip('"').strip().split()

@@ -6,11 +6,13 @@ verify_ssl = true
 [dev-packages]
 black = "*"
 mypy = "*"
+isort = "*"
 
 [packages]
 numpy = "*"
 Pillow = "*"
 fonttools = "*"
+crayons = "*"
 
 [requires]
 python_version = "3.8"

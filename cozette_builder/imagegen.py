@@ -1,11 +1,11 @@
 import subprocess
-from typing import Tuple, Dict, Optional, NamedTuple
-from shlex import quote
-from pathlib import Path
-from unicodedata import east_asian_width as charwidth
-from cozette_builder.bdffont import BdfFont
-import platform
 import tempfile
+from pathlib import Path
+from shlex import quote
+from typing import Dict, NamedTuple, Optional, Tuple
+from unicodedata import east_asian_width as charwidth
+
+from cozette_builder.bdffont import BdfFont
 
 Color = Tuple[int, int, int]
 
@@ -45,7 +45,7 @@ def wrap_text(src: str, width=79) -> Sample:
     idx = 0
     linebreaks = []
     while idx < len(src):
-        if running_w >= width:
+        if running_w - int(src[idx] == " ") >= width:
             linebreaks.append(idx - 1)
             running_w = 0
             sample_h += 1
@@ -58,7 +58,7 @@ def wrap_text(src: str, width=79) -> Sample:
             running_w += 1 if charwidth(src[idx]) != "W" else 2
             idx += 1
     for idx in reversed(linebreaks):
-        src = src[:idx] + "\n" + src[idx:]
+        src = src[:idx].rstrip() + "\n" + src[idx:].lstrip()
     return Sample(src, width, sample_h)
 
 
@@ -73,9 +73,8 @@ def read_sample(src_path: Path) -> Sample:
     return Sample(src, w, h)
 
 
-# Todo: rewrite this to use files instead of a string
 def save_sample(
-    font: str,
+    fnt: str,
     sample: Sample,
     output_path: Path,
     fgcolor: str = "#abb2bf",
@@ -85,7 +84,6 @@ def save_sample(
     if palette is None:
         palette = default_palette
     colored = color_text(sample.text, palette)
-    print(colored)
     with tempfile.NamedTemporaryFile("w", delete=False) as f:
         f.write(colored)
         fp = f.name
@@ -97,12 +95,14 @@ def save_sample(
     subprocess.run(
         [
             "xterm",
+            "-en",
+            "utf8",
             "-fg",
             fgcolor,
             "-bg",
             bgcolor,
             "-fa",
-            font,
+            fnt,
             "-geometry",
             f"{sample.width}x{sample.height}",
             "-dc",
@@ -137,15 +137,17 @@ def color_text(text: str, palette: Palette) -> str:
     return colored_text
 
 
-def save_charlist(bdf_font: Path, output_path: Path):
+def save_charlist(fnt: str, bdf_font: Path, output_path: Path):
     with bdf_font.open() as f:
         bdf = BdfFont.from_bdf(f)
     save_sample(
-        "Clozette",
+        fnt,
         wrap_text(
-            "".join(
-                chr(c) for c in bdf.codepoints if c >= 32 and c not in (127,)
+            " ".join(
+                chr(c) for c in bdf.codepoints if c > 32 and c not in (127,)
             )
+            .replace("⚡ ", "⚡")
+            .replace("\u03a2 ", "")
         ),
         output_path,
     )

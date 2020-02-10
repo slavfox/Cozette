@@ -13,25 +13,37 @@ small - which prompted me to make Cozette.
 
 # Installation
 
-**Note:** vscode doesn't support bitmap fonts. Until Cozette has a vectorized
-version, it won't work in vscode.
-
 [You can get Cozette over at the Releases tab](https://github.com/slavfox/Cozette/releases)!
 
-If you're on Linux, the preferred format is `.otb` or `.ttf`. To install the
-font, just throw it in your fonts directory (you probably want to follow your
-distro's instructions). On Ubuntu, if you don't want to reconsider your distro
-choice, you might need to
+Cozette is distributed in two main variants: bitmap and vector.
+
+Bitmap fonts are, effectively, just that - bitmaps. They scale terribly, but
+look nice and sharp (and pixel-perfect) if you use them at their intended point
+size. Vector fonts scale well, but in this case, might look ugly at
+smaller point sizes because of antialiasing issues and the like.
+
+VSCode and a lot of other GUI applications don't support bitmap fonts, so you 
+will want to use CozetteVector there. In applications that do support bitmap
+fonts, you will want to use the normal, bitmap Cozette (unless it's too
+small for you, in which case, CozetteVector scales better).  
+
+If you're on Linux, the preferred format is `.otb` (for bitmaps) or `.ttf` 
+(for CozetteVector). To install the font, just throw it in your fonts directory
+(you probably want to follow your distro's instructions). On Ubuntu, if you 
+don't want to reconsider your distro choice, you might need to
 [specifically enable bitmap fonts](https://bugs.launchpad.net/ubuntu/+source/fontconfig/+bug/1560114).
 
 If you're on Mac, download the `.dfont` and install it with `Font Book.app`.
+Both the bitmap `Cozette.dfont` and the vector `CozetteVector.dfont` should
+work.
 
-If you're on Windows,
+If you're on Windows, just grab `CozetteVector.ttf`. If you want to get the 
+bitmap versions to work,
 [follow the instructions from here](https://wiki.archlinux.org/index.php/installation_guide).
 
 # Unicode support
 
-As of release 1.0, these are the characters included in Cozette:
+As of the current version, these are the characters included in Cozette:
 
 ![characters.png](./img/characters.png)
 
@@ -53,9 +65,10 @@ where Cozette is so far, in the order the features are going to be implemented:
 - [ ] Nerdfonts:
   - [x] nf-seti-*
   - [ ] nf-dev-*
-- [ ] Glyph map generation (so I don't have to keep `characters.png` up to date)
-- [ ] "True" TTF version
-  - [ ] Windows support
+- [x] Glyph map generation (so I don't have to keep `characters.png` up to
+  date)
+- [x] "True" TTF version
+  - [x] Windows support
 - [ ] Bold version
 - [ ] Italic version
 - [ ] Ligatures

@@ -14,21 +14,14 @@ jobs:
     steps:
     - name: Install dependencies
       run: |
-        pacman -Sy --noconfirm base git tar
-    - uses: actions/checkout@v2
+        pacman -Sy --noconfirm base git tar python python-pipenv
     - name: Install fontforge
       run: pacman -S --noconfirm fontforge
+    - uses: actions/checkout@v2
     - name: Build fonts
       run: |
-        fontforge -lang ff -c '\
-          Open("Cozette8/Cozette8.sfd"); \
-          Generate("cozette.", "otb"); \
-          Generate("cozette.ttf", "otb"); \
-          Generate("cozette.dfont","sbit"); \
-          Generate("cozette.","fnt"); \
-          Generate("cozette.","bdf"); \
-        '
+        pipenv install; pipenv run python build.py
     - uses: ncipollo/release-action@v1
       with:
-        artifacts: "*.otb, *.ttf, *.bdf, *.dfont, *.fnt"
+        artifacts: "build/*"
         token: ${{ secrets.GITHUB_TOKEN }}

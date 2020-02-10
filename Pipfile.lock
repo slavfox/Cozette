@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "11679fbbfbfe6ca9cf64b908f74c67c912a0b96bff52aa6f34ff7528e5b9f449"
+            "sha256": "fbc5bf15a267368c830aa098f5765fbd1a8b70feb242039f517a2550fd29f22d"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -16,6 +16,21 @@
         ]
     },
     "default": {
+        "colorama": {
+            "hashes": [
+                "sha256:7d73d2a99753107a36ac6b455ee49046802e59d9d076ef8e47b61499fa29afff",
+                "sha256:e96da0d330793e2cb9485e9ddfd918d456036c7149416295932478192f4436a1"
+            ],
+            "version": "==0.4.3"
+        },
+        "crayons": {
+            "hashes": [
+                "sha256:50e5fa729d313e2c607ae8bf7b53bb487652e10bd8e7a1e08c4bc8bf62755ffc",
+                "sha256:8c9e4a3a607bc10e9a9140d496ecd16c6805088dd16c852c378f1f1d5db7aeb6"
+            ],
+            "index": "pypi",
+            "version": "==0.3.0"
+        },
         "fonttools": {
             "hashes": [
                 "sha256:0c16d5da7846a92aedcb448277d13d3b729f7de48a917768d97ebd0d17067d7f",
@@ -109,6 +124,14 @@
                 "sha256:5b94b49521f6456670fdb30cd82a4eca9412788a93fa6dd6df72c94d5a8ff2d7"
             ],
             "version": "==7.0"
+        },
+        "isort": {
+            "hashes": [
+                "sha256:54da7e92468955c4fceacd0c86bd0ec997b0e1ee80d97f67c35a78b719dccab1",
+                "sha256:6e811fcb295968434526407adb8796944f1988c5b65e8139058f2014cbe100fd"
+            ],
+            "index": "pypi",
+            "version": "==4.3.21"
         },
         "mypy": {
             "hashes": [
