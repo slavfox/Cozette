@@ -20,7 +20,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Build fonts
       run: |
-        pipenv install; pipenv run python build.py
+        pipenv install; pipenv run python build.py fonts
     - uses: ncipollo/release-action@v1
       with:
         artifacts: "build/*"

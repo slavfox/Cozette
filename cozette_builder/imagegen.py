@@ -4,6 +4,7 @@ from pathlib import Path
 from shlex import quote
 from typing import Dict, NamedTuple, Optional, Tuple
 from unicodedata import east_asian_width as charwidth
+from PIL import Image, ImageOps
 
 from cozette_builder.bdffont import BdfFont
 
@@ -151,3 +152,18 @@ def save_charlist(fnt: str, bdf_font: Path, output_path: Path):
         ),
         output_path,
     )
+
+
+def add_margins(sample_path: Path, color: str = "#282c34"):
+    im: Image.Image = Image.open(sample_path).convert("RGB")
+    new_w = round((im.height / 3) * 4)
+    im.load()
+    new_im = ImageOps.pad(
+        im,
+        (new_w, im.height),
+        method=Image.NEAREST,
+        color=color
+    )
+    new_im.save(sample_path)
+
+

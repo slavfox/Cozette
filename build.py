@@ -1,6 +1,7 @@
 import os
 import subprocess
 import tempfile
+import argparse
 from dataclasses import dataclass
 from pathlib import Path
 from shlex import quote
@@ -9,7 +10,8 @@ from typing import Optional, Sequence, cast
 
 import crayons  # type: ignore
 
-from cozette_builder.imagegen import read_sample, save_charlist, save_sample
+from cozette_builder.imagegen import read_sample, save_charlist, \
+    save_sample, add_margins
 from cozette_builder.ttfbuilder import TTFBuilder
 
 REPO_ROOT = Path(__file__).resolve().parent
@@ -50,6 +52,7 @@ def save_images(bdfpath):
         )
         subprocess.run(["xset", "-fp", tmpdirname])
     subprocess.run(["xset", "fp", "rehash"])
+    add_margins(REPO_ROOT / "img" / "sample.png", )
 
 
 def fontforge(open: Path, generate: Sequence[Generate]):
@@ -123,6 +126,9 @@ def fix_ttf(ttfpath: Path):
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("action", choices=["images", "fonts"])
+    args = parser.parse_args()
     BUILD_DIR.mkdir(exist_ok=True)
     os.chdir(BUILD_DIR)
     print(crayons.blue("Building .bdf..."))
@@ -131,13 +137,15 @@ if __name__ == "__main__":
     print(crayons.blue("Building bitmap formats..."))
     gen_bitmap_formats(bdfpath)
     print(crayons.green("Done!", bold=True))
-    print(crayons.blue("Saving sample images..."))
-    save_images(bdfpath)
-    print(crayons.green("Done!", bold=True))
-    print(crayons.blue("Generating TTF..."))
-    ttfbuilder = TTFBuilder.from_bdf_path(bdfpath)
-    ttfbuilder.build("cozette-tmp.ttf")
-    print(crayons.green("Done!", bold=True))
-    print(crayons.blue("Fixing TTF..."))
-    fix_ttf(Path("cozette-tmp.ttf"))
-    print(crayons.green("Done!", bold=True))
+    if args.action == "images":
+        print(crayons.blue("Saving sample images..."))
+        save_images(bdfpath)
+        print(crayons.green("Done!", bold=True))
+    else:
+        print(crayons.blue("Generating TTF..."))
+        ttfbuilder = TTFBuilder.from_bdf_path(bdfpath)
+        ttfbuilder.build("cozette-tmp.ttf")
+        print(crayons.green("Done!", bold=True))
+        print(crayons.blue("Fixing TTF..."))
+        fix_ttf(Path("cozette-tmp.ttf"))
+        print(crayons.green("Done!", bold=True))
