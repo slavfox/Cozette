@@ -54,3 +54,8 @@ dmypy.json
 .AppleDouble
 .LSOverride
 ._*
+*.otb
+*.bdf
+*.fnt
+*.ttf
+*.otf

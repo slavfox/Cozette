@@ -1,19 +1,49 @@
 # Cozette
 
-![Build fonts](https://github.com/slavfox/Cozette/workflows/Build%20fonts/badge.svg?event=push)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/slavfox/Cozette?logo=github&style=flat-square)](https://github.com/slavfox/Cozette/releases/latest)
+[![AUR version](https://img.shields.io/aur/version/cozette-otb?color=%231793d1&label=AUR&logo=arch-linux&logoColor=%23fff&style=flat-square)](https://aur.archlinux.org/packages/cozette-otb/)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/slavfox/Cozette/Build%20fonts?logo=github&style=flat-square)
+![GitHub All Releases](https://img.shields.io/github/downloads/slavfox/Cozette/total?style=flat-square)
+[![GitHub license](https://img.shields.io/github/license/slavfox/Cozette?style=flat-square)](https://github.com/slavfox/Cozette/blob/master/LICENSE)
+
+![Cozette](./img/sample.png)
 
 A bitmap programming font optimized for coziness.
 
-![sample.png](img/sample.png)
+# Contents
 
-Cozette is based on [Dina][], which itself is based on [Proggy][].
-It's also heavily inspired by [Creep][]. I absolutely adore Creep, and was
+- [About Cozette](#about-cozette)
+- [Installation](#installation)
+  - [Linux](#linux)
+  - [Mac](#mac)
+  - [Windows](#windows)
+- [Roadmap](#roadmap)
+- [Character map](#character-map)
+- [License](#license)
+
+# About Cozette
+
+Cozette is based on [Dina], which itself is based on [Proggy].
+It's also heavily inspired by [Creep]. I absolutely adore Creep, and was
 using it up until I got a higher-DPI screen for which it was slightly too
-small - which prompted me to make Cozette.
+small. That prompted me to make the bitmap font I always wished existed: 
+Cozette; a small-but-not-tiny bitmap font with great coverage of all the 
+glyphs *you* might encounter in the terminal:
+
+![glyphs in Cozette](./img/characters.png)
+
+I'm intentionally putting the emphasis on "you" - although Cozette already
+has all the glyphs I've seen in my CLI tools so far, *you* might find it's
+missing a glyph you wish it had. If that's the case, *please [file an issue]*!
+It's an important goal for Cozette to be a useful bitmap alternative to
+[Nerd Fonts].
+
+A nicer character map that includes the codepoints can be found at 
+[the bottom of this README]!
 
 # Installation
 
-[You can get Cozette over at the Releases tab](https://github.com/slavfox/Cozette/releases)!
+### [You can get Cozette over at the Releases tab]!
 
 Cozette is distributed in two main variants: bitmap and vector.
 
@@ -27,35 +57,43 @@ will want to use CozetteVector there. In applications that do support bitmap
 fonts, you will want to use the normal, bitmap Cozette (unless it's too
 small for you, in which case, CozetteVector scales better).  
 
-If you're on Linux, the preferred format is `.otb` (for bitmaps) or `.ttf` 
+### Linux
+The preferred format is `.otb` (for bitmaps) or `.ttf` 
 (for CozetteVector). To install the font, just throw it in your fonts directory
 (you probably want to follow your distro's instructions). On Ubuntu, if you 
 don't want to reconsider your distro choice, you might need to
-[specifically enable bitmap fonts](https://bugs.launchpad.net/ubuntu/+source/fontconfig/+bug/1560114).
+[specifically enable bitmap fonts].
 
-If you're on Mac, download the `.dfont` and install it with `Font Book.app`.
-Both the bitmap `Cozette.dfont` and the vector `CozetteVector.dfont` should
-work.
+**If you're on Arch**, [ifreund] made [an AUR package] for the .otb! Install it
+using your AUR helper of choice:
+```
+$ yay -S cozette-otb
+```
+Or, if you're not using an AUR helper:
+```
+$ git clone https://aur.archlinux.org/cozette-otb.git
+$ cd cozette-otb
+$ makepkg -si
+```
 
-If you're on Windows, just grab `CozetteVector.ttf`. If you want to get the 
-bitmap versions to work,
-[follow the instructions from here](https://wiki.archlinux.org/index.php/installation_guide).
+### Mac
+Download the `.dfont` and install it with `Font Book .app`.  Both the bitmap
+`Cozette.dfont` and the vector `CozetteVector.dfont` should work.
 
-# Unicode support
+### Windows
+Grab `CozetteVector.ttf`. If you want to get the bitmap versions to work, 
+[follow the instructions from here].
 
-As of the current version, these are the characters included in Cozette:
+### BSD / Solaris / Haku /Other
 
-![characters.png](./img/characters.png)
-
-Supporting as many characters as possible is, however, an important objective
-for this font, as I'd, ideally, like it to be able to display anything I
-might need it to. If you want any additional characters added, just submit
-an issue and I'll do my best.
+You know what you're doing.
 
 # Roadmap
 
-The eventual goal is feature (and character range)-parity with Creep. Here's
-where Cozette is so far, in the order the features are going to be implemented:
+Check the [CHANGELOG] for the latest news!
+
+Here's where Cozette is so far, in the rough order the features are going to be
+implemented:
 
 - [x] ASCII
 - [x] Powerline
@@ -69,15 +107,54 @@ where Cozette is so far, in the order the features are going to be implemented:
   date)
 - [x] "True" TTF version
   - [x] Windows support
+- [x] Full [vim-airline] support
+- [x] Charmap including the code points (to make it easier for users to
+      report issues/request additions)
 - [ ] Bold version
 - [ ] Italic version
 - [ ] Ligatures
 
+# Character map
+
+![Character map](./img/charmap.png)
+
+# Building
+
+If you want to build Cozette yourself, you'll need [FontForge]. Once you
+have that, just clone this repo, open `Cozette/Cozette.sfd` in FontForge,
+and go to *File → Generate Fonts...*.
+
+To run the build scripts I use to prepare releases, first install Python 3.8
+and [pipenv]. Then, install the dependencies and run `build.py fonts`:
+
+```console
+$ pipenv install
+$ pipenv run python3.8 build.py fonts
+```
+
 # License
 
-Cozette is licensed [MIT][] 💜
+Cozette is licensed [MIT] 💜
+
 
 [Dina]: https://www.dcmembers.com/jibsen/download/61/
 [Proggy]: https://github.com/bluescan/proggyfonts
-[MIT]: ./LICENSE
 [Creep]: https://github.com/romeovs/creep
+[great coverage of all the glyphs I might encounter in the terminal]:
+    #character-map
+[file an issue]: https://github.com/slavfox/Cozette/issues/new
+[Nerd Fonts]: https://www.nerdfonts.com/
+[the bottom of this README]: #character-map
+[You can get Cozette over at the Releases tab]:
+    https://github.com/slavfox/Cozette/releases
+[ifreund]: https://github.com/ifreund
+[an AUR package]: https://aur.archlinux.org/packages/cozette-otb/
+[specifically enable bitmap fonts]:
+    https://bugs.launchpad.net/ubuntu/+source/fontconfig/+bug/1560114
+[follow the instructions from here]: 
+    https://wiki.archlinux.org/index.php/installation_guide
+[CHANGELOG]: ./CHANGELOG.md
+[vim-airline]: https://github.com/vim-airline/vim-airline/
+[fontforge]: https://fontforge.org/en-US/
+[pipenv]: https://github.com/pypa/pipenv
+[MIT]: ./LICENSE

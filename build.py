@@ -5,14 +5,23 @@ import argparse
 from dataclasses import dataclass
 from pathlib import Path
 from shlex import quote
-from shutil import copy
+from shutil import copy, rmtree
 from typing import Optional, Sequence, cast
 
 import crayons  # type: ignore
 
-from cozette_builder.imagegen import read_sample, save_charlist, \
-    save_sample, add_margins
+from cozette_builder.imagegen import (
+    read_sample,
+    save_charlist,
+    save_sample,
+    add_margins,
+)
 from cozette_builder.ttfbuilder import TTFBuilder
+from cozette_builder.scanner import (
+    scan_for_codepoints,
+    print_codepoints_for_changelog,
+    find_missing_codepoints,
+)
 
 REPO_ROOT = Path(__file__).resolve().parent
 BUILD_DIR = REPO_ROOT / "build"
@@ -42,7 +51,7 @@ def save_images(bdfpath):
         subprocess.run(["xset", "fp", "rehash"])
 
         print(crayons.yellow("Saving character map"))
-        save_charlist(FONTNAME, bdfpath, REPO_ROOT / "img" / "characters.png")
+        save_charlist(FONTNAME, bdfpath, REPO_ROOT / "img")
 
         print(crayons.yellow("Saving sample image"))
         save_sample(
@@ -52,7 +61,7 @@ def save_images(bdfpath):
         )
         subprocess.run(["xset", "-fp", tmpdirname])
     subprocess.run(["xset", "fp", "rehash"])
-    add_margins(REPO_ROOT / "img" / "sample.png", )
+    add_margins(REPO_ROOT / "img" / "sample.png")
 
 
 def fontforge(open: Path, generate: Sequence[Generate]):
@@ -75,20 +84,11 @@ def rename_single(dir: Path, pattern: str, newname: str) -> Path:
     return cast(Path, next(dir.glob(pattern)).rename(dir / newname))
 
 
-def mkbdf() -> Path:
-    print()
+def gen_bitmap_formats() -> Path:
     fontforge(
         open=REPO_ROOT / "Cozette" / "Cozette.sfd",
-        generate=[Generate("cozette.", bitmap_fmt="bdf")],
-    )
-    bdfpath = rename_single(BUILD_DIR, "*.bdf", "cozette.bdf")
-    return bdfpath
-
-
-def gen_bitmap_formats(bdfpath: Path):
-    fontforge(
-        open=bdfpath,
         generate=[
+            Generate("cozette.", bitmap_fmt="bdf"),
             Generate("cozette.", "otb"),
             Generate("cozette.", "fnt"),
             Generate("cozette_bitmap.ttf", "otb"),
@@ -96,6 +96,8 @@ def gen_bitmap_formats(bdfpath: Path):
         ],
     )
     rename_single(BUILD_DIR, "*.fnt", "cozette.fnt")
+    bdfpath = rename_single(BUILD_DIR, "*.bdf", "cozette.bdf")
+    return bdfpath
 
 
 def fix_ttf(ttfpath: Path):
@@ -127,25 +129,49 @@ def fix_ttf(ttfpath: Path):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("action", choices=["images", "fonts"])
+    subparsers = parser.add_subparsers(dest="action")
+    images = subparsers.add_parser("images")
+    fonts = subparsers.add_parser("fonts")
+    scan = subparsers.add_parser("scan")
+    # noinspection PyTypeChecker
+    scan.add_argument("path", type=Path)  # type: ignore
+    scan.add_argument("-s", "--print-source-files", action="store_true")
     args = parser.parse_args()
-    BUILD_DIR.mkdir(exist_ok=True)
-    os.chdir(BUILD_DIR)
-    print(crayons.blue("Building .bdf..."))
-    bdfpath = mkbdf()
-    print(crayons.green("Done!", bold=True))
-    print(crayons.blue("Building bitmap formats..."))
-    gen_bitmap_formats(bdfpath)
-    print(crayons.green("Done!", bold=True))
-    if args.action == "images":
-        print(crayons.blue("Saving sample images..."))
-        save_images(bdfpath)
+    if args.action == "scan":
+        missing_codepoints = find_missing_codepoints(
+            REPO_ROOT / "Cozette" / "Cozette.sfd",
+            scan_for_codepoints(args.path),
+        )
+        if missing_codepoints:
+            print_codepoints_for_changelog(
+                missing_codepoints, print_source_files=args.print_source_files
+            )
+        else:
+            print(
+                crayons.green(
+                    f"All codepoints under {args.path} already "
+                    f"supported by Cozette."
+                )
+            )
+    elif args.action in ("images", "fonts"):
+        rmtree(BUILD_DIR, ignore_errors=True)
+        BUILD_DIR.mkdir(exist_ok=True)
+        os.chdir(BUILD_DIR)
+        print(crayons.blue("Building bitmap formats..."))
+        bdfpath = gen_bitmap_formats()
         print(crayons.green("Done!", bold=True))
+        print(crayons.green("Done!", bold=True))
+        if args.action == "images":
+            print(crayons.blue("Saving sample images..."))
+            save_images(bdfpath)
+            print(crayons.green("Done!", bold=True))
+        else:
+            print(crayons.blue("Generating TTF..."))
+            ttfbuilder = TTFBuilder.from_bdf_path(bdfpath)
+            ttfbuilder.build("cozette-tmp.ttf")
+            print(crayons.green("Done!", bold=True))
+            print(crayons.blue("Fixing TTF..."))
+            fix_ttf(Path("cozette-tmp.ttf"))
+            print(crayons.green("Done!", bold=True))
     else:
-        print(crayons.blue("Generating TTF..."))
-        ttfbuilder = TTFBuilder.from_bdf_path(bdfpath)
-        ttfbuilder.build("cozette-tmp.ttf")
-        print(crayons.green("Done!", bold=True))
-        print(crayons.blue("Fixing TTF..."))
-        fix_ttf(Path("cozette-tmp.ttf"))
-        print(crayons.green("Done!", bold=True))
+        parser.print_usage()

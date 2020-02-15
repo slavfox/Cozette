@@ -2,9 +2,9 @@ import subprocess
 import tempfile
 from pathlib import Path
 from shlex import quote
-from typing import Dict, NamedTuple, Optional, Tuple
+from typing import Dict, NamedTuple, Optional, Tuple, List
 from unicodedata import east_asian_width as charwidth
-from PIL import Image, ImageOps
+from PIL import Image, ImageOps  # type: ignore
 
 from cozette_builder.bdffont import BdfFont
 
@@ -138,32 +138,99 @@ def color_text(text: str, palette: Palette) -> str:
     return colored_text
 
 
-def save_charlist(fnt: str, bdf_font: Path, output_path: Path):
+def make_charmap(bdf_font: Path) -> List[str]:
     with bdf_font.open() as f:
         bdf = BdfFont.from_bdf(f)
+    text = [
+        "       0 1 2 3 4 5 6 7 8 9 A B C D E F",
+        "      ┌───────────────────────────────",
+    ]
+    codepoints = sorted(bdf.codepoints)
+    for i in range(0, codepoints[-1] + 16, 16):
+        line = ""
+        for j in range(16):
+            if (cp := i + j) > 32 and cp not in (127,) and cp in codepoints:
+                ch = chr(i + j)
+            else:
+                ch = " "
+            line += ch
+            if not charwidth(ch) == "W":
+                line += " "
+        if line := line.rstrip():
+            text.append(f"U+{i//16:03X}_│{line}")
+    return text
+
+
+def make_charlist_text(bdf_font: Path) -> str:
+    with bdf_font.open() as f:
+        bdf = BdfFont.from_bdf(f)
+    text = ""
+    for c in bdf.codepoints:
+        if c > 32 and c not in (127,):
+            ch = chr(c)
+            text += ch if charwidth(ch) == "W" else f"{ch} "
+    return text
+
+
+def stitch_charmap(files: List[Path], target: Path):
+    images = [
+        im.crop((0, 2, im.width, im.height - 2))
+        for path in files
+        if (im := Image.open(path).convert("RGB"))
+    ]
+    tot_height = sum(im.height for im in images)
+    width = max(im.width for im in images)
+    new_im = Image.new("RGB", (width, tot_height))
+    y = 0
+    for im in images:
+        new_im.paste(im, (0, y))
+        y += im.height
+    for p in files:
+        p.unlink()
+    new_im.save(target)
+
+
+def save_charlist(fnt: str, bdf_font: Path, output_dir: Path):
+    sample = wrap_text(make_charlist_text(bdf_font))
     save_sample(
         fnt,
-        wrap_text(
-            " ".join(
-                chr(c) for c in bdf.codepoints if c > 32 and c not in (127,)
-            )
-            .replace("⚡ ", "⚡")
-            .replace("\u03a2 ", "")
-        ),
-        output_path,
+        sample,
+        output_dir / "characters.png",
+        fgcolor="#24292e",
+        bgcolor="#ffffff",
     )
+    expand(output_dir / "characters.png", color="#ffffff")
+    print(sample.text)
+
+    charmap = make_charmap(bdf_font)
+    files = []
+    for chunk in range(0, len(charmap), 50):
+        path = output_dir / f"charmap{chunk//50}_tmp.png"
+        text = "\n".join(charmap[chunk : chunk + 50])
+        save_sample(
+            fnt,
+            Sample(text, 39, len(charmap[chunk : chunk + 50])),
+            path,
+            fgcolor="#24292e",
+            bgcolor="#ffffff",
+        )
+        files.append(path)
+    stitch_charmap(files, output_dir / "charmap.png")
+    expand(output_dir / "charmap.png", color="#ffffff")
+
+
+def expand(sample_path: Path, margin: int = 40, color: str = "#282c34"):
+    im: Image.Image = Image.open(sample_path).convert("RGB")
+    im.load()
+    new_im = ImageOps.expand(im, (margin, margin), fill=color)
+    new_im.save(sample_path)
 
 
 def add_margins(sample_path: Path, color: str = "#282c34"):
     im: Image.Image = Image.open(sample_path).convert("RGB")
-    new_w = round((im.height / 3) * 4)
+    new_w = round((im.height / 10) * 16)
     im.load()
     new_im = ImageOps.pad(
-        im,
-        (new_w, im.height),
-        method=Image.NEAREST,
-        color=color
+        im, (new_w, im.height), method=Image.NEAREST, color=color
     )
     new_im.save(sample_path)
-
-
