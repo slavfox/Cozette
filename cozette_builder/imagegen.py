@@ -105,7 +105,7 @@ def save_sample(
             "-fa",
             fnt,
             "-geometry",
-            f"{sample.width}x{sample.height}",
+            f"{sample.width}x{sample.height - 1}",
             "-dc",
             "-e",
             f"bash -c {cmd}",
@@ -136,7 +136,6 @@ def color_text(text: str, palette: Palette) -> str:
             f"${color.upper()}$", color_escape_seq(palette[color])
         )
     return colored_text
-
 
 def make_charmap(bdf_font: Path) -> List[str]:
     with bdf_font.open() as f:
@@ -209,7 +208,7 @@ def save_charlist(fnt: str, bdf_font: Path, output_dir: Path):
         text = "\n".join(charmap[chunk : chunk + 50])
         save_sample(
             fnt,
-            Sample(text, 39, len(charmap[chunk : chunk + 50])),
+            Sample(text, 39, len(charmap[chunk : chunk + 49])),
             path,
             fgcolor="#24292e",
             bgcolor="#ffffff",

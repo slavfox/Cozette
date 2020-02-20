@@ -100,9 +100,11 @@ implemented:
 - [x] Build scripts to handle exporting
 - [x] Box-drawing (mostly)
 - [x] Braille
+- [ ] Cyrillic
 - [ ] Nerdfonts:
   - [x] nf-seti-*
-  - [ ] nf-dev-*
+  - [ ] nf-dev-* (partial)
+  - [ ] nf-weather-*
 - [x] Glyph map generation (so I don't have to keep `characters.png` up to
   date)
 - [x] "True" TTF version

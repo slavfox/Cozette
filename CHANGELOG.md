@@ -7,7 +7,100 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-Nothing!
+### Added
+
+#### Glyphs
+
+- Nerdfonts:
+  - Volume icons:
+    -  **nf-fa-volume_off** (U+F026)
+    -  **nf-fa-volume_down** (U+F027)
+    -  **nf-fa-volume_up** (U+F028)
+    - 墳 **nf-mdi-volume_high (U+FA7D)**
+    - 奄 **nf-mdi-volume_low (U+FA7E)**
+    - 奔 **nf-mdi-volume_medium (U+FA7F)**
+    - 婢 **nf-mdi-volume_off (U+FA80)**
+    - ﱛ **nf-mdi-volume_plus (U+FC5B)**
+    - ﱜ **nf-mdi-volume_minus (U+FC5C)**
+    - ﱝ **nf-mdi-volume_mute (U+FC5D)**
+  - Battery icons:
+    -  **nf-fa-battery_0 (U+F244)**
+    -  **nf-fa-battery_1 (U+F243)**
+    -  **nf-fa-battery_2 (U+F242)**
+    -  **nf-fa-battery_3 (U+F241)**
+    -  **nf-fa-battery_4 (U+F240)**
+    - The entire `nf-mdi-battery*` block (U+F578-U+F590 and U+FD05-U+FD10)
+  - Temperature icons:
+    - fat thermometer:
+      -  **nf-fa-thermometer_full (U+F2C7)**
+      -  **nf-fa-thermometer_three_quarters (U+F2C8)**
+      -  **nf-fa-thermometer_half (U+F2C9)**
+      -  **nf-fa-thermometer_quarter (U+F2CA)**
+      -  **nf-fa-thermometer_empty (U+F2CB)**
+    - skinny thermometer:
+      -  **nf-fae-thermometer (U+E20A)**
+      -  **nf-fae-thermometer (U+E20B)**
+      -  **nf-fae-thermometer (U+E20C)**
+  - Internet:
+    -  **nf-fa-globe (U+F0AC)**
+    -  **nf-fa-wifi (U+F1EB)** - am not happy with this one, but I can't
+      see how to do it better in 6x13px.
+    -  **nf-mdi-ethernet (U+F6FF)**
+    - 直 **nf-mdi-wifi (U+FAA8)**
+    - 睊 **nf-mdi-wifi_off (U+FAA9)**
+  - Charts:
+    -  **nf-fa-bar_chart (U+F080)**
+    -  **nf-fa-area_chart (U+F1FE)** - this one couldn't be made to look
+      good in 6x13px, so it's not filled. Gotta have some artistic license when
+      trying to make stuff this small.
+    -  **nf-fa-pie-chart (U+F200)**
+    -  **nf-fa-line-chart (U+F201)**
+  - Software:
+    -  **nf-dev-opera (U+E746)** (old logo)
+    -  **nf-fa-steam (U+F1B6)**
+    -  **nf-fa-steam_square (U+F1B7)**
+    -  **nf-fa-slack (U+F198)** 
+    -  **nf-fa-chrome (U+F268)** (copied as nf-dev-chrome U+E743)
+    -  **nf-fa-firefox (U+F269)** (copied as nf-dev-firefox U+E745)
+    -  **nf-fa-opera (U+F26A)** (new logo)
+    - Copied nf-dev-linux and nf-dev-apple to nf-fa-linux and -apple 
+    - Copied nf-dev-python to nf-mdi_language_python
+    -  **nf-mdi-language_python_text**
+  - Other random stuff:
+    -  **nf-fa-clock_o (U+F017)**
+    -  **nf-fa-headphones (U+F025)**
+    -  **nf-fa-step_backward (U+F048)**
+    -  **nf-fa-fast_backward (U+F049)**
+    -  **nf-fa-backward (U+F04A)**
+    -  **nf-fa-play (U+F04B)**
+    -  **nf-fa-pause (U+F04C)**
+    -  **nf-fa-stop (U+F04D)**
+    -  **nf-fa-forward (U+F04E)**
+    -  **nf-fa-fast_forward (U+F050)**
+    -  **nf-fa-step_forward (U+F051)**
+    -  **nf-fa-key (U+F084)** (copied as nf-mdi-key_variant U+F80A)
+    -  **nf-fa-eject (U+F052)**
+    -  **nf-fa-bell_o (U+F0A2)**
+    -  **nf-fa-bell (U+F0F3)**
+    -  **nf-fa-microphone (U+F130)**
+    -  **nf-fa-microphone_slash (U+F131)**
+    -  **nf-fa-calendar_o (U+F133)**
+    -  **nf-fa-bell_slash (U+F1F6)**
+    -  **nf-fa-bell_slash_o (U+F1F7)**
+    -  **nf-fa-microchip (U+F2DB)**
+    -  **nf-mdi-headphones (U+F7CA)**
+    -  **nf-mdi-headphones_box (U+F7CB)**
+    -  **nf-mdi-headphones_settings (U+F7CC)**
+    -  **nf-mdi-headset (U+F7CD)**
+    -  **nf-mdi-headset_off (U+F7CF)**
+    - ﳌ **nf-mdi-headphones_off (U+FCCC)**
+
+### Changed
+
+#### Glyphs
+
+- moved  (**nf-seti-xml (U+E619)**) up a pixel to conform with the 
+  spacing of other glyphs better
 
 ## [1.4.0] - The `vim-airline` Update - 2020-02-15
 
