@@ -100,7 +100,7 @@ implemented:
 - [x] Build scripts to handle exporting
 - [x] Box-drawing (mostly)
 - [x] Braille
-- [ ] Cyrillic
+- [x] Cyrillic!
 - [ ] Nerdfonts:
   - [x] nf-seti-*
   - [ ] nf-dev-* (partial)
@@ -109,7 +109,8 @@ implemented:
   date)
 - [x] "True" TTF version
   - [x] Windows support
-- [x] Full [vim-airline] support
+- [x] Full [vim-airline] support!
+- [x] Full [ranger_devicons] support!
 - [x] Charmap including the code points (to make it easier for users to
       report issues/request additions)
 - [ ] Bold version
@@ -157,6 +158,7 @@ Cozette is licensed [MIT] 💜
     https://wiki.archlinux.org/index.php/installation_guide
 [CHANGELOG]: ./CHANGELOG.md
 [vim-airline]: https://github.com/vim-airline/vim-airline/
+[ranger_devicons]: https://github.com/alexanderjeurissen/ranger_devicons
 [fontforge]: https://fontforge.org/en-US/
 [pipenv]: https://github.com/pypa/pipenv
 [MIT]: ./LICENSE
