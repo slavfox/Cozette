@@ -5,17 +5,61 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [v.1.5.0]
 
 ### Added
 
-#### Glyphs
+***436 new glyphs!***
 
+Full Cyryllic and `ranger-devicons` support, and a *lot* of other things.
+
+#### Glyphs
+- The Cyryllic and Cyryllic supplement blocks. That's U+0400 to U+052F, sans
+  the combining characters (U+0483-U+0489). If you ever need to `cat` some
+  medieval Cyryllic texts, Cozette has your back.
+- ⚸ **BLACK MOON LILITH (U+26B8)** for no reason other than being my favorite
+  Unicode codepoint.
 - Nerdfonts:
+  - `ranger-devicons`:
+    -  **nf-fae-galery [sic] (U+E244)** 
+    -  **nf-custom-folder_git (U+E5FB)** 
+    -  **nf-custom-elm (U+E62C)**
+    -  **nf-custom-elixir (U+E62D)**
+    -  **nf-dev-database (U+E706)**
+    -  **nf-dev-dropbox (U+E707)**
+    -  **nf-dev-windows (U+E70F)**
+    -  **nf-dev-nodejs_small (U+E718)**
+    -  **nf-dev-git_compare (U+E728)**
+    -  **nf-dev-scala (U+E737)**
+    -  **nf-dev-java (U+E738)**
+    -  **nf-dev-clojure (U+E768)** (copied to U+E76A nf-dev-clojure_alt)
+    -  **nf-dev-perl (U+E769)**
+    -  **nf-dev-clojure_alt (U+E76A)**
+    -  **nf-dev-rust (U+E7A8)**
+    -  **nf-dev-illustrator (U+E7B4)**
+    -  **nf-dev-photoshop (U+E7B8)**
+    -  **nf-dev-react (U+E7BA)**
+    -  **nf-dev-vim (U+E7C5)**
+    -  **nf-fa-music (U+F001)**
+    -  **nf-fa-film (U+F008)**
+    -  **nf-fa-book (U+F02D)**
+    -  **nf-fa-comment (U+F075)**
+    -  **nf-fa-copy (U+F0C5)**
+    -  **nf-fa-desktop (U+F108)**
+    -  **nf-fa-dollar (U+F155)**
+    -  **nf-fa-archive (U+F187)**
+    -  **nf-fa-newspaper_o (U+F1EA)**
+    -  **nf-linux-docker (U+F308)**
+    -  **nf-oct-repo (U+F401)**
+    -  **nf-oct-organization (U+F42B)**
+    -  **nf-oct-device_camera_video (U+F447)**
+    -  **nf-oct-desktop_download (U+F498)**
+    -  **nf-mdi-language_csharp (U+F81A)**
+    -  copied U+E739 nf-dev-ruby to U+E791 nf-dev-ruby_rough
   - Volume icons:
-    -  **nf-fa-volume_off** (U+F026)
-    -  **nf-fa-volume_down** (U+F027)
-    -  **nf-fa-volume_up** (U+F028)
+    -  **nf-fa-volume_off (U+F026)**
+    -  **nf-fa-volume_down (U+F027)**
+    -  **nf-fa-volume_up (U+F028)**
     - 墳 **nf-mdi-volume_high (U+FA7D)**
     - 奄 **nf-mdi-volume_low (U+FA7E)**
     - 奔 **nf-mdi-volume_medium (U+FA7F)**
@@ -289,7 +333,8 @@ Still broken on Windows.
 - Braille
 - nf-seti
 
-[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.4.0...HEAD
+[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.5.0...HEAD
+[1.5.0]: https://github.com/slavfox/Cozette/compare/v.1.4.0...v.1.5.0
 [1.4.0]: https://github.com/slavfox/Cozette/compare/v.1.3.0...v.1.4.0
 [1.3.0]: https://github.com/slavfox/Cozette/compare/v.1.2.0...v.1.3.0
 [1.2.0]: https://github.com/slavfox/Cozette/compare/v.1.1.0...v.1.2.0
