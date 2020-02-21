@@ -26,6 +26,7 @@ from cozette_builder.scanner import (
 REPO_ROOT = Path(__file__).resolve().parent
 BUILD_DIR = REPO_ROOT / "build"
 FONTNAME = "Cozette"
+SFDPATH = REPO_ROOT / "Cozette" / "Cozette.sfd"
 
 
 @dataclass
@@ -41,17 +42,17 @@ class Generate:
         )
 
 
-def save_images(bdfpath):
+def save_images(otbpath):
     with tempfile.TemporaryDirectory() as tmpdirname:
         print(crayons.yellow("Making tmp fontdir"))
         tmpdirpath = Path(tmpdirname)
-        copy(bdfpath, tmpdirname)
+        copy(otbpath, tmpdirname)
         subprocess.run(["mkfontdir", tmpdirname])
         subprocess.run(["xset", "+fp", tmpdirname])
         subprocess.run(["xset", "fp", "rehash"])
 
         print(crayons.yellow("Saving character map"))
-        save_charlist(FONTNAME, bdfpath, REPO_ROOT / "img")
+        save_charlist(FONTNAME, SFDPATH, REPO_ROOT / "img")
 
         print(crayons.yellow("Saving sample image"))
         save_sample(
@@ -139,7 +140,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
     if args.action == "scan":
         missing_codepoints = find_missing_codepoints(
-            REPO_ROOT / "Cozette" / "Cozette.sfd",
+            SFDPATH,
             scan_for_codepoints(args.path),
         )
         if missing_codepoints:
@@ -163,7 +164,7 @@ if __name__ == "__main__":
         print(crayons.green("Done!", bold=True))
         if args.action == "images":
             print(crayons.blue("Saving sample images..."))
-            save_images(bdfpath)
+            save_images(BUILD_DIR / "cozette.otb")
             print(crayons.green("Done!", bold=True))
         else:
             print(crayons.blue("Generating TTF..."))

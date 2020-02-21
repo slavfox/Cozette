@@ -4,7 +4,7 @@ FullName: Cozette
 FamilyName: Cozette
 Weight: Medium
 Copyright: (c) 2020 Slavfox
-Version: 1.005
+Version: 1.051
 ItalicAngle: 0
 UnderlinePosition: -3071
 UnderlineWidth: 2048
@@ -22,7 +22,7 @@ OS2Version: 1
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: -2082812035
-ModificationTime: 1582296649
+ModificationTime: 1582316352
 PfmFamily: 49
 TTFWeight: 500
 TTFWidth: 5
@@ -62,12 +62,12 @@ NameList: AGL with PUA
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 64128 32 17
+WinInfo: 9760 32 16
 OnlyBitmaps: 1
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 524288 262144 174762 0 -1048576 174762 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 1114112 1471
+BeginChars: 1114112 1500
 
 StartChar: .notdef
 Encoding: 0 -1 0
@@ -10378,8 +10378,211 @@ Width: 945
 Flags: W
 LayerCount: 2
 EndChar
+
+StartChar: uni21E0
+Encoding: 8672 8672 1471
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni21E1
+Encoding: 8673 8673 1472
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni21E2
+Encoding: 8674 8674 1473
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni21E3
+Encoding: 8675 8675 1474
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni2601
+Encoding: 9729 9729 1475
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni2615
+Encoding: 9749 9749 1476
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni2638
+Encoding: 9784 9784 1477
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni2699
+Encoding: 9881 9881 1478
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni26A0
+Encoding: 9888 9888 1479
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni2726
+Encoding: 10022 10022 1480
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni276F
+Encoding: 10095 10095 1481
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni276E
+Encoding: 10094 10094 1482
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni279C
+Encoding: 10140 10140 1483
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni27EA
+Encoding: 10218 10218 1484
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni27EB
+Encoding: 10219 10219 1485
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni27E8
+Encoding: 10216 10216 1486
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni27E9
+Encoding: 10217 10217 1487
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni2B22
+Encoding: 11042 11042 1488
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uniE777
+Encoding: 59255 59255 1489
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: u1F333
+Encoding: 127795 127795 1490
+Width: 945
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: u1F439
+Encoding: 128057 128057 1491
+Width: 945
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: u1F40F
+Encoding: 128015 128015 1492
+Width: 945
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: u1F52E
+Encoding: 128302 128302 1493
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: u1F4E6
+Encoding: 128230 128230 1494
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: u1F418
+Encoding: 128024 128024 1495
+Width: 945
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: u1F40D
+Encoding: 128013 128013 1496
+Width: 945
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: u1F48E
+Encoding: 128142 128142 1497
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: u1F980
+Encoding: 129408 129408 1498
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: u1F4A0
+Encoding: 128160 128160 1499
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
 EndChars
-BitmapFont: 13 1474 10 3 1
+BitmapFont: 13 1504 10 3 1
 BDFStartProperties: 42
 FONT 1 "-slavfox-Cozette-Medium-R-Normal--13-120-75-75-M-60-ISO10646-1"
 COMMENT 0 "(c) 2020 Slavfox"
@@ -10401,7 +10604,7 @@ FONTNAME_REGISTRY 16 ""
 FONT_NAME 16 "Cozette"
 FACE_NAME 16 "Cozette"
 COPYRIGHT 16 "(c) 2020 Slavfox"
-FONT_VERSION 16 "1.005"
+FONT_VERSION 16 "1.051"
 FONT_ASCENT 18 10
 FONT_DESCENT 18 3
 UNDERLINE_POSITION 18 -19
@@ -12711,8 +12914,8 @@ BDFChar: 1141 1025 6 1 5 0 9
 :]U9@JFJ)>JG9*E
 BDFChar: 1142 1026 6 1 5 -2 7
 n3B6@BLkZb#VZ5Y
-BDFChar: 1143 1027 6 1 5 0 9
-&0LuJJ:N0#J:IV"
+BDFChar: 1143 1027 6 2 5 0 9
++@#qrJ:N0#J:IV"
 BDFChar: 1144 1028 6 1 5 0 7
 0M$``J:L0E
 BDFChar: 1145 1029 6 1 5 0 7
@@ -12743,8 +12946,8 @@ BDFChar: 1157 1041 6 1 5 0 7
 n:6&YLkplV
 BDFChar: 1158 1042 6 1 5 0 7
 n;)niLkplV
-BDFChar: 1159 1043 6 1 5 0 7
-pjdmFJ:N0#
+BDFChar: 1159 1043 6 2 5 0 7
+n:6%>J:N0#
 BDFChar: 1160 1044 6 1 5 -1 7
 E)9A-:f*8KL]@DT
 BDFChar: 1161 1045 6 1 5 0 7
@@ -12779,16 +12982,16 @@ BDFChar: 1175 1060 6 1 5 0 7
 +E49XW2OYX
 BDFChar: 1176 1061 6 1 5 0 7
 LknkM+AdlM
-BDFChar: 1177 1062 6 1 5 0 7
-OH>QcOHB5C
+BDFChar: 1177 1062 6 1 5 -1 7
+OH>QcOH>S!#QOi)
 BDFChar: 1178 1063 6 1 5 0 7
 LkpkCGR+Q\
 BDFChar: 1179 1064 6 1 5 0 7
 W2QYnW2QZi
-BDFChar: 1180 1065 6 0 5 -1 6
-W2QYnW2TUs
+BDFChar: 1180 1065 6 1 6 -2 7
+W2QYnW2QZi"<7CA
 BDFChar: 1181 1066 6 0 5 0 7
-i#j.%,U=X[
+i#j.%,U=Wp
 BDFChar: 1182 1067 6 1 5 0 7
 Lkpl.W2QZ9
 BDFChar: 1183 1068 6 1 5 0 7
@@ -12801,8 +13004,8 @@ BDFChar: 1186 1071 6 1 5 0 7
 G_h03GUQ+=
 BDFChar: 1187 1074 6 1 5 0 5
 n;-RiM!tBE
-BDFChar: 1188 1075 6 1 5 0 5
-pjdmFJ:IV"
+BDFChar: 1188 1075 6 2 5 0 5
+n:6%>J:IV"
 BDFChar: 1189 1076 6 1 5 -1 5
 E)9A-OSFV3
 BDFChar: 1190 1077 6 1 5 0 5
@@ -12836,21 +13039,21 @@ p`L\%+<UXa
 BDFChar: 1204 1091 6 1 5 -2 5
 Lkpj`:`pmr
 BDFChar: 1205 1092 6 1 5 -2 7
-+<VeGW2QY6+<UXa
++<YX%W2QY6+<UXa
 BDFChar: 1206 1093 6 1 5 0 5
 Leo3::l#)O
-BDFChar: 1207 1094 6 1 5 0 5
-OH>Qcp]pj"
+BDFChar: 1207 1094 6 1 5 -1 5
+OH>QcOSB(]
 BDFChar: 1208 1096 6 1 5 0 5
 W2QYnW;$>m
-BDFChar: 1209 1097 6 0 5 -1 4
-W2QYnqud!"
+BDFChar: 1209 1097 6 1 6 -2 5
+W2QYnW;$K8
 BDFChar: 1210 1098 6 1 5 0 5
-^d)j082(#D
+^d)j088nP/
 BDFChar: 1211 1099 6 1 5 0 5
 Lks-NW5nr=
-BDFChar: 1212 1100 6 1 5 0 5
-J:R-FM!tBE
+BDFChar: 1212 1100 6 2 5 0 5
+J:QR>OPg*=
 BDFChar: 1213 1101 6 1 5 0 5
 n-F7E#k.fo
 BDFChar: 1214 1102 6 1 5 0 5
@@ -12861,8 +13064,8 @@ BDFChar: 1216 1104 6 1 5 0 8
 5Tg&GM"lLVDu]k<
 BDFChar: 1217 1106 6 1 5 -2 7
 5X=g(=D15r#VZ5Y
-BDFChar: 1218 1107 6 1 5 0 8
-&0LuJJ:N0#J,fQL
+BDFChar: 1218 1107 6 2 5 0 8
++@#qrJ:N0#J,fQL
 BDFChar: 1219 1108 6 1 5 0 5
 E/<G&Li<=o
 BDFChar: 1220 1109 6 1 5 0 5
@@ -12969,18 +13172,18 @@ BDFChar: 1270 1166 6 1 5 0 7
 n;)n!n;)UF
 BDFChar: 1271 1167 6 1 5 -3 5
 YfMWVW:5UnJ,fQL
-BDFChar: 1272 1168 6 1 5 0 8
-#l&q#J:N0#J,fQL
-BDFChar: 1273 1169 6 1 5 0 6
-#l&q#J:N.M
-BDFChar: 1274 1170 6 0 5 0 7
-HpBq^n3B6(
-BDFChar: 1275 1171 6 0 5 0 5
-HpI0d5X5;L
-BDFChar: 1276 1172 6 1 5 -2 7
-n:6%>n;)mV#S6t9
-BDFChar: 1277 1173 6 1 5 -2 5
-n:6&YLkl<J
+BDFChar: 1272 1168 6 2 5 0 8
+&Fb4#J:N0#J,fQL
+BDFChar: 1273 1169 6 2 5 0 6
+&Fb4#J:N.M
+BDFChar: 1274 1170 6 1 5 0 7
+GX+MZn3B6(
+BDFChar: 1275 1171 6 1 5 0 5
+GX1a`5X5;L
+BDFChar: 1276 1172 6 2 5 -2 7
+n:6%>i/j%^&0LrQ
+BDFChar: 1277 1173 6 2 5 -2 5
+n:6&IOH:"r
 BDFChar: 1278 1174 6 1 5 -2 7
 W2QY6E2]_6#RCD1
 BDFChar: 1279 1175 6 1 5 -2 5
@@ -13173,18 +13376,18 @@ BDFChar: 1372 1268 6 1 5 0 9
 :]Q<-Lkp9]#RCD1
 BDFChar: 1373 1269 6 1 5 0 7
 :]Q<-Lj012
-BDFChar: 1374 1270 6 1 5 -2 7
-pjdmFJ:N0c5X5;L
-BDFChar: 1375 1271 6 1 5 -2 5
-pjdmFJA=E8
+BDFChar: 1374 1270 6 2 5 -2 7
+n:6%>J:N0c5X5;L
+BDFChar: 1375 1271 6 2 5 -2 5
+n:6%>JA=E8
 BDFChar: 1376 1272 6 1 5 0 9
 :]Q<-LrcNnW5nr=
 BDFChar: 1377 1273 6 1 5 0 7
 :]Q<-aJc&Y
-BDFChar: 1378 1274 6 0 5 -2 7
-HpBq^n3B6X&7>J<
-BDFChar: 1379 1275 6 0 5 -2 5
-HpI0d5]@9B
+BDFChar: 1378 1274 6 1 5 -2 7
+GX+MZn3B6X&7>J<
+BDFChar: 1379 1275 6 1 5 -2 5
+GX1a`5]@9B
 BDFChar: 1380 1276 6 1 5 -2 7
 LknkM+AdlM#VZ5Y
 BDFChar: 1381 1277 6 1 5 -2 5
@@ -13367,5 +13570,63 @@ BDFChar: 1469 62616 6 0 6 0 8
 &.mF(P(N]42uipY
 BDFChar: 1470 63514 6 0 6 -2 8
 @$#o'^6H?rJ<4.=
+BDFChar: 1471 8672 6 1 5 1 5
++@)kj+92BA
+BDFChar: 1472 8673 6 1 5 0 6
++Af!:+93Ma
+BDFChar: 1473 8674 6 1 5 1 5
++:tI_+92BA
+BDFChar: 1474 8675 6 1 5 0 6
++93MaW)+T:
+BDFChar: 1475 9729 6 1 5 2 4
+0R3?m
+BDFChar: 1476 9749 6 0 6 0 9
+&0N),E3>)rpi$35
+BDFChar: 1477 9784 6 0 6 0 6
+\l?9/\l?6@
+BDFChar: 1478 9881 6 0 6 0 6
+834[g7^s]D
+BDFChar: 1479 9888 6 0 6 0 6
+&3)(SI.$t6
+BDFChar: 1480 10022 6 1 5 1 5
++E7*p+92BA
+BDFChar: 1481 10095 6 2 5 -1 7
+^qa>c0OS;(^]4?7
+BDFChar: 1482 10094 6 2 5 -1 7
+0JHmB^gLP(0E;(Q
+BDFChar: 1483 10140 6 1 6 0 5
+0Gs`c(bbpi
+BDFChar: 1484 10218 6 1 5 -1 7
+-n%ngTMSH5-ia5I
+BDFChar: 1485 10219 6 1 5 -1 7
+TV,+X-r<a5TE"rl
+BDFChar: 1486 10216 6 2 4 -1 7
++<Wp7J3Z@B+92BA
+BDFChar: 1487 10217 6 2 4 -1 7
+J:KmM+@&2BJ,fQL
+BDFChar: 1488 11042 6 1 5 0 6
++E7,Npi%>U
+BDFChar: 1489 59255 6 0 6 0 6
+TWYM"\>ZJ/
+BDFChar: 1490 127795 6 0 6 -1 8
+I/a-Err.9n-o_2,
+BDFChar: 1491 128057 6 -1 7 0 7
+G5tnK@fSdp<<,Sj8H?2L
+BDFChar: 1492 128015 6 0 6 0 7
+0O4Uk^A^5?
+BDFChar: 1493 128302 6 0 6 0 7
+3(03eJjb"c
+BDFChar: 1494 128230 6 0 6 0 9
+-q&[d\q7eNK)P`M
+BDFChar: 1495 128024 6 0 6 0 6
+E4#>A]Hea&
+BDFChar: 1496 128013 6 0 6 0 7
+*&bN#L'E,)
+BDFChar: 1497 128142 6 0 6 1 6
+I/<hi3"Q&i
+BDFChar: 1498 129408 6 0 7 0 6
+JYg7f4Ba!1
+BDFChar: 1499 128160 6 0 6 0 6
+&3*YW<&bEh
 EndBitmapFont
 EndSplineFont

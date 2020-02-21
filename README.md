@@ -111,6 +111,7 @@ implemented:
   - [x] Windows support
 - [x] Full [vim-airline] support!
 - [x] Full [ranger_devicons] support!
+- [x] [starship] supported out of the box!
 - [x] Charmap including the code points (to make it easier for users to
       report issues/request additions)
 - [ ] Bold version
@@ -159,6 +160,7 @@ Cozette is licensed [MIT] 💜
 [CHANGELOG]: ./CHANGELOG.md
 [vim-airline]: https://github.com/vim-airline/vim-airline/
 [ranger_devicons]: https://github.com/alexanderjeurissen/ranger_devicons
+[starship]: https://starship.rs/
 [fontforge]: https://fontforge.org/en-US/
 [pipenv]: https://github.com/pypa/pipenv
 [MIT]: ./LICENSE

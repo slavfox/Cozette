@@ -137,14 +137,12 @@ def color_text(text: str, palette: Palette) -> str:
         )
     return colored_text
 
-def make_charmap(bdf_font: Path) -> List[str]:
-    with bdf_font.open() as f:
-        bdf = BdfFont.from_bdf(f)
+def make_charmap(sfd: Path) -> List[str]:
     text = [
-        "       0 1 2 3 4 5 6 7 8 9 A B C D E F",
-        "      ┌───────────────────────────────",
+        "        0 1 2 3 4 5 6 7 8 9 A B C D E F",
+        "       ┌───────────────────────────────",
     ]
-    codepoints = sorted(bdf.codepoints)
+    codepoints = sfd_codepoints(sfd)
     for i in range(0, codepoints[-1] + 16, 16):
         line = ""
         for j in range(16):
@@ -156,15 +154,25 @@ def make_charmap(bdf_font: Path) -> List[str]:
             if not charwidth(ch) == "W":
                 line += " "
         if line := line.rstrip():
-            text.append(f"U+{i//16:03X}_│{line}")
+            text.append(f"U+{i//16:04X}_│{line}")
     return text
 
+def sfd_codepoints(sfd: Path) -> List[int]:
+    codepoints = []
+    with sfd.open() as f:
+        chars = False
+        for line in f:
+            if chars:
+                if line.startswith("Encoding:"):
+                    codepoints.append(int(line.split(maxsplit=2)[1]))
+            elif line.startswith("BeginChars"):
+                chars = True
+    return sorted(codepoints)
 
-def make_charlist_text(bdf_font: Path) -> str:
-    with bdf_font.open() as f:
-        bdf = BdfFont.from_bdf(f)
+
+def make_charlist_text(sfd: Path) -> str:
     text = ""
-    for c in bdf.codepoints:
+    for c in sfd_codepoints(sfd):
         if c > 32 and c not in (127,):
             ch = chr(c)
             text += ch if charwidth(ch) == "W" else f"{ch} "
@@ -189,8 +197,8 @@ def stitch_charmap(files: List[Path], target: Path):
     new_im.save(target)
 
 
-def save_charlist(fnt: str, bdf_font: Path, output_dir: Path):
-    sample = wrap_text(make_charlist_text(bdf_font))
+def save_charlist(fnt: str, sfd: Path, output_dir: Path):
+    sample = wrap_text(make_charlist_text(sfd))
     save_sample(
         fnt,
         sample,
@@ -201,14 +209,14 @@ def save_charlist(fnt: str, bdf_font: Path, output_dir: Path):
     expand(output_dir / "characters.png", color="#ffffff")
     print(sample.text)
 
-    charmap = make_charmap(bdf_font)
+    charmap = make_charmap(sfd)
     files = []
     for chunk in range(0, len(charmap), 50):
         path = output_dir / f"charmap{chunk//50}_tmp.png"
         text = "\n".join(charmap[chunk : chunk + 50])
         save_sample(
             fnt,
-            Sample(text, 39, len(charmap[chunk : chunk + 49])),
+            Sample(text, 40, len(charmap[chunk : chunk + 49])),
             path,
             fgcolor="#24292e",
             bgcolor="#ffffff",

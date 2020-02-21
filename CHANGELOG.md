@@ -5,6 +5,23 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+## [v.1.5.1]
+
+### Added
+- All glyphs from the default [starship](https://starship.rs/) prompt.
+
+### Changed
+- [Cyrillic fixes](https://github.com/slavfox/Cozette/issues/5#issuecomment-589734989)
+- Changed font versioning scheme from `M.mmm` where M = major, m = minor to
+  `M.mmp` where p=patch. Since font versions are stored as a decimal value 
+  `x.yyy` with three places past the decimal point, they don't map cleanly
+  to semantic versioning - so I'm setting an arbitrary limit of 9 patches
+  per minor release.
+- Tweaked build scripts to output charmaps based on SFD, not BDF, since the BDF
+  doesn't include emoji.
+
 ## [v.1.5.0]
 
 ### Added
@@ -333,7 +350,8 @@ Still broken on Windows.
 - Braille
 - nf-seti
 
-[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.5.0...HEAD
+[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.5.1...HEAD
+[1.5.0]: https://github.com/slavfox/Cozette/compare/v.1.5.0...v.1.5.1
 [1.5.0]: https://github.com/slavfox/Cozette/compare/v.1.4.0...v.1.5.0
 [1.4.0]: https://github.com/slavfox/Cozette/compare/v.1.3.0...v.1.4.0
 [1.3.0]: https://github.com/slavfox/Cozette/compare/v.1.2.0...v.1.3.0
