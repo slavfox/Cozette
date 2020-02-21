@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [v.1.5.1]
+## [1.5.1]
 
 ### Added
 - All glyphs from the default [starship](https://starship.rs/) prompt.
@@ -22,7 +22,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Tweaked build scripts to output charmaps based on SFD, not BDF, since the BDF
   doesn't include emoji.
 
-## [v.1.5.0]
+## [1.5.0]
 
 ### Added
 
@@ -351,7 +351,7 @@ Still broken on Windows.
 - nf-seti
 
 [unreleased]: https://github.com/slavfox/Cozette/compare/v.1.5.1...HEAD
-[1.5.0]: https://github.com/slavfox/Cozette/compare/v.1.5.0...v.1.5.1
+[1.5.1]: https://github.com/slavfox/Cozette/compare/v.1.5.0...v.1.5.1
 [1.5.0]: https://github.com/slavfox/Cozette/compare/v.1.4.0...v.1.5.0
 [1.4.0]: https://github.com/slavfox/Cozette/compare/v.1.3.0...v.1.4.0
 [1.3.0]: https://github.com/slavfox/Cozette/compare/v.1.2.0...v.1.3.0
