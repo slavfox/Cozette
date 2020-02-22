@@ -2,10 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+The format is based on [Keep a Changelog], and this project adheres to
+[Semantic Versioning].
 
 ## [Unreleased]
+
+- Added [charmap.txt](img/charmap.txt) for easy glyph copypasting for
+  statusbars and whatnot.
 
 ## [1.5.1]
 
@@ -350,6 +353,8 @@ Still broken on Windows.
 - Braille
 - nf-seti
 
+[Keep a Changelog]: https://keepachangelog.com/en/1.0.0/
+[Semantic Versioning]: https://semver.org/spec/v2.0.0.html
 [unreleased]: https://github.com/slavfox/Cozette/compare/v.1.5.1...HEAD
 [1.5.1]: https://github.com/slavfox/Cozette/compare/v.1.5.0...v.1.5.1
 [1.5.0]: https://github.com/slavfox/Cozette/compare/v.1.4.0...v.1.5.0

@@ -120,6 +120,10 @@ implemented:
 
 # Character map
 
+For easy copy-pasting, the character map is provided in text form in 
+[img/charmap.txt](./img/charmap.txt). If you just want to see how the glyphs
+look in Cozette, here is a screenshot of it:
+
 ![Character map](./img/charmap.png)
 
 # Building

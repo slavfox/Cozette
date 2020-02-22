@@ -210,6 +210,8 @@ def save_charlist(fnt: str, sfd: Path, output_dir: Path):
     print(sample.text)
 
     charmap = make_charmap(sfd)
+    with (output_dir / "charmap.txt").open("w") as f:
+        f.write("\n".join(charmap))
     files = []
     for chunk in range(0, len(charmap), 50):
         path = output_dir / f"charmap{chunk//50}_tmp.png"
