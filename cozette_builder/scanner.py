@@ -1,7 +1,9 @@
-from typing import Set, Dict, Iterable, List
+from typing import Set, Dict, Iterable, List, Set
 from pathlib import Path
+import re
 from unicodedata import name as uniname
 
+UESCAPE = re.compile(r"\\[uU]([0-9A-Fa-f]{4,5})")
 
 def scan_file_for_nonascii(path: Path) -> Set[int]:
     with path.open() as f:
@@ -9,12 +11,19 @@ def scan_file_for_nonascii(path: Path) -> Set[int]:
             src = f.read()
         except UnicodeDecodeError:
             return set()
-        else:
-            return {codepoint for c in set(src) if (codepoint := ord(c)) > 127}
+        nonascii = {codepoint for c in set(src) if (codepoint := ord(c)) > 127}
+        escapes = UESCAPE.finditer(src)
+        nonascii |= {int(esc.group(1), 16) for esc in escapes}
+        return nonascii
+
 
 
 # noinspection PyShadowingBuiltins
 def scan_for_codepoints(dir: Path) -> Dict[int, List[Path]]:
+    if dir.is_file():
+        return {
+            cp: [dir] for cp in scan_file_for_nonascii(dir)
+        }
     non_ascii_codepoints: Dict[int, List[Path]] = {}
     for path in dir.glob("**/*"):
         if path.is_file():
@@ -24,15 +33,19 @@ def scan_for_codepoints(dir: Path) -> Dict[int, List[Path]]:
 
 
 def print_codepoints_for_changelog(
-    codepoints: Dict[int, List[Path]], print_source_files=False
+    codepoints: Dict[int, List[Path]], print_source_files=False, reverse=False
 ) -> None:
-    for cp in sorted(codepoints):
+    for cp in sorted(codepoints, reverse=reverse):
         ch = chr(cp)
         try:
-            name = uniname(ch)
+            name = uniname(ch).strip()
         except ValueError:
             name = ""
-        print(f"**{ch} U+{cp:04X} {name}**", end="")
+        if name:
+            if "VARIATION SELECTOR" in name:
+                continue
+            name = " " + name
+        print(f"**{ch} U+{cp:04X}{name}**", end="")
         if print_source_files:
             print(f": {' '.join(str(p) for p in codepoints[cp])}")
         else:

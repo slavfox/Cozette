@@ -137,6 +137,7 @@ if __name__ == "__main__":
     # noinspection PyTypeChecker
     scan.add_argument("path", type=Path)  # type: ignore
     scan.add_argument("-s", "--print-source-files", action="store_true")
+    scan.add_argument("-r", "--reverse", action="store_true")
     args = parser.parse_args()
     if args.action == "scan":
         missing_codepoints = find_missing_codepoints(
@@ -145,7 +146,8 @@ if __name__ == "__main__":
         )
         if missing_codepoints:
             print_codepoints_for_changelog(
-                missing_codepoints, print_source_files=args.print_source_files
+                missing_codepoints, print_source_files=args.print_source_files,
+                reverse=args.reverse
             )
         else:
             print(

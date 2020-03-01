@@ -7,7 +7,90 @@ The format is based on [Keep a Changelog], and this project adheres to
 
 ## [Unreleased]
 
-- Added [charmap.txt](img/charmap.txt) for easy glyph copypasting for
+### Added
+
+
+#### Glyphs
+- **Ⅴ U+2164 ROMAN NUMERAL FIVE**
+- **↵ U+21B5 DOWNWARDS ARROW WITH CORNER LEFTWARDS**
+- **≡ U+2261 IDENTICAL TO**
+- **⌂ U+2302 HOUSE**
+- **⌘ U+2318 PLACE OF INTEREST SIGN**
+- **⍟ U+235F APL FUNCTIONAL SYMBOL CIRCLE STAR**
+- **⎈ U+2388 HELM SYMBOL**
+- **■ U+25A0 BLACK SQUARE**
+- **□ U+25A1 WHITE SQUARE**
+- **▲ U+25B2 BLACK UP-POINTING TRIANGLE**
+- **▼ U+25B2 BLACK DOWN-POINTING TRIANGLE**
+- **○ U+25CB WHITE CIRCLE**
+- **☐ U+2610 BALLOT BOX**
+- **☑ U+2611 BALLOT BOX WITH CHECK**
+- **☒ U+2612 BALLOT BOX WITH X**
+- **☿ U+263F MERCURY**
+- **❎ U+274E NEGATIVE SQUARED CROSS MARK**
+- **⭐ U+2B50 WHITE MEDIUM STAR**
+- **U+E0B4 to U+E0BF** (extended powerline glyphs)
+- ** U+E12C** (not a nerdfonts glyph, but house icon in fontawesome)
+- ** U+E12E** fontawesome clock
+- ** U+E131** FA download
+- ** U+E132** FA upload
+- ** U+E133** FA inbox
+- ** U+E138** FA lock
+- ** U+E168** FA plus sign
+- ** U+E16C** FA question sign
+- ** U+E17B** FA asterisk
+- ** U+E17C** FA exclamation sign
+- ** U+E184** FA calendar
+- ** U+E18D** FA open folder
+- ** U+E190** FA bar chart
+- ** U+E1AD** FA rss
+- ** U+E1AE** FA hdd
+- ** U+E1C3** FA beaker
+- ** U+E1E2** FA dashboard
+- ** U+E1EB** FA cloud download
+- ** U+E1EC** FA cloud upload
+- ** U+E20E** FA github
+- ** U+E220** FA fork
+- ** U+E26E** FA apple
+- ** U+E26F** FA windows
+- ** U+E270** FA android
+- ** U+E271** FA linux
+- ** U+E626** nf-custom-go
+- ** U+E703** nf-dev-bitbucket
+- ** U+E729** nf-dev-git_commit
+
+- ** U+F464** nf-oct-history
+- ** U+F489** nf-oct-terminal
+- ** U+F49B** nf-oct-watch
+- ** U+F4A0** nf-mdi-tasklist
+- **ﴃ U+FD03** nf-mdi-azure
+- ** U+F7B7** nf-mdi-google_glass
+- **ﯱ U+FBF1** nf-mdi-network
+- **︵ U+FE35 PRESENTATION FORM FOR VERTICAL LEFT PARENTHESIS**
+- **） U+FF09 FULLWIDTH RIGHT PARENTHESIS** (╯°□°）╯︵ ┻━┻
+- **🌞 U+1F31E SUN WITH FACE**
+- **🌱 U+1F331 SEEDLING**
+- **👈 U+1F448 WHITE LEFT POINTING BACKHAND INDEX**
+- **👈 U+1F448 WHITE LEFT POINTING BACKHAND INDEX**
+- **🔋 U+1F50B BATTERY**
+- **😈 U+1F608 SMILING FACE WITH HORNS**
+- **🛡 U+1F6E1 SHIELD**
+---
+Note: the following glyphs are specified incorrectly in powerlevel10k.
+Powerlevel10k uses codepoints 256 too low, *which doesn't work even with the
+font they, themselves, recommend*. For example, SWIFT_ICON is defined as
+`\uE655` in pl10k. I'm not interested in supporting other people's typos at the
+font level; FA support is already a divergence from NerdFonts. The following
+glyphs are using *correct* NerdFonts codepoints:
+- ** U+E73C** nf-dev-python (already supported, pl10k uses E63C)
+- ** U+E755** nf-dev-swift (new, pl10k uses E655)
+- ** U+E7A8** nf-dev-rust (already supported, pl10k uses E6A8)
+
+---
+
+#### Other
+
+- [charmap.txt](img/charmap.txt) for easy glyph copypasting for
   statusbars and whatnot.
 
 ## [1.5.1]
