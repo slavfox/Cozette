@@ -112,6 +112,8 @@ implemented:
 - [x] Full [vim-airline] support!
 - [x] Full [ranger_devicons] support!
 - [x] [starship] supported out of the box!
+- [x] Full [powerlevel10k] support! (if it doesn't work, try setting
+ `POWERLEVEL9K_MODE` to `nerdfont-complete`)
 - [x] Charmap including the code points (to make it easier for users to
       report issues/request additions)
 - [ ] Bold version
@@ -166,5 +168,6 @@ Cozette is licensed [MIT] 💜
 [ranger_devicons]: https://github.com/alexanderjeurissen/ranger_devicons
 [starship]: https://starship.rs/
 [fontforge]: https://fontforge.org/en-US/
+[powerlevel10k]: https://github.com/romkatv/powerlevel10k/
 [pipenv]: https://github.com/pypa/pipenv
 [MIT]: ./LICENSE

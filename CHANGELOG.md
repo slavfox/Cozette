@@ -7,8 +7,13 @@ The format is based on [Keep a Changelog], and this project adheres to
 
 ## [Unreleased]
 
+Nothing!
+
+## [1.6.0]
+
 ### Added
 
+[Powerlevel10k](https://github.com/romkatv/powerlevel10k/) support.
 
 #### Glyphs
 - **Ⅴ U+2164 ROMAN NUMERAL FIVE**
@@ -30,35 +35,30 @@ The format is based on [Keep a Changelog], and this project adheres to
 - **❎ U+274E NEGATIVE SQUARED CROSS MARK**
 - **⭐ U+2B50 WHITE MEDIUM STAR**
 - **U+E0B4 to U+E0BF** (extended powerline glyphs)
-- ** U+E12C** (not a nerdfonts glyph, but house icon in fontawesome)
-- ** U+E12E** fontawesome clock
-- ** U+E131** FA download
-- ** U+E132** FA upload
-- ** U+E133** FA inbox
-- ** U+E138** FA lock
-- ** U+E168** FA plus sign
-- ** U+E16C** FA question sign
-- ** U+E17B** FA asterisk
-- ** U+E17C** FA exclamation sign
-- ** U+E184** FA calendar
-- ** U+E18D** FA open folder
-- ** U+E190** FA bar chart
-- ** U+E1AD** FA rss
-- ** U+E1AE** FA hdd
-- ** U+E1C3** FA beaker
-- ** U+E1E2** FA dashboard
-- ** U+E1EB** FA cloud download
-- ** U+E1EC** FA cloud upload
-- ** U+E20E** FA github
-- ** U+E220** FA fork
-- ** U+E26E** FA apple
-- ** U+E26F** FA windows
-- ** U+E270** FA android
-- ** U+E271** FA linux
 - ** U+E626** nf-custom-go
 - ** U+E703** nf-dev-bitbucket
 - ** U+E729** nf-dev-git_commit
-
+- ** U+E72D** nf-dev-smashing_magazine
+- ** U+E73F** nf-dev-laravel
+- ** U+E757** nf-dev-symfony
+- ** U+E76E** nf-dev-postgres
+- ** U+E77F** nf-dev-dotnet
+- ** U+F00B** nf-fa-th_list
+- ** U+F00C** nf-fa-check
+- ** U+F00D** nf-fa-close
+- ** U+F013** nf-fa-cog
+- ** U+F015** nf-fa-home
+- ** U+F01A** nf-fa-arrow_circle_o_down
+- ** U+F01B** nf-fa-arrow_circle_o_up
+- ** U+F01C** nf-fa-inbox
+- ** U+F023** nf-fa-lock
+- ** U+F02B** nf-fa-tag
+- ** U+F055** nf-fa-plus_circle
+- ** U+F315** nf-linux-raspberry_pi
+- ** U+F317** nf-linux-sabayon
+- ** U+F319** nf-linux-slackware
+- ** U+F31B** nf-linux-ubuntu
+- ** U+F461** nf-oct-bookmark
 - ** U+F464** nf-oct-history
 - ** U+F489** nf-oct-terminal
 - ** U+F49B** nf-oct-watch
@@ -75,16 +75,7 @@ The format is based on [Keep a Changelog], and this project adheres to
 - **🔋 U+1F50B BATTERY**
 - **😈 U+1F608 SMILING FACE WITH HORNS**
 - **🛡 U+1F6E1 SHIELD**
----
-Note: the following glyphs are specified incorrectly in powerlevel10k.
-Powerlevel10k uses codepoints 256 too low, *which doesn't work even with the
-font they, themselves, recommend*. For example, SWIFT_ICON is defined as
-`\uE655` in pl10k. I'm not interested in supporting other people's typos at the
-font level; FA support is already a divergence from NerdFonts. The following
-glyphs are using *correct* NerdFonts codepoints:
-- ** U+E73C** nf-dev-python (already supported, pl10k uses E63C)
-- ** U+E755** nf-dev-swift (new, pl10k uses E655)
-- ** U+E7A8** nf-dev-rust (already supported, pl10k uses E6A8)
+- and many others that I didn't keep track of.
 
 ---
 
@@ -438,7 +429,8 @@ Still broken on Windows.
 
 [Keep a Changelog]: https://keepachangelog.com/en/1.0.0/
 [Semantic Versioning]: https://semver.org/spec/v2.0.0.html
-[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.5.1...HEAD
+[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.6.0...HEAD
+[1.6.0]: https://github.com/slavfox/Cozette/compare/v.1.5.1...v.1.6.0
 [1.5.1]: https://github.com/slavfox/Cozette/compare/v.1.5.0...v.1.5.1
 [1.5.0]: https://github.com/slavfox/Cozette/compare/v.1.4.0...v.1.5.0
 [1.4.0]: https://github.com/slavfox/Cozette/compare/v.1.3.0...v.1.4.0
