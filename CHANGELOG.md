@@ -9,6 +9,13 @@ The format is based on [Keep a Changelog], and this project adheres to
 
 Nothing!
 
+## [1.6.1]
+
+### Changed
+
+### Glyphs
+- Reduced underscore `_` width to make it more in line with other characters.
+
 ## [1.6.0]
 
 ### Added
@@ -429,7 +436,8 @@ Still broken on Windows.
 
 [Keep a Changelog]: https://keepachangelog.com/en/1.0.0/
 [Semantic Versioning]: https://semver.org/spec/v2.0.0.html
-[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.6.0...HEAD
+[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.6.1...HEAD
+[1.6.0]: https://github.com/slavfox/Cozette/compare/v.1.6.0...v.1.6.1
 [1.6.0]: https://github.com/slavfox/Cozette/compare/v.1.5.1...v.1.6.0
 [1.5.1]: https://github.com/slavfox/Cozette/compare/v.1.5.0...v.1.5.1
 [1.5.0]: https://github.com/slavfox/Cozette/compare/v.1.4.0...v.1.5.0

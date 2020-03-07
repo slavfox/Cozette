@@ -4,7 +4,7 @@ FullName: Cozette
 FamilyName: Cozette
 Weight: Medium
 Copyright: (c) 2020 Slavfox
-Version: 1.051
+Version: 1.061
 ItalicAngle: 0
 UnderlinePosition: -3071
 UnderlineWidth: 2048
@@ -22,7 +22,7 @@ OS2Version: 1
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: -2082812035
-ModificationTime: 1583594427
+ModificationTime: 1583600899
 PfmFamily: 49
 TTFWeight: 500
 TTFWidth: 5
@@ -62,7 +62,7 @@ NameList: AGL with PUA
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 8671 29 9
+WinInfo: 58 29 8
 OnlyBitmaps: 1
 BeginPrivate: 0
 EndPrivate
@@ -11447,7 +11447,7 @@ Flags: W
 LayerCount: 2
 EndChar
 EndChars
-BitmapFont: 13 1628 10 3 1
+BitmapFont: 13 1624 10 3 1
 BDFStartProperties: 42
 FONT 1 "-slavfox-Cozette-Medium-R-Normal--13-120-75-75-M-60-ISO10646-1"
 COMMENT 0 "(c) 2020 Slavfox"
@@ -11469,7 +11469,7 @@ FONTNAME_REGISTRY 16 ""
 FONT_NAME 16 "Cozette"
 FACE_NAME 16 "Cozette"
 COPYRIGHT 16 "(c) 2020 Slavfox"
-FONT_VERSION 16 "1.051"
+FONT_VERSION 16 "1.061"
 FONT_ASCENT 18 10
 FONT_DESCENT 18 3
 UNDERLINE_POSITION 18 -19
@@ -11683,8 +11683,8 @@ BDFChar: 93 93 6 2 4 -2 8
 i#j-b+<VdL+<]SB
 BDFChar: 94 94 6 1 5 7 9
 +Adjo
-BDFChar: 95 95 6 0 6 -1 -1
-rVuou
+BDFChar: 95 95 6 1 5 -1 -1
+p](9o
 BDFChar: 96 96 6 2 3 7 8
 J3X)7
 BDFChar: 97 97 6 1 5 0 5
