@@ -22,7 +22,7 @@ OS2Version: 1
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: -2082812035
-ModificationTime: 1584380167
+ModificationTime: 1585208984
 PfmFamily: 49
 TTFWeight: 500
 TTFWidth: 5
@@ -62,12 +62,11 @@ NameList: AGL with PUA
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 58 29 8
-OnlyBitmaps: 1
+WinInfo: 9744 29 8
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 524288 262144 174762 0 -1048576 174762 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 1114112 1623
+BeginChars: 1114112 1631
 
 StartChar: .notdef
 Encoding: 0 -1 0
@@ -11446,8 +11445,64 @@ Width: 1024
 Flags: W
 LayerCount: 2
 EndChar
+
+StartChar: smileface
+Encoding: 9786 9786 1623
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: uni266C
+Encoding: 9836 9836 1624
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: uni2669
+Encoding: 9833 9833 1625
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: musicalnote
+Encoding: 9834 9834 1626
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: musicalnotedbl
+Encoding: 9835 9835 1627
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: uni266D
+Encoding: 9837 9837 1628
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: uni266E
+Encoding: 9838 9838 1629
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: uni266F
+Encoding: 9839 9839 1630
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
 EndChars
-BitmapFont: 13 1624 10 3 1
+BitmapFont: 13 1632 10 3 1
 BDFStartProperties: 42
 FONT 1 "-slavfox-Cozette-Medium-R-Normal--13-120-75-75-M-60-ISO10646-1"
 COMMENT 0 "(c) 2020 Slavfox"
@@ -14739,5 +14794,23 @@ BDFChar: 1621 62227 6 0 6 -1 8
 &-1Fk\c?3(P%4Om
 BDFChar: 1622 62228 6 0 6 1 6
 G^TAEi4]0k
+BDFChar: 1623 9786 6 0 5 1 5
+8,rXCGQ7^D
+BDFChar: 1624 9836 6 0 5 0 6
+Hpi?M7*NjT
+BDFChar: 1625 9833 6 2 3 0 6
+5X7S"5et/8
+BDFChar: 1626 9834 6 2 5 0 6
+?r0*R5et/8
+BDFChar: 1627 9835 6 0 5 0 7
+E(iYf7)[:X
+BDFChar: 1628 9837 6 2 4 0 6
+J:N1.TV0(#
+BDFChar: 1629 9838 6 2 4 -1 6
+J:QRNT\pq8
+BDFChar: 1630 9839 6 1 5 -1 6
+&6Nnu=E)VP
+BDFChar: -1 9865 6 0 0 0 0
+z
 EndBitmapFont
 EndSplineFont

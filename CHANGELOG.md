@@ -9,6 +9,15 @@ The format is based on [Keep a Changelog], and this project adheres to
 
 Nothing!
 
+## [1.7.0]
+### Added
+- U+263A WHITE SMILING FACE ☺
+- U+2669 QUARTER NOTE ♩
+- U+266A EIGHTH NOTE ♪
+- U+266B BEAMED EIGHTH NOTES ♫
+- U+266C BEAMED SIXTEENTH NOTES ♬
+- flats and sharps too
+
 ## [1.6.3]
 ### Changed
 - Fixed Mac builds which got broken in 1.6.2
@@ -444,7 +453,8 @@ Still broken on Windows.
 
 [Keep a Changelog]: https://keepachangelog.com/en/1.0.0/
 [Semantic Versioning]: https://semver.org/spec/v2.0.0.html
-[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.6.3...HEAD
+[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.7.0...HEAD
+[1.7.0]: https://github.com/slavfox/Cozette/compare/v.1.6.3...v.1.7.0
 [1.6.3]: https://github.com/slavfox/Cozette/compare/v.1.6.2...v.1.6.3
 [1.6.2]: https://github.com/slavfox/Cozette/compare/v.1.6.1...v.1.6.2
 [1.6.1]: https://github.com/slavfox/Cozette/compare/v.1.6.0...v.1.6.1
