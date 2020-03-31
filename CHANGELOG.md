@@ -9,6 +9,10 @@ The format is based on [Keep a Changelog], and this project adheres to
 
 Nothing!
 
+## [1.7.1]
+### Added
+- U+20BD RUBLE SIGN ₽
+
 ## [1.7.0]
 ### Added
 - U+263A WHITE SMILING FACE ☺
@@ -453,7 +457,8 @@ Still broken on Windows.
 
 [Keep a Changelog]: https://keepachangelog.com/en/1.0.0/
 [Semantic Versioning]: https://semver.org/spec/v2.0.0.html
-[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.7.0...HEAD
+[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.7.1...HEAD
+[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.7.0...v.1.7.1
 [1.7.0]: https://github.com/slavfox/Cozette/compare/v.1.6.3...v.1.7.0
 [1.6.3]: https://github.com/slavfox/Cozette/compare/v.1.6.2...v.1.6.3
 [1.6.2]: https://github.com/slavfox/Cozette/compare/v.1.6.1...v.1.6.2
