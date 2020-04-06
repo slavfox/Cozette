@@ -102,6 +102,7 @@ implemented:
 - [x] Braille
 - [x] Cyrillic!
 - [ ] Nerdfonts:
+  - [x] nf-pom-*
   - [x] nf-seti-*
   - [ ] nf-dev-* (partial)
   - [ ] nf-weather-*

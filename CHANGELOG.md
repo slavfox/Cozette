@@ -9,6 +9,11 @@ The format is based on [Keep a Changelog], and this project adheres to
 
 Nothing!
 
+## [1.8.0]
+### Added
+#### Glyphs
+- [Pomicons](https://github.com/gabrielelana/pomicons)
+
 ## [1.7.2]
 ### Changed
 - Bumped version number, since I accidentally released 1.7.0 again as 1.7.1.
@@ -461,7 +466,8 @@ Still broken on Windows.
 
 [Keep a Changelog]: https://keepachangelog.com/en/1.0.0/
 [Semantic Versioning]: https://semver.org/spec/v2.0.0.html
-[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.7.2...HEAD
+[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.8.0...HEAD
+[1.8.0]: https://github.com/slavfox/Cozette/compare/v.1.7.2...v.1.8.0
 [1.7.2]: https://github.com/slavfox/Cozette/compare/v.1.7.1...v.1.7.2
 [1.7.1]: https://github.com/slavfox/Cozette/compare/v.1.7.0...v.1.7.1
 [1.7.0]: https://github.com/slavfox/Cozette/compare/v.1.6.3...v.1.7.0
