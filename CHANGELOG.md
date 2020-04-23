@@ -9,6 +9,11 @@ The format is based on [Keep a Changelog], and this project adheres to
 
 Nothing!
 
+## [1.8.0+zipbuild]
+
+### Added
+- Releases now also include a zipped package with all the fonts.
+
 ## [1.8.0]
 ### Added
 #### Glyphs
