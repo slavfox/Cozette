@@ -14,7 +14,7 @@ jobs:
     steps:
     - name: Install dependencies
       run: |
-        pacman -Sy --noconfirm base git tar which python python-pipenv zip
+        pacman -Sy --noconfirm base git tar which python python-pipenv zip libffi
     - name: Install fontforge
       run: pacman -S --noconfirm fontforge
     - uses: actions/checkout@v2
