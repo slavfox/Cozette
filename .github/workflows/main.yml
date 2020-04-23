@@ -12,9 +12,15 @@ jobs:
     container:
       image: archlinux/base
     steps:
+    - name: Update packages
+      run: |
+        pacman -Syyu --noconfirm
     - name: Install dependencies
       run: |
-        pacman -Sy --noconfirm base git tar which python python-pipenv zip libffi
+        pacman -S --noconfirm base git tar which zip libffi
+    - name: Install python
+      run: |
+        pacman -S --noconfirm python python-pipenv
     - name: Install fontforge
       run: pacman -S --noconfirm fontforge
     - uses: actions/checkout@v2
