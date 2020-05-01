@@ -29,7 +29,7 @@ jobs:
         pipenv install; pipenv run python build.py fonts
     - name: Zip fonts
       run: |
-        mv build CozetteFonts; zip -r CozetteFonts.zip CozetteFonts
+        mv build CozetteFonts; cp ./LICENSE CozetteFonts/LICENSE; zip -r CozetteFonts.zip CozetteFonts
     - uses: ncipollo/release-action@v1
       with:
         artifacts: "CozetteFonts.zip,CozetteFonts/*"
