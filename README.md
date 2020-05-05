@@ -23,7 +23,9 @@ A bitmap programming font optimized for coziness.
 
 # About Cozette
 
-Cozette is based on [Dina], which itself is based on [Proggy].
+Cozette is a 6x13px (bounding box; average 5px character width, 3px 
+descent, 10px ascent, 8px cap height) bitmap font based on [Dina], which 
+itself is based on [Proggy].
 It's also heavily inspired by [Creep]. I absolutely adore Creep, and was
 using it up until I got a higher-DPI screen for which it was slightly too
 small. That prompted me to make the bitmap font I always wished existed: 
@@ -48,7 +50,7 @@ A nicer character map that includes the codepoints can be found at
 Cozette is distributed in two main variants: bitmap and vector.
 
 Bitmap fonts are, effectively, just that - bitmaps. They scale terribly, but
-look nice and sharp (and pixel-perfect) if you use them at their intended point
+look nice and sharp (and pixel-perfect) at one specific point
 size. Vector fonts scale well, but in this case, might look ugly at
 smaller point sizes because of antialiasing issues and the like.
 
