@@ -9,6 +9,14 @@ The format is based on [Keep a Changelog], and this project adheres to
 
 Nothing!
 
+## [1.8.1]
+
+### Changed
+
+- `isFixedPitch` is now being set to 1 for CozetteVector, and the OS/2
+ `panose` table specifies proportion as monospace which should hopefully fix
+  the font not being detected as monospace under Windows and kitty-term. 
+
 ## [1.8.0+zipbuild]
 
 ### Added

@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from fontTools.fontBuilder import FontBuilder  # type: ignore
+from fontTools.fontBuilder import FontBuilder, _panoseDefaults  # type: ignore
 
 from cozette_builder.bdffont import BdfFont
 
@@ -90,7 +90,14 @@ class TTFBuilder:
         self.fb.setupHorizontalHeader(ascent=ascent, descent=-descent)
         self.fb.setupNameTable(namestrings)
         self.fb.setupOS2(
-            sTypoAscender=ascent, usWinAscent=ascent, usWinDescent=descent
+            sTypoAscender=ascent,
+            usWinAscent=ascent,
+            usWinDescent=descent,
+            panose={
+                **_panoseDefaults,
+                "bFamilyType": 2,  # Text and display
+                "bProportion": 9  # Monospace
+            }
         )
-        self.fb.setupPost()
+        self.fb.setupPost(isFixedPitch=1)
         self.fb.save(output_path)
