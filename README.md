@@ -149,6 +149,8 @@ $ pipenv run python3.8 build.py fonts
 
 Cozette is licensed [MIT] 💜
 
+Massive thanks to [ym1234] for helping me figure out how to make the font tables behave nicely.
+
 
 [Dina]: https://www.dcmembers.com/jibsen/download/61/
 [Proggy]: https://github.com/bluescan/proggyfonts
@@ -174,3 +176,4 @@ Cozette is licensed [MIT] 💜
 [powerlevel10k]: https://github.com/romkatv/powerlevel10k/
 [pipenv]: https://github.com/pypa/pipenv
 [MIT]: ./LICENSE
+[ym1234]: https://github.com/ym1234
