@@ -4,7 +4,7 @@ FullName: Cozette
 FamilyName: Cozette
 Weight: Medium
 Copyright: (c) 2020 Slavfox
-Version: 1.081
+Version: 1.082
 ItalicAngle: 0
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -22,7 +22,7 @@ OS2Version: 1
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: -2082812035
-ModificationTime: 1590569378
+ModificationTime: 1590669969
 PfmFamily: 49
 TTFWeight: 500
 TTFWidth: 5
@@ -63,7 +63,7 @@ NameList: AGL with PUA
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 1218 29 8
+WinInfo: 812 29 8
 OnlyBitmaps: 1
 BeginPrivate: 0
 EndPrivate
@@ -11610,7 +11610,7 @@ FONTNAME_REGISTRY 16 ""
 FONT_NAME 16 "Cozette"
 FACE_NAME 16 "Cozette"
 COPYRIGHT 16 "(c) 2020 Slavfox"
-FONT_VERSION 16 "1.081"
+FONT_VERSION 16 "1.082"
 FONT_ASCENT 18 10
 FONT_DESCENT 18 3
 UNDERLINE_POSITION 18 -19
@@ -14651,9 +14651,9 @@ rdo`RJqEt%
 BDFChar: 1507 9632 6 0 6 0 6
 rr2orrr2ls
 BDFChar: 1508 9650 6 0 6 0 6
-rr.:m3&hHL
-BDFChar: 1509 9660 6 0 6 0 6
 &3)XsI/a*F
+BDFChar: 1509 9660 6 0 6 0 6
+rr.:m3&hHL
 BDFChar: 1510 9675 6 0 6 0 6
 3(/@MJj_Qu
 BDFChar: 1511 9744 6 0 6 0 6
