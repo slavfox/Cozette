@@ -18,6 +18,7 @@ A bitmap programming font optimized for coziness.
   - [Mac](#mac)
   - [Windows](#windows)
 - [Roadmap](#roadmap)
+- [Recommended alternatives](#recommended-alternatives)
 - [Character map](#character-map)
 - [License](#license)
 
@@ -122,6 +123,15 @@ implemented:
 - [ ] Bold version
 - [ ] Italic version
 - [ ] Ligatures
+
+# Recommended alternatives
+
+Cozette is, intentionally, a very small font. If you're looking for other
+bitmap fonts with extra glyphs, a couple of my favorites are 
+[Tamzen](https://github.com/sunaku/tamzen-font/)
+and [Envypn](https://github.com/Sorixelle/envypn-powerline). You might also
+find the [Tecate/bitmap-fonts repo](https://github.com/Tecate/bitmap-fonts)
+useful. 
 
 # Character map
 
