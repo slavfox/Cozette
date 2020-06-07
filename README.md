@@ -17,6 +17,9 @@ A bitmap programming font optimized for coziness.
   - [Linux](#linux)
   - [Mac](#mac)
   - [Windows](#windows)
+  - [Notes on specific applications](#notes-on-specific-applications)
+    - [VSCode, general GUI applications](#vscode-general-gui-applications)
+    - [Kitty](#kitty)
 - [Roadmap](#roadmap)
 - [Recommended alternatives](#recommended-alternatives)
 - [Character map](#character-map)
@@ -55,11 +58,6 @@ look nice and sharp (and pixel-perfect) at one specific point
 size. Vector fonts scale well, but in this case, might look ugly at
 smaller point sizes because of antialiasing issues and the like.
 
-VSCode and a lot of other GUI applications don't support bitmap fonts, so you 
-will want to use CozetteVector there. In applications that do support bitmap
-fonts, you will want to use the normal, bitmap Cozette (unless it's too
-small for you, in which case, CozetteVector scales better).  
-
 ### Linux
 The preferred format is `.otb` (for bitmaps) or `.ttf` 
 (for CozetteVector). To install the font, just throw it in your fonts directory
@@ -90,6 +88,28 @@ Grab `CozetteVector.ttf`. If you want to get the bitmap versions to work,
 ### BSD / Solaris / Haku /Other
 
 You know what you're doing.
+
+### Notes on specific applications
+
+#### VSCode, general GUI applications
+
+VSCode and a lot of other GUI applications don't support bitmap fonts, so you 
+will want to use CozetteVector there. In applications that do support bitmap
+fonts, you will want to use the normal, bitmap Cozette (unless it's too
+small for you, in which case, CozetteVector scales better).
+
+#### Kitty
+
+> `if you like bitmap fonts, kitty is not for you.`
+
+**`kitty` [doesn't, and never will, support bitmap fonts](https://github.com/kovidgoyal/kitty/issues/97#issuecomment-373970232)**.
+
+If you *really* want to get Cozette working, there are three workarounds reported to work. 
+
+The first one is outlined [here](https://github.com/kovidgoyal/kitty/issues/97#issuecomment-579094656); if you 
+explicitly set Cozette(Vector)'s `spacing` to 100, and `scalable` to `true` in `fontconfig`, `kitty` *should* accept it. Alternately, you can build `kitty` from source with bitmap font support by... just changing `allow_bitmapped_fonts` to `1` in `kitty/fontconfig.c`. You can also make Cozette work flawlessly by uninstalling `kitty` and using a terminal emulator for which *not rendering fonts* isn't a design principle - I cannot recommend [alacritty](https://github.com/alacritty/alacritty/) enough. it's excellent, has worked flawlessly for me for quite some time, and both configuring and getting bitmap fonts to work in it is a breeze.
+
+(The support was discussed in [slavfox/Cozette#18](https://github.com/slavfox/Cozette/issues/18). Many thanks to both the participants there, and to Luflosi, who brought up flipping the `allow_bitmapped_fonts` flag in [their fork](https://github.com/Luflosi/kitty/commit/e645e0b5ed084c2c57ecfb8acafc07e76f5717bb)) 
 
 # Roadmap
 
