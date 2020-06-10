@@ -9,6 +9,14 @@ The format is based on [Keep a Changelog], and this project adheres to
 
 Nothing!
 
+## [1.8.3]
+
+### Fixed
+
+#### Glyphs
+
+-  (U+E61D nf-custom-cpp) and  (U+E61E nf-custom-c) were the wrong way around.
+
 ## [1.8.2]
 
 ### Fixed
@@ -487,7 +495,8 @@ Still broken on Windows.
 
 [Keep a Changelog]: https://keepachangelog.com/en/1.0.0/
 [Semantic Versioning]: https://semver.org/spec/v2.0.0.html
-[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.8.2...HEAD
+[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.8.3...HEAD
+[1.8.3]: https://github.com/slavfox/Cozette/compare/v.1.8.2...v.1.8.3
 [1.8.2]: https://github.com/slavfox/Cozette/compare/v.1.8.1...v.1.8.2
 [1.8.1]: https://github.com/slavfox/Cozette/compare/v.1.8.0...v.1.8.1
 [1.8.0]: https://github.com/slavfox/Cozette/compare/v.1.7.2...v.1.8.0
