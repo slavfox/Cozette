@@ -100,16 +100,20 @@ small for you, in which case, CozetteVector scales better).
 
 #### Kitty
 
+**[4e554c4c](https://github.com/4e554c4c) made [an AUR package for `kitty` patched to support bitmap fonts](https://aur.archlinux.org/packages/kitty-bitmap/).**
+
 > `if you like bitmap fonts, kitty is not for you.`
 
-**`kitty` [doesn't, and never will, support bitmap fonts](https://github.com/kovidgoyal/kitty/issues/97#issuecomment-373970232)**.
+**According to its author, `kitty` [doesn't, and never will, support bitmap fonts](https://github.com/kovidgoyal/kitty/issues/97#issuecomment-373970232)**.
 
-If you *really* want to get Cozette working, there are three workarounds reported to work. 
+If you *really* want to get Cozette working, you can try the [AUR package mentioned above](https://aur.archlinux.org/packages/kitty-bitmap/), or apply [the patch there](https://aur.archlinux.org/cgit/aur.git/tree/Allow-bitmap-fonts.patch?h=kitty-bitmap) yourself. 
 
-The first one is outlined [here](https://github.com/kovidgoyal/kitty/issues/97#issuecomment-579094656); if you 
-explicitly set Cozette(Vector)'s `spacing` to 100, and `scalable` to `true` in `fontconfig`, `kitty` *should* accept it. Alternately, you can build `kitty` from source with bitmap font support by... just changing `allow_bitmapped_fonts` to `1` in `kitty/fontconfig.c`. You can also make Cozette work flawlessly by uninstalling `kitty` and using a terminal emulator for which *not rendering fonts* isn't a design principle - I cannot recommend [alacritty](https://github.com/alacritty/alacritty/) enough. it's excellent, has worked flawlessly for me for quite some time, and both configuring and getting bitmap fonts to work in it is a breeze.
+If that doesn't work, you can try the trick from [here](https://github.com/kovidgoyal/kitty/issues/97#issuecomment-579094656); if you 
+explicitly set Cozette(Vector)'s `spacing` to 100, and `scalable` to `true` in `fontconfig`, `kitty` *should* accept it.
 
-(The support was discussed in [slavfox/Cozette#18](https://github.com/slavfox/Cozette/issues/18). Many thanks to both the participants there, and to Luflosi, who brought up flipping the `allow_bitmapped_fonts` flag in [their fork](https://github.com/Luflosi/kitty/commit/e645e0b5ed084c2c57ecfb8acafc07e76f5717bb)) 
+You can also make Cozette work flawlessly by uninstalling `kitty` and using a terminal emulator for which *not rendering fonts* isn't a design principle - I cannot recommend [alacritty](https://github.com/alacritty/alacritty/) enough. it's excellent, has worked flawlessly for me for quite some time, and both configuring and getting bitmap fonts to work in it is a breeze.
+
+(The support was discussed in [slavfox/Cozette#18](https://github.com/slavfox/Cozette/issues/18). Many thanks to all the participants there, especially to to Luflosi, who brought up flipping the `allow_bitmapped_fonts` flag in [their fork](https://github.com/Luflosi/kitty/commit/e645e0b5ed084c2c57ecfb8acafc07e76f5717bb), and to [4e554c4c](https://github.com/4e554c4c), who made the AUR package.) 
 
 # Roadmap
 
