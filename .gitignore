@@ -59,3 +59,4 @@ dmypy.json
 *.fnt
 *.ttf
 *.otf
+.vim

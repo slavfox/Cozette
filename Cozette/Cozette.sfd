@@ -4,7 +4,7 @@ FullName: Cozette
 FamilyName: Cozette
 Weight: Medium
 Copyright: (c) 2020 Slavfox
-Version: 1.083
+Version: 1.090
 ItalicAngle: 0
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -22,7 +22,7 @@ OS2Version: 1
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: -2082812035
-ModificationTime: 1591793302
+ModificationTime: 1596611255
 PfmFamily: 49
 TTFWeight: 500
 TTFWidth: 5
@@ -62,12 +62,12 @@ NameList: AGL with PUA
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 58841 29 8
+WinInfo: 128000 40 15
 OnlyBitmaps: 1
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 524288 262144 174762 0 -1048576 174762 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 1114112 1643
+BeginChars: 1114112 1649
 
 StartChar: .notdef
 Encoding: 0 -1 0
@@ -10549,7 +10549,7 @@ EndChar
 
 StartChar: u1F40D
 Encoding: 128013 128013 1495
-Width: 945
+Width: 1890
 Flags: W
 LayerCount: 2
 EndChar
@@ -11586,8 +11586,50 @@ Width: 1024
 Flags: W
 LayerCount: 2
 EndChar
+
+StartChar: Uogonek
+Encoding: 370 370 1643
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uogonek
+Encoding: 371 371 1644
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: Wcircumflex
+Encoding: 372 372 1645
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: wcircumflex
+Encoding: 373 373 1646
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: Ycircumflex
+Encoding: 374 374 1647
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: ycircumflex
+Encoding: 375 375 1648
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
 EndChars
-BitmapFont: 13 1644 10 3 1
+BitmapFont: 13 1650 10 3 1
 BDFStartProperties: 42
 FONT 1 "-slavfox-Cozette-Medium-R-Normal--13-120-75-75-M-60-ISO10646-1"
 COMMENT 0 "(c) 2020 Slavfox"
@@ -11609,7 +11651,7 @@ FONTNAME_REGISTRY 16 ""
 FONT_NAME 16 "Cozette"
 FACE_NAME 16 "Cozette"
 COPYRIGHT 16 "(c) 2020 Slavfox"
-FONT_VERSION 16 "1.083"
+FONT_VERSION 16 "1.090"
 FONT_ASCENT 18 10
 FONT_DESCENT 18 3
 UNDERLINE_POSITION 18 -19
@@ -14623,8 +14665,8 @@ BDFChar: 1493 128230 6 0 6 0 9
 -q&[d\q7eNK)P`M
 BDFChar: 1494 128024 6 0 6 0 6
 E4#>A]Hea&
-BDFChar: 1495 128013 6 0 6 0 7
-*&bN#L'E,)
+BDFChar: 1495 128013 12 1 10 0 7
+"+UTk(Vg<l&AS:]J&))7
 BDFChar: 1496 128142 6 0 6 1 6
 I/<hi3"Q&i
 BDFChar: 1497 129408 6 0 7 0 6
@@ -14919,5 +14961,17 @@ BDFChar: 1641 57353 6 2 3 -1 8
 ^qdb$^qd_c^q]pM
 BDFChar: 1642 57354 6 1 6 0 7
 G]7'cpb6)@
+BDFChar: 1643 370 6 1 5 -2 7
+LkpkCLkpk++><cq
+BDFChar: 1644 371 6 1 5 -2 5
+LkpkCLj0IJ
+BDFChar: 1645 372 6 1 5 0 9
++A`&oLo@7k:f%,l
+BDFChar: 1646 373 6 1 5 0 8
++A`&oLo@7K:]LIq
+BDFChar: 1647 374 6 1 5 0 9
++A`&oLknkM+<UXa
+BDFChar: 1648 375 6 1 5 -3 8
++A`&oLkpkCGR+Ro
 EndBitmapFont
 EndSplineFont

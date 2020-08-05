@@ -9,6 +9,23 @@ The format is based on [Keep a Changelog], and this project adheres to
 
 Nothing!
 
+## [1.9.0]
+
+### Added
+
+- Ŧ (U+0166 LATIN CAPITAL LETTER T WITH STROKE)
+- ŧ (U+0167 LATIN SMALL LETTER T WITH STROKE)
+- Ų (U+0172 LATIN CAPITAL LETTER U WITH OGONEK)
+- ų (U+0173 LATIN SMALL LETTER U WITH OGONEK)
+- Ŵ (U+0174 LATIN CAPITAL LETTER W WITH CIRCUMFLEX)
+- ŵ (U+0175 LATIN SMALL LETTER W WITH CIRCUMFLEX)
+- Ŷ (U+0176 LATIN CAPITAL LETTER Y WITH CIRCUMFLEX)
+- ŷ (U+0177 LATIN SMALL LETTER Y WITH CIRCUMFLEX)
+
+### Changed
+
+- 🐍is now fullwidth to make starship prompts look less ugly
+
 ## [1.8.3]
 
 ### Fixed
