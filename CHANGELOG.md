@@ -9,6 +9,17 @@ The format is based on [Keep a Changelog], and this project adheres to
 
 Nothing!
 
+
+## [1.9.2]
+
+### Added
+- √ (U+221A SQUARE ROOT)
+- № (U+2116 NUMERO SIGN)
+
+### Fixed
+- Ԇ (U+0506 CYRILLIC CAPITAL LETTER KOMI DZJE) now has an actual glyph
+- ԇ (U+0507 CYRILLIC SMALL LETTER KOMI DZJE) now has an actual glyph
+
 ## [1.9.0]
 
 ### Added
@@ -513,6 +524,8 @@ Still broken on Windows.
 [Keep a Changelog]: https://keepachangelog.com/en/1.0.0/
 [Semantic Versioning]: https://semver.org/spec/v2.0.0.html
 [unreleased]: https://github.com/slavfox/Cozette/compare/v.1.8.3...HEAD
+[1.9.2]: https://github.com/slavfox/Cozette/compare/v.1.9.0...v.1.9.2
+[1.9.0]: https://github.com/slavfox/Cozette/compare/v.1.8.3...v.1.9.0
 [1.8.3]: https://github.com/slavfox/Cozette/compare/v.1.8.2...v.1.8.3
 [1.8.2]: https://github.com/slavfox/Cozette/compare/v.1.8.1...v.1.8.2
 [1.8.1]: https://github.com/slavfox/Cozette/compare/v.1.8.0...v.1.8.1

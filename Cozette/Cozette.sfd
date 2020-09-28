@@ -4,7 +4,7 @@ FullName: Cozette
 FamilyName: Cozette
 Weight: Medium
 Copyright: (c) 2020 Slavfox
-Version: 1.091
+Version: 1.092
 ItalicAngle: 0
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -22,7 +22,7 @@ OS2Version: 1
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: -2082812035
-ModificationTime: 1596612189
+ModificationTime: 1601275347
 PfmFamily: 49
 TTFWeight: 500
 TTFWidth: 5
@@ -62,12 +62,12 @@ NameList: AGL with PUA
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 40 40 15
+WinInfo: 8040 40 15
 OnlyBitmaps: 1
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 524288 262144 174762 0 -1048576 174762 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 1114112 1651
+BeginChars: 1114112 1653
 
 StartChar: .notdef
 Encoding: 0 -1 0
@@ -11642,8 +11642,22 @@ Width: 1024
 Flags: W
 LayerCount: 2
 EndChar
+
+StartChar: radical
+Encoding: 8730 8730 1651
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: afii61352
+Encoding: 8470 8470 1652
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
 EndChars
-BitmapFont: 13 1652 10 3 1
+BitmapFont: 13 1654 10 3 1
 BDFStartProperties: 42
 FONT 1 "-slavfox-Cozette-Medium-R-Normal--13-120-75-75-M-60-ISO10646-1"
 COMMENT 0 "(c) 2020 Slavfox"
@@ -11665,7 +11679,7 @@ FONTNAME_REGISTRY 16 ""
 FONT_NAME 16 "Cozette"
 FACE_NAME 16 "Cozette"
 COPYRIGHT 16 "(c) 2020 Slavfox"
-FONT_VERSION 16 "1.091"
+FONT_VERSION 16 "1.092"
 FONT_ASCENT 18 10
 FONT_DESCENT 18 3
 UNDERLINE_POSITION 18 -19
@@ -14469,10 +14483,10 @@ BDFChar: 1388 1284 6 1 5 0 7
 ^`Xc@-n$JT
 BDFChar: 1389 1285 6 1 5 0 5
 ^`Y&H-kH@Y
-BDFChar: 1390 1286 6 1 5 0 7
-n;%?(#RH6*
-BDFChar: 1391 1287 6 1 5 0 5
-E/61RLi<=o
+BDFChar: 1390 1286 6 1 5 -2 7
+@#tpB?k<kd#RCD1
+BDFChar: 1391 1287 6 1 5 -2 5
+@#tq-&/YZY
 BDFChar: 1392 1288 6 0 5 0 7
 E)9M5<)chQ
 BDFChar: 1393 1289 6 0 5 0 5
@@ -14991,5 +15005,9 @@ BDFChar: 1649 358 6 1 5 0 7
 p`L\u+<VdL
 BDFChar: 1650 359 6 1 5 0 7
 5X=g(n3B5u
+BDFChar: 1651 8730 6 1 5 1 6
+3$=le5X5;L
+BDFChar: 1652 8470 6 0 5 0 8
+*0c]C^q?n5O8o7\
 EndBitmapFont
 EndSplineFont
