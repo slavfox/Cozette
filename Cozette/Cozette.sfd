@@ -4,7 +4,7 @@ FullName: Cozette
 FamilyName: Cozette
 Weight: Medium
 Copyright: (c) 2020 Slavfox
-Version: 1.092
+Version: 1.093
 ItalicAngle: 0
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -22,7 +22,7 @@ OS2Version: 1
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: -2082812035
-ModificationTime: 1601275347
+ModificationTime: 1606064408
 PfmFamily: 49
 TTFWeight: 500
 TTFWidth: 5
@@ -62,12 +62,12 @@ NameList: AGL with PUA
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 8040 40 15
+WinInfo: 1168 16 15
 OnlyBitmaps: 1
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 524288 262144 174762 0 -1048576 174762 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 1114112 1653
+BeginChars: 1114112 1658
 
 StartChar: .notdef
 Encoding: 0 -1 0
@@ -11656,8 +11656,43 @@ Width: 1024
 Flags: W
 LayerCount: 2
 EndChar
+
+StartChar: uni21B3
+Encoding: 8627 8627 1653
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni21B4
+Encoding: 8628 8628 1654
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni21B2
+Encoding: 8626 8626 1655
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni21B1
+Encoding: 8625 8625 1656
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni21B0
+Encoding: 8624 8624 1657
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
 EndChars
-BitmapFont: 13 1654 10 3 1
+BitmapFont: 13 1658 10 3 1
 BDFStartProperties: 42
 FONT 1 "-slavfox-Cozette-Medium-R-Normal--13-120-75-75-M-60-ISO10646-1"
 COMMENT 0 "(c) 2020 Slavfox"
@@ -11679,7 +11714,7 @@ FONTNAME_REGISTRY 16 ""
 FONT_NAME 16 "Cozette"
 FACE_NAME 16 "Cozette"
 COPYRIGHT 16 "(c) 2020 Slavfox"
-FONT_VERSION 16 "1.092"
+FONT_VERSION 16 "1.093"
 FONT_ASCENT 18 10
 FONT_DESCENT 18 3
 UNDERLINE_POSITION 18 -19
@@ -12641,10 +12676,10 @@ BDFChar: 467 8717 6 2 5 1 5
 i"5AhhuE`W
 BDFChar: 468 8718 6 2 4 0 3
 i8EPO
-BDFChar: 469 8719 6 1 5 0 5
-peXd`:f%,l
-BDFChar: 470 8720 6 1 5 0 5
-:f'tb;"t"j
+BDFChar: 469 8719 6 1 5 0 9
+pkX`^LkpkCLkl$2
+BDFChar: 470 8720 6 1 5 0 9
+LkpkCLkpkCM"grM
 BDFChar: 471 8727 6 1 5 1 5
 +K07X+92BA
 BDFChar: 472 8728 6 2 4 2 4
@@ -13035,18 +13070,18 @@ BDFChar: 664 10248 6 4 5 7 8
 ^q]pM
 BDFChar: 665 10249 6 1 5 7 8
 f[p0(
-BDFChar: 666 10250 6 1 2 4 5
-^q]pM
-BDFChar: 667 10251 6 1 2 4 8
-^q]rc^]4?7
-BDFChar: 668 10252 6 1 2 1 2
-^q]pM
-BDFChar: 669 10253 6 1 2 1 8
-^q]pM!!'gM
-BDFChar: 670 10254 6 1 2 1 5
-^q]rc^]4?7
-BDFChar: 671 10255 6 1 2 1 8
-^q]rc^];0c
+BDFChar: 666 10250 6 1 5 4 8
+(`37g^]4?7
+BDFChar: 667 10251 6 1 5 4 8
+f[p2>^]4?7
+BDFChar: 668 10252 6 1 5 1 8
+(`35Q!!'gM
+BDFChar: 669 10253 6 1 5 1 8
+f[p0(!!'gM
+BDFChar: 670 10254 6 1 5 1 8
+(`37g^];0c
+BDFChar: 671 10255 6 1 5 1 8
+f[p2>^];0c
 BDFChar: 672 10256 6 4 5 4 5
 ^q]pM
 BDFChar: 673 10257 6 1 5 4 8
@@ -14367,8 +14402,8 @@ BDFChar: 1330 1226 6 1 5 -2 5
 Lkpl^Lkl<J
 BDFChar: 1331 1227 6 1 5 -2 7
 LkpkCGR+Ql&.egA
-BDFChar: 1332 1228 6 1 5 -1 5
-Lkpk3#T+*Q
+BDFChar: 1332 1228 6 1 5 -2 5
+Lkpk3#T+*a
 BDFChar: 1333 1229 6 1 5 -2 7
 Lks^9W2PN.#S6t9
 BDFChar: 1334 1230 6 1 5 -2 5
@@ -15009,5 +15044,15 @@ BDFChar: 1651 8730 6 1 5 1 6
 3$=le5X5;L
 BDFChar: 1652 8470 6 0 5 0 8
 *0c]C^q?n5O8o7\
+BDFChar: 1653 8627 6 1 5 2 6
+J:NaV&-)\1
+BDFChar: 1654 8628 6 1 5 2 6
+n.6-j&-)\1
+BDFChar: 1655 8626 6 1 5 2 6
+#REur5QCca
+BDFChar: 1656 8625 6 1 5 3 7
+&GV?;J,fQL
+BDFChar: 1657 8624 6 1 5 3 7
+5kmkU#QOi)
 EndBitmapFont
 EndSplineFont

@@ -9,6 +9,18 @@ The format is based on [Keep a Changelog], and this project adheres to
 
 Nothing!
 
+## [1.9.3]
+
+### Added
+- ↰ (U+21B0 UPWARDS ARROW WITH TIP LEFTWARDS)
+- ↱ (U+21B1 UPWARDS ARROW WITH TIP RIGHTWARDS)
+- ↲ (U+21B2 DOWNWARDS ARROW WITH TIP LEFTWARDS)
+- ↳ (U+21B3 DOWNWARDS ARROW WITH TIP RIGHTWARDS)
+
+### Fixed
+- Changed ∏ U+220F N-ARY PRODUCT and ∐ U+2210 N-ARY COPRODUCT to make them
+  taller
+- Extended the descender of U+04CC CYRILLIC SMALL LETTER KHAKASSIAN CHE ӌ
 
 ## [1.9.2]
 
