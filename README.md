@@ -172,12 +172,25 @@ have that, just clone this repo, open `Cozette/Cozette.sfd` in FontForge,
 and go to *File → Generate Fonts...*.
 
 To run the build scripts I use to prepare releases, first install Python 3.8
-and [pipenv]. Then, install the dependencies and run `build.py fonts`:
+and [pipenv]. For generating the images, you will also need `xorg-mkfontscale`
+and `xterm`.
+Then, install the dependencies and run `build.py fonts`:
 
 ```console
 $ pipenv install
 $ pipenv run python3.8 build.py fonts
 ```
+
+Then install the generated fonts, and run
+```console
+$ pipenv run python3.8 build.py images
+```
+
+Running
+```console
+$ pipenv run python3.8 build.py changelog
+```
+will output the changelog between your local version and the last tag.
 
 # License
 

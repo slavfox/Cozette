@@ -4,7 +4,7 @@ FullName: Cozette
 FamilyName: Cozette
 Weight: Medium
 Copyright: (c) 2020 Slavfox
-Version: 1.093
+Version: 1.100
 ItalicAngle: 0
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -22,7 +22,7 @@ OS2Version: 1
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: -2082812035
-ModificationTime: 1623462779
+ModificationTime: 1623526037
 PfmFamily: 49
 TTFWeight: 500
 TTFWidth: 5
@@ -11889,66 +11889,77 @@ EndChar
 StartChar: uniE21E
 Encoding: 57886 57886 1686
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uniE256
 Encoding: 57942 57942 1687
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uniE781
 Encoding: 59265 59265 1688
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uniE74E
 Encoding: 59214 59214 1689
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uniE70E
 Encoding: 59150 59150 1690
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uniE749
 Encoding: 59209 59209 1691
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uniE74A
 Encoding: 59210 59210 1692
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uniF718
 Encoding: 63256 63256 1693
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uniF713
 Encoding: 63251 63251 1694
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uniE758
 Encoding: 59224 59224 1695
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uniE759
 Encoding: 59225 59225 1696
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
@@ -11969,12 +11980,14 @@ EndChar
 StartChar: uniE64E
 Encoding: 58958 58958 1699
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uniE681
 Encoding: 59009 59009 1700
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
@@ -12030,6 +12043,7 @@ EndChar
 StartChar: uniF298
 Encoding: 62104 62104 1708
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
@@ -12043,12 +12057,14 @@ EndChar
 StartChar: uniE28B
 Encoding: 57995 57995 1710
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uniE28A
 Encoding: 57994 57994 1711
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
@@ -12062,24 +12078,28 @@ EndChar
 StartChar: uniE5FC
 Encoding: 58876 58876 1713
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uniF408
 Encoding: 62472 62472 1714
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uniF121
 Encoding: 61729 61729 1715
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uniE62A
 Encoding: 58922 58922 1716
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
@@ -12198,6 +12218,7 @@ EndChar
 StartChar: uni0261
 Encoding: 609 609 1733
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
@@ -12225,6 +12246,7 @@ EndChar
 StartChar: uni0265
 Encoding: 613 613 1737
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
@@ -12245,24 +12267,28 @@ EndChar
 StartChar: uni0241
 Encoding: 577 577 1740
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni0242
 Encoding: 578 578 1741
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni0253
 Encoding: 595 595 1742
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni026F
 Encoding: 623 623 1743
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
@@ -12472,18 +12498,21 @@ EndChar
 StartChar: uni0293
 Encoding: 659 659 1773
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni0294
 Encoding: 660 660 1774
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni0295
 Encoding: 661 661 1775
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
@@ -12560,12 +12589,14 @@ EndChar
 StartChar: uni0268
 Encoding: 616 616 1786
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni0269
 Encoding: 617 617 1787
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
@@ -12600,12 +12631,14 @@ EndChar
 StartChar: uni02AE
 Encoding: 686 686 1792
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni0286
 Encoding: 646 646 1793
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
@@ -12633,6 +12666,7 @@ EndChar
 StartChar: uni0284
 Encoding: 644 644 1797
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
@@ -12646,12 +12680,14 @@ EndChar
 StartChar: uni0298
 Encoding: 664 664 1799
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni02A1
 Encoding: 673 673 1800
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
@@ -12700,6 +12736,7 @@ EndChar
 StartChar: upsilondieresis
 Encoding: 971 971 1807
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
@@ -12797,30 +12834,35 @@ EndChar
 StartChar: uni03F4
 Encoding: 1012 1012 1821
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni03F8
 Encoding: 1016 1016 1822
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni03F7
 Encoding: 1015 1015 1823
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni03F9
 Encoding: 1017 1017 1824
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni03DB
 Encoding: 987 987 1825
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
@@ -12834,6 +12876,7 @@ EndChar
 StartChar: uni03DC
 Encoding: 988 988 1827
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
@@ -12903,6 +12946,7 @@ EndChar
 StartChar: uni019E
 Encoding: 414 414 1837
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
@@ -12916,6 +12960,7 @@ EndChar
 StartChar: uni019F
 Encoding: 415 415 1839
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
@@ -12936,6 +12981,7 @@ EndChar
 StartChar: uni01A2
 Encoding: 418 418 1842
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
@@ -12991,12 +13037,14 @@ EndChar
 StartChar: uni01B5
 Encoding: 437 437 1850
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni01B6
 Encoding: 438 438 1851
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
@@ -13052,22 +13100,25 @@ EndChar
 StartChar: uni01BE
 Encoding: 446 446 1859
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uniF48A
 Encoding: 62602 62602 1860
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uniFABF
 Encoding: 64191 64191 1861
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 EndChars
-BitmapFont: 13 1862 10 3 1
+BitmapFont: 13 1863 10 3 1
 BDFStartProperties: 42
 FONT 1 "-slavfox-Cozette-Medium-R-Normal--13-120-75-75-M-60-ISO10646-1"
 COMMENT 0 "(c) 2020 Slavfox"
@@ -13089,7 +13140,7 @@ FONTNAME_REGISTRY 16 ""
 FONT_NAME 16 "Cozette"
 FACE_NAME 16 "Cozette"
 COPYRIGHT 16 "(c) 2020 Slavfox"
-FONT_VERSION 16 "1.093"
+FONT_VERSION 16 "1.100"
 FONT_ASCENT 18 10
 FONT_DESCENT 18 3
 UNDERLINE_POSITION 18 -19

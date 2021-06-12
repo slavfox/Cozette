@@ -13,6 +13,7 @@ numpy = "*"
 Pillow = "*"
 fonttools = "*"
 crayons = "*"
+gitpython = "*"
 
 [requires]
 python_version = "3.8"

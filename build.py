@@ -22,6 +22,7 @@ from cozette_builder.scanner import (
     print_codepoints_for_changelog,
     find_missing_codepoints,
 )
+from cozette_builder.changeloggen import get_changelog
 
 REPO_ROOT = Path(__file__).resolve().parent
 BUILD_DIR = REPO_ROOT / "build"
@@ -132,6 +133,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     subparsers = parser.add_subparsers(dest="action")
     images = subparsers.add_parser("images")
+    changelog = subparsers.add_parser("changelog")
     fonts = subparsers.add_parser("fonts")
     scan = subparsers.add_parser("scan")
     # noinspection PyTypeChecker
@@ -176,5 +178,7 @@ if __name__ == "__main__":
             print(crayons.blue("Fixing TTF..."))
             fix_ttf(Path("cozette-tmp.ttf"))
             print(crayons.green("Done!", bold=True))
+    elif args.action == "changelog":
+        get_changelog()
     else:
         parser.print_usage()
