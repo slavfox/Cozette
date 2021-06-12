@@ -185,6 +185,8 @@ Cozette is licensed [MIT] 💜
 
 Massive thanks to [ym1234] for helping me figure out how to make the font tables behave nicely.
 
+Additional thanks to [autumn] for contributing some characters!
+
 
 [Dina]: https://www.dcmembers.com/jibsen/download/61/
 [Proggy]: https://github.com/bluescan/proggyfonts
@@ -211,3 +213,4 @@ Massive thanks to [ym1234] for helping me figure out how to make the font tables
 [pipenv]: https://github.com/pypa/pipenv
 [MIT]: ./LICENSE
 [ym1234]: https://github.com/ym1234
+[autumn]: https://github.com/auctumnus
