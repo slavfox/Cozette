@@ -10,7 +10,7 @@ jobs:
     name: Make release
     runs-on: ubuntu-latest
     container:
-      image: archlinux/base
+      image: archlinux/archlinux:latest
     steps:
     - name: Update packages
       run: |
