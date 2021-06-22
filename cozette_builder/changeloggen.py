@@ -6,7 +6,8 @@ from unicodedata import name
 REPO_ROOT = Path(__file__).parent.parent
 COZETTE_SFD = REPO_ROOT / "Cozette" / "Cozette.sfd"
 repo = Repo(REPO_ROOT)
-last_ver = repo.tags[-1]
+last_ver = sorted(repo.tags, key=lambda tag: tag.commit.committed_date)[-1]
+
 last_cozette_sfd: str = (
     last_ver
     .commit
@@ -15,6 +16,7 @@ last_cozette_sfd: str = (
     .read().decode('utf-8')
 )
 char_regex = re.compile(r'BDFChar: (-?\d+) (-?\d+) (-?\d+) (-?\d+) (-?\d+) (-?\d+) (-?\d+)')
+
 
 def get_codepoints(cozette_sfd: str):
     codepoints = {}
@@ -26,6 +28,7 @@ def get_codepoints(cozette_sfd: str):
         elif match := char_regex.match(line):
             current_codepoint = int(match.group(2))
     return codepoints
+
 
 def print_codepoint(codepoint):
     try:
@@ -42,6 +45,7 @@ def get_changelog():
     with COZETTE_SFD.open() as f:
         current_codepoints = get_codepoints(f.read())
 
+    print(f"Changelog since {last_ver}: {len(current_codepoints)} glyphs found")
     added = set(current_codepoints) - set(previous_codepoints)
     removed = set(previous_codepoints) - set(current_codepoints)
     changed = set()
