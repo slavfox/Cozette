@@ -4,7 +4,7 @@ FullName: Cozette
 FamilyName: Cozette
 Weight: Medium
 Copyright: (c) 2020 Slavfox
-Version: 1.111
+Version: 1.112
 ItalicAngle: 0
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -22,7 +22,7 @@ OS2Version: 1
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: -2082812035
-ModificationTime: 1625056296
+ModificationTime: 1625069866
 PfmFamily: 49
 TTFWeight: 500
 TTFWidth: 5
@@ -57,18 +57,17 @@ MarkAttachClasses: 1
 DEI: 91125
 LangName: 1033 "" "" "" "" "" "" "" "" "" "" "" "" "" "Copyright (c) 2020 Slavfox <slavfoxman@gmail.com>+AAoACgAA-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the +ACIA-Software+ACIA), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:+AAoACgAA-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.+AAoACgAA-THE SOFTWARE IS PROVIDED +ACIA-AS IS+ACIA, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE." "https://opensource.org/licenses/MIT"
 Encoding: UnicodeFull
-Compacted: 1
 UnicodeInterp: none
 NameList: AGL with PUA
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 490 70 21
+WinInfo: 8995 35 10
 OnlyBitmaps: 1
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 524288 262144 174762 0 -1048576 174762 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 1114112 1907
+BeginChars: 1114112 1913
 
 StartChar: .notdef
 Encoding: 0 -1 0
@@ -13431,8 +13430,50 @@ Width: 1024
 Flags: W
 LayerCount: 2
 EndChar
+
+StartChar: approxequal
+Encoding: 8776 8776 1907
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni2249
+Encoding: 8777 8777 1908
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni2300
+Encoding: 8960 8960 1909
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni23E8
+Encoding: 9192 9192 1910
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni27E6
+Encoding: 10214 10214 1911
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni27E7
+Encoding: 10215 10215 1912
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
 EndChars
-BitmapFont: 13 1908 10 3 1
+BitmapFont: 13 1914 10 3 1
 BDFStartProperties: 42
 FONT 1 "-slavfox-Cozette-Medium-R-Normal--13-120-75-75-M-60-ISO10646-1"
 COMMENT 0 "(c) 2020 Slavfox"
@@ -17292,5 +17333,17 @@ BDFChar: 1905 9630 6 0 5 -3 9
 *??+>*ZlK`ioB"WhuE`W
 BDFChar: 1906 9631 6 0 5 -3 9
 *$-1C*ZQ:$s8W#squ?]s
+BDFChar: 1907 8776 6 1 5 1 5
+5c@MX&-)\1
+BDFChar: 1908 8777 6 1 5 -2 8
+#RCu,W)0E(5_+@b
+BDFChar: 1909 8960 6 0 5 -1 8
+#RG[>Pbb+"5X5;L
+BDFChar: 1910 9192 6 0 5 4 8
+8CUU<8,rVi
+BDFChar: 1911 10214 6 1 5 -1 7
+pn4:QTV.sNp](9o
+BDFChar: 1912 10215 6 1 5 -1 7
+pa@O=-n$Jlp](9o
 EndBitmapFont
 EndSplineFont
