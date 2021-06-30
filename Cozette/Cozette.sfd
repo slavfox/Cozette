@@ -4,7 +4,7 @@ FullName: Cozette
 FamilyName: Cozette
 Weight: Medium
 Copyright: (c) 2020 Slavfox
-Version: 1.100
+Version: 1.110
 ItalicAngle: 0
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -22,7 +22,7 @@ OS2Version: 1
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: -2082812035
-ModificationTime: 1624982250
+ModificationTime: 1625035625
 PfmFamily: 49
 TTFWeight: 500
 TTFWidth: 5
@@ -62,12 +62,12 @@ NameList: AGL with PUA
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 8890 70 21
+WinInfo: 9078 51 21
 OnlyBitmaps: 1
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 524288 262144 174762 0 -1048576 174762 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 1114112 1893
+BeginChars: 1114112 1894
 
 StartChar: .notdef
 Encoding: 0 -1 0
@@ -13121,54 +13121,63 @@ EndChar
 StartChar: uni2080
 Encoding: 8320 8320 1862
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni2084
 Encoding: 8324 8324 1863
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni2085
 Encoding: 8325 8325 1864
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni2086
 Encoding: 8326 8326 1865
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni2087
 Encoding: 8327 8327 1866
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni2088
 Encoding: 8328 8328 1867
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni2089
 Encoding: 8329 8329 1868
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni2082
 Encoding: 8322 8322 1869
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni2083
 Encoding: 8323 8323 1870
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
@@ -13182,6 +13191,7 @@ EndChar
 StartChar: uni207B
 Encoding: 8315 8315 1872
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
@@ -13223,30 +13233,35 @@ EndChar
 StartChar: uni208C
 Encoding: 8332 8332 1878
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni208D
 Encoding: 8333 8333 1879
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni208A
 Encoding: 8330 8330 1880
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni208E
 Encoding: 8334 8334 1881
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni208B
 Encoding: 8331 8331 1882
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
@@ -13260,12 +13275,14 @@ EndChar
 StartChar: minus
 Encoding: 8722 8722 1884
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni2213
 Encoding: 8723 8723 1885
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
@@ -13293,6 +13310,7 @@ EndChar
 StartChar: uni2691
 Encoding: 9873 9873 1889
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
@@ -13312,10 +13330,17 @@ EndChar
 StartChar: uni276D
 Encoding: 10093 10093 1892
 Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni23D0
+Encoding: 9168 9168 1893
+Width: 2048
 LayerCount: 2
 EndChar
 EndChars
-BitmapFont: 13 1893 10 3 1
+BitmapFont: 13 1895 10 3 1
 BDFStartProperties: 42
 FONT 1 "-slavfox-Cozette-Medium-R-Normal--13-120-75-75-M-60-ISO10646-1"
 COMMENT 0 "(c) 2020 Slavfox"
@@ -13337,7 +13362,7 @@ FONTNAME_REGISTRY 16 ""
 FONT_NAME 16 "Cozette"
 FACE_NAME 16 "Cozette"
 COPYRIGHT 16 "(c) 2020 Slavfox"
-FONT_VERSION 16 "1.100"
+FONT_VERSION 16 "1.110"
 FONT_ASCENT 18 10
 FONT_DESCENT 18 3
 UNDERLINE_POSITION 18 -19
@@ -17127,7 +17152,7 @@ BDFChar: 1881 8334 6 2 3 -3 3
 J3Z@b5X9i"
 BDFChar: 1882 8331 6 1 3 0 0
 huE`W
-BDFChar: 1883 8721 6 0 4 0 8
+BDFChar: 1883 8721 6 1 5 0 8
 pkV0X+@&2Jp](9o
 BDFChar: 1884 8722 6 1 5 3 3
 p](9o
@@ -17137,15 +17162,17 @@ BDFChar: 1886 9167 6 1 5 1 5
 +E7)Up](9o
 BDFChar: 1887 9229 6 1 4 -2 7
 i.-@9!,tbB:f%,l
-BDFChar: 1888 9872 6 1 5 -2 7
-i0]=VM!14VJ:IV"
-BDFChar: 1889 9873 6 1 5 -2 7
-i;!*Bq"U5,J:IV"
+BDFChar: 1888 9872 6 0 6 -2 7
+i1>OPK&WAPJ:IV"
+BDFChar: 1889 9873 6 0 6 -2 7
+i;W`Trr/L>J:IV"
 BDFChar: 1890 10033 6 0 0 0 0
 z
 BDFChar: 1891 10092 6 2 4 -1 7
 +<Y&W^d)9M+92BA
 BDFChar: 1892 10093 6 3 5 -1 7
 J:KmM?pHu-J,fQL
+BDFChar: 1893 9168 6 0 0 0 0
+z
 EndBitmapFont
 EndSplineFont
