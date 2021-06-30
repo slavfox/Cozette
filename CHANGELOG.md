@@ -9,46 +9,6 @@ The format is based on [Keep a Changelog], and this project adheres to
 
 Nothing!
 
-## [1.11.0]
-
-### Added
-
-- ⁱ (U+2071 SUPERSCRIPT LATIN SMALL LETTER I)
-- ⁺ (U+207A SUPERSCRIPT PLUS SIGN)
-- ⁻ (U+207B SUPERSCRIPT MINUS)
-- ⁼ (U+207C SUPERSCRIPT EQUALS SIGN)
-- ⁽ (U+207D SUPERSCRIPT LEFT PARENTHESIS)
-- ⁾ (U+207E SUPERSCRIPT RIGHT PARENTHESIS)
-- ⁿ (U+207F SUPERSCRIPT LATIN SMALL LETTER N)
-- ₀ (U+2080 SUBSCRIPT ZERO)
-- ₂ (U+2082 SUBSCRIPT TWO)
-- ₃ (U+2083 SUBSCRIPT THREE)
-- ₄ (U+2084 SUBSCRIPT FOUR)
-- ₅ (U+2085 SUBSCRIPT FIVE)
-- ₆ (U+2086 SUBSCRIPT SIX)
-- ₇ (U+2087 SUBSCRIPT SEVEN)
-- ₈ (U+2088 SUBSCRIPT EIGHT)
-- ₉ (U+2089 SUBSCRIPT NINE)
-- ₊ (U+208A SUBSCRIPT PLUS SIGN)
-- ₋ (U+208B SUBSCRIPT MINUS)
-- ₌ (U+208C SUBSCRIPT EQUALS SIGN)
-- ₍ (U+208D SUBSCRIPT LEFT PARENTHESIS)
-- ₎ (U+208E SUBSCRIPT RIGHT PARENTHESIS)
-- ∑ (U+2211 N-ARY SUMMATION)
-- − (U+2212 MINUS SIGN)
-- ∓ (U+2213 MINUS-OR-PLUS SIGN)
-- ⏏ (U+23CF EJECT SYMBOL)
-- ␍ (U+240D SYMBOL FOR CARRIAGE RETURN)
-- ⚐ (U+2690 WHITE FLAG)
-- ⚑ (U+2691 BLACK FLAG)
-- ✱ (U+2731 HEAVY ASTERISK)
-- ❬ (U+276C MEDIUM LEFT-POINTING ANGLE BRACKET ORNAMENT)
-- ❭ (U+276D MEDIUM RIGHT-POINTING ANGLE BRACKET ORNAMENT)
-
-### Changed
-
-- √ (U+221A SQUARE ROOT)
-
 ## [1.10.0]
 
 ### Added
@@ -795,8 +755,7 @@ Still broken on Windows.
 
 [Keep a Changelog]: https://keepachangelog.com/en/1.0.0/
 [Semantic Versioning]: https://semver.org/spec/v2.0.0.html
-[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.11.0...HEAD
-[1.11.0]: https://github.com/slavfox/Cozette/compare/v.1.10.0...v.1.11.0
+[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.8.3...HEAD
 [1.10.0]: https://github.com/slavfox/Cozette/compare/v.1.9.3...v.1.10.0
 [1.9.3]: https://github.com/slavfox/Cozette/compare/v.1.9.2...v.1.9.3
 [1.9.2]: https://github.com/slavfox/Cozette/compare/v.1.9.0...v.1.9.2
