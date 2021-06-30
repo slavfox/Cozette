@@ -198,7 +198,7 @@ Cozette is licensed [MIT] 💜
 
 Massive thanks to [ym1234] for helping me figure out how to make the font tables behave nicely.
 
-Additional thanks to [autumn] for contributing some characters!
+Additional thanks to [autumn] and [cpkio] for contributing characters!
 
 
 [Dina]: https://www.dcmembers.com/jibsen/download/61/
@@ -227,3 +227,4 @@ Additional thanks to [autumn] for contributing some characters!
 [MIT]: ./LICENSE
 [ym1234]: https://github.com/ym1234
 [autumn]: https://github.com/auctumnus
+[cpkio]: https://github.com/cpkio

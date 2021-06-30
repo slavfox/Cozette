@@ -88,7 +88,7 @@ def save_sample(
         fp = f.name
     cmd = quote(
         f"tput civis &&"
-        f"cat {fp} && sleep 0.1 && "
+        f"cat {fp} && sleep 1 && "
         f"import -window $WINDOWID {output_path}"
     )
     subprocess.run(
@@ -190,8 +190,8 @@ def stitch_charmap(files: List[Path], target: Path):
     for im in images:
         new_im.paste(im, (0, y))
         y += im.height
-    # for p in files:
-    #     p.unlink()
+    for p in files:
+        p.unlink()
     new_im.save(target)
 
 

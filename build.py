@@ -44,25 +44,15 @@ class Generate:
 
 
 def save_images(otbpath):
-    with tempfile.TemporaryDirectory() as tmpdirname:
-        print(crayons.yellow("Making tmp fontdir"))
-        tmpdirpath = Path(tmpdirname)
-        copy(otbpath, tmpdirname)
-        subprocess.run(["mkfontdir", tmpdirname])
-        subprocess.run(["xset", "+fp", tmpdirname])
-        subprocess.run(["xset", "fp", "rehash"])
+    print(crayons.yellow("Saving character map"))
+    save_charlist(FONTNAME, SFDPATH, REPO_ROOT / "img")
 
-        print(crayons.yellow("Saving character map"))
-        save_charlist(FONTNAME, SFDPATH, REPO_ROOT / "img")
-
-        print(crayons.yellow("Saving sample image"))
-        save_sample(
-            FONTNAME,
-            read_sample(REPO_ROOT / "img" / "sample.txt"),
-            REPO_ROOT / "img" / "sample.png",
-        )
-        subprocess.run(["xset", "-fp", tmpdirname])
-    subprocess.run(["xset", "fp", "rehash"])
+    print(crayons.yellow("Saving sample image"))
+    save_sample(
+        FONTNAME,
+        read_sample(REPO_ROOT / "img" / "sample.txt"),
+        REPO_ROOT / "img" / "sample.png",
+    )
     add_margins(REPO_ROOT / "img" / "sample.png")
 
 
@@ -158,26 +148,24 @@ if __name__ == "__main__":
                     f"supported by Cozette."
                 )
             )
-    elif args.action in ("images", "fonts"):
+    if args.action == "images":
+        print(crayons.blue("Saving sample images..."))
+        save_images(BUILD_DIR / "cozette.otb")
+        print(crayons.green("Done!", bold=True))
+    elif args.action == "fonts":
         rmtree(BUILD_DIR, ignore_errors=True)
         BUILD_DIR.mkdir(exist_ok=True)
         os.chdir(BUILD_DIR)
         print(crayons.blue("Building bitmap formats..."))
         bdfpath = gen_bitmap_formats()
         print(crayons.green("Done!", bold=True))
+        print(crayons.blue("Generating TTF..."))
+        ttfbuilder = TTFBuilder.from_bdf_path(bdfpath)
+        ttfbuilder.build("cozette-tmp.ttf")
         print(crayons.green("Done!", bold=True))
-        if args.action == "images":
-            print(crayons.blue("Saving sample images..."))
-            save_images(BUILD_DIR / "cozette.otb")
-            print(crayons.green("Done!", bold=True))
-        else:
-            print(crayons.blue("Generating TTF..."))
-            ttfbuilder = TTFBuilder.from_bdf_path(bdfpath)
-            ttfbuilder.build("cozette-tmp.ttf")
-            print(crayons.green("Done!", bold=True))
-            print(crayons.blue("Fixing TTF..."))
-            fix_ttf(Path("cozette-tmp.ttf"))
-            print(crayons.green("Done!", bold=True))
+        print(crayons.blue("Fixing TTF..."))
+        fix_ttf(Path("cozette-tmp.ttf"))
+        print(crayons.green("Done!", bold=True))
     elif args.action == "changelog":
         get_changelog()
     else:
