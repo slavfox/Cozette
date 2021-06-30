@@ -22,7 +22,7 @@ OS2Version: 1
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: -2082812035
-ModificationTime: 1624982250
+ModificationTime: 1625038107
 PfmFamily: 49
 TTFWeight: 500
 TTFWidth: 5
@@ -62,12 +62,12 @@ NameList: AGL with PUA
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 8890 70 21
+WinInfo: 58590 70 21
 OnlyBitmaps: 1
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 524288 262144 174762 0 -1048576 174762 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 1114112 1893
+BeginChars: 1114112 1910
 
 StartChar: .notdef
 Encoding: 0 -1 0
@@ -13121,54 +13121,63 @@ EndChar
 StartChar: uni2080
 Encoding: 8320 8320 1862
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni2084
 Encoding: 8324 8324 1863
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni2085
 Encoding: 8325 8325 1864
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni2086
 Encoding: 8326 8326 1865
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni2087
 Encoding: 8327 8327 1866
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni2088
 Encoding: 8328 8328 1867
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni2089
 Encoding: 8329 8329 1868
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni2082
 Encoding: 8322 8322 1869
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni2083
 Encoding: 8323 8323 1870
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
@@ -13182,6 +13191,7 @@ EndChar
 StartChar: uni207B
 Encoding: 8315 8315 1872
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
@@ -13223,30 +13233,35 @@ EndChar
 StartChar: uni208C
 Encoding: 8332 8332 1878
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni208D
 Encoding: 8333 8333 1879
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni208A
 Encoding: 8330 8330 1880
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni208E
 Encoding: 8334 8334 1881
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni208B
 Encoding: 8331 8331 1882
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
@@ -13260,12 +13275,14 @@ EndChar
 StartChar: minus
 Encoding: 8722 8722 1884
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni2213
 Encoding: 8723 8723 1885
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
@@ -13293,6 +13310,7 @@ EndChar
 StartChar: uni2691
 Encoding: 9873 9873 1889
 Width: 1024
+Flags: W
 LayerCount: 2
 EndChar
 
@@ -13312,10 +13330,126 @@ EndChar
 StartChar: uni276D
 Encoding: 10093 10093 1892
 Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni2596
+Encoding: 9622 9622 1893
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni2597
+Encoding: 9623 9623 1894
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni2598
+Encoding: 9624 9624 1895
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni2599
+Encoding: 9625 9625 1896
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni259A
+Encoding: 9626 9626 1897
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni259B
+Encoding: 9627 9627 1898
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni259C
+Encoding: 9628 9628 1899
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni259D
+Encoding: 9629 9629 1900
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni259E
+Encoding: 9630 9630 1901
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni259F
+Encoding: 9631 9631 1902
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: invsmileface
+Encoding: 9787 9787 1903
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uniE725
+Encoding: 59173 59173 1904
+Width: 1024
+LayerCount: 2
+EndChar
+
+StartChar: uniE726
+Encoding: 59174 59174 1905
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uniE727
+Encoding: 59175 59175 1906
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uniE72A
+Encoding: 59178 59178 1907
+Width: 1024
+LayerCount: 2
+EndChar
+
+StartChar: uniE72B
+Encoding: 59179 59179 1908
+Width: 1024
+LayerCount: 2
+EndChar
+
+StartChar: uniE72C
+Encoding: 59180 59180 1909
+Width: 1024
 LayerCount: 2
 EndChar
 EndChars
-BitmapFont: 13 1893 10 3 1
+BitmapFont: 13 1910 10 3 1
 BDFStartProperties: 42
 FONT 1 "-slavfox-Cozette-Medium-R-Normal--13-120-75-75-M-60-ISO10646-1"
 COMMENT 0 "(c) 2020 Slavfox"
@@ -16259,8 +16393,8 @@ BDFChar: 1447 59151 6 0 7 0 6
 &+Aren*^be
 BDFChar: 1448 59160 6 0 6 0 7
 &3,(*`l?#M
-BDFChar: 1449 59176 6 0 6 -1 7
-:qTaq6pt"#'EA+5
+BDFChar: 1449 59176 6 -1 6 -2 8
+ihl-56:+"JG@a8E
 BDFChar: 1450 59304 6 0 6 -1 6
 3(1?XZDp;P
 BDFChar: 1451 59316 6 0 6 -1 6
@@ -16426,7 +16560,7 @@ BDFChar: 1530 59221 6 0 6 0 6
 BDFChar: 1531 59139 6 0 6 -1 8
 I)c0bCfG416oY/H
 BDFChar: 1532 59177 6 0 6 2 4
-&FL)0
+3:8a+
 BDFChar: 1533 128737 6 0 6 -2 7
 P5bI[rr.:m3"Q&i
 BDFChar: 1534 128520 6 0 6 -1 8
@@ -17147,5 +17281,39 @@ BDFChar: 1891 10092 6 2 4 -1 7
 +<Y&W^d)9M+92BA
 BDFChar: 1892 10093 6 3 5 -1 7
 J:KmM?pHu-J,fQL
+BDFChar: 1893 9622 6 0 2 -3 2
+i8EPOi8=S8
+BDFChar: 1894 9623 6 3 5 -3 2
+i8EPOi8=S8
+BDFChar: 1895 9624 6 0 2 3 9
+i8EPOi8EMn
+BDFChar: 1896 9625 6 0 5 -3 9
+i8EPOi8EPkr;?Kjqu?]s
+BDFChar: 1897 9626 6 0 5 -3 9
+i8EPOi8EN5*#oq<)uos=
+BDFChar: 1898 9627 6 0 5 -3 9
+r;?Kjr;?KNi8EPOhuE`W
+BDFChar: 1899 9628 6 0 5 -3 9
+r;?Kjr;?I4*#oq<)uos=
+BDFChar: 1900 9629 6 3 5 3 9
+i8EPOi8EMn
+BDFChar: 1901 9630 6 0 5 -3 9
+*#oq<*#osVi8EPOhuE`W
+BDFChar: 1902 9631 6 0 5 -3 9
+*#oq<*#osrr;?Kjqu?]s
+BDFChar: 1903 9787 6 0 5 0 6
+r3ZD"G_Gtp
+BDFChar: 1904 59173 6 -1 5 -1 8
+m],\C6qhj`T\oeM
+BDFChar: 1905 59174 6 -1 5 -1 9
+jK/8Q6psF2m],[T
+BDFChar: 1906 59175 6 -1 5 -1 9
+i1T!n:3oZ#i1T!.
+BDFChar: 1907 59178 6 0 0 0 0
+z
+BDFChar: 1908 59179 6 0 0 0 0
+z
+BDFChar: 1909 59180 6 0 0 0 0
+z
 EndBitmapFont
 EndSplineFont
