@@ -62,12 +62,12 @@ NameList: AGL with PUA
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 9078 51 21
+WinInfo: 9520 70 21
 OnlyBitmaps: 1
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 524288 262144 174762 0 -1048576 174762 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 1114112 1894
+BeginChars: 1114112 1908
 
 StartChar: .notdef
 Encoding: 0 -1 0
@@ -13339,8 +13339,106 @@ Encoding: 9168 9168 1893
 Width: 2048
 LayerCount: 2
 EndChar
+
+StartChar: uniE725
+Encoding: 59173 59173 1894
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uniE726
+Encoding: 59174 59174 1895
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uniE727
+Encoding: 59175 59175 1896
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: invsmileface
+Encoding: 9787 9787 1897
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni2596
+Encoding: 9622 9622 1898
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni2597
+Encoding: 9623 9623 1899
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni2598
+Encoding: 9624 9624 1900
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni2599
+Encoding: 9625 9625 1901
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni259A
+Encoding: 9626 9626 1902
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni259B
+Encoding: 9627 9627 1903
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni259C
+Encoding: 9628 9628 1904
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni259D
+Encoding: 9629 9629 1905
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni259E
+Encoding: 9630 9630 1906
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni259F
+Encoding: 9631 9631 1907
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
 EndChars
-BitmapFont: 13 1895 10 3 1
+BitmapFont: 13 1909 10 3 1
 BDFStartProperties: 42
 FONT 1 "-slavfox-Cozette-Medium-R-Normal--13-120-75-75-M-60-ISO10646-1"
 COMMENT 0 "(c) 2020 Slavfox"
@@ -16284,8 +16382,8 @@ BDFChar: 1447 59151 6 0 7 0 6
 &+Aren*^be
 BDFChar: 1448 59160 6 0 6 0 7
 &3,(*`l?#M
-BDFChar: 1449 59176 6 0 6 -1 7
-:qTaq6pt"#'EA+5
+BDFChar: 1449 59176 6 0 6 -1 8
+jK/8Q6ptR7C/+a/
 BDFChar: 1450 59304 6 0 6 -1 6
 3(1?XZDp;P
 BDFChar: 1451 59316 6 0 6 -1 6
@@ -16451,7 +16549,7 @@ BDFChar: 1530 59221 6 0 6 0 6
 BDFChar: 1531 59139 6 0 6 -1 8
 I)c0bCfG416oY/H
 BDFChar: 1532 59177 6 0 6 2 4
-&FL)0
+3USj,
 BDFChar: 1533 128737 6 0 6 -2 7
 P5bI[rr.:m3"Q&i
 BDFChar: 1534 128520 6 0 6 -1 8
@@ -17171,8 +17269,36 @@ z
 BDFChar: 1891 10092 6 2 4 -1 7
 +<Y&W^d)9M+92BA
 BDFChar: 1892 10093 6 3 5 -1 7
-J:KmM?pHu-J,fQL
+J:PF#?pMMXJ,fQL
 BDFChar: 1893 9168 6 0 0 0 0
 z
+BDFChar: 1894 59173 6 0 6 -1 8
+m],_D6qqsbT]#kN
+BDFChar: 1895 59174 6 0 6 -1 8
+jK/8Q6q'Q4X7$#g
+BDFChar: 1896 59175 6 0 6 -1 8
+i1]((H;?fbU#>tO
+BDFChar: 1897 9787 6 0 5 0 6
+r3lV)HA;G"
+BDFChar: 1898 9622 6 0 2 -3 2
+m/HPAs763j
+BDFChar: 1899 9623 6 3 5 -3 2
+m.U#EqXsmh
+BDFChar: 1900 9624 6 0 2 3 9
+m.U#EqY'ph
+BDFChar: 1901 9625 6 0 5 -3 9
+io8tUio&kqr;Zfsrr<$!
+BDFChar: 1902 9626 6 0 5 -3 9
+iSi_QioB&?*ZlCD)uos=
+BDFChar: 1903 9627 6 0 5 -3 9
+rVcZlrr<#XioB"WhuE`W
+BDFChar: 1904 9628 6 0 5 -3 9
+rr2oprqud:*$6.B)uos=
+BDFChar: 1905 9629 6 3 5 3 9
+o)A1Srq$-i
+BDFChar: 1906 9630 6 0 5 -3 9
+*??+>*ZlK`ioB"WhuE`W
+BDFChar: 1907 9631 6 0 5 -3 9
+*$-1C*ZQ:$s8W#squ?]s
 EndBitmapFont
 EndSplineFont
