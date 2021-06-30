@@ -88,7 +88,7 @@ def save_sample(
         fp = f.name
     cmd = quote(
         f"tput civis &&"
-        f"cat {fp} && sleep 1 && "
+        f"cat {fp} && sleep 0.1 && "
         f"import -window $WINDOWID {output_path}"
     )
     subprocess.run(
@@ -170,7 +170,7 @@ def sfd_codepoints(sfd: Path) -> List[int]:
 
 def make_charlist_text(sfd: Path) -> str:
     text = ""
-    for c in sorted(set(sfd_codepoints(sfd))):
+    for c in sfd_codepoints(sfd):
         if c > 32 and c not in (127,):
             ch = chr(c)
             text += ch if charwidth(ch) == "W" else f"{ch} "

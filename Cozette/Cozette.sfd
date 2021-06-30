@@ -22,7 +22,7 @@ OS2Version: 1
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: -2082812035
-ModificationTime: 1625044499
+ModificationTime: 1625035625
 PfmFamily: 49
 TTFWeight: 500
 TTFWidth: 5
@@ -62,7 +62,7 @@ NameList: AGL with PUA
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 1113075 51 21
+WinInfo: 9078 51 21
 OnlyBitmaps: 1
 BeginPrivate: 0
 EndPrivate
@@ -13314,30 +13314,29 @@ Flags: W
 LayerCount: 2
 EndChar
 
+StartChar: uni2731
+Encoding: 10033 10033 1890
+Width: 2048
+LayerCount: 2
+EndChar
+
 StartChar: uni276C
-Encoding: 10092 10092 1890
+Encoding: 10092 10092 1891
 Width: 1024
 Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni276D
-Encoding: 10093 10093 1891
+Encoding: 10093 10093 1892
 Width: 1024
 Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni23D0
-Encoding: 9168 9168 1892
+Encoding: 9168 9168 1893
 Width: 2048
-LayerCount: 2
-EndChar
-
-StartChar: uni2B30
-Encoding: 11056 11056 1893
-Width: 1024
-Flags: W
 LayerCount: 2
 EndChar
 EndChars
@@ -16625,8 +16624,8 @@ BDFChar: 1617 62221 6 0 6 -2 7
 0R3N`rdI%Yptu,P
 BDFChar: 1618 62222 6 0 6 1 6
 r.<@#69YAL
-BDFChar: 1619 62224 6 0 6 -2 8
-&-sBa&4F*]Jj_Qu
+BDFChar: 1619 62224 6 0 6 -2 9
+!"]DY#S9D8Jq?BM
 BDFChar: 1620 62226 6 1 5 1 5
 k_Q19VuQet
 BDFChar: 1621 62227 6 0 6 -1 8
@@ -16913,8 +16912,8 @@ BDFChar: 1761 641 6 1 5 0 5
 LkplVM!tBE
 BDFChar: 1762 642 6 1 5 -3 5
 G^s`=#k3@p?iU0,
-BDFChar: 1763 643 6 2 6 -3 8
-(a'qD+<VdL+<VfB
+BDFChar: 1763 643 6 1 6 -3 8
+$kNs]&.fBa&.fC\
 BDFChar: 1764 649 6 0 6 0 5
 6q%#B6p(GL
 BDFChar: 1765 650 6 1 5 0 5
@@ -17167,13 +17166,13 @@ BDFChar: 1888 9872 6 0 6 -2 7
 i1>OPK&WAPJ:IV"
 BDFChar: 1889 9873 6 0 6 -2 7
 i;W`Trr/L>J:IV"
-BDFChar: 1890 10092 6 2 4 -1 7
-+<Y&W^d)9M+92BA
-BDFChar: 1891 10093 6 3 5 -1 7
-J:KmM?pHu-J,fQL
-BDFChar: 1892 9168 6 0 0 0 0
+BDFChar: 1890 10033 6 0 0 0 0
 z
-BDFChar: 1893 11056 6 0 6 2 4
-8G5RS
+BDFChar: 1891 10092 6 2 4 -1 7
++<Y&W^d)9M+92BA
+BDFChar: 1892 10093 6 3 5 -1 7
+J:KmM?pHu-J,fQL
+BDFChar: 1893 9168 6 0 0 0 0
+z
 EndBitmapFont
 EndSplineFont
