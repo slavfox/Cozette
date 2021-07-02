@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog], and this project adheres to
 [Semantic Versioning].
 
+## [1.11.3]
+
+### Added
+
+- ⏳ (U+23F3 HOURGLASS WITH FLOWING SAND)
+
+### Changed
+
+- redrawn  (U+F462) (nf-oct-settings) to fix rendering on Windows
+
 ## [1.11.2]
 
 ### Added
@@ -866,8 +876,9 @@ Still broken on Windows.
 
 [Keep a Changelog]: https://keepachangelog.com/en/1.0.0/
 [Semantic Versioning]: https://semver.org/spec/v2.0.0.html
-[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.11.2...HEAD
-[1.11.1]: https://github.com/slavfox/Cozette/compare/v.1.11.1...v.1.11.2
+[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.11.3...HEAD
+[1.11.3]: https://github.com/slavfox/Cozette/compare/v.1.11.2...v.1.11.3
+[1.11.2]: https://github.com/slavfox/Cozette/compare/v.1.11.1...v.1.11.2
 [1.11.1]: https://github.com/slavfox/Cozette/compare/v.1.11.0...v.1.11.1
 [1.11.0]: https://github.com/slavfox/Cozette/compare/v.1.10.0...v.1.11.0
 [1.10.0]: https://github.com/slavfox/Cozette/compare/v.1.9.3...v.1.10.0
