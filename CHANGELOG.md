@@ -5,6 +5,55 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog], and this project adheres to
 [Semantic Versioning].
 
+## [1.11.2]
+
+### Added
+
+- ≈ (U+2248 ALMOST EQUAL TO)
+- ≉ (U+2249 NOT ALMOST EQUAL TO)
+- ⌀ (U+2300 DIAMETER SIGN)
+- ⏨ (U+23E8 DECIMAL EXPONENT SYMBOL)
+- ⟦ (U+27E6 MATHEMATICAL LEFT WHITE SQUARE BRACKET)
+- ⟧ (U+27E7 MATHEMATICAL RIGHT WHITE SQUARE BRACKET)
+-  (U+E7A3)
+-  (U+E7AA)
+-  (U+F040)
+-  (U+F053)
+-  (U+F054)
+-  (U+F0B0)
+-  (U+F13E)
+- ﹔ (U+FE54 SMALL SEMICOLON)
+- ﹕ (U+FE55 SMALL COLON)
+- ﹖ (U+FE56 SMALL QUESTION MARK)
+- ﹗ (U+FE57 SMALL EXCLAMATION MARK)
+- ﹘ (U+FE58 SMALL EM DASH)
+- ﹙ (U+FE59 SMALL LEFT PARENTHESIS)
+- ﹚ (U+FE5A SMALL RIGHT PARENTHESIS)
+- ﹛ (U+FE5B SMALL LEFT CURLY BRACKET)
+- ﹜ (U+FE5C SMALL RIGHT CURLY BRACKET)
+- ﹝ (U+FE5D SMALL LEFT TORTOISE SHELL BRACKET)
+- ﹞ (U+FE5E SMALL RIGHT TORTOISE SHELL BRACKET)
+- ﹟ (U+FE5F SMALL NUMBER SIGN)
+- ﹠ (U+FE60 SMALL AMPERSAND)
+- ﹡ (U+FE61 SMALL ASTERISK)
+- ﹢ (U+FE62 SMALL PLUS SIGN)
+- ﹣ (U+FE63 SMALL HYPHEN-MINUS)
+- ﹤ (U+FE64 SMALL LESS-THAN SIGN)
+- ﹥ (U+FE65 SMALL GREATER-THAN SIGN)
+- ﹦ (U+FE66 SMALL EQUALS SIGN)
+- ﹨ (U+FE68 SMALL REVERSE SOLIDUS)
+- ﹩ (U+FE69 SMALL DOLLAR SIGN)
+- ﹪ (U+FE6A SMALL PERCENT SIGN)
+- ﹫ (U+FE6B SMALL COMMERCIAL AT)
+
+### Changed
+
+-  (U+E796)
+-  (U+F121)
+-  (U+F179)
+-  (U+F462)
+- 謹 (U+FABF CJK COMPATIBILITY IDEOGRAPH-FABF)
+
 ## [1.11.1]
 
 ### Added
@@ -817,7 +866,8 @@ Still broken on Windows.
 
 [Keep a Changelog]: https://keepachangelog.com/en/1.0.0/
 [Semantic Versioning]: https://semver.org/spec/v2.0.0.html
-[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.11.1...HEAD
+[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.11.2...HEAD
+[1.11.1]: https://github.com/slavfox/Cozette/compare/v.1.11.1...v.1.11.2
 [1.11.1]: https://github.com/slavfox/Cozette/compare/v.1.11.0...v.1.11.1
 [1.11.0]: https://github.com/slavfox/Cozette/compare/v.1.10.0...v.1.11.0
 [1.10.0]: https://github.com/slavfox/Cozette/compare/v.1.9.3...v.1.10.0
