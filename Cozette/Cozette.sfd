@@ -119,7 +119,7 @@ NameList: AGL with PUA
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 8400 35 12
+WinInfo: 8892 38 13
 OnlyBitmaps: 1
 BeginPrivate: 0
 EndPrivate
@@ -17583,8 +17583,8 @@ BDFChar: 1902 8776 6 1 5 1 5
 5c@MX&-)\1
 BDFChar: 1903 8777 6 0 5 0 7
 #Y;1!W&.%1
-BDFChar: 1904 8960 6 0 5 -1 8
-#RG[>Pbb+"5X5;L
+BDFChar: 1904 8960 6 0 5 0 7
+"F/.TUs+(6
 BDFChar: 1905 9192 6 0 5 4 8
 8CUU<8,rVi
 BDFChar: 1906 10214 6 1 5 -1 7
