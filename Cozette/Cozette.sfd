@@ -119,12 +119,12 @@ NameList: AGL with PUA
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 8892 38 13
+WinInfo: 570 38 13
 OnlyBitmaps: 1
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 524288 262144 174762 0 -1048576 174762 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 1114112 1941
+BeginChars: 1114112 1964
 
 StartChar: .notdef
 Encoding: 0 -1 0
@@ -13728,8 +13728,169 @@ Width: 1024
 Flags: W
 LayerCount: 2
 EndChar
+
+StartChar: uni0306
+Encoding: 774 774 1941
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: tildecomb
+Encoding: 771 771 1942
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni0302
+Encoding: 770 770 1943
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: acutecomb
+Encoding: 769 769 1944
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: gravecomb
+Encoding: 768 768 1945
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni0304
+Encoding: 772 772 1946
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni0305
+Encoding: 773 773 1947
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni0307
+Encoding: 775 775 1948
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni0308
+Encoding: 776 776 1949
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni030A
+Encoding: 778 778 1950
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni030B
+Encoding: 779 779 1951
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni030C
+Encoding: 780 780 1952
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: hookabovecomb
+Encoding: 777 777 1953
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni030D
+Encoding: 781 781 1954
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni030E
+Encoding: 782 782 1955
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni030F
+Encoding: 783 783 1956
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni0311
+Encoding: 785 785 1957
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni0315
+Encoding: 789 789 1958
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni0313
+Encoding: 787 787 1959
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni0314
+Encoding: 788 788 1960
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni0310
+Encoding: 784 784 1961
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni0312
+Encoding: 786 786 1962
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: dotbelowcomb
+Encoding: 803 803 1963
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
 EndChars
-BitmapFont: 13 1942 10 3 1
+BitmapFont: 13 1965 10 3 1
 BDFStartProperties: 42
 FONT 1 "-slavfox-Cozette-Medium-R-Normal--13-120-75-75-M-60-ISO10646-1"
 COMMENT 0 "(c) 2020 Slavfox"
@@ -17657,5 +17818,51 @@ BDFChar: 1939 62562 6 0 5 0 7
 <)ds=<7G/P
 BDFChar: 1940 9203 6 0 6 -1 8
 rdo`L3&jm#rr)lt
+BDFChar: 1941 774 6 2 4 7 8
+TKiJW
+BDFChar: 1942 771 6 2 5 7 8
+:nRdg
+BDFChar: 1943 770 6 2 4 7 8
+5bJ)W
+BDFChar: 1944 769 6 3 4 7 8
+5_&h7
+BDFChar: 1945 768 6 2 3 7 8
+J3X)7
+BDFChar: 1946 772 6 2 4 7 7
+huE`W
+BDFChar: 1947 773 6 1 5 7 7
+p](9o
+BDFChar: 1948 775 6 3 3 7 7
+J,fQL
+BDFChar: 1949 776 6 2 4 7 7
+TE"rl
+BDFChar: 1950 778 6 2 4 7 9
+5bL@B
+BDFChar: 1951 779 6 2 6 7 8
+8<<fO
+BDFChar: 1952 780 6 2 4 7 8
+i'78B
+BDFChar: 1953 777 6 2 4 7 9
+i#k8b
+BDFChar: 1954 781 6 3 3 7 8
+J:IV"
+BDFChar: 1955 782 6 2 4 7 8
+TV)8b
+BDFChar: 1956 783 6 1 5 7 8
+O@T?O
+BDFChar: 1957 785 6 2 5 7 8
+@#t?g
+BDFChar: 1958 789 6 6 6 7 8
+J:IV"
+BDFChar: 1959 787 6 2 3 7 9
+^q`28
+BDFChar: 1960 788 6 3 4 7 9
+^qbI#
+BDFChar: 1961 784 6 1 5 7 9
++Gat:
+BDFChar: 1962 786 6 3 4 7 9
+JAAr#
+BDFChar: 1963 803 6 3 3 -2 -2
+J,fQL
 EndBitmapFont
 EndSplineFont
