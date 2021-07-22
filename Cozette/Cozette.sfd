@@ -119,12 +119,12 @@ NameList: AGL with PUA
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 570 38 13
+WinInfo: 572 52 17
 OnlyBitmaps: 1
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 524288 262144 174762 0 -1048576 174762 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 1114112 1964
+BeginChars: 1114112 1972
 
 StartChar: .notdef
 Encoding: 0 -1 0
@@ -13889,8 +13889,64 @@ Width: 1024
 Flags: W
 LayerCount: 2
 EndChar
+
+StartChar: uni033D
+Encoding: 829 829 1964
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni033F
+Encoding: 831 831 1965
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni0346
+Encoding: 838 838 1966
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni0347
+Encoding: 839 839 1967
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni0348
+Encoding: 840 840 1968
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni033B
+Encoding: 827 827 1969
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni033E
+Encoding: 830 830 1970
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni033A
+Encoding: 826 826 1971
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
 EndChars
-BitmapFont: 13 1965 10 3 1
+BitmapFont: 13 1973 10 3 1
 BDFStartProperties: 42
 FONT 1 "-slavfox-Cozette-Medium-R-Normal--13-120-75-75-M-60-ISO10646-1"
 COMMENT 0 "(c) 2020 Slavfox"
@@ -17864,5 +17920,21 @@ BDFChar: 1962 786 6 3 4 7 9
 JAAr#
 BDFChar: 1963 803 6 3 3 -2 -2
 J,fQL
+BDFChar: 1964 829 6 2 4 7 9
+TKo.M
+BDFChar: 1965 831 6 1 5 7 9
+p]1'h
+BDFChar: 1966 838 6 1 5 7 8
+pkSnM
+BDFChar: 1967 839 6 1 5 -3 -1
+p]1'h
+BDFChar: 1968 840 6 2 4 -3 -1
+TV.qX
+BDFChar: 1969 827 6 2 4 -2 -1
+T\oeM
+BDFChar: 1970 830 6 2 4 7 9
+?pML-
+BDFChar: 1971 826 6 1 5 -3 -2
+M"grM
 EndBitmapFont
 EndSplineFont
