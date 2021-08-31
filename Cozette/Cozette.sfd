@@ -116,10 +116,10 @@ MATH:MinConnectorOverlap: 40
 Encoding: UnicodeFull
 UnicodeInterp: none
 NameList: AGL with PUA
-DisplaySize: -48
+DisplaySize: 13
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 680 34 10
+WinInfo: 738 41 12
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 524288 262144 174762 0 -1048576 174762 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
@@ -14171,7 +14171,7 @@ Fore
 Refer: 1958 787 N 1 0 0 1 0 0 2
 EndChar
 EndChars
-BitmapFont: 13 2006 10 3 1
+BitmapFont: 13 2004 10 3 1
 BDFStartProperties: 42
 FONT 1 "-slavfox-Cozette-Medium-R-Normal--13-120-75-75-M-60-ISO10646-1"
 COMMENT 0 "(c) 2020 Slavfox"
@@ -16193,8 +16193,8 @@ BDFChar: 986 1073 6 1 5 0 8
 #]P<uaG>Y.Du]k<
 BDFChar: 987 1095 6 1 5 0 5
 Lkpk3#RCD1
-BDFChar: 988 1105 6 1 5 0 8
-:]LK7M"lLVDu]k<
+BDFChar: 988 1105 6 1 5 0 7
+:]PHjpje0>
 BDFChar: 989 5792 6 1 4 0 7
 OJ'sn^jprc
 BDFChar: 990 8304 6 1 4 4 8
@@ -16608,7 +16608,7 @@ R$ahNaN+>]
 BDFChar: 1194 1081 6 1 5 0 8
 :`ob*R&Ht)a8c2?
 BDFChar: 1195 1082 6 1 5 0 5
-Lle:VOGEl:
+Lle:fOGEl:
 BDFChar: 1196 1083 6 1 5 0 5
 GXt@r8;I6G
 BDFChar: 1197 1084 6 1 5 0 5
@@ -16641,8 +16641,8 @@ BDFChar: 1210 1098 6 1 5 0 5
 ^d)j088nP/
 BDFChar: 1211 1099 6 1 5 0 5
 Lks-NW5nr=
-BDFChar: 1212 1100 6 2 5 0 5
-J:QR>OPg*=
+BDFChar: 1212 1100 6 1 5 0 5
+J:R-FM!tBE
 BDFChar: 1213 1101 6 1 5 0 5
 n-F7E#k.fo
 BDFChar: 1214 1102 6 1 5 0 5
@@ -17987,8 +17987,6 @@ BDFChar: 1883 9872 6 0 6 -2 7
 i1>OPK&WAPJ:IV"
 BDFChar: 1884 9873 6 0 6 -2 7
 i;W`Trr/L>J:IV"
-BDFChar: -1 10033 6 0 0 0 0
-z
 BDFChar: 1885 10092 6 2 4 -1 7
 +<Y&W^d)9M+92BA
 BDFChar: 1886 10093 6 3 5 -1 7
@@ -18161,9 +18159,9 @@ BDFChar: 1969 830 6 2 4 7 9
 ?pML-
 BDFChar: 1970 826 6 1 5 -3 -2
 M"grM
-BDFChar: 1971 790 6 2 3 -3 -2
+BDFChar: 1971 790 6 3 4 -3 -2
 J3X)7
-BDFChar: 1972 791 6 3 4 -3 -2
+BDFChar: 1972 791 6 2 3 -3 -2
 5_&h7
 BDFChar: 1973 792 6 2 3 -3 -1
 5eoVb
@@ -18225,10 +18223,6 @@ BDFChar: 2001 834 6 0 0 0 0
 z
 BDFChar: 2002 835 6 0 0 0 0
 z
-BDFChar: -1 841 6 2 4 -3 -2
-i#i""
-BDFChar: -1 848 6 3 4 7 9
-J3\Vb
 BDFRefChar: 1999 1944 0 0 N
 BDFRefChar: 2000 1943 0 0 N
 BDFRefChar: 2001 1941 0 0 N
