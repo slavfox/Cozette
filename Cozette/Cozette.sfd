@@ -22,7 +22,7 @@ OS2Version: 1
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: -2082812035
-ModificationTime: 1632463273
+ModificationTime: 1632468409
 PfmFamily: 49
 TTFWeight: 500
 TTFWidth: 5
@@ -119,11 +119,11 @@ NameList: AGL with PUA
 DisplaySize: 13
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 738 41 12
+WinInfo: 0 41 12
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 524288 262144 174762 0 -1048576 174762 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 1114112 2003
+BeginChars: 1114112 2013
 
 StartChar: .notdef
 Encoding: 0 -1 0
@@ -14170,8 +14170,78 @@ LayerCount: 2
 Fore
 Refer: 1958 787 N 1 0 0 1 0 0 2
 EndChar
+
+StartChar: uni203B
+Encoding: 8251 8251 2003
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: exclamdbl
+Encoding: 8252 8252 2004
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: uni203D
+Encoding: 8253 8253 2005
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: uni203E
+Encoding: 8254 8254 2006
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: uni205D
+Encoding: 8285 8285 2007
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: uni205E
+Encoding: 8286 8286 2008
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: uni2E3D
+Encoding: 11837 11837 2009
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: uni237F
+Encoding: 9087 9087 2010
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: uni22EF
+Encoding: 8943 8943 2011
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: uni22EE
+Encoding: 8942 8942 2012
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
 EndChars
-BitmapFont: 13 2004 10 3 1
+BitmapFont: 13 2013 10 3 1
 BDFStartProperties: 42
 FONT 1 "-slavfox-Cozette-Medium-R-Normal--13-120-75-75-M-60-ISO10646-1"
 COMMENT 0 "(c) 2020 Slavfox"
@@ -15083,7 +15153,7 @@ BDFChar: 431 8246 6 2 5 7 8
 TMPUg
 BDFChar: 432 8247 6 0 5 7 8
 W)N`s
-BDFChar: 433 8248 6 1 5 0 2
+BDFChar: 433 8248 6 1 5 -2 0
 +Adjo
 BDFChar: 434 8249 6 1 3 1 5
 +@(HB+92BA
@@ -15189,8 +15259,8 @@ BDFChar: 484 9209 6 1 5 1 5
 q"XXZp](9o
 BDFChar: 485 9210 6 1 5 1 5
 E;95'Du]k<
-BDFChar: 486 9211 6 0 6 0 7
-&.hg(P(H(]
+BDFChar: 486 9211 6 0 6 0 6
+&6+gUJj_Qu
 BDFChar: 487 9212 6 0 6 0 6
 3(/pmP!h80
 BDFChar: 488 9472 6 0 6 3 3
@@ -18021,8 +18091,8 @@ BDFChar: 1900 9631 6 0 5 -3 9
 *$-1C*ZQ:$s8W#squ?]s
 BDFChar: 1901 8776 6 1 5 1 5
 5c@MX&-)\1
-BDFChar: 1902 8777 6 0 5 0 7
-#Y;1!W&.%1
+BDFChar: 1902 8777 6 1 5 0 6
+&5]<%W),_Z
 BDFChar: 1903 8960 6 0 5 0 7
 "F/.TUs+(6
 BDFChar: 1904 9192 6 0 5 4 8
@@ -18223,6 +18293,26 @@ BDFChar: 2001 834 6 0 0 0 0
 z
 BDFChar: 2002 835 6 0 0 0 0
 z
+BDFChar: 2003 8251 6 0 6 0 6
+&4@q0-q"UH
+BDFChar: 2004 8252 6 2 5 0 7
+OH>QcOH9I(
+BDFChar: 2005 8253 6 1 5 0 7
+E2Y0=+<UY,
+BDFChar: 2006 8254 6 1 5 9 9
+p](9o
+BDFChar: 2007 8285 6 3 3 1 7
+J,fS"!!%NL
+BDFChar: 2008 8286 6 3 3 0 9
+J,fS"!!%NL!.Y%L
+BDFChar: 2009 11837 6 3 3 -2 8
+J,k*"J,k*"J,k*"
+BDFChar: 2010 9087 6 2 4 -3 9
+5X7S"5iCSY5X7S"5QCca
+BDFChar: 2011 8943 6 1 5 3 3
+VuQet
+BDFChar: 2012 8942 6 3 3 1 7
+J,fS"!!%NL
 BDFRefChar: 1999 1944 0 0 N
 BDFRefChar: 2000 1943 0 0 N
 BDFRefChar: 2001 1941 0 0 N
