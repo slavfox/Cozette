@@ -172,8 +172,11 @@ def make_charlist_text(sfd: Path) -> str:
     text = ""
     for c in sfd_codepoints(sfd):
         if c > 32 and c not in (127,):
-            ch = chr(c)
-            text += ch if charwidth(ch) == "W" else f"{ch} "
+            if 0x300 <= c < 0x370:
+                text += f" {chr(c)} "
+            else:
+                ch = chr(c)
+                text += ch if charwidth(ch) == "W" else f"{ch} "
     return text
 
 
