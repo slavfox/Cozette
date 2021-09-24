@@ -957,7 +957,8 @@ Still broken on Windows.
 
 [Keep a Changelog]: https://keepachangelog.com/en/1.0.0/
 [Semantic Versioning]: https://semver.org/spec/v2.0.0.html
-[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.11.3...HEAD
+[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.12.0...HEAD
+[1.12.0]: https://github.com/slavfox/Cozette/compare/v.1.11.3...v.1.12.0
 [1.11.3]: https://github.com/slavfox/Cozette/compare/v.1.11.2...v.1.11.3
 [1.11.2]: https://github.com/slavfox/Cozette/compare/v.1.11.1...v.1.11.2
 [1.11.1]: https://github.com/slavfox/Cozette/compare/v.1.11.0...v.1.11.1
