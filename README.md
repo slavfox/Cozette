@@ -85,7 +85,7 @@ Download the `.dfont` and install it with `Font Book .app`.  Both the bitmap
 Grab `CozetteVector.ttf`. If you want to get the bitmap versions to work, 
 [follow the instructions from here].
 
-### BSD / Solaris / Haku /Other
+### BSD / Solaris / Haiku /Other
 
 You know what you're doing.
 
