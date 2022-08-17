@@ -1,21 +1,30 @@
-from git import Repo
 import re
 from pathlib import Path
 from unicodedata import name
 
+from git import Repo
+
 REPO_ROOT = Path(__file__).parent.parent
 COZETTE_SFD = REPO_ROOT / "Cozette" / "Cozette.sfd"
-repo = Repo(REPO_ROOT)
-last_ver = sorted(repo.tags, key=lambda tag: tag.commit.committed_date)[-1]
 
-last_cozette_sfd: str = (
-    last_ver
-    .commit
-    .tree["Cozette/Cozette.sfd"]
-    .data_stream
-    .read().decode('utf-8')
+
+def get_last_ver():
+    repo = Repo(REPO_ROOT)
+    return sorted(repo.tags, key=lambda tag: tag.commit.committed_date)[-1]
+
+
+def get_last_cozette_sfd() -> str:
+    return (
+        get_last_ver()
+        .commit.tree["Cozette/Cozette.sfd"]
+        .data_stream.read()
+        .decode("utf-8")
+    )
+
+
+char_regex = re.compile(
+    r"BDFChar: (-?\d+) (-?\d+) (-?\d+) (-?\d+) (-?\d+) (-?\d+) (-?\d+)"
 )
-char_regex = re.compile(r'BDFChar: (-?\d+) (-?\d+) (-?\d+) (-?\d+) (-?\d+) (-?\d+) (-?\d+)')
 
 
 def get_codepoints(cozette_sfd: str):
@@ -35,17 +44,17 @@ def print_codepoint(codepoint):
         chrname = " " + name(chr(codepoint))
     except ValueError:
         chrname = ""
-    print(
-        f"- {chr(codepoint)} (U+{codepoint:04X}{chrname})"
-    )
+    print(f"- {chr(codepoint)} (U+{codepoint:04X}{chrname})")
 
 
 def get_changelog():
-    previous_codepoints = get_codepoints(last_cozette_sfd)
+    previous_codepoints = get_codepoints(get_last_cozette_sfd())
     with COZETTE_SFD.open() as f:
         current_codepoints = get_codepoints(f.read())
 
-    print(f"Changelog since {last_ver}: {len(current_codepoints)} glyphs found")
+    print(
+        f"Changelog since {get_last_ver()}: {len(current_codepoints)} glyphs found"
+    )
     added = set(current_codepoints) - set(previous_codepoints)
     removed = set(previous_codepoints) - set(current_codepoints)
     changed = set()

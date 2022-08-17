@@ -96,8 +96,8 @@ class TTFBuilder:
             panose={
                 **_panoseDefaults,
                 "bFamilyType": 2,  # Text and display
-                "bProportion": 9  # Monospace
-            }
+                "bProportion": 9,  # Monospace
+            },
         )
         self.fb.setupPost(isFixedPitch=1)
         self.fb.save(output_path)

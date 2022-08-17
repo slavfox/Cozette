@@ -1,9 +1,10 @@
-from typing import Set, Dict, Iterable, List, Set
-from pathlib import Path
 import re
+from pathlib import Path
+from typing import Dict, Iterable, List, Set
 from unicodedata import name as uniname
 
 UESCAPE = re.compile(r"\\[uU]([0-9A-Fa-f]{4,5})")
+
 
 def scan_file_for_nonascii(path: Path) -> Set[int]:
     with path.open() as f:
@@ -17,13 +18,10 @@ def scan_file_for_nonascii(path: Path) -> Set[int]:
         return nonascii
 
 
-
 # noinspection PyShadowingBuiltins
 def scan_for_codepoints(dir: Path) -> Dict[int, List[Path]]:
     if dir.is_file():
-        return {
-            cp: [dir] for cp in scan_file_for_nonascii(dir)
-        }
+        return {cp: [dir] for cp in scan_file_for_nonascii(dir)}
     non_ascii_codepoints: Dict[int, List[Path]] = {}
     for path in dir.glob("**/*"):
         if path.is_file():

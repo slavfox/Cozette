@@ -1,7 +1,7 @@
+import argparse
 import os
 import subprocess
 import tempfile
-import argparse
 from dataclasses import dataclass
 from pathlib import Path
 from shlex import quote
@@ -10,19 +10,19 @@ from typing import Optional, Sequence, cast
 
 import crayons  # type: ignore
 
+from cozette_builder.changeloggen import get_changelog
 from cozette_builder.imagegen import (
+    add_margins,
     read_sample,
     save_charlist,
     save_sample,
-    add_margins,
+)
+from cozette_builder.scanner import (
+    find_missing_codepoints,
+    print_codepoints_for_changelog,
+    scan_for_codepoints,
 )
 from cozette_builder.ttfbuilder import TTFBuilder
-from cozette_builder.scanner import (
-    scan_for_codepoints,
-    print_codepoints_for_changelog,
-    find_missing_codepoints,
-)
-from cozette_builder.changeloggen import get_changelog
 
 REPO_ROOT = Path(__file__).resolve().parent
 BUILD_DIR = REPO_ROOT / "build"
@@ -138,8 +138,9 @@ if __name__ == "__main__":
         )
         if missing_codepoints:
             print_codepoints_for_changelog(
-                missing_codepoints, print_source_files=args.print_source_files,
-                reverse=args.reverse
+                missing_codepoints,
+                print_source_files=args.print_source_files,
+                reverse=args.reverse,
             )
         else:
             print(

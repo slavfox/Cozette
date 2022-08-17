@@ -2,8 +2,9 @@ import subprocess
 import tempfile
 from pathlib import Path
 from shlex import quote
-from typing import Dict, NamedTuple, Optional, Tuple, List
+from typing import Dict, List, NamedTuple, Optional, Tuple
 from unicodedata import east_asian_width as charwidth
+
 from PIL import Image, ImageOps  # type: ignore
 
 Color = Tuple[int, int, int]
@@ -135,6 +136,7 @@ def color_text(text: str, palette: Palette) -> str:
         )
     return colored_text
 
+
 def make_charmap(sfd: Path) -> List[str]:
     text = [
         "        0 1 2 3 4 5 6 7 8 9 A B C D E F",
@@ -154,6 +156,7 @@ def make_charmap(sfd: Path) -> List[str]:
         if line := line.rstrip():
             text.append(f"U+{i//16:04X}_│{line}")
     return text
+
 
 def sfd_codepoints(sfd: Path) -> List[int]:
     codepoints = []
