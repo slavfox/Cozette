@@ -22,7 +22,7 @@ OS2Version: 1
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: -2082812035
-ModificationTime: 1635075891
+ModificationTime: 1660758485
 PfmFamily: 49
 TTFWeight: 500
 TTFWidth: 5
@@ -114,17 +114,16 @@ MATH:RadicalKernAfterDegree: -1137
 MATH:RadicalDegreeBottomRaisePercent: 60
 MATH:MinConnectorOverlap: 40
 Encoding: UnicodeFull
-Compacted: 1
 UnicodeInterp: none
 NameList: AGL with PUA
 DisplaySize: 13
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 512 32 17
+WinInfo: 62016 32 17
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 524288 262144 174762 0 -1048576 174762 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 1114112 2777
+BeginChars: 1114112 2780
 
 StartChar: .notdef
 Encoding: 0 -1 0
@@ -10980,8 +10979,8 @@ EndChar
 
 StartChar: u1F980
 Encoding: 129408 129408 1497
-Width: 1024
-Flags: W
+Width: 1890
+Flags: HW
 LayerCount: 2
 EndChar
 
@@ -19949,8 +19948,30 @@ Width: 1024
 Flags: HW
 LayerCount: 2
 EndChar
+
+StartChar: uni2744
+Encoding: 10052 10052 2777
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: uniE702
+Encoding: 59138 59138 2778
+Width: 945
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: uniF260
+Encoding: 62048 62048 2779
+Width: 945
+VWidth: 0
+Flags: HW
+LayerCount: 2
+EndChar
 EndChars
-BitmapFont: 13 2778 10 3 1
+BitmapFont: 13 2781 10 3 1
 BDFStartProperties: 42
 FONT 1 "-slavfox-Cozette-Medium-R-Normal--13-120-75-75-M-60-ISO10646-1"
 COMMENT 0 "(c) 2020 Slavfox"
@@ -22990,8 +23011,8 @@ BDFChar: 1495 128013 12 1 10 0 7
 "+UTk(Vg<l&AS:]J&))7
 BDFChar: 1496 128142 6 0 6 1 6
 I/<hi3"Q&i
-BDFChar: 1497 129408 6 0 7 0 6
-JYg7f4Ba!1
+BDFChar: 1497 129408 12 1 10 0 6
+J3]en^qa9,56,#?+TMKB
 BDFChar: 1498 128160 6 0 6 0 6
 &3*YW<&bEh
 BDFChar: 1499 8548 6 1 5 0 7
@@ -25550,6 +25571,12 @@ BDFChar: 2775 62606 6 0 6 0 8
 3<"MWWiE(NrVuou
 BDFChar: 2776 61944 6 0 5 0 8
 0`1qK]^5R'qu?]s
+BDFChar: 2777 10052 6 0 6 -1 7
+&3/7l37cY?&-)\1
+BDFChar: 2778 59138 6 0 6 0 6
+&1D)SCcDt+
+BDFChar: 2779 62048 6 0 6 0 4
+-rbdt-ia5I
 BDFRefChar: 1999 1944 0 0 N
 BDFRefChar: 2000 1943 0 0 N
 BDFRefChar: 2001 1941 0 0 N
