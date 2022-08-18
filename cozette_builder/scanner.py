@@ -1,7 +1,7 @@
 import re
 from pathlib import Path
 from typing import Dict, Iterable, List, Set
-from unicodedata import name as uniname
+from unicodedata import name as uniname, east_asian_width as eaw
 
 UESCAPE = re.compile(r"\\[uU]([0-9A-Fa-f]{4,5})")
 
@@ -43,7 +43,7 @@ def print_codepoints_for_changelog(
             if "VARIATION SELECTOR" in name:
                 continue
             name = " " + name
-        print(f"**{ch} U+{cp:04X}{name}**", end="")
+        print(f"**{ch} U+{cp:04X}{name}** {eaw(ch)}", end="")
         if print_source_files:
             print(f": {' '.join(str(p) for p in codepoints[cp])}")
         else:
