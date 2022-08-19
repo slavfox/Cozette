@@ -5,6 +5,33 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog], and this project adheres to
 [Semantic Versioning].
 
+## [1.16.0]
+
+### Added
+
+- ⅶ (U+2176 SMALL ROMAN NUMERAL SEVEN)
+- ⅷ (U+2177 SMALL ROMAN NUMERAL EIGHT)
+- ⅻ (U+217B SMALL ROMAN NUMERAL TWELVE)
+-  (U+F631)
+-  (U+F632)
+- 🌑 (U+1F311 NEW MOON SYMBOL)
+- 🌒 (U+1F312 WAXING CRESCENT MOON SYMBOL)
+- 🌓 (U+1F313 FIRST QUARTER MOON SYMBOL)
+- 🌔 (U+1F314 WAXING GIBBOUS MOON SYMBOL)
+- 🌕 (U+1F315 FULL MOON SYMBOL)
+- 🌖 (U+1F316 WANING GIBBOUS MOON SYMBOL)
+- 🌗 (U+1F317 LAST QUARTER MOON SYMBOL)
+- 🌘 (U+1F318 WANING CRESCENT MOON SYMBOL)
+
+### Changed
+
+- ⅳ (U+2173 SMALL ROMAN NUMERAL FOUR)
+- ⅴ (U+2174 SMALL ROMAN NUMERAL FIVE)
+- ⅵ (U+2175 SMALL ROMAN NUMERAL SIX)
+- ⅸ (U+2178 SMALL ROMAN NUMERAL NINE)
+- ⅹ (U+2179 SMALL ROMAN NUMERAL TEN)
+- ⅺ (U+217A SMALL ROMAN NUMERAL ELEVEN)
+
 ## [1.15.0]
 
 ### Added
@@ -22,10 +49,8 @@ they'll be helpful for programming.
 -  (U+F449)
 -  (U+F475)
 -  (U+F49E)
--  (U+F4BE)
 -  (U+F529)
 -  (U+F5EB)
--  (U+F631)
 -  (U+F658)
 -  (U+F659)
 -  (U+F668)
@@ -45,7 +70,6 @@ they'll be helpful for programming.
 - ﰮ (U+FC2E ARABIC LIGATURE FEH WITH HAH ISOLATED FORM)
 - ﳤ (U+FCE4 ARABIC LIGATURE TEH WITH HEH MEDIAL FORM)
 - ﴲ (U+FD32 ARABIC LIGATURE SHEEN WITH HEH INITIAL FORM)
-- ﵒ (U+FD52 ARABIC LIGATURE TEH WITH HAH WITH JEEM INITIAL FORM)
  
 ## [1.14.0]
 
@@ -1852,7 +1876,8 @@ Still broken on Windows.
 
 [Keep a Changelog]: https://keepachangelog.com/en/1.0.0/
 [Semantic Versioning]: https://semver.org/spec/v2.0.0.html
-[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.15.0...HEAD
+[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.16.0...HEAD
+[1.16.0]: https://github.com/slavfox/Cozette/compare/v.1.15.0...v.1.16.0
 [1.15.0]: https://github.com/slavfox/Cozette/compare/v.1.14.0...v.1.15.0
 [1.14.0]: https://github.com/slavfox/Cozette/compare/v.1.13.0...v.1.14.0
 [1.13.0]: https://github.com/slavfox/Cozette/compare/v.1.12.0...v.1.13.0
