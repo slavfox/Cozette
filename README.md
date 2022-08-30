@@ -142,6 +142,8 @@ implemented:
 - [x] [starship] supported out of the box!
 - [x] Full [powerlevel10k] support! (if it doesn't work, try setting
  `POWERLEVEL9K_MODE` to `nerdfont-complete`)
+- [x] All glyphs used by [maturin](https://github.com/PyO3/maturin) and 
+      many other CLI tools!
 - [x] Charmap including the code points (to make it easier for users to
       report issues/request additions)
 - [ ] Bold version

@@ -4,7 +4,7 @@ FullName: Cozette
 FamilyName: Cozette
 Weight: Medium
 Copyright: (c) 2021 Slavfox
-Version: 1.160
+Version: 1.170
 ItalicAngle: 0
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -22,7 +22,7 @@ OS2Version: 1
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: -2082812035
-ModificationTime: 1660895050
+ModificationTime: 1661855892
 PfmFamily: 49
 TTFWeight: 500
 TTFWidth: 5
@@ -119,11 +119,11 @@ NameList: AGL with PUA
 DisplaySize: 13
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 127712 32 17
+WinInfo: 128896 32 17
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 524288 262144 174762 0 -1048576 174762 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 1114112 2824
+BeginChars: 1114112 2846
 
 StartChar: .notdef
 Encoding: 0 -1 0
@@ -7698,8 +7698,8 @@ EndChar
 
 StartChar: u1F512
 Encoding: 128274 128274 1030
-Width: 1024
-Flags: W
+Width: 1890
+Flags: HW
 LayerCount: 2
 EndChar
 
@@ -20278,8 +20278,162 @@ Width: 1890
 Flags: HW
 LayerCount: 2
 EndChar
+
+StartChar: uni0CA0
+Encoding: 3232 3232 2824
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: uni26D4
+Encoding: 9940 9940 2825
+Width: 1890
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: uni2728
+Encoding: 10024 10024 2826
+Width: 1890
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: uni2753
+Encoding: 10067 10067 2827
+Width: 1890
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: u1F379
+Encoding: 127865 127865 2828
+Width: 1890
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: u1F381
+Encoding: 127873 127873 2829
+Width: 1890
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: u1F41B
+Encoding: 128027 128027 2830
+Width: 1890
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: u1F47D
+Encoding: 128125 128125 2831
+Width: 1890
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: u1F4A1
+Encoding: 128161 128161 2832
+Width: 1890
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: u1F4A5
+Encoding: 128165 128165 2833
+Width: 1890
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: u1F4BC
+Encoding: 128188 128188 2834
+Width: 1890
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: u1F4D6
+Encoding: 128214 128214 2835
+Width: 1890
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: u1F4E1
+Encoding: 128225 128225 2836
+Width: 1890
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: u1F510
+Encoding: 128272 128272 2837
+Width: 1890
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: u1F511
+Encoding: 128273 128273 2838
+Width: 1890
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: u1F517
+Encoding: 128279 128279 2839
+Width: 1890
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: u1F527
+Encoding: 128295 128295 2840
+Width: 1890
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: u1F5A8
+Encoding: 128424 128424 2841
+Width: 1890
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: u1F60A
+Encoding: 128522 128522 2842
+Width: 1890
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: u1F680
+Encoding: 128640 128640 2843
+Width: 1890
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: u1F6E0
+Encoding: 128736 128736 2844
+Width: 1890
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: u1F937
+Encoding: 129335 129335 2845
+Width: 1890
+Flags: HW
+LayerCount: 2
+EndChar
 EndChars
-BitmapFont: 13 2825 10 3 1
+BitmapFont: 13 2846 10 3 1
 BDFStartProperties: 42
 FONT 1 "-slavfox-Cozette-Medium-R-Normal--13-120-75-75-M-60-ISO10646-1"
 COMMENT 0 "(c) 2020 Slavfox"
@@ -20301,7 +20455,7 @@ FONTNAME_REGISTRY 16 ""
 FONT_NAME 16 "Cozette"
 FACE_NAME 16 "Cozette"
 COPYRIGHT 16 "(c) 2021 Slavfox"
-FONT_VERSION 16 "1.160"
+FONT_VERSION 16 "1.170"
 FONT_ASCENT 18 10
 FONT_DESCENT 18 3
 UNDERLINE_POSITION 18 -19
@@ -22385,8 +22539,8 @@ BDFChar: 1028 13265 6 0 5 0 7
 ^d(.e<)cih
 BDFChar: 1029 42920 6 1 5 0 7
 G^u0#a9W(@
-BDFChar: 1030 128274 6 1 5 -1 6
-E)9C+f\#uo
+BDFChar: 1030 128274 12 2 9 -1 8
+4@2A$s8W-!s8N'!
 BDFChar: 1031 64605 6 1 6 1 6
 J5C3(GSC,X
 BDFChar: 1032 61478 6 0 2 1 5
@@ -25973,6 +26127,50 @@ BDFChar: 2822 127767 12 1 10 -1 8
 *WTi'7t?B1LVS\\LVQE1B7M$'
 BDFChar: 2823 127768 12 1 10 -1 8
 *WTi':Oo(QT>7)7T>46QB7M$'
+BDFChar: 2824 3232 6 0 5 1 8
+#R'pALo?,K
+BDFChar: 2825 9940 12 1 10 -1 8
+*WU\?It7R7J3\WMs1j,7It/R?
+BDFChar: 2826 10024 12 1 10 -1 8
+5QK^B63%&e#65j]#65qJEW@3^
+BDFChar: 2827 10067 12 3 8 -2 8
+Gl5bo*&oW+!&-),
+BDFChar: 2828 127865 12 2 9 -2 8
+*e07NP+lb(Ck@$7
+BDFChar: 2829 127873 12 1 10 -2 8
+1B:+!561`!N'REY9Rofe9RofeIt.M!
+BDFChar: 2830 128027 12 1 10 -1 8
+TE%dgGQ8Q\)uqMi%KI7E#J^__
+BDFChar: 2831 128125 12 1 11 -2 9
+*ro]a5X9iBZ(S_%Rijs]5X6TF&HE:@
+BDFChar: 2832 128161 12 2 9 -2 8
+4@4UMJO1V-4?OG\
+BDFChar: 2833 128165 12 2 10 -2 8
+"99,9g]2hS2ZR:epAdF.C]Hp)!WW3#
+BDFChar: 2834 128188 12 2 10 -1 6
+)uq/_s+'ioIfP"Ls+(-"
+BDFChar: 2835 128214 12 1 11 -1 6
+4+P7W`*gMk`*gMks5<e4
+BDFChar: 2836 128225 12 1 10 -1 8
+#64aS7R1BIF[.nd)usjVk5auO
+BDFChar: 2837 128272 12 1 11 -1 8
+2ul@^7A**-s1j6eL&d56JcPcM
+BDFChar: 2838 128273 12 1 10 1 4
+!J(28UVHn\
+BDFChar: 2839 128279 12 1 10 -2 7
+!Peb%"@*6C*<7\l6i`#CO9"2=
+BDFChar: 2840 128295 12 0 11 -2 9
+0E;piQiQm]HiOWV#64ka!Up,O!It0c
+BDFChar: 2841 128424 12 1 10 -2 7
+It0e7s1nZMs1m4$^qe[>5_+?7
+BDFChar: 2842 128522 12 -5 11 -2 24
+J,fQLzzzzzzzzzzz!.4bHJcGfP!!5Q=!igbP!.Y+NJ-&,h!BC,[JcGduz
+BDFChar: 2843 128640 12 0 11 -2 9
+!,qt#"qV*6E1l,S,X?U)\H'AEMZE;J
+BDFChar: 2844 128736 12 0 11 -2 9
+&-+]*I=V-TnaQG6T)]?$*rnBQEPN]I
+BDFChar: 2845 129335 12 0 11 -1 8
+%fd/k.6o"@-:%(iM%Fjg5JTM!
 BDFRefChar: 1999 1944 0 0 N
 BDFRefChar: 2000 1943 0 0 N
 BDFRefChar: 2001 1941 0 0 N

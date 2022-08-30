@@ -5,6 +5,39 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog], and this project adheres to
 [Semantic Versioning].
 
+## [1.17.0]
+
+The [maturin](https://github.com/PyO3/maturin) update!
+
+### Added
+
+- ಠ (U+0CA0 KANNADA LETTER TTHA)
+- ⛔ (U+26D4 NO ENTRY)
+- ✨ (U+2728 SPARKLES)
+- ❓ (U+2753 BLACK QUESTION MARK ORNAMENT)
+- 🍹 (U+1F379 TROPICAL DRINK)
+- 🎁 (U+1F381 WRAPPED PRESENT)
+- 🐛 (U+1F41B BUG)
+- 👽 (U+1F47D EXTRATERRESTRIAL ALIEN)
+- 💡 (U+1F4A1 ELECTRIC LIGHT BULB)
+- 💥 (U+1F4A5 COLLISION SYMBOL)
+- 💼 (U+1F4BC BRIEFCASE)
+- 📖 (U+1F4D6 OPEN BOOK)
+- 📡 (U+1F4E1 SATELLITE ANTENNA)
+- 🔐 (U+1F510 CLOSED LOCK WITH KEY)
+- 🔑 (U+1F511 KEY)
+- 🔗 (U+1F517 LINK SYMBOL)
+- 🔧 (U+1F527 WRENCH)
+- 🖨 (U+1F5A8 PRINTER)
+- 😊 (U+1F60A SMILING FACE WITH SMILING EYES)
+- 🚀 (U+1F680 ROCKET)
+- 🛠 (U+1F6E0 HAMMER AND WRENCH)
+- 🤷 (U+1F937 SHRUG)
+
+### Changed
+
+- 🔒 (U+1F512 LOCK)
+
 ## [1.16.0]
 
 ### Added
@@ -1876,7 +1909,8 @@ Still broken on Windows.
 
 [Keep a Changelog]: https://keepachangelog.com/en/1.0.0/
 [Semantic Versioning]: https://semver.org/spec/v2.0.0.html
-[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.16.0...HEAD
+[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.17.0...HEAD
+[1.17.0]: https://github.com/slavfox/Cozette/compare/v.1.16.0...v.1.16.0
 [1.16.0]: https://github.com/slavfox/Cozette/compare/v.1.15.0...v.1.16.0
 [1.15.0]: https://github.com/slavfox/Cozette/compare/v.1.14.0...v.1.15.0
 [1.14.0]: https://github.com/slavfox/Cozette/compare/v.1.13.0...v.1.14.0
