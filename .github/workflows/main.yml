@@ -20,7 +20,7 @@ jobs:
         pacman -S --noconfirm base git tar which zip libffi
     - name: Install python
       run: |
-        pacman -S --noconfirm python python-pipenv
+        pacman -S --noconfirm python python-pipenv python-setuptools
     - name: Install fontforge
       run: pacman -S --noconfirm fontforge
     - uses: actions/checkout@v2
