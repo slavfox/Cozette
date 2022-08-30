@@ -14,6 +14,7 @@ Pillow = ">=8.3.2"
 fonttools = "*"
 crayons = "*"
 gitpython = "*"
+setuptools = "*"
 
 [requires]
 python_version = "3.10"
