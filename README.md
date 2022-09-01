@@ -146,9 +146,7 @@ implemented:
       many other CLI tools!
 - [x] Charmap including the code points (to make it easier for users to
       report issues/request additions)
-- [ ] Bold version
-- [ ] Italic version
-- [ ] Ligatures
+- [ ] Codepoints above U+FFFF in vector fonts
 
 # Recommended alternatives
 
