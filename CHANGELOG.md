@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog], and this project adheres to
 [Semantic Versioning].
 
+## [1.17.2]
+
+### Changed
+
+- Ä (U+00C4 LATIN CAPITAL LETTER A WITH DIAERESIS)
+- Ë (U+00CB LATIN CAPITAL LETTER E WITH DIAERESIS)
+- Ï (U+00CF LATIN CAPITAL LETTER I WITH DIAERESIS)
+- Ü (U+00DC LATIN CAPITAL LETTER U WITH DIAERESIS)
+
 ## [1.17.1]
 
 ### Added
@@ -1917,8 +1926,10 @@ Still broken on Windows.
 
 [Keep a Changelog]: https://keepachangelog.com/en/1.0.0/
 [Semantic Versioning]: https://semver.org/spec/v2.0.0.html
-[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.17.0...HEAD
-[1.17.0]: https://github.com/slavfox/Cozette/compare/v.1.16.0...v.1.16.0
+[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.17.2...HEAD
+[1.17.2]: https://github.com/slavfox/Cozette/compare/v.1.17.1...v.1.17.2
+[1.17.1]: https://github.com/slavfox/Cozette/compare/v.1.17.0...v.1.17.1
+[1.17.0]: https://github.com/slavfox/Cozette/compare/v.1.16.0...v.1.17.0
 [1.16.0]: https://github.com/slavfox/Cozette/compare/v.1.15.0...v.1.16.0
 [1.15.0]: https://github.com/slavfox/Cozette/compare/v.1.14.0...v.1.15.0
 [1.14.0]: https://github.com/slavfox/Cozette/compare/v.1.13.0...v.1.14.0

@@ -4,7 +4,7 @@ FullName: Cozette
 FamilyName: Cozette
 Weight: Medium
 Copyright: (c) 2021 Slavfox
-Version: 1.171
+Version: 1.172
 ItalicAngle: 0
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -22,7 +22,7 @@ OS2Version: 1
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: -2082812035
-ModificationTime: 1662018902
+ModificationTime: 1662034881
 PfmFamily: 49
 TTFWeight: 500
 TTFWidth: 5
@@ -119,7 +119,7 @@ NameList: AGL with PUA
 DisplaySize: 13
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 128000 32 17
+WinInfo: 0 32 17
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 524288 262144 174762 0 -1048576 174762 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
@@ -20447,7 +20447,7 @@ Flags: HW
 LayerCount: 2
 EndChar
 EndChars
-BitmapFont: 13 2848 10 3 1
+BitmapFont: 13 2849 10 3 1
 BDFStartProperties: 42
 FONT 1 "-slavfox-Cozette-Medium-R-Normal--13-120-75-75-M-60-ISO10646-1"
 COMMENT 0 "(c) 2020 Slavfox"
@@ -20469,7 +20469,7 @@ FONTNAME_REGISTRY 16 ""
 FONT_NAME 16 "Cozette"
 FACE_NAME 16 "Cozette"
 COPYRIGHT 16 "(c) 2021 Slavfox"
-FONT_VERSION 16 "1.171"
+FONT_VERSION 16 "1.172"
 FONT_ASCENT 18 10
 FONT_DESCENT 18 3
 UNDERLINE_POSITION 18 -19
@@ -20821,8 +20821,8 @@ BDFChar: 162 194 6 1 5 0 9
 +A`&WLkth^Lkl$2
 BDFChar: 163 195 6 1 5 0 9
 BWqJULkth^Lkl$2
-BDFChar: 164 196 6 1 5 0 8
-:]PHjM"ld^L]@DT
+BDFChar: 164 196 6 1 5 0 9
+:]PHjLkth^Lkl$2
 BDFChar: 165 197 6 1 5 0 9
 +Aa0\E/9>FLkl$2
 BDFChar: 166 198 6 1 5 0 7
@@ -20835,16 +20835,16 @@ BDFChar: 169 201 6 1 5 0 9
 &0LuJJ:R->JG9*E
 BDFChar: 170 202 6 1 5 0 9
 +A`(5J:R->JG9*E
-BDFChar: 171 203 6 1 5 0 8
-:]U9@JFJ)>p](9o
+BDFChar: 171 203 6 1 5 0 9
+:]U9@JFJ)>JG9*E
 BDFChar: 172 204 6 2 4 0 9
 J3X+m5X7S"5i;VB
 BDFChar: 173 205 6 2 4 0 9
 +@#qb5X7S"5i;VB
 BDFChar: 174 206 6 2 4 0 9
 5bJ,85X7S"5i;VB
-BDFChar: 175 207 6 2 4 0 8
-TE*n85X7S"huE`W
+BDFChar: 175 207 6 2 4 0 9
+TE*n85X7S"5i;VB
 BDFChar: 176 208 6 1 5 0 6
 E(EO`84[\"
 BDFChar: 177 209 6 1 5 0 9
@@ -20869,8 +20869,8 @@ BDFChar: 186 218 6 1 5 0 9
 &0Lt/LkpkCLi<=o
 BDFChar: 187 219 6 1 5 0 9
 +A`&oLkpkCLi<=o
-BDFChar: 188 220 6 1 5 0 8
-:]Q<-LkpkCDu]k<
+BDFChar: 188 220 6 1 5 0 9
+:]Q<-LkpkCLi<=o
 BDFChar: 189 221 6 1 5 0 9
 &0Lt/LknkM+<UXa
 BDFChar: 190 222 6 1 5 0 7
