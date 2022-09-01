@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog], and this project adheres to
 [Semantic Versioning].
 
+## [1.17.1]
+
+### Added
+
+- 🐪 (U+1F42A DROMEDARY CAMEL)
+- 🐫 (U+1F42B BACTRIAN CAMEL)
+
+
 ## [1.17.0]
 
 The [maturin](https://github.com/PyO3/maturin) update!
