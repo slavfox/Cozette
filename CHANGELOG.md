@@ -5,6 +5,29 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog], and this project adheres to
 [Semantic Versioning].
 
+## [1.18.0]
+
+### Added
+
+- ∧ (U+2227 LOGICAL AND)
+- ∨ (U+2228 LOGICAL OR)
+- ∩ (U+2229 INTERSECTION)
+- ∪ (U+222A UNION)
+- ⊂ (U+2282 SUBSET OF)
+- ⊃ (U+2283 SUPERSET OF)
+- ⊄ (U+2284 NOT A SUBSET OF)
+- ⊅ (U+2285 NOT A SUPERSET OF)
+- ⊆ (U+2286 SUBSET OF OR EQUAL TO)
+- ⊇ (U+2287 SUPERSET OF OR EQUAL TO)
+- ⊈ (U+2288 NEITHER A SUBSET OF NOR EQUAL TO)
+- ⊉ (U+2289 NEITHER A SUPERSET OF NOR EQUAL TO)
+- ⊊ (U+228A SUBSET OF WITH NOT EQUAL TO)
+- ⊋ (U+228B SUPERSET OF WITH NOT EQUAL TO)
+- ⋀ (U+22C0 N-ARY LOGICAL AND)
+- ⋁ (U+22C1 N-ARY LOGICAL OR)
+- ⋂ (U+22C2 N-ARY INTERSECTION)
+- ⋃ (U+22C3 N-ARY UNION)
+
 ## [1.17.2]
 
 ### Changed
@@ -1926,7 +1949,8 @@ Still broken on Windows.
 
 [Keep a Changelog]: https://keepachangelog.com/en/1.0.0/
 [Semantic Versioning]: https://semver.org/spec/v2.0.0.html
-[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.17.2...HEAD
+[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.18.0...HEAD
+[1.18.0]: https://github.com/slavfox/Cozette/compare/v.1.17.2...v.1.18.0
 [1.17.2]: https://github.com/slavfox/Cozette/compare/v.1.17.1...v.1.17.2
 [1.17.1]: https://github.com/slavfox/Cozette/compare/v.1.17.0...v.1.17.1
 [1.17.0]: https://github.com/slavfox/Cozette/compare/v.1.16.0...v.1.17.0
