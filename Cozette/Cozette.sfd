@@ -3,8 +3,8 @@ FontName: Cozette
 FullName: Cozette
 FamilyName: Cozette
 Weight: Medium
-Copyright: (c) 2021 Slavfox
-Version: 1.180
+Copyright: (c) 2020-2022 Slavfox
+Version: 1.181
 ItalicAngle: 0
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -22,7 +22,7 @@ OS2Version: 1
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: -2082812035
-ModificationTime: 1664173849
+ModificationTime: 1668729664
 PfmFamily: 49
 TTFWeight: 500
 TTFWidth: 5
@@ -119,11 +119,11 @@ NameList: AGL with PUA
 DisplaySize: 13
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 8704 32 17
+WinInfo: 62400 32 17
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 524288 262144 174762 0 -1048576 174762 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 1114112 2866
+BeginChars: 1114112 2872
 
 StartChar: .notdef
 Encoding: 0 -1 0
@@ -20572,11 +20572,53 @@ Width: 1024
 Flags: HW
 LayerCount: 2
 EndChar
+
+StartChar: uniF293
+Encoding: 62099 62099 2866
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: uniF294
+Encoding: 62100 62100 2867
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: uniF5AE
+Encoding: 62894 62894 2868
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: uniF5AF
+Encoding: 62895 62895 2869
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: uniF5B1
+Encoding: 62897 62897 2870
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: uniF5B2
+Encoding: 62898 62898 2871
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
 EndChars
-BitmapFont: 13 2866 10 3 1
+BitmapFont: 13 2873 10 3 1
 BDFStartProperties: 42
 FONT 1 "-slavfox-Cozette-Medium-R-Normal--13-120-75-75-M-60-ISO10646-1"
-COMMENT 0 "(c) 2020 Slavfox"
+COMMENT 0 "(c) 2020-2022 Slavfox"
 FOUNDRY 16 "slavfox"
 FAMILY_NAME 16 "Cozette"
 WEIGHT_NAME 16 "Medium"
@@ -20594,8 +20636,8 @@ CHARSET_ENCODING 16 "1"
 FONTNAME_REGISTRY 16 ""
 FONT_NAME 16 "Cozette"
 FACE_NAME 16 "Cozette"
-COPYRIGHT 16 "(c) 2021 Slavfox"
-FONT_VERSION 16 "1.180"
+COPYRIGHT 16 "(c) 2020-2022 Slavfox"
+FONT_VERSION 16 "1.181"
 FONT_ASCENT 18 10
 FONT_DESCENT 18 3
 UNDERLINE_POSITION 18 -19
@@ -26351,6 +26393,20 @@ BDFChar: 2864 8898 6 1 5 0 8
 E7fu&LkpkCL]@DT
 BDFChar: 2865 8899 6 1 5 0 8
 LkpkCLkpl>Du]k<
+BDFChar: 2866 62099 6 0 6 -1 7
+I.!lSk/sRhHiO-H
+BDFChar: 2867 62100 6 1 5 0 6
++L#N5BWrTZ
+BDFChar: 2868 62894 6 0 4 -1 6
++L#N50PI[5
+BDFChar: 2869 62895 6 0 6 -1 6
+,dM/?12=*?
+BDFChar: -1 62896 6 0 0 0 0
+z
+BDFChar: 2870 62897 6 0 5 -1 6
++L#N50PIg9
+BDFChar: 2871 62898 6 0 4 -1 8
++L#N50PI[5!2okt
 BDFRefChar: 1999 1944 0 0 N
 BDFRefChar: 2000 1943 0 0 N
 BDFRefChar: 2001 1941 0 0 N

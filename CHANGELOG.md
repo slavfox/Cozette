@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog], and this project adheres to
 [Semantic Versioning].
 
+## [1.18.1]
+
+### Added
+
+-  (U+F293)
+-  (U+F294)
+-  (U+F5AE)
+-  (U+F5AF)
+-  (U+F5B0)
+-  (U+F5B1)
+-  (U+F5B2)
+
 ## [1.18.0]
 
 ### Added
@@ -1949,7 +1961,8 @@ Still broken on Windows.
 
 [Keep a Changelog]: https://keepachangelog.com/en/1.0.0/
 [Semantic Versioning]: https://semver.org/spec/v2.0.0.html
-[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.18.0...HEAD
+[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.18.1...HEAD
+[1.18.1]: https://github.com/slavfox/Cozette/compare/v.1.18.0...v.1.18.1
 [1.18.0]: https://github.com/slavfox/Cozette/compare/v.1.17.2...v.1.18.0
 [1.17.2]: https://github.com/slavfox/Cozette/compare/v.1.17.1...v.1.17.2
 [1.17.1]: https://github.com/slavfox/Cozette/compare/v.1.17.0...v.1.17.1
