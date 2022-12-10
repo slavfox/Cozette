@@ -4,7 +4,7 @@ FullName: Cozette
 FamilyName: Cozette
 Weight: Medium
 Copyright: (c) 2020-2022 Slavfox
-Version: 1.181
+Version: 1.19
 ItalicAngle: 0
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -22,7 +22,7 @@ OS2Version: 1
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: -2082812035
-ModificationTime: 1670097305
+ModificationTime: 1670648610
 PfmFamily: 49
 TTFWeight: 500
 TTFWidth: 5
@@ -119,7 +119,7 @@ NameList: AGL with PUA
 DisplaySize: 13
 AntiAlias: 1
 FitToEm: 0
-WinInfo: 62836 46 14
+WinInfo: 62606 46 14
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 524288 262144 174762 0 -1048576 174762 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
@@ -26342,7 +26342,7 @@ Flags: W
 LayerCount: 2
 EndChar
 EndChars
-BitmapFont: 13 2935 10 3 1
+BitmapFont: 13 2921 10 3 1
 BDFStartProperties: 42
 FONT 1 "-slavfox-Cozette-Medium-R-Normal--13-120-75-75-M-60-ISO10646-1"
 COMMENT 0 "(c) 2020-2022 Slavfox"
@@ -26364,7 +26364,7 @@ FONTNAME_REGISTRY 16 ""
 FONT_NAME 16 "Cozette"
 FACE_NAME 16 "Cozette"
 COPYRIGHT 16 "(c) 2020-2022 Slavfox"
-FONT_VERSION 16 "1.181"
+FONT_VERSION 16 "1.19"
 FONT_ASCENT 18 10
 FONT_DESCENT 18 3
 UNDERLINE_POSITION 18 -19
@@ -32166,40 +32166,20 @@ BDFChar: 2887 62483 6 1 5 1 5
 i;!*Bp](9o
 BDFChar: 2888 63262 6 0 5 0 7
 n<f`aPe;\I
-BDFChar: -1 63263 6 0 0 0 0
-z
 BDFChar: 2889 57909 6 0 6 0 6
 3#MM3^+_MH
 BDFChar: 2890 63622 6 2 5 0 6
 ?r0*R5et/8
-BDFChar: -1 63623 6 0 0 0 0
-z
 BDFChar: 2891 63274 6 0 5 0 7
 nEAs2P`1k)
 BDFChar: 2892 63266 6 0 5 0 7
 n<f`!S<UDY
-BDFChar: -1 63264 6 0 0 0 0
-z
-BDFChar: -1 63253 6 0 0 0 0
-z
 BDFChar: 2893 63258 6 0 5 0 7
 n<f`!e>1Ul
 BDFChar: 2894 63275 6 0 5 0 7
 n<f`!eC:St
-BDFChar: -1 63267 6 0 0 0 0
-z
 BDFChar: 2895 63277 6 0 6 0 8
 n;)a\U6:CcrVuou
-BDFChar: -1 63327 6 0 0 0 0
-z
-BDFChar: -1 63328 6 0 0 0 0
-z
-BDFChar: -1 63329 6 0 0 0 0
-z
-BDFChar: -1 63330 6 0 0 0 0
-z
-BDFChar: -1 63331 6 0 0 0 0
-z
 BDFChar: 2896 62779 6 0 6 0 6
 rW)r;rr2ls
 BDFChar: 2897 63548 6 0 6 0 7
@@ -32218,8 +32198,6 @@ BDFChar: 2903 63161 6 0 5 1 6
 E/=!sS7hm&
 BDFChar: 2904 63268 6 0 5 0 7
 n<f`AUqFYD
-BDFChar: -1 63269 6 0 0 0 0
-z
 BDFChar: 2905 63449 6 0 6 0 7
 +F#/`RZ^&u
 BDFChar: 2906 62908 6 0 6 0 6
@@ -32248,14 +32226,6 @@ BDFChar: 2917 62786 6 1 5 1 5
 J4M(*GQ7^D
 BDFChar: 2918 62787 6 0 6 0 6
 Wbh)'mVJm'
-BDFChar: -1 62789 6 0 0 0 0
-z
-BDFChar: -1 62797 6 0 0 0 0
-z
-BDFChar: -1 62804 6 0 0 0 0
-z
-BDFChar: -1 62790 6 0 0 0 0
-z
 BDFChar: 2919 62795 6 0 6 0 6
 m`)7,WlFH,
 BDFRefChar: 1999 1944 0 0 N

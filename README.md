@@ -24,6 +24,7 @@ A bitmap programming font optimized for coziness.
 - [Roadmap](#roadmap)
 - [Recommended alternatives](#recommended-alternatives)
 - [Character map](#character-map)
+- [Contributors](#contributors)
 - [License](#license)
 
 # About Cozette
@@ -213,13 +214,15 @@ $ pipenv run python3.8 build.py changelog
 
 will output the changelog between your local version and the last tag.
 
-# License
-
-Cozette is licensed [MIT] 💜
+# Contributors
 
 Massive thanks to [ym1234] for helping me figure out how to make the font tables behave nicely.
 
-Additional thanks to [autumn] and [cpkio] for contributing characters!
+Thanks to [autumn], [cpkio], and [yoshiyoshyosh] for contributing characters!
+
+# License
+
+Cozette is licensed [MIT] 💜
 
 [dina]: https://www.dcmembers.com/jibsen/download/61/
 [proggy]: https://github.com/bluescan/proggyfonts
@@ -244,3 +247,4 @@ Additional thanks to [autumn] and [cpkio] for contributing characters!
 [ym1234]: https://github.com/ym1234
 [autumn]: https://github.com/auctumnus
 [cpkio]: https://github.com/cpkio
+[yoshiyoshyosh]: https://github.com/yoshiyoshyosh

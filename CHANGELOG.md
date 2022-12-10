@@ -5,6 +5,85 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog], and this project adheres to
 [Semantic Versioning].
 
+## [1.19.0]
+
+### Added
+
+-  (U+E235)
+-  (U+F144)
+-  (U+F40E)
+-  (U+F40F)
+-  (U+F411)
+-  (U+F413)
+-  (U+F423)
+-  (U+F431)
+-  (U+F432)
+-  (U+F433)
+-  (U+F434)
+-  (U+F44A)
+-  (U+F44B)
+-  (U+F499)
+-  (U+F4A5)
+-  (U+F53B)
+-  (U+F541)
+-  (U+F542)
+-  (U+F543)
+-  (U+F544)
+-  (U+F545)
+-  (U+F546)
+-  (U+F54B)
+-  (U+F54C)
+-  (U+F54D)
+-  (U+F553)
+-  (U+F554)
+-  (U+F55A)
+-  (U+F55B)
+-  (U+F55C)
+-  (U+F5BC)
+-  (U+F5BD)
+-  (U+F68C)
+-  (U+F6B7)
+-  (U+F6B8)
+-  (U+F6B9)
+-  (U+F715)
+-  (U+F71A)
+-  (U+F71E)
+-  (U+F71F)
+-  (U+F720)
+-  (U+F722)
+-  (U+F723)
+-  (U+F724)
+-  (U+F725)
+-  (U+F72A)
+-  (U+F72B)
+-  (U+F72D)
+-  (U+F75F)
+-  (U+F760)
+-  (U+F761)
+-  (U+F762)
+-  (U+F763)
+-  (U+F7D9)
+-  (U+F831)
+-  (U+F832)
+-  (U+F833)
+-  (U+F836)
+-  (U+F837)
+-  (U+F83C)
+-  (U+F886)
+-  (U+F887)
+- ﭨ (U+FB68 ARABIC LETTER TTEH INITIAL FORM)
+
+### Changed
+
+- ʃ (U+0283 LATIN SMALL LETTER ESH)
+-  (U+F310)
+-  (U+F713)
+-  (U+F718)
+
+### Removed
+
+-  (U+F5B0)
+
 ## [1.18.1]
 
 ### Added
@@ -1961,7 +2040,8 @@ Still broken on Windows.
 
 [Keep a Changelog]: https://keepachangelog.com/en/1.0.0/
 [Semantic Versioning]: https://semver.org/spec/v2.0.0.html
-[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.18.1...HEAD
+[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.19.0...HEAD
+[1.19.0]: https://github.com/slavfox/Cozette/compare/v.1.18.1...1.19.0
 [1.18.1]: https://github.com/slavfox/Cozette/compare/v.1.18.0...v.1.18.1
 [1.18.0]: https://github.com/slavfox/Cozette/compare/v.1.17.2...v.1.18.0
 [1.17.2]: https://github.com/slavfox/Cozette/compare/v.1.17.1...v.1.17.2
