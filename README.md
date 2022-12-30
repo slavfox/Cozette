@@ -60,7 +60,7 @@ look nice and sharp (and pixel-perfect) at one specific point
 size. Vector fonts scale well, but in this case, might look ugly at
 smaller point sizes because of antialiasing issues and the like.
 
-<h2>
+<h3>
 The vector formats (CozetteVector) are provided as a compatibility feature.
 They look hideous. They don't contain any glyphs past U+FFFF. 
 Rendering of vectorized bitmap-like fonts is <em>terrible</em> on virtually all operating systems.
@@ -70,7 +70,7 @@ If Cozette looks awful on your system, you probably have a vector version.
 
 Issues with vector formats will <em>not</em> be fixed or addressed.
 Cozette is a bitmap font first and foremost. 
-</h2>
+</h3>
 
 ### Linux
 
