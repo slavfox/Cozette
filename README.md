@@ -60,6 +60,16 @@ look nice and sharp (and pixel-perfect) at one specific point
 size. Vector fonts scale well, but in this case, might look ugly at
 smaller point sizes because of antialiasing issues and the like.
 
+# The vector formats (CozetteVector) are provided as a compatibility feature.
+
+# They look bad. They don't contain any glyphs past U+FFFF.
+
+# Issues with vector formats will **not** be fixed or addressed.
+
+# Cozette is a bitmap font first and foremost. Please use the bitmap formats
+
+# (.otb) if you can.
+
 ### Linux
 
 The preferred format is `.otb` (for bitmaps) or `.ttf`

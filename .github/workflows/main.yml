@@ -3,7 +3,7 @@ name: Build fonts
 on:
   push:
     tags:
-    - '*'
+      - "*"
 
 jobs:
   build:
@@ -12,26 +12,26 @@ jobs:
     container:
       image: archlinux/archlinux:latest
     steps:
-    - name: Update packages
-      run: |
-        pacman -Syyu --noconfirm
-    - name: Install dependencies
-      run: |
-        pacman -S --noconfirm base git tar which zip libffi
-    - name: Install python
-      run: |
-        pacman -S --noconfirm python python-pipenv python-setuptools
-    - name: Install fontforge
-      run: pacman -S --noconfirm fontforge
-    - uses: actions/checkout@v2
-    - name: Build fonts
-      run: |
-        pipenv --python /bin/python install; pipenv run python build.py fonts
-    - name: Zip fonts
-      run: |
-        mv build CozetteFonts; cp ./LICENSE CozetteFonts/LICENSE; zip -r CozetteFonts.zip CozetteFonts
-    - uses: ncipollo/release-action@v1
-      with:
-        artifacts: "CozetteFonts.zip,CozetteFonts/*"
-        token: ${{ secrets.GITHUB_TOKEN }}
-        body: "See [CHANGELOG.md](https://github.com/slavfox/Cozette/blob/master/CHANGELOG.md)"
+      - name: Update packages
+        run: |
+          pacman -Syyu --noconfirm
+      - name: Install dependencies
+        run: |
+          pacman -S --noconfirm base git tar which zip libffi
+      - name: Install python
+        run: |
+          pacman -S --noconfirm python python-pipenv python-setuptools
+      - name: Install fontforge
+        run: pacman -S --noconfirm fontforge
+      - uses: actions/checkout@v2
+      - name: Build fonts
+        run: |
+          pipenv --python /bin/python install; pipenv run python build.py fonts
+      - name: Zip fonts
+        run: |
+          mv build CozetteFonts; cp ./LICENSE CozetteFonts/LICENSE; zip -r CozetteFonts.zip CozetteFonts
+      - uses: ncipollo/release-action@v1
+        with:
+          artifacts: "CozetteFonts.zip,CozetteFonts/*"
+          token: ${{ secrets.GITHUB_TOKEN }}
+          body: "See [CHANGELOG.md](https://github.com/slavfox/Cozette/blob/master/CHANGELOG.md)"

@@ -135,7 +135,6 @@ The format is based on [Keep a Changelog], and this project adheres to
 - 🐪 (U+1F42A DROMEDARY CAMEL)
 - 🐫 (U+1F42B BACTRIAN CAMEL)
 
-
 ## [1.17.0]
 
 The [maturin](https://github.com/PyO3/maturin) update!
@@ -200,7 +199,7 @@ The [maturin](https://github.com/PyO3/maturin) update!
 
 ### Added
 
-"LSP related icons". I'm not sure where these come from, but I'm told 
+"LSP related icons". I'm not sure where these come from, but I'm told
 they'll be helpful for programming.
 
 -  (U+E716)
@@ -234,7 +233,7 @@ they'll be helpful for programming.
 - ﰮ (U+FC2E ARABIC LIGATURE FEH WITH HAH ISOLATED FORM)
 - ﳤ (U+FCE4 ARABIC LIGATURE TEH WITH HEH MEDIAL FORM)
 - ﴲ (U+FD32 ARABIC LIGATURE SHEEN WITH HEH INITIAL FORM)
- 
+
 ## [1.14.0]
 
 Big thanks to [cpkio](https://github.com/cpkio) for contributing this one!
@@ -678,18 +677,18 @@ Big thanks to [cpkio](https://github.com/cpkio) for contributing this one!
 - ỷ (U+1EF7 LATIN SMALL LETTER Y WITH HOOK ABOVE)
 - Ỹ (U+1EF8 LATIN CAPITAL LETTER Y WITH TILDE)
 - ỹ (U+1EF9 LATIN SMALL LETTER Y WITH TILDE)
--   (U+2000 EN QUAD)
--   (U+2001 EM QUAD)
--   (U+2002 EN SPACE)
--   (U+2003 EM SPACE)
--   (U+2004 THREE-PER-EM SPACE)
--   (U+2005 FOUR-PER-EM SPACE)
--   (U+2006 SIX-PER-EM SPACE)
--   (U+2007 FIGURE SPACE)
--   (U+2008 PUNCTUATION SPACE)
--   (U+2009 THIN SPACE)
--   (U+200A HAIR SPACE)
--   (U+202F NARROW NO-BREAK SPACE)
+- (U+2000 EN QUAD)
+- (U+2001 EM QUAD)
+- (U+2002 EN SPACE)
+- (U+2003 EM SPACE)
+- (U+2004 THREE-PER-EM SPACE)
+- (U+2005 FOUR-PER-EM SPACE)
+- (U+2006 SIX-PER-EM SPACE)
+- (U+2007 FIGURE SPACE)
+- (U+2008 PUNCTUATION SPACE)
+- (U+2009 THIN SPACE)
+- (U+200A HAIR SPACE)
+- (U+202F NARROW NO-BREAK SPACE)
 - ⁃ (U+2043 HYPHEN BULLET)
 - ⁄ (U+2044 FRACTION SLASH)
 - ⁅ (U+2045 LEFT SQUARE BRACKET WITH QUILL)
@@ -1087,7 +1086,6 @@ Big thanks to [cpkio](https://github.com/cpkio) for contributing this one!
 - ₆ (U+2086 SUBSCRIPT SIX)
 - ⏻ (U+23FB POWER SYMBOL)
 
-
 ## [1.12.0]
 
 ### Added
@@ -1167,7 +1165,6 @@ Big thanks to [cpkio](https://github.com/cpkio) for contributing this one!
 ### Removed
 
 - ✱ (U+2731 HEAVY ASTERISK)
-
 
 ## [1.11.3]
 
@@ -1517,12 +1514,14 @@ Big thanks to [cpkio](https://github.com/cpkio) for contributing this one!
 ## [1.9.3]
 
 ### Added
+
 - ↰ (U+21B0 UPWARDS ARROW WITH TIP LEFTWARDS)
 - ↱ (U+21B1 UPWARDS ARROW WITH TIP RIGHTWARDS)
 - ↲ (U+21B2 DOWNWARDS ARROW WITH TIP LEFTWARDS)
 - ↳ (U+21B3 DOWNWARDS ARROW WITH TIP RIGHTWARDS)
 
 ### Fixed
+
 - Changed ∏ U+220F N-ARY PRODUCT and ∐ U+2210 N-ARY COPRODUCT to make them
   taller
 - Extended the descender of U+04CC CYRILLIC SMALL LETTER KHAKASSIAN CHE ӌ
@@ -1530,10 +1529,12 @@ Big thanks to [cpkio](https://github.com/cpkio) for contributing this one!
 ## [1.9.2]
 
 ### Added
+
 - √ (U+221A SQUARE ROOT)
 - № (U+2116 NUMERO SIGN)
 
 ### Fixed
+
 - Ԇ (U+0506 CYRILLIC CAPITAL LETTER KOMI DZJE) now has an actual glyph
 - ԇ (U+0507 CYRILLIC SMALL LETTER KOMI DZJE) now has an actual glyph
 
@@ -1575,29 +1576,39 @@ Big thanks to [cpkio](https://github.com/cpkio) for contributing this one!
 ### Changed
 
 - `isFixedPitch` is now being set to 1 for CozetteVector, and the OS/2
- `panose` table specifies proportion as monospace which should hopefully fix
-  the font not being detected as monospace under Windows and kitty-term. 
+  `panose` table specifies proportion as monospace which should hopefully fix
+  the font not being detected as monospace under Windows and kitty-term.
 
 ## [1.8.0+zipbuild]
 
 ### Added
+
 - Releases now also include a zipped package with all the fonts.
 
 ## [1.8.0]
+
 ### Added
+
 #### Glyphs
+
 - [Pomicons](https://github.com/gabrielelana/pomicons)
 
 ## [1.7.2]
+
 ### Changed
+
 - Bumped version number, since I accidentally released 1.7.0 again as 1.7.1.
 
 ## [1.7.1]
+
 ### Added
+
 - U+20BD RUBLE SIGN ₽
 
 ## [1.7.0]
+
 ### Added
+
 - U+263A WHITE SMILING FACE ☺
 - U+2669 QUARTER NOTE ♩
 - U+266A EIGHTH NOTE ♪
@@ -1606,11 +1617,15 @@ Big thanks to [cpkio](https://github.com/cpkio) for contributing this one!
 - flats and sharps too
 
 ## [1.6.3]
+
 ### Changed
+
 - Fixed Mac builds which got broken in 1.6.2
 
 ## [1.6.2]
+
 ### Changed
+
 - Fixed rendering on Mac and underline metrics in general
 
 ## [1.6.1]
@@ -1618,6 +1633,7 @@ Big thanks to [cpkio](https://github.com/cpkio) for contributing this one!
 ### Changed
 
 ### Glyphs
+
 - Reduced underscore `_` width to make it more in line with other characters.
 
 ## [1.6.0]
@@ -1627,6 +1643,7 @@ Big thanks to [cpkio](https://github.com/cpkio) for contributing this one!
 [Powerlevel10k](https://github.com/romkatv/powerlevel10k/) support.
 
 #### Glyphs
+
 - **Ⅴ U+2164 ROMAN NUMERAL FIVE**
 - **↵ U+21B5 DOWNWARDS ARROW WITH CORNER LEFTWARDS**
 - **≡ U+2261 IDENTICAL TO**
@@ -1698,12 +1715,14 @@ Big thanks to [cpkio](https://github.com/cpkio) for contributing this one!
 ## [1.5.1]
 
 ### Added
+
 - All glyphs from the default [starship](https://starship.rs/) prompt.
 
 ### Changed
+
 - [Cyrillic fixes](https://github.com/slavfox/Cozette/issues/5#issuecomment-589734989)
 - Changed font versioning scheme from `M.mmm` where M = major, m = minor to
-  `M.mmp` where p=patch. Since font versions are stored as a decimal value 
+  `M.mmp` where p=patch. Since font versions are stored as a decimal value
   `x.yyy` with three places past the decimal point, they don't map cleanly
   to semantic versioning - so I'm setting an arbitrary limit of 9 patches
   per minor release.
@@ -1714,11 +1733,12 @@ Big thanks to [cpkio](https://github.com/cpkio) for contributing this one!
 
 ### Added
 
-***436 new glyphs!***
+**_436 new glyphs!_**
 
-Full Cyryllic and `ranger-devicons` support, and a *lot* of other things.
+Full Cyryllic and `ranger-devicons` support, and a _lot_ of other things.
 
 #### Glyphs
+
 - The Cyryllic and Cyryllic supplement blocks. That's U+0400 to U+052F, sans
   the combining characters (U+0483-U+0489). If you ever need to `cat` some
   medieval Cyryllic texts, Cozette has your back.
@@ -1726,8 +1746,8 @@ Full Cyryllic and `ranger-devicons` support, and a *lot* of other things.
   Unicode codepoint.
 - Nerdfonts:
   - `ranger-devicons`:
-    -  **nf-fae-galery [sic] (U+E244)** 
-    -  **nf-custom-folder_git (U+E5FB)** 
+    -  **nf-fae-galery [sic] (U+E244)**
+    -  **nf-custom-folder_git (U+E5FB)**
     -  **nf-custom-elm (U+E62C)**
     -  **nf-custom-elixir (U+E62D)**
     -  **nf-dev-database (U+E706)**
@@ -1808,11 +1828,11 @@ Full Cyryllic and `ranger-devicons` support, and a *lot* of other things.
     -  **nf-dev-opera (U+E746)** (old logo)
     -  **nf-fa-steam (U+F1B6)**
     -  **nf-fa-steam_square (U+F1B7)**
-    -  **nf-fa-slack (U+F198)** 
+    -  **nf-fa-slack (U+F198)**
     -  **nf-fa-chrome (U+F268)** (copied as nf-dev-chrome U+E743)
     -  **nf-fa-firefox (U+F269)** (copied as nf-dev-firefox U+E745)
     -  **nf-fa-opera (U+F26A)** (new logo)
-    - Copied nf-dev-linux and nf-dev-apple to nf-fa-linux and -apple 
+    - Copied nf-dev-linux and nf-dev-apple to nf-fa-linux and -apple
     - Copied nf-dev-python to nf-mdi_language_python
     -  **nf-mdi-language_python_text**
   - Other random stuff:
@@ -1848,7 +1868,7 @@ Full Cyryllic and `ranger-devicons` support, and a *lot* of other things.
 
 #### Glyphs
 
-- moved  (**nf-seti-xml (U+E619)**) up a pixel to conform with the 
+- moved  (**nf-seti-xml (U+E619)**) up a pixel to conform with the
   spacing of other glyphs better
 
 ## [1.4.0] - The `vim-airline` Update - 2020-02-15
@@ -1859,65 +1879,65 @@ Full support for vim-airline!
 
 #### Glyphs
 
-- У  **U+0423 CYRILLIC CAPITAL LETTER U**
-- а  **U+0430 CYRILLIC SMALL LETTER A**
-- б  **U+0431 CYRILLIC SMALL LETTER BE**
-- ч  **U+0447 CYRILLIC SMALL LETTER CHE**
-- ё  **U+0451 CYRILLIC SMALL LETTER IO** (copy of U+00EB LATIN SMALL LETTER E
+- У **U+0423 CYRILLIC CAPITAL LETTER U**
+- а **U+0430 CYRILLIC SMALL LETTER A**
+- б **U+0431 CYRILLIC SMALL LETTER BE**
+- ч **U+0447 CYRILLIC SMALL LETTER CHE**
+- ё **U+0451 CYRILLIC SMALL LETTER IO** (copy of U+00EB LATIN SMALL LETTER E
   WITH DIAERESIS)
-- ᚠ  **U+16A0 RUNIC LETTER FEHU FEOH FE F**
-- ⁰  **U+2070 SUPERSCRIPT ZERO**
-- ⁴  **U+2074 SUPERSCRIPT FOUR**
-- ⁵  **U+2075 SUPERSCRIPT FIVE**
-- ⁶  **U+2076 SUPERSCRIPT SIX**
-- ⁷  **U+2077 SUPERSCRIPT SEVEN**
-- ⁸  **U+2078 SUPERSCRIPT EIGHT**
-- ⁹  **U+2079 SUPERSCRIPT NINE**
-- ₁  **U+2081 SUBSCRIPT ONE**
-- ∞  **U+221E INFINITY**
-- ∥  **U+2225 PARALLEL TO**
-- ∦  **U+2226 NOT PARALLEL TO**
-- ⊝  **U+229D CIRCLED DASH**
-- ⎇  **U+2387 ALTERNATIVE KEY SYMBOL** (the alt key symbol)
-- ⏎  **U+23CE RETURN SYMBOL**
-- ␊  **U+240A SYMBOL FOR LINE FEED**
-- ␤  **U+2424 SYMBOL FOR NEWLINE**
-- ▶  **U+25B6 BLACK RIGHT-POINTING TRIANGLE**
-- ◀  **U+25C0 BLACK LEFT-POINTING TRIANGLE**
-- ☰  **U+2630 TRIGRAM FOR HEAVEN** (often used for hamburger menus)
-- ☱  **U+2631 TRIGRAM FOR LAKE**
-- ☲  **U+2632 TRIGRAM FOR FIRE**
-- ☳  **U+2633 TRIGRAM FOR THUNDER**
-- ☴  **U+2634 TRIGRAM FOR WIND**
-- ☵  **U+2635 TRIGRAM FOR WATER**
-- ☶  **U+2636 TRIGRAM FOR MOUNTAIN**
-- ☷  **U+2637 TRIGRAM FOR EARTH**
-- ⭠  **U+2B60 LEFTWARDS TRIANGLE-HEADED ARROW**
-- ⭡  **U+2B61 UPWARDS TRIANGLE-HEADED ARROW**
-- ⭢  **U+2B62 RIGHTWARDS TRIANGLE-HEADED ARROW**
-- ⭣  **U+2B63 DOWNWARDS TRIANGLE-HEADED ARROW**
-- ⭤  **U+2B64 LEFT RIGHT TRIANGLE-HEADED ARROW**
-- ⭥  **U+2B65 UP DOWN TRIANGLE-HEADED ARROW**
-- ⭦  **U+2B66 NORTH WEST TRIANGLE-HEADED ARROW**
-- ⭧  **U+2B67 NORTH EAST TRIANGLE-HEADED ARROW**
-- ⭨  **U+2B68 SOUTH EAST TRIANGLE-HEADED ARROW**
-- ⭩  **U+2B69 SOUTH WEST TRIANGLE-HEADED ARROW**
-- ⮀  **U+2B80 LEFTWARDS TRIANGLE-HEADED ARROW OVER RIGHTWARDS TRIANGLE-HEADED
+- ᚠ **U+16A0 RUNIC LETTER FEHU FEOH FE F**
+- ⁰ **U+2070 SUPERSCRIPT ZERO**
+- ⁴ **U+2074 SUPERSCRIPT FOUR**
+- ⁵ **U+2075 SUPERSCRIPT FIVE**
+- ⁶ **U+2076 SUPERSCRIPT SIX**
+- ⁷ **U+2077 SUPERSCRIPT SEVEN**
+- ⁸ **U+2078 SUPERSCRIPT EIGHT**
+- ⁹ **U+2079 SUPERSCRIPT NINE**
+- ₁ **U+2081 SUBSCRIPT ONE**
+- ∞ **U+221E INFINITY**
+- ∥ **U+2225 PARALLEL TO**
+- ∦ **U+2226 NOT PARALLEL TO**
+- ⊝ **U+229D CIRCLED DASH**
+- ⎇ **U+2387 ALTERNATIVE KEY SYMBOL** (the alt key symbol)
+- ⏎ **U+23CE RETURN SYMBOL**
+- ␊ **U+240A SYMBOL FOR LINE FEED**
+- ␤ **U+2424 SYMBOL FOR NEWLINE**
+- ▶ **U+25B6 BLACK RIGHT-POINTING TRIANGLE**
+- ◀ **U+25C0 BLACK LEFT-POINTING TRIANGLE**
+- ☰ **U+2630 TRIGRAM FOR HEAVEN** (often used for hamburger menus)
+- ☱ **U+2631 TRIGRAM FOR LAKE**
+- ☲ **U+2632 TRIGRAM FOR FIRE**
+- ☳ **U+2633 TRIGRAM FOR THUNDER**
+- ☴ **U+2634 TRIGRAM FOR WIND**
+- ☵ **U+2635 TRIGRAM FOR WATER**
+- ☶ **U+2636 TRIGRAM FOR MOUNTAIN**
+- ☷ **U+2637 TRIGRAM FOR EARTH**
+- ⭠ **U+2B60 LEFTWARDS TRIANGLE-HEADED ARROW**
+- ⭡ **U+2B61 UPWARDS TRIANGLE-HEADED ARROW**
+- ⭢ **U+2B62 RIGHTWARDS TRIANGLE-HEADED ARROW**
+- ⭣ **U+2B63 DOWNWARDS TRIANGLE-HEADED ARROW**
+- ⭤ **U+2B64 LEFT RIGHT TRIANGLE-HEADED ARROW**
+- ⭥ **U+2B65 UP DOWN TRIANGLE-HEADED ARROW**
+- ⭦ **U+2B66 NORTH WEST TRIANGLE-HEADED ARROW**
+- ⭧ **U+2B67 NORTH EAST TRIANGLE-HEADED ARROW**
+- ⭨ **U+2B68 SOUTH EAST TRIANGLE-HEADED ARROW**
+- ⭩ **U+2B69 SOUTH WEST TRIANGLE-HEADED ARROW**
+- ⮀ **U+2B80 LEFTWARDS TRIANGLE-HEADED ARROW OVER RIGHTWARDS TRIANGLE-HEADED
   ARROW**
-- ⮁  **U+2B81 UPWARDS TRIANGLE-HEADED ARROW LEFTWARDS OF DOWNWARDS
+- ⮁ **U+2B81 UPWARDS TRIANGLE-HEADED ARROW LEFTWARDS OF DOWNWARDS
   TRIANGLE-HEADED ARROW**
-- ⮂  **U+2B82 RIGHTWARDS TRIANGLE-HEADED ARROW OVER LEFTWARDS TRIANGLE-HEADED
+- ⮂ **U+2B82 RIGHTWARDS TRIANGLE-HEADED ARROW OVER LEFTWARDS TRIANGLE-HEADED
   ARROW**
-- ⮃  **U+2B83 DOWNWARDS TRIANGLE-HEADED ARROW LEFTWARDS OF UPWARDS TRIANGLE-HEADED
+- ⮃ **U+2B83 DOWNWARDS TRIANGLE-HEADED ARROW LEFTWARDS OF UPWARDS TRIANGLE-HEADED
   ARROW**
-- ㏑  **U+33D1 SQUARE LN**
-- Ꞩ  **U+A7A8 LATIN CAPITAL LETTER S WITH OBLIQUE STROKE**
+- ㏑ **U+33D1 SQUARE LN**
+- Ꞩ **U+A7A8 LATIN CAPITAL LETTER S WITH OBLIQUE STROKE**
 
 #### Other
 
 - `build.py scan` command to scan all the files in a given directory for non
   ASCII glyphs and list those that aren't included in Cozette (yet):
-  
+
   ```
   $ python build.py scan -s ~/.vim/plugged/vim-airline-themes/
   All codepoints under /home/fox/.vim/plugged/vim-airline-themes already supported by Cozette.
@@ -1930,19 +1950,19 @@ Full support for vim-airline!
 #### Glyphs
 
 - Ξ **U+039E GREEK CAPITAL LETTER XI**: removed the "serifs" since some tools
-  use it as an alternate hamburger menu icon 
+  use it as an alternate hamburger menu icon
 - ╱ ╲ ╳  
   **U+2571 BOX DRAWINGS LIGHT DIAGONAL UPPER RIGHT TO LOWER LEFT**  
   **U+2572 BOX DRAWINGS LIGHT DIAGONAL UPPER LEFT TO LOWER RIGHT**  
-  **U+2573 BOX DRAWINGS LIGHT DIAGONAL CROSS**  
-  
+  **U+2573 BOX DRAWINGS LIGHT DIAGONAL CROSS**
+
   Tweaked to make them more symmetrical.
-  
+
 #### Other
 
 - Tweaked image generation, changed to match the github readme colors
 - Made README nicer, included a mention of the AUR package and the new charmap
-  
+
 ## [1.3.0] - 2020-02-10
 
 ### Added
@@ -1950,14 +1970,14 @@ Full support for vim-airline!
 #### Glyphs
 
 - Nerdfonts:
-  -  **nf-custom-folder_open (U+E5FE)** 
+  -  **nf-custom-folder_open (U+E5FE)**
   -  **nf-custom-cpp (U+E61D)**, C++ logo
   -  **nf-custom-c (U+E61E)**, C logo
   -  **nf-indent-line (U+E621)**, indentation guide
   -  **nf-custom-vim (U+E62B)**
   -  **nf-dev-visualstudio (U+E70C)**
   -  **nf-dev-terminal (U+E795)** (black `>_` symbol)
-  -  **nf-dev-terminal_badge (U+E7A2)** (white `>_` symbol), also copied as 
+  -  **nf-dev-terminal_badge (U+E7A2)** (white `>_` symbol), also copied as
     **nf-fa-terminal (U+F120)**
   -  **nf-dev-ruby (U+E739)**
   -  **nf-dev-ubuntu (U+E73A)**
@@ -1966,10 +1986,9 @@ Full support for vim-airline!
   -  **nf-dev-erlang (U+E7AF)**
   -  **nf-dev-erlang (U+E7B1)**
   -  **nf-fa-h-square (U+F0FD)** \[My vim uses it for C headers\]
-  - Copied some nf glyphs to code points that should be the same glyph (eg. 
-     nf-dev-heroku U+E77B and nf-seti-heroku U+E607) 
+  - Copied some nf glyphs to code points that should be the same glyph (eg.
+     nf-dev-heroku U+E77B and nf-seti-heroku U+E607)
   -  **nf-linux-archlinux (U+F303)**
-  
 - Four variations on a `+`:
 
   - ✙ **U+2719 OUTLINED GREEK CROSS**
@@ -1978,7 +1997,7 @@ Full support for vim-airline!
   - ✜ **U+271C HEAVY OPEN CENTRE CROSS**
 
   These should come in handy for git prompts and the like.
-  
+
 #### Build scripts
 
 - Automatic character map generation
@@ -2038,8 +2057,8 @@ Still broken on Windows.
 - Braille
 - nf-seti
 
-[Keep a Changelog]: https://keepachangelog.com/en/1.0.0/
-[Semantic Versioning]: https://semver.org/spec/v2.0.0.html
+[keep a changelog]: https://keepachangelog.com/en/1.0.0/
+[semantic versioning]: https://semver.org/spec/v2.0.0.html
 [unreleased]: https://github.com/slavfox/Cozette/compare/v.1.19.0...HEAD
 [1.19.0]: https://github.com/slavfox/Cozette/compare/v.1.18.1...1.19.0
 [1.18.1]: https://github.com/slavfox/Cozette/compare/v.1.18.0...v.1.18.1
