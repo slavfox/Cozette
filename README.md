@@ -62,11 +62,14 @@ smaller point sizes because of antialiasing issues and the like.
 
 <h2>
 The vector formats (CozetteVector) are provided as a compatibility feature.
-They look bad. They don't contain any glyphs past U+FFFF.
+They look hideous. They don't contain any glyphs past U+FFFF. 
+Rendering of vectorized bitmap-like fonts is <em>terrible</em> on virtually all operating systems.
+  
+If Cozette looks awful on your system, you probably have a vector version.
+<em>Please</em> use the bitmap formats (.otb) if you can.
+
 Issues with vector formats will <em>not</em> be fixed or addressed.
 Cozette is a bitmap font first and foremost. 
-
-<em>Please use the bitmap formats (.otb) if you can.</em>
 </h2>
 
 ### Linux
