@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog], and this project adheres to
 [Semantic Versioning].
 
+## [1.19.1]
+
+### Added
+
+- ᴥ (U+1D25 LATIN LETTER AIN)
+
+### Changed
+
+Fixed rendering combining marks in the changelog.
+
+- ʔ (U+0294 LATIN LETTER GLOTTAL STOP)
+- ʕ (U+0295 LATIN LETTER PHARYNGEAL VOICED FRICATIVE)
+- ʖ (U+0296 LATIN LETTER INVERTED GLOTTAL STOP)
+
 ## [1.19.0]
 
 ### Added
@@ -2059,7 +2073,8 @@ Still broken on Windows.
 
 [keep a changelog]: https://keepachangelog.com/en/1.0.0/
 [semantic versioning]: https://semver.org/spec/v2.0.0.html
-[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.19.0...HEAD
+[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.19.1...HEAD
+[1.19.1]: https://github.com/slavfox/Cozette/compare/v.1.19.0...1.19.1
 [1.19.0]: https://github.com/slavfox/Cozette/compare/v.1.18.1...1.19.0
 [1.18.1]: https://github.com/slavfox/Cozette/compare/v.1.18.0...v.1.18.1
 [1.18.0]: https://github.com/slavfox/Cozette/compare/v.1.17.2...v.1.18.0

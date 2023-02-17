@@ -230,7 +230,7 @@ will output the changelog between your local version and the last tag.
 
 Massive thanks to [ym1234] for helping me figure out how to make the font tables behave nicely.
 
-Thanks to [autumn], [cpkio], and [yoshiyoshyosh] for contributing characters!
+Thanks to [autumn], [cpkio], [yoshiyoshyosh], and [klinegareth] for contributing characters!
 
 # License
 
@@ -260,3 +260,4 @@ Cozette is licensed [MIT] 💜
 [autumn]: https://github.com/auctumnus
 [cpkio]: https://github.com/cpkio
 [yoshiyoshyosh]: https://github.com/yoshiyoshyosh
+[klinegareth]: https://github.com/klinegareth

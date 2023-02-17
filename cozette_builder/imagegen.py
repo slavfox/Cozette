@@ -104,8 +104,10 @@ def save_sample(
             "-fa",
             fnt,
             "-geometry",
-            f"{sample.width}x{sample.height - 1}",
+            f"{sample.width}x{sample.height - 1}+100+100",
             "-dc",
+            "-cu",
+            "-cn",
             "-e",
             f"bash -c {cmd}",
         ],
@@ -150,6 +152,9 @@ def make_charmap(sfd: Path) -> List[str]:
                 ch = chr(i + j)
             else:
                 ch = " "
+            # Workaround for combining characters
+            if (0x300 <= cp < 0x370) and cp in codepoints:
+                line += " "
             line += ch
             if not charwidth(ch) == "W":
                 line += " "
