@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog], and this project adheres to
 [Semantic Versioning].
 
+## [1.19.2]
+
+GitHub Copilot CLI update.
+
+### Added
+
+- ✅ (U+2705 WHITE HEAVY CHECK MARK)
+- ❌ (U+274C CROSS MARK)
+- 📝 (U+1F4DD MEMO)
+
+### Changed
+
+- ❎ (U+274E NEGATIVE SQUARED CROSS MARK)
+
 ## [1.19.1]
 
 ### Added

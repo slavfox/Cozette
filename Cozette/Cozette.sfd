@@ -3,8 +3,8 @@ FontName: Cozette
 FullName: Cozette
 FamilyName: Cozette
 Weight: Medium
-Copyright: (c) 2020-2022 Slavfox
-Version: 1.191
+Copyright: (c) 2020-2023 Slavfox
+Version: 1.192
 ItalicAngle: 0
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -22,7 +22,7 @@ OS2Version: 1
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: -2082812035
-ModificationTime: 1676624151
+ModificationTime: 1681709828
 PfmFamily: 49
 TTFWeight: 500
 TTFWidth: 5
@@ -114,17 +114,18 @@ MATH:RadicalKernAfterDegree: -1137
 MATH:RadicalDegreeBottomRaisePercent: 60
 MATH:MinConnectorOverlap: 40
 Encoding: UnicodeFull
+Compacted: 1
 UnicodeInterp: none
 NameList: AGL with PUA
 DisplaySize: 13
 AntiAlias: 1
 FitToEm: 0
 WidthSeparation: 307
-WinInfo: 7416 24 9
+WinInfo: 1992 24 9
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 524288 262144 174762 0 -1048576 174762 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 1114112 2921
+BeginChars: 1114112 2924
 
 StartChar: uni0000
 Encoding: 0 0 0
@@ -13774,11 +13775,9 @@ EndChar
 
 StartChar: uni274E
 Encoding: 10062 10062 1515
-Width: 1024
-Flags: W
+Width: 1890
+Flags: HW
 LayerCount: 2
-Fore
-Validated: 1
 EndChar
 
 StartChar: uni2B50
@@ -26349,11 +26348,32 @@ Width: 1024
 Flags: HW
 LayerCount: 2
 EndChar
+
+StartChar: uni2705
+Encoding: 9989 9989 2921
+Width: 1890
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: uni274C
+Encoding: 10060 10060 2922
+Width: 1890
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: u1F4DD
+Encoding: 128221 128221 2923
+Width: 1890
+Flags: HW
+LayerCount: 2
+EndChar
 EndChars
-BitmapFont: 13 2922 10 3 1
+BitmapFont: 13 2925 10 3 1
 BDFStartProperties: 42
 FONT 1 "-slavfox-Cozette-Medium-R-Normal--13-120-75-75-M-60-ISO10646-1"
-COMMENT 0 "(c) 2020-2022 Slavfox"
+COMMENT 0 "(c) 2020-2023 Slavfox"
 FOUNDRY 16 "slavfox"
 FAMILY_NAME 16 "Cozette"
 WEIGHT_NAME 16 "Medium"
@@ -26371,8 +26391,8 @@ CHARSET_ENCODING 16 "1"
 FONTNAME_REGISTRY 16 ""
 FONT_NAME 16 "Cozette"
 FACE_NAME 16 "Cozette"
-COPYRIGHT 16 "(c) 2020-2022 Slavfox"
-FONT_VERSION 16 "1.191"
+COPYRIGHT 16 "(c) 2020-2023 Slavfox"
+FONT_VERSION 16 "1.192"
 FONT_ASCENT 18 10
 FONT_DESCENT 18 3
 UNDERLINE_POSITION 18 -19
@@ -29426,8 +29446,8 @@ BDFChar: 1513 9746 6 0 6 0 6
 rdq/5We13M
 BDFChar: 1514 9791 6 1 5 -2 7
 Lkp#+Lkp!mE$,,\
-BDFChar: 1515 10062 6 0 6 0 6
-rjp\Kf"1h\
+BDFChar: 1515 10062 12 1 10 -1 8
+s1nZMhSANoo>'t5mD.Sos1nZM
 BDFChar: 1516 11088 6 1 5 1 6
 +<^GUE/4Jo
 BDFChar: 1517 57556 6 1 6 -3 9
@@ -32238,6 +32258,12 @@ BDFChar: 2919 62795 6 0 6 0 6
 m`)7,WlFH,
 BDFChar: 2920 7461 6 1 5 0 5
 E,]b=+P6Yo
+BDFChar: 2921 9989 12 1 10 -1 8
+s1nZMr]pCsq7r30a2%/Zs1nZM
+BDFChar: 2922 10060 12 2 9 -1 7
+J\u(^(d)EJJH,ZM
+BDFChar: 2923 128221 12 2 10 -1 7
+rW%P#]7>M6^&X/n\c@<^rVuou
 BDFRefChar: 1999 1944 0 0 N
 BDFRefChar: 2000 1943 0 0 N
 BDFRefChar: 2001 1941 0 0 N
