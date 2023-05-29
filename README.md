@@ -105,7 +105,13 @@ Download the `.dfont` and install it with `Font Book .app`. Both the bitmap
 Grab `CozetteVector.ttf`. If you want to get the bitmap versions to work,
 [follow the instructions from here].
 
-### BSD / Solaris / Haiku /Other
+### FreeBSD
+
+[laxul] made a [port] for the `.otb`!
+
+* ports: `cd /usr/ports/x11-fonts/cozette; make install clean`
+
+### Other BSD / Solaris / Haiku / Other
 
 You know what you're doing.
 
@@ -261,3 +267,5 @@ Cozette is licensed [MIT] 💜
 [cpkio]: https://github.com/cpkio
 [yoshiyoshyosh]: https://github.com/yoshiyoshyosh
 [klinegareth]: https://github.com/klinegareth
+[laxul]: https://github.com/laxul
+[port]: https://cgit.freebsd.org/ports/tree/x11-fonts/cozette
