@@ -1,6 +1,6 @@
 import re
 from pathlib import Path
-from typing import Dict, Iterable, List, Set
+from typing import Dict, List, Set
 from unicodedata import name as uniname, east_asian_width as eaw
 
 UESCAPE = re.compile(r"\\[uU]([0-9A-Fa-f]{4,5})")

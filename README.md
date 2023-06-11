@@ -21,6 +21,7 @@ A bitmap programming font optimized for coziness.
     - [Dmenu](#dmenu)
     - [VSCode, general GUI applications](#vscode-general-gui-applications)
     - [Kitty](#kitty)
+  - [Variants](#variants)
 - [Roadmap](#roadmap)
 - [Recommended alternatives](#recommended-alternatives)
 - [Character map](#character-map)
@@ -53,31 +54,40 @@ A nicer character map that includes the codepoints can be found at
 
 ### [You can get Cozette over at the Releases tab]!
 
-Cozette is distributed in two main variants: bitmap and vector.
+## Variants and Sizes
+
+Cozette is distributed in three main variants: normal and hi-dpi (upscaled 2x) bitmaps 
+(`.bdf`, `.otb`, `.psf`, and `.fnt`), and vectors (`.ttf`).
+
+Font scaling varies wildly from system to system, and sometimes even from
+program to program and font format to format. On my system (Linux), `cozette.otb`
+looks right at 13pts; `cozette_hidpi.otb` looks right at 26pts and downscales 
+quite elegantly to 10pts; `CozetteVector` doesn't look right at any size (technically,
+it will look right specifically at 9.4pts on a 100dpi screen on Linux, but pixel-perfect
+bitmap fonts are a massive headache, treated differently by every OS, that I'm not quite sure how to solve)
 
 Bitmap fonts are, effectively, just that - bitmaps. They scale terribly, but
 look nice and sharp (and pixel-perfect) at one specific point
 size. Vector fonts scale well, but in this case, might look ugly at
 smaller point sizes because of antialiasing issues and the like.
 
-<h3>
-The vector formats (CozetteVector) are provided as a compatibility feature.
-They look hideous. They don't contain any glyphs past U+FFFF. 
+<h3>NOTE:</h3>
+The vector formats (`CozetteVector`) are provided as a compatibility feature.
 Rendering of vectorized bitmap-like fonts is <em>terrible</em> on virtually all operating systems.
   
 If Cozette looks awful on your system, you probably have a vector version.
-<em>Please</em> use the bitmap formats (.otb) if you can.
+<em>Please</em> use the bitmap formats (`.otb`) if you can.
 
-Issues with vector formats will <em>not</em> be fixed or addressed.
-Cozette is a bitmap font first and foremost. 
-</h3>
+Issues with vector formats will almost certainly <em>not</em> be fixed or 
+addressed; Cozette is a bitmap font first and foremost, and building a
+bitmap font that builds from a single source and looks good both in its intended,
+bitmap font as well as as the auto-vectorized format, on every OS, seems to be an unsolved problem. 
 
 ### Linux
 
 The preferred format is `.otb` (for bitmaps) or `.ttf`
 (for CozetteVector). To install the font, just throw it in your fonts directory
-(you probably want to follow your distro's instructions). On Ubuntu, if you
-don't want to reconsider your distro choice, you might need to
+(you probably want to follow your distro's instructions). On Ubuntu you might need to
 [specifically enable bitmap fonts].
 
 **If you're on Arch**, [ifreund] made [an AUR package] for the .otb! Install it
@@ -183,12 +193,14 @@ implemented:
       many other CLI tools!
 - [x] Charmap including the code points (to make it easier for users to
       report issues/request additions)
-- [ ] Codepoints above U+FFFF in vector fonts
+- [x] Codepoints above U+FFFF in vector fonts
+- [x] Upscaled hi-dpi variant
 
 # Recommended alternatives
 
-Cozette is, intentionally, a very small font. If you're looking for other
-bitmap fonts with extra glyphs, a couple of my favorites are
+Cozette is, intentionally, a very small font. If neither the base nor the 
+[HiDpi](#variants) version fit your needs, you might want to look at some
+other bitmap fonts with extra glyphs. A couple of my favorites are
 [Tamzen](https://github.com/sunaku/tamzen-font/)
 and [Envypn](https://github.com/Sorixelle/envypn-powerline). You might also
 find the [Tecate/bitmap-fonts repo](https://github.com/Tecate/bitmap-fonts)
@@ -204,30 +216,30 @@ look in Cozette, here is a screenshot of it:
 
 # Building
 
-If you want to build Cozette yourself, you'll need [FontForge]. Once you
+If you want to build Cozette yourself, you'll need [FontForge] and Java. Once you
 have that, just clone this repo, open `Cozette/Cozette.sfd` in FontForge,
 and go to _File → Generate Fonts..._.
 
-To run the build scripts I use to prepare releases, first install Python 3.8
+To run the build scripts I use to prepare releases, first install Python (at least 3.8)
 and [pipenv]. For generating the images, you will also need `xorg-mkfontscale`
 and `xterm`.
 Then, install the dependencies and run `build.py fonts`:
 
 ```console
 $ pipenv install
-$ pipenv run python3.8 build.py fonts
+$ pipenv run python build.py fonts
 ```
 
 Then install the generated fonts, and run
 
 ```console
-$ pipenv run python3.8 build.py images
+$ pipenv run python build.py images
 ```
 
 Running
 
 ```console
-$ pipenv run python3.8 build.py changelog
+$ pipenv run python build.py changelog
 ```
 
 will output the changelog between your local version and the last tag.
@@ -238,9 +250,12 @@ Massive thanks to [ym1234] for helping me figure out how to make the font tables
 
 Thanks to [autumn], [cpkio], [yoshiyoshyosh], and [klinegareth] for contributing characters!
 
-# License
+# License & Acknowledgements
 
 Cozette is licensed [MIT] 💜
+
+Cozette's builds use [bdfscale](https://github.com/philj56/bdfscale) by [philj56](https://github.com/philj56) and
+[Bits'N'Picas](https://github.com/kreativekorp/bitsnpicas) by [Kreative Software](https://github.com/kreativekorp).
 
 [dina]: https://www.dcmembers.com/jibsen/download/61/
 [proggy]: https://github.com/bluescan/proggyfonts
