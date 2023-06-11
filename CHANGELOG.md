@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog], and this project adheres to
 [Semantic Versioning].
 
+## [1.19.2-hidpi]
+
+### Added
+
+- Bold and HiDpi variants
+
+### Changed
+
+- TTF fonts should work slightly better now.
+- Rewrote the build system to use [monobit](https://github.com/robhagemans/monobit) and [bitsnpicas](https://github.com/kreativekorp/bitsnpicas/releases/download/v2.0/BitsNPicas.jar).
+
 ## [1.19.2]
 
 GitHub Copilot CLI update.
@@ -2087,9 +2098,11 @@ Still broken on Windows.
 
 [keep a changelog]: https://keepachangelog.com/en/1.0.0/
 [semantic versioning]: https://semver.org/spec/v2.0.0.html
-[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.19.1...HEAD
-[1.19.1]: https://github.com/slavfox/Cozette/compare/v.1.19.0...1.19.1
-[1.19.0]: https://github.com/slavfox/Cozette/compare/v.1.18.1...1.19.0
+[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.19.2-hidpi...HEAD
+[1.19.2-hidpi]: https://github.com/slavfox/Cozette/compare/v.1.19.2...v.1.19.2-hidpi
+[1.19.2]: https://github.com/slavfox/Cozette/compare/v.1.19.1...v.1.19.2
+[1.19.1]: https://github.com/slavfox/Cozette/compare/v.1.19.0...v.1.19.1
+[1.19.0]: https://github.com/slavfox/Cozette/compare/v.1.18.1...v.1.19.0
 [1.18.1]: https://github.com/slavfox/Cozette/compare/v.1.18.0...v.1.18.1
 [1.18.0]: https://github.com/slavfox/Cozette/compare/v.1.17.2...v.1.18.0
 [1.17.2]: https://github.com/slavfox/Cozette/compare/v.1.17.1...v.1.17.2

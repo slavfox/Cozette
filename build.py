@@ -1,16 +1,15 @@
 import argparse
-import os
 import subprocess
-import tempfile
 from dataclasses import dataclass
 from pathlib import Path
 from shlex import quote
-from shutil import copy, rmtree
+from shutil import rmtree
 from typing import Optional, Sequence, cast
 
 import crayons  # type: ignore
 
 from cozette_builder.changeloggen import get_changelog
+from cozette_builder.hidpi import double_size
 from cozette_builder.imagegen import (
     add_margins,
     read_sample,
@@ -22,7 +21,6 @@ from cozette_builder.scanner import (
     print_codepoints_for_changelog,
     scan_for_codepoints,
 )
-from cozette_builder.ttfbuilder import TTFBuilder
 
 REPO_ROOT = Path(__file__).resolve().parent
 BUILD_DIR = REPO_ROOT / "build"
@@ -43,7 +41,7 @@ class Generate:
         )
 
 
-def save_images(otbpath):
+def save_images():
     print(crayons.yellow("Saving character map"))
     save_charlist(FONTNAME, SFDPATH, REPO_ROOT / "img")
 
@@ -82,41 +80,117 @@ def gen_bitmap_formats() -> Path:
         generate=[
             Generate("cozette.", bitmap_fmt="bdf"),
             Generate("cozette.", "otb"),
+            Generate("cozette.", "psf"),
             Generate("cozette.", "fnt"),
-            Generate("cozette_bitmap.ttf", "otb"),
-            Generate("cozette_bitmap.dfont", "sbit"),
+            Generate("cozette.dfont", "sbit"),
         ],
     )
     rename_single(BUILD_DIR, "*.fnt", "cozette.fnt")
-    bdfpath = rename_single(BUILD_DIR, "*.bdf", "cozette.bdf")
-    return bdfpath
+    return rename_single(BUILD_DIR, "*.bdf", "cozette.bdf")
 
 
-def fix_ttf(ttfpath: Path):
-    outname = "CozetteVector"
+def fix_ttf(ttfpath: Path, name: str):
+    print(crayons.yellow(f"Generating TTF for {name}..."))
     script = "; ".join(
         [
             f'Open("{ttfpath}")',
             "SelectWorthOutputting()",
             "RemoveOverlap()",
             "CorrectDirection()",
-            "Simplify()",
-            "Simplify(-1, 1.02)",
+            "ScaleToEm(2048)",
             'RenameGlyphs("AGL with PUA")',
             'Reencode("unicode")',
-            f'Generate("{outname}.dfont")',
-            f'Generate("{outname}.otf.dfont")',
-            f'Generate("{outname}.otf")',
-            "ScaleToEm(1024)",
-            f'Generate("{outname}.ttf")',
+            f'SetTTFName(0x409, 3, "{name}")',
+            f'SetTTFName(0x409, 11, "")',
+            'SetTTFName(0x409, 13, "MIT")',
+            'SetTTFName(0x409, 14, "https://opensource.org/licenses/MIT")',
+            f'Generate("{name}.dfont")',
+            f'Generate("{name}.otf")',
+            f'Generate("{name}.ttf")',
         ]
     )
 
     # No idea why this doesn't work without shell=True
     subprocess.run(
-        [f"fontforge -lang ff -c {quote(script)}"], cwd=BUILD_DIR, shell=True
+        [f"fontforge -lang ff -c {quote(script)}"],
+        cwd=BUILD_DIR,
+        shell=True,
+        check=True,
     )
     ttfpath.unlink()
+
+
+def make_hidpi(bdf_path: Path, out_path: Path):
+    print(crayons.yellow("Generating hidpi font..."))
+    with bdf_path.open() as i:
+        with out_path.open("w") as o:
+            double_size(i, o)
+    print(crayons.green("Done!"))
+
+
+def gen_variants(bdf_path: Path):
+    hidpi_path = BUILD_DIR / "cozette_hidpi.bdf"
+
+    def bnp_invoc_ttf(name: str, format: str):
+        return [
+            REPO_ROOT / "bitsnpicas.sh",
+            "convertbitmap",
+            "-f",
+            format,
+            "-o",
+            BUILD_DIR / f"{name}_tmp.{format}",
+            "-s",
+            "Cozette",
+            "-r",
+            name,
+            "-T",
+        ]
+
+    subprocess.run(
+        [
+            BUILD_DIR.parent / "bitsnpicas.sh",
+            "convertbitmap",
+            "-f",
+            "psf",
+            "-o",
+            BUILD_DIR / f"cozette.psf",
+            bdf_path,
+        ],
+        check=True,
+    )
+    subprocess.run(
+        bnp_invoc_ttf("CozetteVector", "ttf") + [bdf_path], check=True
+    )
+    subprocess.run(
+        bnp_invoc_ttf("CozetteVectorBold", "ttf") + ["-b", bdf_path],
+        check=True,
+    )
+    print(crayons.yellow("Fixing TTF variants..."))
+    fix_ttf(BUILD_DIR / "CozetteVector_tmp.ttf", "CozetteVector")
+    fix_ttf(BUILD_DIR / "CozetteVectorBold_tmp.ttf", "CozetteVectorBold")
+    print(crayons.green("Done!"))
+    make_hidpi(bdf_path, hidpi_path)
+    fontforge(
+        open=hidpi_path,
+        generate=[
+            Generate(f"{hidpi_path.stem}.", "otb"),
+            Generate(f"{hidpi_path.stem}.", "fnt"),
+            Generate(f"{hidpi_path.stem}.dfont", "sbit"),
+        ],
+    )
+    rename_single(BUILD_DIR, "*-26.fnt", "cozette_hidpi.fnt")
+    subprocess.run(
+        [
+            BUILD_DIR.parent / "bitsnpicas.sh",
+            "convertbitmap",
+            "-f",
+            "psf",
+            "-o",
+            hidpi_path.with_suffix(".psf"),
+            hidpi_path,
+        ],
+        check=True,
+    )
 
 
 if __name__ == "__main__":
@@ -151,21 +225,16 @@ if __name__ == "__main__":
             )
     if args.action == "images":
         print(crayons.blue("Saving sample images..."))
-        save_images(BUILD_DIR / "cozette.otb")
+        save_images()
         print(crayons.green("Done!", bold=True))
     elif args.action == "fonts":
         rmtree(BUILD_DIR, ignore_errors=True)
         BUILD_DIR.mkdir(exist_ok=True)
-        os.chdir(BUILD_DIR)
         print(crayons.blue("Building bitmap formats..."))
-        bdfpath = gen_bitmap_formats()
+        bdf_path = gen_bitmap_formats()
         print(crayons.green("Done!", bold=True))
-        print(crayons.blue("Generating TTF..."))
-        ttfbuilder = TTFBuilder.from_bdf_path(bdfpath)
-        ttfbuilder.build("cozette-tmp.ttf")
-        print(crayons.green("Done!", bold=True))
-        print(crayons.blue("Fixing TTF..."))
-        fix_ttf(Path("cozette-tmp.ttf"))
+        print(crayons.blue("Building variants..."))
+        gen_variants(bdf_path)
         print(crayons.green("Done!", bold=True))
     elif args.action == "changelog":
         get_changelog()

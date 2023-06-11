@@ -17,7 +17,7 @@ jobs:
           pacman -Syyu --noconfirm
       - name: Install dependencies
         run: |
-          pacman -S --noconfirm base git tar which zip libffi
+          pacman -S --noconfirm base git tar which zip libffi jre17-openjdk wget
       - name: Install python
         run: |
           pacman -S --noconfirm python python-pipenv python-setuptools
