@@ -8,7 +8,7 @@ from typing import Optional, Sequence, cast
 
 import crayons  # type: ignore
 
-from cozette_builder.changeloggen import get_changelog
+from cozette_builder.changeloggen import get_changelog, get_last_ver
 from cozette_builder.hidpi import double_size
 from cozette_builder.imagegen import (
     add_margins,
@@ -59,8 +59,8 @@ def fontforge(open: Path, generate: Sequence[Generate]):
     script = "; ".join(
         [
             f'Open("{open}")',
-            'RenameGlyphs("AGL with PUA")',
-            'Reencode("unicode")',
+            # 'RenameGlyphs("AGL with PUA")',
+            # 'Reencode("unicode")',
         ]
         + [str(gen) for gen in generate]
     )
@@ -91,6 +91,12 @@ def gen_bitmap_formats() -> Path:
 
 def fix_ttf(ttfpath: Path, name: str):
     print(crayons.yellow(f"Generating TTF for {name}..."))
+    version = "1.0"
+    with SFDPATH.open() as f:
+        for line in f.readlines():
+            if line.startswith("Version "):
+                version = line.split()[1]
+                break
     script = "; ".join(
         [
             f'Open("{ttfpath}")',
@@ -101,8 +107,11 @@ def fix_ttf(ttfpath: Path, name: str):
             'RenameGlyphs("AGL with PUA")',
             'Reencode("unicode")',
             f'SetTTFName(0x409, 3, "{name}")',
-            f'SetTTFName(0x409, 11, "")',
-            'SetTTFName(0x409, 13, "MIT")',
+            f'SetTTFName(0x409, 5, "{version}")',
+            f'SetTTFName(0x409, 8, "Slavfox")',
+            f'SetTTFName(0x409, 9, "Slavfox")',
+            f'SetTTFName(0x409, 11, "https://github.com/slavfox/Cozette")',
+            f'SetTTFName(0x409, 13, "MIT")',
             'SetTTFName(0x409, 14, "https://opensource.org/licenses/MIT")',
             f'Generate("{name}.dfont")',
             f'Generate("{name}.otf")',
@@ -159,10 +168,10 @@ def gen_variants(bdf_path: Path):
         check=True,
     )
     subprocess.run(
-        bnp_invoc_ttf("CozetteVector", "ttf") + [bdf_path], check=True
+        bnp_invoc_ttf("CozetteVector", "ttf") + [SFDPATH], check=True
     )
     subprocess.run(
-        bnp_invoc_ttf("CozetteVectorBold", "ttf") + ["-b", bdf_path],
+        bnp_invoc_ttf("CozetteVectorBold", "ttf") + ["-b", SFDPATH],
         check=True,
     )
     print(crayons.yellow("Fixing TTF variants..."))

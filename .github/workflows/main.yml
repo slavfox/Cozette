@@ -27,9 +27,13 @@ jobs:
       - name: Build fonts
         run: |
           pipenv --python /bin/python install; pipenv run python build.py fonts
+      - name: Save version
+        id: version
+        run: |
+          echo "version=${GITHUB_REF#refs/tags/}" | tr . - >> $GITHUB_OUTPUT
       - name: Zip fonts
         run: |
-          mv build CozetteFonts; cp ./LICENSE CozetteFonts/LICENSE; zip -r CozetteFonts.zip CozetteFonts
+          mv build CozetteFonts; cp ./LICENSE CozetteFonts/LICENSE; zip -r CozetteFonts-${{ steps.version.outputs.version }}.zip CozetteFonts
       - uses: ncipollo/release-action@v1
         with:
           artifacts: "CozetteFonts.zip,CozetteFonts/*"

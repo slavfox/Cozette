@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog], and this project adheres to
 [Semantic Versioning].
 
+## [1.19.2-hidpi2]
+
+### Changed
+
+- TTF fonts now build from the fontforge sfd sources
+- Fixed rendering of hidpi fonts in terminals 
+
 ## [1.19.2-hidpi]
 
 ### Added
@@ -2098,7 +2105,8 @@ Still broken on Windows.
 
 [keep a changelog]: https://keepachangelog.com/en/1.0.0/
 [semantic versioning]: https://semver.org/spec/v2.0.0.html
-[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.19.2-hidpi...HEAD
+[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.19.2-hidpi2...HEAD
+[1.19.2-hidpi2]: https://github.com/slavfox/Cozette/compare/v.1.19.2-hidpi...v.1.19.2-hidpi2
 [1.19.2-hidpi]: https://github.com/slavfox/Cozette/compare/v.1.19.2...v.1.19.2-hidpi
 [1.19.2]: https://github.com/slavfox/Cozette/compare/v.1.19.1...v.1.19.2
 [1.19.1]: https://github.com/slavfox/Cozette/compare/v.1.19.0...v.1.19.1

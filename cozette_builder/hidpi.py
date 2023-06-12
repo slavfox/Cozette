@@ -46,7 +46,7 @@ scale_lines = [
     "FIGURE_WIDTH",
     "AVG_LOWERCASE_WIDTH",
     "AVG_UPPERCASE_WIDTH" "DWIDTH",
-    # "SWIDTH",
+    "DWIDTH",
     "BBX",
     "QUAD_WIDTH",
 ]
