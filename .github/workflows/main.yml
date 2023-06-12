@@ -36,6 +36,6 @@ jobs:
           mv build CozetteFonts; cp ./LICENSE CozetteFonts/LICENSE; zip -r CozetteFonts-${{ steps.version.outputs.version }}.zip CozetteFonts
       - uses: ncipollo/release-action@v1
         with:
-          artifacts: "CozetteFonts.zip,CozetteFonts/*"
+          artifacts: "CozetteFonts-${{ steps.version.outputs.version }}.zip,CozetteFonts/*"
           token: ${{ secrets.GITHUB_TOKEN }}
           body: "See [CHANGELOG.md](https://github.com/slavfox/Cozette/blob/master/CHANGELOG.md)"

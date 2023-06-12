@@ -79,6 +79,12 @@ def gen_bitmap_formats() -> Path:
         open=REPO_ROOT / "Cozette" / "Cozette.sfd",
         generate=[
             Generate("cozette.", bitmap_fmt="bdf"),
+        ],
+    )
+    bdf_path = rename_single(BUILD_DIR, "*.bdf", "cozette.bdf")
+    fontforge(
+        open=bdf_path,
+        generate=[
             Generate("cozette.", "otb"),
             Generate("cozette.", "psf"),
             Generate("cozette.", "fnt"),
@@ -86,7 +92,7 @@ def gen_bitmap_formats() -> Path:
         ],
     )
     rename_single(BUILD_DIR, "*.fnt", "cozette.fnt")
-    return rename_single(BUILD_DIR, "*.bdf", "cozette.bdf")
+    return bdf_path
 
 
 def fix_ttf(ttfpath: Path, name: str):
@@ -168,10 +174,10 @@ def gen_variants(bdf_path: Path):
         check=True,
     )
     subprocess.run(
-        bnp_invoc_ttf("CozetteVector", "ttf") + [SFDPATH], check=True
+        bnp_invoc_ttf("CozetteVector", "ttf") + [bdf_path], check=True
     )
     subprocess.run(
-        bnp_invoc_ttf("CozetteVectorBold", "ttf") + ["-b", SFDPATH],
+        bnp_invoc_ttf("CozetteVectorBold", "ttf") + ["-b", bdf_path],
         check=True,
     )
     print(crayons.yellow("Fixing TTF variants..."))
