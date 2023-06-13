@@ -175,6 +175,7 @@ implemented:
 - [x] Box-drawing (mostly)
 - [x] Braille
 - [x] Cyrillic!
+- [x] APL Glyphs (based on the list from [APL386](https://abrudz.github.io/APL386/))!
 - [ ] Nerdfonts:
   - [x] nf-pom-\*
   - [x] nf-seti-\*
