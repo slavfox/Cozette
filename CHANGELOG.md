@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog], and this project adheres to
 [Semantic Versioning].
 
+## [1.20.1]
+
+### Added
+
+- 😎 (U+1F60E SMILING FACE WITH SUNGLASSES)
+
 ## [1.20.0]
 
 The APL update
@@ -2173,7 +2179,8 @@ Still broken on Windows.
 
 [keep a changelog]: https://keepachangelog.com/en/1.0.0/
 [semantic versioning]: https://semver.org/spec/v2.0.0.html
-[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.20.0...HEAD
+[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.20.1...HEAD
+[1.20.1]: https://github.com/slavfox/Cozette/compare/v.1.20.0...v.1.20.1
 [1.20.0]: https://github.com/slavfox/Cozette/compare/v.1.19.3...v.1.20.0
 [1.19.3]: https://github.com/slavfox/Cozette/compare/v.1.19.2-hidpi2...v.1.19.3
 [1.19.2-hidpi2]: https://github.com/slavfox/Cozette/compare/v.1.19.2-hidpi...v.1.19.2-hidpi2

@@ -4,7 +4,7 @@ FullName: Cozette
 FamilyName: Cozette
 Weight: Medium
 Copyright: (c) 2020-2023 Slavfox
-Version: 1.200
+Version: 1.201
 ItalicAngle: 0
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -22,7 +22,7 @@ OS2Version: 1
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: -2082812035
-ModificationTime: 1686663471
+ModificationTime: 1688019720
 PfmFamily: 49
 TTFWeight: 500
 TTFWidth: 5
@@ -120,11 +120,11 @@ DisplaySize: 13
 AntiAlias: 1
 FitToEm: 0
 WidthSeparation: 307
-WinInfo: 0 24 9
+WinInfo: 690 30 12
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 524288 262144 174762 0 -1048576 174762 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 1114112 2978
+BeginChars: 1114112 2979
 
 StartChar: uni0000
 Encoding: 0 0 0
@@ -26746,6 +26746,13 @@ Width: 1024
 Flags: HW
 LayerCount: 2
 EndChar
+
+StartChar: u1F60E
+Encoding: 128526 128526 2978
+Width: 1890
+Flags: HW
+LayerCount: 2
+EndChar
 EndChars
 BitmapFont: 13 2979 10 3 1
 BDFStartProperties: 42
@@ -26769,7 +26776,7 @@ FONTNAME_REGISTRY 16 ""
 FONT_NAME 16 "Cozette"
 FACE_NAME 16 "Cozette"
 COPYRIGHT 16 "(c) 2020-2023 Slavfox"
-FONT_VERSION 16 "1.200"
+FONT_VERSION 16 "1.201"
 FONT_ASCENT 18 10
 FONT_DESCENT 18 3
 UNDERLINE_POSITION 18 -19
@@ -32749,6 +32756,8 @@ BDFChar: 2976 9109 6 1 5 -1 7
 pkX`^LkpkCp](9o
 BDFChar: 2977 9022 6 0 5 1 6
 Gg*P=b]j*f
+BDFChar: 2978 128526 12 -5 11 -2 24
+J,fQLzzzzzzzzzzz!.4bHJcGfP!!E7O"7LaAmXP?=J-&,h!BC,[JcGduz
 BDFRefChar: 1999 1944 0 0 N
 BDFRefChar: 2000 1943 0 0 N
 BDFRefChar: 2001 1941 0 0 N
