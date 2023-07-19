@@ -5,6 +5,45 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog], and this project adheres to
 [Semantic Versioning].
 
+## [1.21.0]
+
+The BQN update, brought to you by [dariof4](https://github.com/dariof4)!
+
+### Added
+
+- ‿ (U+203F UNDERTIE)
+- ∾ (U+223E INVERTED LAZY S)
+- ≍ (U+224D EQUIVALENT TO)
+- ⊏ (U+228F SQUARE IMAGE OF)
+- ⊐ (U+2290 SQUARE ORIGINAL OF)
+- ⊑ (U+2291 SQUARE IMAGE OF OR EQUAL TO)
+- ⊒ (U+2292 SQUARE ORIGINAL OF OR EQUAL TO)
+- ⊓ (U+2293 SQUARE CAP)
+- ⊔ (U+2294 SQUARE CUP)
+- ⊘ (U+2298 CIRCLED DIVISION SLASH)
+- ⊶ (U+22B6 ORIGINAL OF)
+- ⊷ (U+22B7 IMAGE OF)
+- ⊸ (U+22B8 MULTIMAP)
+- ⋈ (U+22C8 BOWTIE)
+- ⎉ (U+2389 CIRCLED HORIZONTAL BAR WITH NOTCH)
+- ⎊ (U+238A CIRCLED TRIANGLE DOWN)
+- ␏ (U+240F SYMBOL FOR SHIFT IN)
+- ▔ (U+2594 UPPER ONE EIGHTH BLOCK)
+- ⚇ (U+2687 WHITE CIRCLE WITH TWO DOTS)
+- ⟜ (U+27DC LEFT MULTIMAP)
+- ⥊ (U+294A LEFT BARB UP RIGHT BARB DOWN HARPOON)
+- 𝔽 (U+1D53D MATHEMATICAL DOUBLE-STRUCK CAPITAL F)
+- 𝔾 (U+1D53E MATHEMATICAL DOUBLE-STRUCK CAPITAL G)
+- 𝕊 (U+1D54A MATHEMATICAL DOUBLE-STRUCK CAPITAL S)
+- 𝕎 (U+1D54E MATHEMATICAL DOUBLE-STRUCK CAPITAL W)
+- 𝕏 (U+1D54F MATHEMATICAL DOUBLE-STRUCK CAPITAL X)
+- 𝕗 (U+1D557 MATHEMATICAL DOUBLE-STRUCK SMALL F)
+- 𝕘 (U+1D558 MATHEMATICAL DOUBLE-STRUCK SMALL G)
+- 𝕣 (U+1D563 MATHEMATICAL DOUBLE-STRUCK SMALL R)
+- 𝕤 (U+1D564 MATHEMATICAL DOUBLE-STRUCK SMALL S)
+- 𝕨 (U+1D568 MATHEMATICAL DOUBLE-STRUCK SMALL W)
+- 𝕩 (U+1D569 MATHEMATICAL DOUBLE-STRUCK SMALL X)
+
 ## [1.20.1]
 
 ### Added
@@ -2179,7 +2218,8 @@ Still broken on Windows.
 
 [keep a changelog]: https://keepachangelog.com/en/1.0.0/
 [semantic versioning]: https://semver.org/spec/v2.0.0.html
-[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.20.1...HEAD
+[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.21.0...HEAD
+[1.20.1]: https://github.com/slavfox/Cozette/compare/v.1.20.1...v.1.21.0
 [1.20.1]: https://github.com/slavfox/Cozette/compare/v.1.20.0...v.1.20.1
 [1.20.0]: https://github.com/slavfox/Cozette/compare/v.1.19.3...v.1.20.0
 [1.19.3]: https://github.com/slavfox/Cozette/compare/v.1.19.2-hidpi2...v.1.19.3

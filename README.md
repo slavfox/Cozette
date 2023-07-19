@@ -176,6 +176,7 @@ implemented:
 - [x] Braille
 - [x] Cyrillic!
 - [x] APL Glyphs (based on the list from [APL386](https://abrudz.github.io/APL386/))!
+- [x] [BQN](https://mlochbaum.github.io/BQN/fonts.html) Glyphs!
 - [ ] Nerdfonts:
   - [x] nf-pom-\*
   - [x] nf-seti-\*
@@ -249,7 +250,7 @@ will output the changelog between your local version and the last tag.
 
 Massive thanks to [ym1234] for helping me figure out how to make the font tables behave nicely.
 
-Thanks to [autumn], [cpkio], [yoshiyoshyosh], and [klinegareth] for contributing characters!
+Thanks to [autumn], [cpkio], [yoshiyoshyosh], [klinegareth], and [dariof4] for contributing characters!
 
 # License & Acknowledgements
 
@@ -283,5 +284,6 @@ Cozette's builds use [bdfscale](https://github.com/philj56/bdfscale) by [philj56
 [cpkio]: https://github.com/cpkio
 [yoshiyoshyosh]: https://github.com/yoshiyoshyosh
 [klinegareth]: https://github.com/klinegareth
+[dariof4]: https://github.com/dariof4
 [laxul]: https://github.com/laxul
 [port]: https://cgit.freebsd.org/ports/tree/x11-fonts/cozette
