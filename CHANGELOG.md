@@ -5,6 +5,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog], and this project adheres to
 [Semantic Versioning].
 
+## [1.21.0-woff]
+
+Fixed OS/2 tables and added woff/woff2 formats.
+
 ## [1.21.0]
 
 The BQN update, brought to you by [dariof4](https://github.com/dariof4)!
@@ -2218,8 +2222,9 @@ Still broken on Windows.
 
 [keep a changelog]: https://keepachangelog.com/en/1.0.0/
 [semantic versioning]: https://semver.org/spec/v2.0.0.html
-[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.21.0...HEAD
-[1.20.1]: https://github.com/slavfox/Cozette/compare/v.1.20.1...v.1.21.0
+[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.21.0-woff...HEAD
+[1.21.0-woff]: https://github.com/slavfox/Cozette/compare/v.1.21.0...v.1.21.0-woff
+[1.21.0]: https://github.com/slavfox/Cozette/compare/v.1.20.1...v.1.21.0
 [1.20.1]: https://github.com/slavfox/Cozette/compare/v.1.20.0...v.1.20.1
 [1.20.0]: https://github.com/slavfox/Cozette/compare/v.1.19.3...v.1.20.0
 [1.19.3]: https://github.com/slavfox/Cozette/compare/v.1.19.2-hidpi2...v.1.19.3

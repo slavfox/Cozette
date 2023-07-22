@@ -5,6 +5,7 @@ from pathlib import Path
 from shlex import quote
 from shutil import rmtree
 from typing import Optional, Sequence, cast
+from tempfile import NamedTemporaryFile
 
 import crayons  # type: ignore
 
@@ -103,35 +104,52 @@ def fix_ttf(ttfpath: Path, name: str):
             if line.startswith("Version "):
                 version = line.split()[1]
                 break
-    script = "; ".join(
-        [
-            f'Open("{ttfpath}")',
-            "SelectWorthOutputting()",
-            "RemoveOverlap()",
-            "CorrectDirection()",
-            "ScaleToEm(2048)",
-            'RenameGlyphs("AGL with PUA")',
-            'Reencode("unicode")',
-            f'SetTTFName(0x409, 3, "{name}")',
-            f'SetTTFName(0x409, 5, "{version}")',
-            f'SetTTFName(0x409, 8, "Slavfox")',
-            f'SetTTFName(0x409, 9, "Slavfox")',
-            f'SetTTFName(0x409, 11, "https://github.com/slavfox/Cozette")',
-            f'SetTTFName(0x409, 13, "MIT")',
-            'SetTTFName(0x409, 14, "https://opensource.org/licenses/MIT")',
-            f'Generate("{name}.dfont")',
-            f'Generate("{name}.otf")',
-            f'Generate("{name}.ttf")',
-        ]
-    )
-
+    with NamedTemporaryFile() as sfd:
+        subprocess.run(
+            [f"fontforge -c '"
+             f"f = open(\"{ttfpath}\"); "
+             f"f.os2_version = 4; "
+             f"f.os2_weight_width_slope_only = True; "
+             f"f.save(\"{sfd.name}\")'"],
+            cwd=BUILD_DIR,
+            shell=True,
+            check=True,
+        )
+        script = ";\n".join(
+            [
+                f'Open("{sfd.name}")',
+                "SelectWorthOutputting()",
+                "RemoveOverlap()",
+                "CorrectDirection()",
+                "ScaleToEm(2048)",
+                'RenameGlyphs("AGL with PUA")',
+                'Reencode("unicode")',
+                f'SetTTFName(0x409, 3, "{name}")',
+                f'SetTTFName(0x409, 5, "{version}")',
+                f'SetTTFName(0x409, 8, "Slavfox")',
+                f'SetTTFName(0x409, 9, "Slavfox")',
+                f'SetTTFName(0x409, 11, "https://github.com/slavfox/Cozette")',
+                f'SetTTFName(0x409, 13, LoadStringFromFile({repr(str((REPO_ROOT / "LICENSE").resolve()))}))',
+                'SetTTFName(0x409, 14, "https://github.com/slavfox/Cozette/blob/master/LICENSE")',
+                f'Generate("{name}.dfont")',
+                f'Generate("{name}.otf")',
+                f'Generate("{name}.ttf")',
+                f'Generate("{name}.woff")',
+                f'Generate("{name}.woff2")',
+            ]
+        )
+        with NamedTemporaryFile(mode="w+", suffix=".pe") as f:
+            print(f.name)
+            f.write(script)
+            f.flush()
+            f.seek(0)
+            subprocess.run(
+                [f"fontforge -script {f.name}"],
+                cwd=BUILD_DIR,
+                shell=True,
+                check=True,
+            )
     # No idea why this doesn't work without shell=True
-    subprocess.run(
-        [f"fontforge -lang ff -c {quote(script)}"],
-        cwd=BUILD_DIR,
-        shell=True,
-        check=True,
-    )
     ttfpath.unlink()
 
 

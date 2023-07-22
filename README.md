@@ -25,8 +25,9 @@ A bitmap programming font optimized for coziness.
 - [Roadmap](#roadmap)
 - [Recommended alternatives](#recommended-alternatives)
 - [Character map](#character-map)
+- [Building](#building)
 - [Contributors](#contributors)
-- [License](#license)
+- [License](#license--acknowledgements)
 
 # About Cozette
 
