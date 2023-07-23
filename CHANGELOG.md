@@ -5,6 +5,59 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog], and this project adheres to
 [Semantic Versioning].
 
+## [1.22]
+
+The zodiac update
+
+### Added
+
+- ␉ (U+2409 SYMBOL FOR HORIZONTAL TABULATION)
+- ␜ (U+241C SYMBOL FOR FILE SEPARATOR)
+- ␝ (U+241D SYMBOL FOR GROUP SEPARATOR)
+- ␞ (U+241E SYMBOL FOR RECORD SEPARATOR)
+- ␟ (U+241F SYMBOL FOR UNIT SEPARATOR)
+- ␠ (U+2420 SYMBOL FOR SPACE)
+- ♀ (U+2640 FEMALE SIGN)
+- ♁ (U+2641 EARTH)
+- ♂ (U+2642 MALE SIGN)
+- ♈ (U+2648 ARIES)
+- ♉ (U+2649 TAURUS)
+- ♊ (U+264A GEMINI)
+- ♋ (U+264B CANCER)
+- ♌ (U+264C LEO)
+- ♍ (U+264D VIRGO)
+- ♎ (U+264E LIBRA)
+- ♏ (U+264F SCORPIUS)
+- ♐ (U+2650 SAGITTARIUS)
+- ♑ (U+2651 CAPRICORN)
+- ♒ (U+2652 AQUARIUS)
+- ♓ (U+2653 PISCES)
+- ⚀ (U+2680 DIE FACE-1)
+- ⚁ (U+2681 DIE FACE-2)
+- ⚂ (U+2682 DIE FACE-3)
+- ⚃ (U+2683 DIE FACE-4)
+- ⚄ (U+2684 DIE FACE-5)
+- ⚅ (U+2685 DIE FACE-6)
+- ⚢ (U+26A2 DOUBLED FEMALE SIGN)
+- ⚣ (U+26A3 DOUBLED MALE SIGN)
+- ⚥ (U+26A5 MALE AND FEMALE SIGN)
+- ⚦ (U+26A6 MALE WITH STROKE SIGN)
+- ⚨ (U+26A8 VERTICAL MALE WITH STROKE SIGN)
+- ⚲ (U+26B2 NEUTER)
+- ⚳ (U+26B3 CERES)
+- ⚴ (U+26B4 PALLAS)
+- ⚵ (U+26B5 JUNO)
+- 󰋑 (U+F02D1)
+- 󰋔 (U+F02D4)
+
+### Changed
+
+- ␈ (U+2408 SYMBOL FOR BACKSPACE)
+- ␋ (U+240B SYMBOL FOR VERTICAL TABULATION)
+- ␍ (U+240D SYMBOL FOR CARRIAGE RETURN)
+- ␎ (U+240E SYMBOL FOR SHIFT OUT)
+- ␏ (U+240F SYMBOL FOR SHIFT IN)
+
 ## [1.21.0-woff]
 
 Fixed OS/2 tables and added woff/woff2 formats.
@@ -2222,7 +2275,8 @@ Still broken on Windows.
 
 [keep a changelog]: https://keepachangelog.com/en/1.0.0/
 [semantic versioning]: https://semver.org/spec/v2.0.0.html
-[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.21.0-woff...HEAD
+[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.22.0...HEAD
+[1.22.0]: https://github.com/slavfox/Cozette/compare/v.1.21.0-woff...v.1.22.0
 [1.21.0-woff]: https://github.com/slavfox/Cozette/compare/v.1.21.0...v.1.21.0-woff
 [1.21.0]: https://github.com/slavfox/Cozette/compare/v.1.20.1...v.1.21.0
 [1.20.1]: https://github.com/slavfox/Cozette/compare/v.1.20.0...v.1.20.1

@@ -45,7 +45,7 @@ def wrap_text(src: str, width=79) -> Sample:
     idx = 0
     linebreaks = []
     while idx < len(src):
-        if running_w - int(src[idx] == " ") >= width:
+        if running_w - int(src[idx] == " ") > width:
             linebreaks.append(idx - 1)
             running_w = 0
             sample_h += 1
@@ -207,7 +207,9 @@ def stitch_charmap(files: List[Path], target: Path):
 
 
 def save_charlist(fnt: str, sfd: Path, output_dir: Path):
-    sample = wrap_text(make_charlist_text(sfd))
+    text = make_charlist_text(sfd)
+    sample = wrap_text(text)
+    sample = Sample(text, sample.width + 1, sample.height)
     save_sample(
         fnt,
         sample,
