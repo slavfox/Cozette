@@ -5,7 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog], and this project adheres to
 [Semantic Versioning].
 
-## [1.22]
+## [1.22.1]
+
+Caron fixes
+
+### Added
+
+- ❤ (U+2764 HEAVY BLACK HEART)
+
+### Changed
+
+- Ř (U+0158 LATIN CAPITAL LETTER R WITH CARON)
+- ř (U+0159 LATIN SMALL LETTER R WITH CARON)
+
+## [1.22.0]
 
 The zodiac update
 
@@ -2275,7 +2288,8 @@ Still broken on Windows.
 
 [keep a changelog]: https://keepachangelog.com/en/1.0.0/
 [semantic versioning]: https://semver.org/spec/v2.0.0.html
-[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.22.0...HEAD
+[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.22.1...HEAD
+[1.22.1]: https://github.com/slavfox/Cozette/compare/v.1.22.0...v.1.22.1
 [1.22.0]: https://github.com/slavfox/Cozette/compare/v.1.21.0-woff...v.1.22.0
 [1.21.0-woff]: https://github.com/slavfox/Cozette/compare/v.1.21.0...v.1.21.0-woff
 [1.21.0]: https://github.com/slavfox/Cozette/compare/v.1.20.1...v.1.21.0

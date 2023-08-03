@@ -4,7 +4,7 @@ FullName: Cozette
 FamilyName: Cozette
 Weight: Medium
 Copyright: (c) 2020-2023 Slavfox
-Version: 1.220
+Version: 1.221
 ItalicAngle: 0
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -22,7 +22,7 @@ OS2Version: 1
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: -2082812035
-ModificationTime: 1690101279
+ModificationTime: 1691049850
 PfmFamily: 49
 TTFWeight: 500
 TTFWidth: 5
@@ -120,11 +120,11 @@ DisplaySize: 13
 AntiAlias: 1
 FitToEm: 0
 WidthSeparation: 307
-WinInfo: 9184 28 16
+WinInfo: 9800 28 16
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 524288 262144 174762 0 -1048576 174762 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 1114112 3049
+BeginChars: 1114112 3050
 
 StartChar: uni0000
 Encoding: 0 0 0
@@ -27299,8 +27299,15 @@ Width: 1024
 Flags: HW
 LayerCount: 2
 EndChar
+
+StartChar: uni2764
+Encoding: 10084 10084 3049
+Width: 1890
+Flags: HW
+LayerCount: 2
+EndChar
 EndChars
-BitmapFont: 13 3049 10 3 1
+BitmapFont: 13 3050 10 3 1
 BDFStartProperties: 42
 FONT 1 "-slavfox-Cozette-Medium-R-Normal--13-120-75-75-M-60-ISO10646-1"
 COMMENT 0 "(c) 2020-2023 Slavfox"
@@ -27322,7 +27329,7 @@ FONTNAME_REGISTRY 16 ""
 FONT_NAME 16 "Cozette"
 FACE_NAME 16 "Cozette"
 COPYRIGHT 16 "(c) 2020-2023 Slavfox"
-FONT_VERSION 16 "1.220"
+FONT_VERSION 16 "1.221"
 FONT_ASCENT 18 10
 FONT_DESCENT 18 3
 UNDERLINE_POSITION 18 -19
@@ -27971,9 +27978,9 @@ n;)niOGJ^K+@#o,
 BDFChar: 311 343 6 0 5 -3 5
 GXOe^5X5<7J,fQL
 BDFChar: 312 344 6 1 5 0 9
-:iHF(LktP^Lkl$2
+:`oc-LktP^Lkl$2
 BDFChar: 313 345 6 1 5 0 8
-:iHF(Lk(#+J,fQL
+:`oc-Lk(#+J,fQL
 BDFChar: 314 346 6 1 5 0 9
 &0LslLk'FMLi<=o
 BDFChar: 315 347 6 1 5 0 8
@@ -33444,6 +33451,8 @@ BDFChar: 3047 9244 6 1 4 -2 8
 i.0a9J,h8g+:qo\
 BDFChar: 3048 9248 6 1 4 -2 8
 @":Kb^]7b=?pHsW
+BDFChar: 3049 10084 12 1 11 -2 7
+EPVJ0s5<q8s58CB5CagU%KHV3
 BDFRefChar: 1999 1944 0 0 N
 BDFRefChar: 2000 1943 0 0 N
 BDFRefChar: 2001 1941 0 0 N
