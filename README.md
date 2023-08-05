@@ -120,6 +120,7 @@ Grab `CozetteVector.ttf`. If you want to get the bitmap versions to work,
 
 [laxul] made a [port] for the `.otb`!
 
+* pkg: `pkg install cozette`
 * ports: `cd /usr/ports/x11-fonts/cozette; make install clean`
 
 ### Other BSD / Solaris / Haiku / Other
