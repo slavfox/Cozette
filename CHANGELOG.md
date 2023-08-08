@@ -5,6 +5,23 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog], and this project adheres to
 [Semantic Versioning].
 
+## [1.22.2]
+
+### Added
+
+- ∔ (U+2214 DOT PLUS)
+- ∕ (U+2215 DIVISION SLASH)
+- ∖ (U+2216 SET MINUS)
+- ∛ (U+221B CUBE ROOT)
+- ∜ (U+221C FOURTH ROOT)
+- ∝ (U+221D PROPORTIONAL TO)
+- ∟ (U+221F RIGHT ANGLE)
+- ∠ (U+2220 ANGLE)
+- ∡ (U+2221 MEASURED ANGLE)
+- ∢ (U+2222 SPHERICAL ANGLE)
+- ∣ (U+2223 DIVIDES)
+- ∤ (U+2224 DOES NOT DIVIDE)
+
 ## [1.22.1]
 
 Caron fixes
@@ -2288,7 +2305,8 @@ Still broken on Windows.
 
 [keep a changelog]: https://keepachangelog.com/en/1.0.0/
 [semantic versioning]: https://semver.org/spec/v2.0.0.html
-[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.22.1...HEAD
+[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.22.2...HEAD
+[1.22.2]: https://github.com/slavfox/Cozette/compare/v.1.22.1...v.1.22.2
 [1.22.1]: https://github.com/slavfox/Cozette/compare/v.1.22.0...v.1.22.1
 [1.22.0]: https://github.com/slavfox/Cozette/compare/v.1.21.0-woff...v.1.22.0
 [1.21.0-woff]: https://github.com/slavfox/Cozette/compare/v.1.21.0...v.1.21.0-woff
