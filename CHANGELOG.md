@@ -5,6 +5,128 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog], and this project adheres to
 [Semantic Versioning].
 
+## [1.3.0]
+
+### Added
+
+[Uiua](https://www.uiua.org/) and [lsd](https://github.com/lsd-rs/lsd) support!
+
+- Ẩ (U+1EA8 LATIN CAPITAL LETTER A WITH CIRCUMFLEX AND HOOK ABOVE)
+- ẩ (U+1EA9 LATIN SMALL LETTER A WITH CIRCUMFLEX AND HOOK ABOVE)
+- Ể (U+1EC2 LATIN CAPITAL LETTER E WITH CIRCUMFLEX AND HOOK ABOVE)
+- ể (U+1EC3 LATIN SMALL LETTER E WITH CIRCUMFLEX AND HOOK ABOVE)
+- Ổ (U+1ED4 LATIN CAPITAL LETTER O WITH CIRCUMFLEX AND HOOK ABOVE)
+- ổ (U+1ED5 LATIN SMALL LETTER O WITH CIRCUMFLEX AND HOOK ABOVE)
+- ↯ (U+21AF DOWNWARDS ZIGZAG ARROW)
+- ↹ (U+21B9 LEFTWARDS ARROW TO BAR OVER RIGHTWARDS ARROW TO BAR)
+- ∴ (U+2234 THEREFORE)
+- ∵ (U+2235 BECAUSE)
+- ∶ (U+2236 RATIO)
+- ∷ (U+2237 PROPORTION)
+- ∺ (U+223A GEOMETRIC PROPORTION)
+- ≅ (U+2245 APPROXIMATELY EQUAL TO)
+- ⊗ (U+2297 CIRCLED TIMES)
+- ⊛ (U+229B CIRCLED ASTERISK OPERATOR)
+- ⊜ (U+229C CIRCLED EQUALS)
+- ⊠ (U+22A0 SQUARED TIMES)
+- ⌕ (U+2315 TELEPHONE RECORDER)
+- ⌵ (U+2335 COUNTERSINK)
+- ⍘ (U+2358 APL FUNCTIONAL SYMBOL QUOTE UNDERBAR)
+- ⍚ (U+235A APL FUNCTIONAL SYMBOL DIAMOND UNDERBAR)
+- ⍜ (U+235C APL FUNCTIONAL SYMBOL CIRCLE UNDERBAR)
+- ⎋ (U+238B BROKEN CIRCLE WITH NORTHWEST ARROW)
+- △ (U+25B3 WHITE UP-POINTING TRIANGLE)
+- ▽ (U+25BD WHITE DOWN-POINTING TRIANGLE)
+- ◫ (U+25EB WHITE SQUARE WITH VERTICAL BISECTING LINE)
+- ◿ (U+25FF LOWER RIGHT TRIANGLE)
+- ⧻ (U+29FB TRIPLE PLUS)
+- 。 (U+3002 IDEOGRAPHIC FULL STOP)
+-  (U+E5FA)
+-  (U+E5FD)
+-  (U+E634)
+-  (U+E697)
+-  (U+E6A9)
+-  (U+E6AA)
+-  (U+E764)
+-  (U+E76D)
+-  (U+E779)
+-  (U+E786)
+-  (U+F005)
+-  (U+F03A)
+-  (U+F03E)
+-  (U+F064)
+-  (U+F076)
+-  (U+F085)
+-  (U+F0F4)
+-  (U+F11C)
+-  (U+F13B)
+-  (U+F18D)
+-  (U+F1FA)
+-  (U+F233)
+-  (U+F292)
+-  (U+F2DC)
+-  (U+F302)
+-  (U+F415)
+-  (U+F417)
+-  (U+F471)
+- 🐩 (U+1F429 POODLE)
+- 🐬 (U+1F42C DOLPHIN)
+- 👩 (U+1F469 WOMAN)
+- 💩 (U+1F4A9 PILE OF POO)
+- 📄 (U+1F4C4 PAGE FACING UP)
+- 📩 (U+1F4E9 ENVELOPE WITH DOWNWARDS ARROW ABOVE)
+- 🔬 (U+1F52C MICROSCOPE)
+- 󰀂 (U+F0002)
+- 󰁯 (U+F006F)
+- 󰅲 (U+F0172)
+- 󰆨 (U+F01A8)
+- 󰇰 (U+F01F0)
+- 󰈲 (U+F0232)
+- 󰌆 (U+F0306)
+- 󰌛 (U+F031B)
+- 󰌠 (U+F0320)
+- 󰐑 (U+F0411)
+- 󰒍 (U+F048D)
+- 󰗆 (U+F05C6)
+- 󰙅 (U+F0645)
+- 󰚩 (U+F06A9)
+- 󰜫 (U+F072B)
+- 󰟔 (U+F07D4)
+- 󰡄 (U+F0844)
+- 󱐗 (U+F1417)
+
+### Changed
+
+- Ά (U+0386 GREEK CAPITAL LETTER ALPHA WITH TONOS)
+- Έ (U+0388 GREEK CAPITAL LETTER EPSILON WITH TONOS)
+- Ή (U+0389 GREEK CAPITAL LETTER ETA WITH TONOS)
+- Ί (U+038A GREEK CAPITAL LETTER IOTA WITH TONOS)
+- Ό (U+038C GREEK CAPITAL LETTER OMICRON WITH TONOS)
+- Ύ (U+038E GREEK CAPITAL LETTER UPSILON WITH TONOS)
+- Ώ (U+038F GREEK CAPITAL LETTER OMEGA WITH TONOS)
+- Ṧ (U+1E66 LATIN CAPITAL LETTER S WITH CARON AND DOT ABOVE)
+- ṧ (U+1E67 LATIN SMALL LETTER S WITH CARON AND DOT ABOVE)
+- Ả (U+1EA2 LATIN CAPITAL LETTER A WITH HOOK ABOVE)
+- ả (U+1EA3 LATIN SMALL LETTER A WITH HOOK ABOVE)
+- ấ (U+1EA5 LATIN SMALL LETTER A WITH CIRCUMFLEX AND ACUTE)
+- ầ (U+1EA7 LATIN SMALL LETTER A WITH CIRCUMFLEX AND GRAVE)
+- Ẫ (U+1EAA LATIN CAPITAL LETTER A WITH CIRCUMFLEX AND TILDE)
+- Ẻ (U+1EBA LATIN CAPITAL LETTER E WITH HOOK ABOVE)
+- ẻ (U+1EBB LATIN SMALL LETTER E WITH HOOK ABOVE)
+- Ễ (U+1EC4 LATIN CAPITAL LETTER E WITH CIRCUMFLEX AND TILDE)
+- ễ (U+1EC5 LATIN SMALL LETTER E WITH CIRCUMFLEX AND TILDE)
+- Ỏ (U+1ECE LATIN CAPITAL LETTER O WITH HOOK ABOVE)
+- ỏ (U+1ECF LATIN SMALL LETTER O WITH HOOK ABOVE)
+- Ồ (U+1ED2 LATIN CAPITAL LETTER O WITH CIRCUMFLEX AND GRAVE)
+- ồ (U+1ED3 LATIN SMALL LETTER O WITH CIRCUMFLEX AND GRAVE)
+-  (U+E0B8)
+-  (U+E0BA)
+-  (U+E0BC)
+-  (U+E0BE)
+-  (U+E5FB)
+-  (U+E5FC)
+- 😎 (U+1F60E SMILING FACE WITH SUNGLASSES)
+
 ## [1.22.2]
 
 ### Added
@@ -2305,7 +2427,8 @@ Still broken on Windows.
 
 [keep a changelog]: https://keepachangelog.com/en/1.0.0/
 [semantic versioning]: https://semver.org/spec/v2.0.0.html
-[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.22.2...HEAD
+[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.23.0...HEAD
+[1.23.0]: https://github.com/slavfox/Cozette/compare/v.1.22.2...v.1.23.0
 [1.22.2]: https://github.com/slavfox/Cozette/compare/v.1.22.1...v.1.22.2
 [1.22.1]: https://github.com/slavfox/Cozette/compare/v.1.22.0...v.1.22.1
 [1.22.0]: https://github.com/slavfox/Cozette/compare/v.1.21.0-woff...v.1.22.0

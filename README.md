@@ -178,6 +178,7 @@ implemented:
 - [x] Braille
 - [x] Cyrillic!
 - [x] APL Glyphs (based on the list from [APL386](https://abrudz.github.io/APL386/))!
+- [x] [Uiua](https://www.uiua.org/) glyphs!
 - [x] [BQN](https://mlochbaum.github.io/BQN/fonts.html) Glyphs!
 - [ ] Nerdfonts:
   - [x] nf-pom-\*

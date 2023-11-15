@@ -84,7 +84,7 @@ def gen_bitmap_formats() -> Path:
     )
     bdf_path = rename_single(BUILD_DIR, "*.bdf", "cozette.bdf")
     fontforge(
-        open=bdf_path,
+        open=REPO_ROOT / "Cozette" / "Cozette.sfd",
         generate=[
             Generate("cozette.", "otb"),
             Generate("cozette.", "psf"),
