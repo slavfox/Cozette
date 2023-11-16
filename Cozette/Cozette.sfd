@@ -4,7 +4,7 @@ FullName: Cozette
 FamilyName: Cozette
 Weight: Medium
 Copyright: (c) 2020-2023 Slavfox
-Version: 1.230
+Version: 1.231
 ItalicAngle: 0
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -22,7 +22,7 @@ OS2Version: 1
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: -2082812035
-ModificationTime: 1700086916
+ModificationTime: 1700139818
 PfmFamily: 49
 TTFWeight: 500
 TTFWidth: 5
@@ -114,13 +114,14 @@ MATH:RadicalKernAfterDegree: -1137
 MATH:RadicalDegreeBottomRaisePercent: 60
 MATH:MinConnectorOverlap: 40
 Encoding: UnicodeFull
+Compacted: 1
 UnicodeInterp: none
 NameList: AGL with PUA
 DisplaySize: 13
 AntiAlias: 1
 FitToEm: 0
 WidthSeparation: 307
-WinInfo: 7648 32 18
+WinInfo: 2592 32 18
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 524288 262144 174762 0 -1048576 174762 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
@@ -27986,7 +27987,7 @@ FONTNAME_REGISTRY 16 ""
 FONT_NAME 16 "Cozette"
 FACE_NAME 16 "Cozette"
 COPYRIGHT 16 "(c) 2020-2023 Slavfox"
-FONT_VERSION 16 "1.230"
+FONT_VERSION 16 "1.231"
 FONT_ASCENT 18 10
 FONT_DESCENT 18 3
 UNDERLINE_POSITION 18 -19
@@ -33694,8 +33695,8 @@ BDFChar: 2840 128295 12 0 11 -2 9
 0E;piQiQm]HiOWV#64ka!Up,O!It0c
 BDFChar: 2841 128424 12 1 10 -2 7
 It0e7s1nZMs1m4$^qe[>5_+?7
-BDFChar: 2842 128522 12 -5 11 -2 24
-J,fQLzzzzzzzzzzz!.4bHJcGfP!!5Q=!igbP!.Y+NJ-&,h!BC,[JcGduz
+BDFChar: 2842 128522 12 1 11 -2 8
+*rmF65X:GSWh=kbJ09ss:-]qP*rl9@
 BDFChar: 2843 128640 12 0 11 -2 9
 !,qt#"qV*6E1l,S,X?U)\H'AEMZE;J
 BDFChar: 2844 128736 12 0 11 -2 9
@@ -34232,8 +34233,8 @@ BDFChar: 3109 128044 12 2 10 -1 8
 !J!B7IfNi+It7QL#Co0l-NJMo
 BDFChar: 3110 128169 12 1 10 -2 7
 &-*[M&ca'T+TPDj5_,"_N'MlC
-BDFChar: 3111 128105 12 -5 11 -2 24
-J,fQLzzzzzzzzzzz!.4bHrVuuF!!A",!s*oS7=YI@J-/5j"$(l6K7F&PJ,fQL
+BDFChar: 3111 128105 12 1 11 -2 8
+*rnNUF26bm^gPPt^gPPtc=#Sghd?Ea
 BDFChar: 3112 128041 12 1 11 -1 8
 0E>3?pg>.N5CbtK5!TB=#Tssl
 BDFChar: 3113 62577 6 0 5 0 7
