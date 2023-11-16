@@ -2435,7 +2435,7 @@ Still broken on Windows.
 [keep a changelog]: https://keepachangelog.com/en/1.0.0/
 [semantic versioning]: https://semver.org/spec/v2.0.0.html
 [unreleased]: https://github.com/slavfox/Cozette/compare/v.1.23.1...HEAD
-[1.23.0]: https://github.com/slavfox/Cozette/compare/v.1.23.0...v.1.23.1
+[1.23.1]: https://github.com/slavfox/Cozette/compare/v.1.23.0...v.1.23.1
 [1.23.0]: https://github.com/slavfox/Cozette/compare/v.1.22.2...v.1.23.0
 [1.22.2]: https://github.com/slavfox/Cozette/compare/v.1.22.1...v.1.22.2
 [1.22.1]: https://github.com/slavfox/Cozette/compare/v.1.22.0...v.1.22.1
