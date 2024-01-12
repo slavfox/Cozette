@@ -4,7 +4,7 @@ FullName: Cozette
 FamilyName: Cozette
 Weight: Medium
 Copyright: (c) 2020-2023 Slavfox
-Version: 1.231
+Version: 1.232
 ItalicAngle: 0
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -22,7 +22,7 @@ OS2Version: 1
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: -2082812035
-ModificationTime: 1704241071
+ModificationTime: 1705070457
 PfmFamily: 49
 TTFWeight: 500
 TTFWidth: 5
@@ -120,11 +120,11 @@ DisplaySize: 13
 AntiAlias: 1
 FitToEm: 0
 WidthSeparation: 307
-WinInfo: 0 35 13
+WinInfo: 1120 35 13
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 524288 262144 174762 0 -1048576 174762 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 1114112 3149
+BeginChars: 1114112 3164
 
 StartChar: uni0000
 Encoding: 0 0 0
@@ -27999,8 +27999,113 @@ Width: 1024
 Flags: HW
 LayerCount: 2
 EndChar
+
+StartChar: partialdiff
+Encoding: 8706 8706 3149
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: uni2201
+Encoding: 8705 8705 3150
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: uni2639
+Encoding: 9785 9785 3151
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: u130BA
+Encoding: 78010 78010 3152
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: uniFF32
+Encoding: 65330 65330 3153
+Width: 2048
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: uniFF41
+Encoding: 65345 65345 3154
+Width: 2048
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: uniFF4E
+Encoding: 65358 65358 3155
+Width: 2048
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: uniFF53
+Encoding: 65363 65363 3156
+Width: 2048
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: u1016F
+Encoding: 65903 65903 3157
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: u102A6
+Encoding: 66214 66214 3158
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: u102C9
+Encoding: 66249 66249 3159
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: u102CF
+Encoding: 66255 66255 3160
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: u10315
+Encoding: 66325 66325 3161
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: u10343
+Encoding: 66371 66371 3162
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: uniFF0B
+Encoding: 65291 65291 3163
+Width: 2048
+Flags: HW
+LayerCount: 2
+EndChar
 EndChars
-BitmapFont: 13 3149 10 3 1
+BitmapFont: 13 3165 10 3 1
 BDFStartProperties: 42
 FONT 1 "-slavfox-Cozette-Medium-R-Normal--13-120-75-75-M-60-ISO10646-1"
 COMMENT 0 "(c) 2020-2023 Slavfox"
@@ -28022,7 +28127,7 @@ FONTNAME_REGISTRY 16 ""
 FONT_NAME 16 "Cozette"
 FACE_NAME 16 "Cozette"
 COPYRIGHT 16 "(c) 2020-2023 Slavfox"
-FONT_VERSION 16 "1.231"
+FONT_VERSION 16 "1.232"
 FONT_ASCENT 18 10
 FONT_DESCENT 18 3
 UNDERLINE_POSITION 18 -19
@@ -34344,6 +34449,34 @@ BDFChar: 3147 985610 6 0 6 1 5
 rk@6prVuou
 BDFChar: 3148 58938 6 0 6 0 5
 D#XE]3"Q&i
+BDFChar: 3149 8706 6 1 5 0 8
+?k<SLG_h0;?iU0,
+BDFChar: 3150 8705 6 1 4 0 7
+@$#nhJ:N_h
+BDFChar: 3151 9785 6 0 5 1 5
+8,rX7KE(uP
+BDFChar: 3153 65330 13 2 11 0 8
+rr@S"J3\X8rr@TMJ:N/8J3X)7
+BDFChar: 3154 65345 13 2 11 0 6
+It3&7!'l%LJ3\\$IR!l5
+BDFChar: 3155 65358 13 2 11 0 6
+^Au'"J3\WMJ3\WMJ3X)7
+BDFChar: 3156 65363 13 2 11 0 6
+It3&7J,k(L!'l'"It.M!
+BDFChar: 3157 65903 6 1 5 0 8
+pkX`Vn;r`nO8o7\
+BDFChar: 3158 66214 6 2 4 0 8
+i'9Om5X7S"huE`W
+BDFChar: 3159 66249 6 1 5 0 8
+0L1/=Y_\*kDu]k<
+BDFChar: 3160 66255 6 1 5 0 8
+LkpkCpkX`^L]@DT
+BDFChar: 3161 66325 6 1 5 0 8
+^b@/Z+<VdL+92BA
+BDFChar: 3162 66371 6 1 5 0 7
+E/9$P0F3JR
+BDFChar: 3163 65291 13 3 11 1 7
+#QP,1#QXmT#QP,1#QOi)
 BDFRefChar: 1999 1944 0 0 N
 BDFRefChar: 2000 1943 0 0 N
 BDFRefChar: 2001 1941 0 0 N

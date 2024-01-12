@@ -156,7 +156,7 @@ def make_charmap(sfd: Path) -> List[str]:
             if (0x300 <= cp < 0x370) and cp in codepoints:
                 line += " "
             line += ch
-            if not charwidth(ch) == "W":
+            if charwidth(ch) not in "FW":
                 line += " "
         if line := line.rstrip():
             text.append(f"U+{i//16:04X}_│{line}")
@@ -184,7 +184,7 @@ def make_charlist_text(sfd: Path) -> str:
                 text += f" {chr(c)} "
             else:
                 ch = chr(c)
-                text += ch if charwidth(ch) == "W" else f"{ch} "
+                text += ch if charwidth(ch) in "FW" else f"{ch} "
     return text
 
 
