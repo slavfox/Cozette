@@ -3,8 +3,8 @@ FontName: Cozette
 FullName: Cozette
 FamilyName: Cozette
 Weight: Medium
-Copyright: (c) 2020-2023 Slavfox
-Version: 1.232
+Copyright: (c) 2020-2024 Slavfox
+Version: 1.240
 ItalicAngle: 0
 UnderlinePosition: -100
 UnderlineWidth: 50
@@ -22,7 +22,7 @@ OS2Version: 1
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: -2082812035
-ModificationTime: 1714234787
+ModificationTime: 1715153089
 PfmFamily: 49
 TTFWeight: 500
 TTFWidth: 5
@@ -120,11 +120,11 @@ DisplaySize: 13
 AntiAlias: 1
 FitToEm: 0
 WidthSeparation: 307
-WinInfo: 0 46 33
+WinInfo: 0 46 26
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 524288 262144 174762 0 -1048576 174762 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 1114112 3208
+BeginChars: 1114112 3209
 
 StartChar: uni0000
 Encoding: 0 0 0
@@ -28408,11 +28408,18 @@ Width: 1024
 Flags: HW
 LayerCount: 2
 EndChar
+
+StartChar: f_i
+Encoding: 64257 64257 3208
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
 EndChars
-BitmapFont: 13 3208 10 3 1
+BitmapFont: 13 3209 10 3 1
 BDFStartProperties: 42
 FONT 1 "-slavfox-Cozette-Medium-R-Normal--13-120-75-75-M-60-ISO10646-1"
-COMMENT 0 "(c) 2020-2023 Slavfox"
+COMMENT 0 "(c) 2020-2024 Slavfox"
 FOUNDRY 16 "slavfox"
 FAMILY_NAME 16 "Cozette"
 WEIGHT_NAME 16 "Medium"
@@ -28430,8 +28437,8 @@ CHARSET_ENCODING 16 "1"
 FONTNAME_REGISTRY 16 ""
 FONT_NAME 16 "Cozette"
 FACE_NAME 16 "Cozette"
-COPYRIGHT 16 "(c) 2020-2023 Slavfox"
-FONT_VERSION 16 "1.232"
+COPYRIGHT 16 "(c) 2020-2024 Slavfox"
+FONT_VERSION 16 "1.240"
 FONT_ASCENT 18 10
 FONT_DESCENT 18 3
 UNDERLINE_POSITION 18 -19
@@ -30467,22 +30474,22 @@ BDFChar: 1004 9654 6 1 5 -1 7
 JAC+4q!d4WJ,fQL
 BDFChar: 1005 9664 6 1 5 -1 7
 #T,OGpinb8#QOi)
-BDFChar: 1006 9776 6 0 6 0 6
-rVurt!!)uu
-BDFChar: 1007 9777 6 0 6 0 6
-mJm7d!!)uu
-BDFChar: 1008 9778 6 0 6 0 6
-rVurd!!)uu
-BDFChar: 1009 9779 6 0 6 0 6
-mJm7T!!)uu
-BDFChar: 1010 9780 6 0 6 0 6
-rVurt!!)Ee
-BDFChar: 1011 9781 6 0 6 0 6
-mJm7d!!)Ee
-BDFChar: 1012 9782 6 0 6 0 6
-rVurd!!)Ee
-BDFChar: 1013 9783 6 0 6 0 6
-mJm7T!!)Ee
+BDFChar: 1006 9776 6 1 5 0 6
+p](<h!!)co
+BDFChar: 1007 9777 6 1 5 0 6
+fDkpH!!)co
+BDFChar: 1008 9778 6 1 5 0 6
+p](<H!!)co
+BDFChar: 1009 9779 6 1 5 0 6
+fDkp(!!)co
+BDFChar: 1010 9780 6 1 5 0 6
+p](<h!!(XO
+BDFChar: 1011 9781 6 1 5 0 6
+fDkpH!!(XO
+BDFChar: 1012 9782 6 1 5 0 6
+p](<H!!(XO
+BDFChar: 1013 9783 6 1 5 0 6
+fDkp(!!(XO
 BDFChar: 1014 11104 6 1 6 2 4
 5l<kI
 BDFChar: 1015 11105 6 2 4 1 6
@@ -34869,6 +34876,8 @@ BDFChar: 3206 694 6 1 4 4 8
 OJ(NnhuE`W
 BDFChar: 3207 7498 6 2 4 4 8
 ^`_R.5QCca
+BDFChar: 3208 64257 6 1 5 0 8
+0Mk%(:f'tb8,rVi
 BDFRefChar: 1999 1944 0 0 N
 BDFRefChar: 2000 1943 0 0 N
 BDFRefChar: 2001 1941 0 0 N

@@ -3,7 +3,7 @@ import tempfile
 from pathlib import Path
 from shlex import quote
 from typing import Dict, List, NamedTuple, Optional, Tuple
-from unicodedata import east_asian_width as charwidth
+from unicodedata import east_asian_width as charwidth, category
 
 from PIL import Image, ImageOps  # type: ignore
 
@@ -148,8 +148,10 @@ def make_charmap(sfd: Path) -> List[str]:
     for i in range(0, codepoints[-1] + 16, 16):
         line = ""
         for j in range(16):
-            if (cp := i + j) > 32 and cp not in (127,) and cp in codepoints:
-                ch = chr(i + j)
+            if (cp := i + j) in codepoints and not (
+                category(chr(cp)).startswith(("Z", "Cc", "Cf"))
+            ):
+                ch = chr(cp)
             else:
                 ch = " "
             # Workaround for combining characters
@@ -179,12 +181,14 @@ def sfd_codepoints(sfd: Path) -> List[int]:
 def make_charlist_text(sfd: Path) -> str:
     text = ""
     for c in sfd_codepoints(sfd):
-        if c > 32 and c not in (127,):
+        if not (category(chr(c)).startswith(("Z", "Cc", "Cf"))):
             if 0x300 <= c < 0x370:
                 text += f" {chr(c)} "
             else:
                 ch = chr(c)
                 text += ch if charwidth(ch) in "FW" else f"{ch} "
+        else:
+            print("Skipping", c, category(chr(c)))
     return text
 
 
@@ -210,6 +214,8 @@ def save_charlist(fnt: str, sfd: Path, output_dir: Path):
     text = make_charlist_text(sfd)
     sample = wrap_text(text)
     sample = Sample(text, sample.width + 1, sample.height)
+    with (output_dir / "characters.txt").open("w") as f:
+        f.write(text)
     save_sample(
         fnt,
         sample,
@@ -218,7 +224,6 @@ def save_charlist(fnt: str, sfd: Path, output_dir: Path):
         bgcolor="#ffffff",
     )
     expand(output_dir / "characters.png", color="#ffffff")
-    print(sample.text)
 
     charmap = make_charmap(sfd)
     with (output_dir / "charmap.txt").open("w") as f:

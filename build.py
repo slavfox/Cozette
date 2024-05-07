@@ -106,11 +106,13 @@ def fix_ttf(ttfpath: Path, name: str):
                 break
     with NamedTemporaryFile() as sfd:
         subprocess.run(
-            [f"fontforge -c '"
-             f"f = open(\"{ttfpath}\"); "
-             f"f.os2_version = 4; "
-             f"f.os2_weight_width_slope_only = True; "
-             f"f.save(\"{sfd.name}\")'"],
+            [
+                f"fontforge -c '"
+                f'f = open("{ttfpath}"); '
+                f"f.os2_version = 4; "
+                f"f.os2_weight_width_slope_only = True; "
+                f'f.save("{sfd.name}")\''
+            ],
             cwd=BUILD_DIR,
             shell=True,
             check=True,
