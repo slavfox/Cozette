@@ -10,6 +10,8 @@
 
 A bitmap programming font optimized for coziness.
 
+![Cozette in Nvim](./img/vim.png)
+
 # Contents
 
 - [About Cozette](#about-cozette)
@@ -177,9 +179,10 @@ implemented:
 - [x] Box-drawing (mostly)
 - [x] Braille
 - [x] Cyrillic!
-- [x] APL Glyphs (based on the list from [APL386](https://abrudz.github.io/APL386/))!
+- [x] IPA glyphs!
+- [x] APL glyphs (based on the list from [APL386](https://abrudz.github.io/APL386/))!
 - [x] [Uiua](https://www.uiua.org/) glyphs!
-- [x] [BQN](https://mlochbaum.github.io/BQN/fonts.html) Glyphs!
+- [x] [BQN](https://mlochbaum.github.io/BQN/fonts.html) glyphs!
 - [ ] Nerdfonts:
   - [x] nf-pom-\*
   - [x] nf-seti-\*
@@ -253,7 +256,14 @@ will output the changelog between your local version and the last tag.
 
 Massive thanks to [ym1234] for helping me figure out how to make the font tables behave nicely.
 
-Thanks to [autumn], [cpkio], [yoshiyoshyosh], [klinegareth], and [dariof4] for contributing characters!
+Cozette includes contributions from:
+
+- [autumn]
+- [cpkio]
+- [dariof4]
+- [klinegareth]
+- [sungodmoth]
+- [yoshiyoshyosh]
 
 # License & Acknowledgements
 
@@ -289,4 +299,5 @@ Cozette's builds use [bdfscale](https://github.com/philj56/bdfscale) by [philj56
 [klinegareth]: https://github.com/klinegareth
 [dariof4]: https://github.com/dariof4
 [laxul]: https://github.com/laxul
+[sungodmoth]: https://github.com/sungodmoth
 [port]: https://cgit.freebsd.org/ports/tree/x11-fonts/cozette
