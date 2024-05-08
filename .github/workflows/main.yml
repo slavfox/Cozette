@@ -20,13 +20,16 @@ jobs:
           pacman -S --noconfirm base git tar which zip libffi jre17-openjdk wget
       - name: Install python
         run: |
-          pacman -S --noconfirm python python-pipenv python-setuptools
+          pacman -S --noconfirm python python-pip python-pipenv python-setuptools
       - name: Install fontforge
         run: pacman -S --noconfirm fontforge
       - uses: actions/checkout@v4
       - name: Build fonts
         run: |
-          pipenv --python /bin/python run pip install --upgrade pip setuptools; pipenv --python /bin/python install; pipenv run python build.py fonts
+          pipenv --python python -m ensurepip --upgrade
+          pipenv --python /bin/python run pip install --upgrade setuptools
+          pipenv --python /bin/python install
+          pipenv run python build.py fonts
       - name: Save version
         id: version
         run: |
