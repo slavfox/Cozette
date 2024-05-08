@@ -23,7 +23,7 @@ jobs:
           pacman -S --noconfirm python python-pipenv python-setuptools
       - name: Install fontforge
         run: pacman -S --noconfirm fontforge
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
       - name: Build fonts
         run: |
           pipenv --python /bin/python install; pipenv run python build.py fonts
