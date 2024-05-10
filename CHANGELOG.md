@@ -5,6 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog], and this project adheres to
 [Semantic Versioning].
 
+## [1.24.1]
+
+Braille fix
+
+### Added
+
+- ⠀ (U+2800 BRAILLE PATTERN BLANK)
+
 ## [1.24.0]
 
 The IPA update!
@@ -2542,7 +2550,8 @@ Still broken on Windows.
 
 [keep a changelog]: https://keepachangelog.com/en/1.0.0/
 [semantic versioning]: https://semver.org/spec/v2.0.0.html
-[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.24.0...HEAD
+[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.24.1...HEAD
+[1.24.0]: https://github.com/slavfox/Cozette/compare/v.1.24.0...v.1.24.1
 [1.24.0]: https://github.com/slavfox/Cozette/compare/v.1.23.2...v.1.24.0
 [1.23.2]: https://github.com/slavfox/Cozette/compare/v.1.23.1...v.1.23.2
 [1.23.1]: https://github.com/slavfox/Cozette/compare/v.1.23.0...v.1.23.1
