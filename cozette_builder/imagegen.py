@@ -253,9 +253,8 @@ def expand(sample_path: Path, margin: int = 40, color: str = "#282c34"):
 
 def add_margins(sample_path: Path, color: str = "#282c34"):
     im: Image.Image = Image.open(sample_path).convert("RGB")
-    new_w = round((im.height / 10) * 16)
     im.load()
     new_im = ImageOps.pad(
-        im, (new_w, im.height), method=Image.NEAREST, color=color
+        im, (im.width * 2, im.height), method=Image.NEAREST, color=color
     )
     new_im.save(sample_path)
