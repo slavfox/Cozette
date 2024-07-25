@@ -14,13 +14,8 @@ def get_last_ver():
 
 
 def get_last_cozette_sfd() -> str:
-    return (
-        get_last_ver()
-        .commit.tree["Cozette/Cozette.sfd"]
-        .data_stream.read()
-        .decode("utf-8")
-    )
-
+    content = get_last_ver().commit.tree["Cozette/Cozette.sfd"]
+    return content.data_stream.read().decode("utf-8")
 
 char_regex = re.compile(
     r"BDFChar: (-?\d+) (-?\d+) (-?\d+) (-?\d+) (-?\d+) (-?\d+) (-?\d+)"

@@ -183,6 +183,7 @@ implemented:
 - [x] APL glyphs (based on the list from [APL386](https://abrudz.github.io/APL386/))!
 - [x] [Uiua](https://www.uiua.org/) glyphs!
 - [x] [BQN](https://mlochbaum.github.io/BQN/fonts.html) glyphs!
+- [x] Fullwidth kana!
 - [ ] Nerdfonts:
   - [x] nf-pom-\*
   - [x] nf-seti-\*
@@ -264,13 +265,14 @@ Cozette includes contributions from:
 - [klinegareth]
 - [sungodmoth]
 - [yoshiyoshyosh]
+- [bluetoad07]
+- [estradiol enantate]
 
 # License & Acknowledgements
 
 Cozette is licensed [MIT] 💜
 
-Cozette's builds use [bdfscale](https://github.com/philj56/bdfscale) by [philj56](https://github.com/philj56) and
-[Bits'N'Picas](https://github.com/kreativekorp/bitsnpicas) by [Kreative Software](https://github.com/kreativekorp).
+Cozette's builds use [bdfscale](https://github.com/philj56/bdfscale) by [philj56](https://github.com/philj56), [Bits'N'Picas](https://github.com/kreativekorp/bitsnpicas) by [Kreative Software](https://github.com/kreativekorp).
 
 [dina]: https://www.dcmembers.com/jibsen/download/61/
 [proggy]: https://github.com/bluescan/proggyfonts
@@ -300,4 +302,6 @@ Cozette's builds use [bdfscale](https://github.com/philj56/bdfscale) by [philj56
 [dariof4]: https://github.com/dariof4
 [laxul]: https://github.com/laxul
 [sungodmoth]: https://github.com/sungodmoth
+[bluetoad07]: https://github.com/bluetoad07
+[estradiol enantate]: https://en.wikipedia.org/wiki/Estradiol_enantate
 [port]: https://cgit.freebsd.org/ports/tree/x11-fonts/cozette

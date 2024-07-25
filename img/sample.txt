@@ -24,15 +24,22 @@ $BLUE$┏━━━━━━━━━━━━━━━━━━━━━━━�
        ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒
 
 
-  $GREEN$Pchnąć w tę łódź jeża lub
+  $MAGENTA$Pchnąć w tę łódź jeża lub
       ósm skrzyń fig.
 
-     Eĥoŝanĝo ĉiuĵaŭde.
+     $YELLOW$Eĥoŝanĝo ĉiuĵaŭde.
 
-    Příliš žluťoučký kůň
+    $GREEN$Příliš žluťoučký kůň
      úpěl ďábelské ódy.
 
-    Любя, съешь щипцы, — 
+    $BLUE$Любя, съешь щипцы, — 
   вздохнёт мэр, — Кайф жгуч!
 
-           $FG$♠ $MAGENTA$♥ $FG$♣ $MAGENTA$♦
+       $FG$いろはにほへと
+         ちりぬるを
+        わかよたれそ
+         つねならむ
+       うゐのおくやま
+         けふこえて
+       あさきゆめみし
+         ゑひもせす
