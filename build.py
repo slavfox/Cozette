@@ -44,7 +44,7 @@ class Generate:
 
 def save_images():
     print(crayons.yellow("Saving character map"))
-    #save_charlist(FONTNAME, SFDPATH, REPO_ROOT / "img")
+    save_charlist(FONTNAME, SFDPATH, REPO_ROOT / "img")
 
     print(crayons.yellow("Saving sample image"))
     save_sample(
