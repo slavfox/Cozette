@@ -19,6 +19,3 @@ pip = "*"
 
 [requires]
 python_version = "3.12"
-
-[pipenv]
-allow_prereleases = true

@@ -5,6 +5,34 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog], and this project adheres to
 [Semantic Versioning].
 
+## [1.25.2]
+
+### Added
+
+- ℰ (U+2130 SCRIPT CAPITAL E)
+- ⊨ (U+22A8 TRUE)
+- ⦿ (U+29BF CIRCLED BULLET)
+-  (U+E20F)
+-  (U+E22C)
+-  (U+E79B)
+-  (U+F09A)
+-  (U+F460)
+-  (U+F47C)
+-  (U+F669)
+-  (U+F673)
+-  (U+F6A7)
+-  (U+F8D6)
+- 𝓐 (U+1D4D0 MATHEMATICAL BOLD SCRIPT CAPITAL A)
+- 𝓒 (U+1D4D2 MATHEMATICAL BOLD SCRIPT CAPITAL C)
+- 𝓢 (U+1D4E2 MATHEMATICAL BOLD SCRIPT CAPITAL S)
+- 𝙏 (U+1D64F MATHEMATICAL SANS-SERIF BOLD ITALIC CAPITAL T)
+- 🗲 (U+1F5F2 LIGHTNING MOOD)
+
+### Changed
+
+- き (U+304D HIRAGANA LETTER KI)
+- ぎ (U+304E HIRAGANA LETTER GI)
+
 ## [1.25.1]
 
 ### Added
@@ -2883,7 +2911,8 @@ Still broken on Windows.
 
 [keep a changelog]: https://keepachangelog.com/en/1.0.0/
 [semantic versioning]: https://semver.org/spec/v2.0.0.html
-[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.25.1...HEAD
+[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.25.2...HEAD
+[1.25.1]: https://github.com/slavfox/Cozette/compare/v.1.25.1...v.1.25.2
 [1.25.1]: https://github.com/slavfox/Cozette/compare/v.1.25.0...v.1.25.1
 [1.25.0]: https://github.com/slavfox/Cozette/compare/v.1.24.1...v.1.25.0
 [1.24.1]: https://github.com/slavfox/Cozette/compare/v.1.24.0...v.1.24.1
