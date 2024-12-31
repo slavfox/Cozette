@@ -90,4 +90,7 @@ def double_size(src: TextIO, out: TextIO):
             line = "FONT " + "-".join(xlfd) + "\n"
         elif line.startswith("BITMAP"):
             bitmap = True
+        if line.startswith("FAMILY_NAME"):
+            out.write(line)
+            continue
         out.write(line.replace("Cozette", "CozetteHiDpi"))

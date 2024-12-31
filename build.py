@@ -1,7 +1,9 @@
 import argparse
+import re
 import subprocess
 from dataclasses import dataclass
 from pathlib import Path
+from pickle import BUILD
 from shlex import quote
 from shutil import rmtree
 from typing import Optional, Sequence, cast
@@ -75,24 +77,24 @@ def rename_single(dir: Path, pattern: str, newname: str) -> Path:
     return cast(Path, next(dir.glob(pattern)).rename(dir / newname))
 
 
-def gen_bitmap_formats() -> Path:
+def gen_bitmap_formats(sfd_path: Path, prefix: str) -> Path:
     fontforge(
-        open=REPO_ROOT / "Cozette" / "Cozette.sfd",
+        open=sfd_path,
         generate=[
-            Generate("cozette.", bitmap_fmt="bdf"),
+            Generate(f"{prefix}.", bitmap_fmt="bdf"),
         ],
     )
-    bdf_path = rename_single(BUILD_DIR, "*.bdf", "cozette.bdf")
+    bdf_path = rename_single(BUILD_DIR, f"{prefix}-*.bdf", f"{prefix}.bdf")
     fontforge(
-        open=REPO_ROOT / "Cozette" / "Cozette.sfd",
+        open=sfd_path,
         generate=[
-            Generate("cozette.", "otb"),
-            Generate("cozette.", "psf"),
-            Generate("cozette.", "fnt"),
-            Generate("cozette.dfont", "sbit"),
+            Generate(f"{prefix}.", "otb"),
+            Generate(f"{prefix}.", "psf"),
+            Generate(f"{prefix}.", "fnt"),
+            Generate(f"{prefix}.dfont", "sbit"),
         ],
     )
-    rename_single(BUILD_DIR, "*.fnt", "cozette.fnt")
+    rename_single(BUILD_DIR, f"{prefix}-*.fnt", f"{prefix}.fnt")
     return bdf_path
 
 
@@ -163,8 +165,39 @@ def make_hidpi(bdf_path: Path, out_path: Path):
     print(crayons.green("Done!"))
 
 
-def gen_variants(bdf_path: Path):
-    hidpi_path = BUILD_DIR / "cozette_hidpi.bdf"
+BDF_CODEPOINT_RE = re.compile(r"BDFChar: \S+ (\d+)")
+
+
+def variant(
+    sfd_path: Path, variant_name: str, variant_source: Path
+) -> tuple[Path, str]:
+    outpath = BUILD_DIR / f"{variant_name}.sfd"
+    replacements = {}
+    with variant_source.open() as f:
+        for line in f:
+            if codepoint := BDF_CODEPOINT_RE.match(line):
+                replacements[int(codepoint.group(1))] = next(f)
+
+    with outpath.open("w") as f:
+        with sfd_path.open() as src:
+            replacement = None
+            for line in src:
+                if replacement is not None:
+                    f.write(replacement)
+                    replacement = None
+                elif line.startswith("FAMILY_NAME"):
+                    f.write(line)
+                else:
+                    f.write(line.replace("Cozette", variant_name))
+                if codepoint := BDF_CODEPOINT_RE.match(line):
+                    if int(codepoint.group(1)) in replacements:
+                        replacement = replacements[int(codepoint.group(1))]
+
+    return (outpath, variant_name)
+
+
+def gen_versions(bdf_path: Path, font_name: str, filename_prefix: str):
+    hidpi_path = BUILD_DIR / f"{filename_prefix}_hidpi.bdf"
 
     def bnp_invoc_ttf(name: str, format: str):
         return [
@@ -188,21 +221,23 @@ def gen_variants(bdf_path: Path):
             "-f",
             "psf",
             "-o",
-            BUILD_DIR / f"cozette.psf",
+            BUILD_DIR / f"{filename_prefix}.psf",
             bdf_path,
         ],
         check=True,
     )
     subprocess.run(
-        bnp_invoc_ttf("CozetteVector", "ttf") + [bdf_path], check=True
+        bnp_invoc_ttf(f"{font_name}Vector", "ttf") + [bdf_path], check=True
     )
     subprocess.run(
-        bnp_invoc_ttf("CozetteVectorBold", "ttf") + ["-b", bdf_path],
+        bnp_invoc_ttf(f"{font_name}VectorBold", "ttf") + ["-b", bdf_path],
         check=True,
     )
     print(crayons.yellow("Fixing TTF variants..."))
-    fix_ttf(BUILD_DIR / "CozetteVector_tmp.ttf", "CozetteVector")
-    fix_ttf(BUILD_DIR / "CozetteVectorBold_tmp.ttf", "CozetteVectorBold")
+    fix_ttf(BUILD_DIR / f"{font_name}Vector_tmp.ttf", f"{font_name}Vector")
+    fix_ttf(
+        BUILD_DIR / f"{font_name}VectorBold_tmp.ttf", f"{font_name}VectorBold"
+    )
     print(crayons.green("Done!"))
     make_hidpi(bdf_path, hidpi_path)
     fontforge(
@@ -213,7 +248,7 @@ def gen_variants(bdf_path: Path):
             Generate(f"{hidpi_path.stem}.dfont", "sbit"),
         ],
     )
-    rename_single(BUILD_DIR, "*-26.fnt", "cozette_hidpi.fnt")
+    rename_single(BUILD_DIR, "*-26.fnt", f"{filename_prefix}_hidpi.fnt")
     subprocess.run(
         [
             BUILD_DIR.parent / "bitsnpicas.sh",
@@ -265,11 +300,19 @@ if __name__ == "__main__":
     elif args.action == "fonts":
         rmtree(BUILD_DIR, ignore_errors=True)
         BUILD_DIR.mkdir(exist_ok=True)
-        print(crayons.blue("Building bitmap formats..."))
-        bdf_path = gen_bitmap_formats()
-        print(crayons.green("Done!", bold=True))
-        print(crayons.blue("Building variants..."))
-        gen_variants(bdf_path)
+        for sfd_path, font_name in (
+            (SFDPATH, "Cozette"),
+            variant(
+                SFDPATH,
+                "CozetteCrossedSeven",
+                SFDPATH.parent / "variants" / "CozetteCrossedSeven.sfd",
+            ),
+        ):
+            print(crayons.blue(f"Building bitmap formats for {font_name}..."))
+            bdf_path = gen_bitmap_formats(sfd_path, font_name.lower())
+            print(crayons.green("Done!", bold=True))
+            print(crayons.blue(f"Building versions for {font_name}..."))
+            gen_versions(bdf_path, font_name, font_name.lower())
         print(crayons.green("Done!", bold=True))
     elif args.action == "changelog":
         get_changelog()

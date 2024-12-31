@@ -1,0 +1,214 @@
+SplineFontDB: 3.2
+FontName: Cozette
+FullName: Cozette
+FamilyName: Cozette
+Weight: Medium
+Copyright: (c) 2020-2024 Slavfox
+Version: 1.252
+ItalicAngle: 0
+UnderlinePosition: -100
+UnderlineWidth: 50
+Ascent: 1575
+Descent: 473
+InvalidEm: 0
+sfntRevision: 0x00010000
+LayerCount: 2
+Layer: 0 0 "Back" 1
+Layer: 1 0 "Fore" 0
+XUID: [1021 693 57709195 13213585]
+StyleMap: 0x0040
+FSType: 0
+OS2Version: 1
+OS2_WeightWidthSlopeOnly: 0
+OS2_UseTypoMetrics: 0
+CreationTime: -2082812035
+ModificationTime: 1735604900
+PfmFamily: 49
+TTFWeight: 500
+TTFWidth: 5
+LineGap: 102
+VLineGap: 0
+Panose: 0 0 0 9 0 0 0 0 0 0
+OS2TypoAscent: 1655
+OS2TypoAOffset: 0
+OS2TypoDescent: 472
+OS2TypoDOffset: 0
+OS2TypoLinegap: 2127
+OS2WinAscent: 1655
+OS2WinAOffset: 0
+OS2WinDescent: 472
+OS2WinDOffset: 0
+HheadAscent: 1655
+HheadAOffset: 0
+HheadDescent: -472
+HheadDOffset: 0
+OS2SubXSize: 409
+OS2SubYSize: 409
+OS2SubXOff: 0
+OS2SubYOff: 409
+OS2SupXSize: 409
+OS2SupYSize: 409
+OS2SupXOff: 0
+OS2SupYOff: 409
+OS2StrikeYSize: 2048
+OS2StrikeYPos: 512
+OS2Vendor: 'UNKN'
+MarkAttachClasses: 1
+DEI: 91125
+LangName: 1033 "" "" "" "" "" "" "" "" "" "" "" "" "" "Copyright (c) 2020 Slavfox <slavfoxman@gmail.com>+AAoACgAA-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the +ACIA-Software+ACIA), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:+AAoACgAA-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.+AAoACgAA-THE SOFTWARE IS PROVIDED +ACIA-AS IS+ACIA, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE." "https://opensource.org/licenses/MIT"
+MATH:ScriptPercentScaleDown: 80
+MATH:ScriptScriptPercentScaleDown: 60
+MATH:DelimitedSubFormulaMinHeight: 3072
+MATH:DisplayOperatorMinHeight: 0
+MATH:MathLeading: 0 
+MATH:AxisHeight: 0 
+MATH:AccentBaseHeight: 0 
+MATH:FlattenedAccentBaseHeight: 0 
+MATH:SubscriptShiftDown: 409 
+MATH:SubscriptTopMax: 0 
+MATH:SubscriptBaselineDropMin: 0 
+MATH:SuperscriptShiftUp: 409 
+MATH:SuperscriptShiftUpCramped: 0 
+MATH:SuperscriptBottomMin: 0 
+MATH:SuperscriptBaselineDropMax: 0 
+MATH:SubSuperscriptGapMin: 200 
+MATH:SuperscriptBottomMaxWithSubscript: 0 
+MATH:SpaceAfterScript: 85 
+MATH:UpperLimitGapMin: 0 
+MATH:UpperLimitBaselineRiseMin: 0 
+MATH:LowerLimitGapMin: 0 
+MATH:LowerLimitBaselineDropMin: 0 
+MATH:StackTopShiftUp: 0 
+MATH:StackTopDisplayStyleShiftUp: 0 
+MATH:StackBottomShiftDown: 0 
+MATH:StackBottomDisplayStyleShiftDown: 0 
+MATH:StackGapMin: 150 
+MATH:StackDisplayStyleGapMin: 350 
+MATH:StretchStackTopShiftUp: 0 
+MATH:StretchStackBottomShiftDown: 0 
+MATH:StretchStackGapAboveMin: 0 
+MATH:StretchStackGapBelowMin: 0 
+MATH:FractionNumeratorShiftUp: 0 
+MATH:FractionNumeratorDisplayStyleShiftUp: 0 
+MATH:FractionDenominatorShiftDown: 0 
+MATH:FractionDenominatorDisplayStyleShiftDown: 0 
+MATH:FractionNumeratorGapMin: 50 
+MATH:FractionNumeratorDisplayStyleGapMin: 150 
+MATH:FractionRuleThickness: 50 
+MATH:FractionDenominatorGapMin: 50 
+MATH:FractionDenominatorDisplayStyleGapMin: 150 
+MATH:SkewedFractionHorizontalGap: 0 
+MATH:SkewedFractionVerticalGap: 0 
+MATH:OverbarVerticalGap: 150 
+MATH:OverbarRuleThickness: 50 
+MATH:OverbarExtraAscender: 50 
+MATH:UnderbarVerticalGap: 150 
+MATH:UnderbarRuleThickness: 50 
+MATH:UnderbarExtraDescender: 50 
+MATH:RadicalVerticalGap: 50 
+MATH:RadicalDisplayStyleVerticalGap: 50 
+MATH:RadicalRuleThickness: 50 
+MATH:RadicalExtraAscender: 50 
+MATH:RadicalKernBeforeDegree: 568 
+MATH:RadicalKernAfterDegree: -1137 
+MATH:RadicalDegreeBottomRaisePercent: 60
+MATH:MinConnectorOverlap: 40
+Encoding: UnicodeFull
+UnicodeInterp: none
+NameList: AGL with PUA
+DisplaySize: 13
+AntiAlias: 1
+FitToEm: 0
+WidthSeparation: 307
+WinInfo: 0 16 12
+BeginPrivate: 0
+EndPrivate
+TeXData: 1 0 0 524288 262144 174762 0 -1048576 174762 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
+BeginChars: 1114112 4
+
+StartChar: seven
+Encoding: 55 55 0
+Width: 1024
+Flags: W
+LayerCount: 2
+Fore
+Validated: 1
+EndChar
+
+StartChar: uni2077
+Encoding: 8311 8311 1
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: uni2087
+Encoding: 8327 8327 2
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: uniFF17
+Encoding: 65303 65303 3
+Width: 1890
+Flags: HW
+LayerCount: 2
+EndChar
+EndChars
+BitmapFont: 13 3599 10 3 1
+BDFStartProperties: 42
+FONT 1 "-slavfox-Cozette-Medium-R-Normal--13-120-75-75-M-60-ISO10646-1"
+COMMENT 0 "(c) 2020-2024 Slavfox"
+FOUNDRY 16 "slavfox"
+FAMILY_NAME 16 "Cozette"
+WEIGHT_NAME 16 "Medium"
+SLANT 16 "R"
+SETWIDTH_NAME 16 "Normal"
+ADD_STYLE_NAME 16 ""
+PIXEL_SIZE 18 13
+POINT_SIZE 18 120
+RESOLUTION_X 19 75
+RESOLUTION_Y 19 75
+SPACING 16 "M"
+AVERAGE_WIDTH 18 60
+CHARSET_REGISTRY 16 "ISO10646"
+CHARSET_ENCODING 16 "1"
+FONTNAME_REGISTRY 16 ""
+FONT_NAME 16 "Cozette"
+FACE_NAME 16 "Cozette"
+COPYRIGHT 16 "(c) 2020-2024 Slavfox"
+FONT_VERSION 16 "1.252"
+FONT_ASCENT 18 10
+FONT_DESCENT 18 3
+UNDERLINE_POSITION 18 -19
+UNDERLINE_THICKNESS 18 13
+X_HEIGHT 18 5
+CAP_HEIGHT 18 7
+DEFAULT_CHAR 19 0
+RAW_ASCENT 18 769
+RAW_DESCENT 18 230
+NORM_SPACE 18 6
+RELATIVE_WEIGHT 19 50
+RELATIVE_SETWIDTH 19 50
+SUPERSCRIPT_X 18 0
+SUPERSCRIPT_Y 18 2
+SUPERSCRIPT_SIZE 18 2
+SUBSCRIPT_X 18 0
+SUBSCRIPT_Y 18 2
+SUBSCRIPT_SIZE 18 2
+FIGURE_WIDTH 18 6
+AVG_LOWERCASE_WIDTH 18 60
+AVG_UPPERCASE_WIDTH 18 60
+BDFEndProperties
+Resolution: 75
+BDFChar: 0 55 6 1 5 0 7
+p]qERGT]7:
+BDFChar: 1 8311 6 1 4 4 8
+n.=MC5QCca
+BDFChar: 2 8327 6 1 4 -2 2
+n.=MC5QCca
+BDFChar: 3 65303 12 4 8 0 7
+p]qERGT]7:
+EndBitmapFont
+EndSplineFont

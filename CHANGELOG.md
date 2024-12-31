@@ -5,6 +5,129 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog], and this project adheres to
 [Semantic Versioning].
 
+## [1.26.0]
+
+The 2025 update! Big thanks to [bluetoad07 for fixing the Kana!](https://github.com/slavfox/Cozette/pull/136)
+
+### Added
+
+- ▕ (U+2595 RIGHT ONE EIGHTH BLOCK)
+-  (U+EA76)
+-  (U+F007)
+-  (U+F0A8)
+-  (U+F0A9)
+-  (U+F0AA)
+-  (U+F0AB)
+-  (U+F128)
+-  (U+F1AE)
+-  (U+F322)
+- 📌 (U+1F4CC PUSHPIN)
+- 󰁌 (U+F004C)
+- 󰁹 (U+F0079)
+- 󰁺 (U+F007A)
+- 󰁻 (U+F007B)
+- 󰁼 (U+F007C)
+- 󰁽 (U+F007D)
+- 󰁾 (U+F007E)
+- 󰁿 (U+F007F)
+- 󰂀 (U+F0080)
+- 󰂁 (U+F0081)
+- 󰂂 (U+F0082)
+- 󰂃 (U+F0083)
+- 󰂄 (U+F0084)
+- 󰂅 (U+F0085)
+- 󰂆 (U+F0086)
+- 󰂇 (U+F0087)
+- 󰂈 (U+F0088)
+- 󰂉 (U+F0089)
+- 󰂊 (U+F008A)
+- 󰂋 (U+F008B)
+- 󰂌 (U+F008C)
+- 󰂍 (U+F008D)
+- 󰂎 (U+F008E)
+- 󰂏 (U+F008F)
+- 󰂐 (U+F0090)
+- 󰂑 (U+F0091)
+- 󰂚 (U+F009A)
+- 󰂛 (U+F009B)
+- 󰂜 (U+F009C)
+- 󰂝 (U+F009D)
+- 󰂞 (U+F009E)
+- 󰂟 (U+F009F)
+- 󰂠 (U+F00A0)
+- 󰂤 (U+F00A4)
+- 󰂾 (U+F00BE)
+- 󰃀 (U+F00C0)
+- 󰃁 (U+F00C1)
+- 󰃂 (U+F00C2)
+- 󰃃 (U+F00C3)
+- 󰃄 (U+F00C4)
+- 󰃅 (U+F00C5)
+- 󰃆 (U+F00C6)
+- 󰃰 (U+F00F0)
+- 󰊚 (U+F029A)
+- 󰊢 (U+F02A2)
+- 󰒋 (U+F048B)
+- 󰔟 (U+F051F)
+- 󰖯 (U+F05AF)
+- 󰖰 (U+F05B0)
+- 󰚥 (U+F06A5)
+- 󱃾 (U+F10FE)
+- 󱅫 (U+F116B)
+- 󱈑 (U+F1211)
+
+### Changed
+
+- ぉ (U+3049 HIRAGANA LETTER SMALL O)
+- き (U+304D HIRAGANA LETTER KI)
+- ぎ (U+304E HIRAGANA LETTER GI)
+- け (U+3051 HIRAGANA LETTER KE)
+- げ (U+3052 HIRAGANA LETTER GE)
+- こ (U+3053 HIRAGANA LETTER KO)
+- ご (U+3054 HIRAGANA LETTER GO)
+- せ (U+305B HIRAGANA LETTER SE)
+- ぜ (U+305C HIRAGANA LETTER ZE)
+- そ (U+305D HIRAGANA LETTER SO)
+- ぞ (U+305E HIRAGANA LETTER ZO)
+- た (U+305F HIRAGANA LETTER TA)
+- だ (U+3060 HIRAGANA LETTER DA)
+- ち (U+3061 HIRAGANA LETTER TI)
+- ぢ (U+3062 HIRAGANA LETTER DI)
+- っ (U+3063 HIRAGANA LETTER SMALL TU)
+- つ (U+3064 HIRAGANA LETTER TU)
+- づ (U+3065 HIRAGANA LETTER DU)
+- な (U+306A HIRAGANA LETTER NA)
+- に (U+306B HIRAGANA LETTER NI)
+- ね (U+306D HIRAGANA LETTER NE)
+- ひ (U+3072 HIRAGANA LETTER HI)
+- び (U+3073 HIRAGANA LETTER BI)
+- ぴ (U+3074 HIRAGANA LETTER PI)
+- ま (U+307E HIRAGANA LETTER MA)
+- み (U+307F HIRAGANA LETTER MI)
+- ゃ (U+3083 HIRAGANA LETTER SMALL YA)
+- や (U+3084 HIRAGANA LETTER YA)
+- ゅ (U+3085 HIRAGANA LETTER SMALL YU)
+- ゆ (U+3086 HIRAGANA LETTER YU)
+- れ (U+308C HIRAGANA LETTER RE)
+- ん (U+3093 HIRAGANA LETTER N)
+- ゕ (U+3095 HIRAGANA LETTER SMALL KA)
+- ゖ (U+3096 HIRAGANA LETTER SMALL KE)
+- ウ (U+30A6 KATAKANA LETTER U)
+- カ (U+30AB KATAKANA LETTER KA)
+- ガ (U+30AC KATAKANA LETTER GA)
+- ス (U+30B9 KATAKANA LETTER SU)
+- ズ (U+30BA KATAKANA LETTER ZU)
+- ソ (U+30BD KATAKANA LETTER SO)
+- ゾ (U+30BE KATAKANA LETTER ZO)
+- ッ (U+30C3 KATAKANA LETTER SMALL TU)
+- ミ (U+30DF KATAKANA LETTER MI)
+- ラ (U+30E9 KATAKANA LETTER RA)
+- ワ (U+30EF KATAKANA LETTER WA)
+- ン (U+30F3 KATAKANA LETTER N)
+- ヴ (U+30F4 KATAKANA LETTER VU)
+- ヵ (U+30F5 KATAKANA LETTER SMALL KA)
+- ー (U+30FC KATAKANA-HIRAGANA PROLONGED SOUND MARK)
+
 ## [1.25.2]
 
 ### Added
@@ -2911,8 +3034,9 @@ Still broken on Windows.
 
 [keep a changelog]: https://keepachangelog.com/en/1.0.0/
 [semantic versioning]: https://semver.org/spec/v2.0.0.html
-[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.25.2...HEAD
-[1.25.1]: https://github.com/slavfox/Cozette/compare/v.1.25.1...v.1.25.2
+[unreleased]: https://github.com/slavfox/Cozette/compare/v.1.26.0...HEAD
+[1.26.0]: https://github.com/slavfox/Cozette/compare/v.1.25.2...v.1.26.0
+[1.25.2]: https://github.com/slavfox/Cozette/compare/v.1.25.1...v.1.25.2
 [1.25.1]: https://github.com/slavfox/Cozette/compare/v.1.25.0...v.1.25.1
 [1.25.0]: https://github.com/slavfox/Cozette/compare/v.1.24.1...v.1.25.0
 [1.24.1]: https://github.com/slavfox/Cozette/compare/v.1.24.0...v.1.24.1

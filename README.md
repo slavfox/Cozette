@@ -193,13 +193,12 @@ implemented:
       date)
 - [x] "True" TTF version
   - [x] Windows support
-- [x] Full [vim-airline] support!
+- [x] Full [vim-airline] and [bufferline.nvim] support!
 - [x] Full [ranger_devicons] support!
 - [x] [starship] supported out of the box!
 - [x] Full [powerlevel10k] support! (if it doesn't work, try setting
       `POWERLEVEL9K_MODE` to `nerdfont-complete`)
-- [x] All glyphs used by [maturin](https://github.com/PyO3/maturin) and
-      many other CLI tools!
+- [x] All glyphs used by [maturin](https://github.com/PyO3/maturin) and many other CLI tools!
 - [x] Charmap including the code points (to make it easier for users to
       report issues/request additions)
 - [x] Codepoints above U+FFFF in vector fonts
@@ -305,3 +304,5 @@ Cozette's builds use [bdfscale](https://github.com/philj56/bdfscale) by [philj56
 [bluetoad07]: https://github.com/bluetoad07
 [estradiol enantate]: https://en.wikipedia.org/wiki/Estradiol_enantate
 [port]: https://cgit.freebsd.org/ports/tree/x11-fonts/cozette
+[bufferline.nvim]: https://github.com/akinsho/bufferline.nvim
+[tmux]: 
