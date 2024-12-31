@@ -203,6 +203,8 @@ implemented:
       report issues/request additions)
 - [x] Codepoints above U+FFFF in vector fonts
 - [x] Upscaled hi-dpi variant
+- [x] Crossed seven variant!
+  ![Crossed seven demo](./img/crossed_seven.png)
 
 # Recommended alternatives
 
