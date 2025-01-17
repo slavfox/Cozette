@@ -93,6 +93,13 @@ The preferred format is `.otb` (for bitmaps) or `.ttf`
 (you probably want to follow your distro's instructions). On Ubuntu you might need to
 [specifically enable bitmap fonts].
 
+**If you're on Void**, [ifreund] made [a Void package] for the .otb! Install it
+using XBPS:
+
+```
+$ sudo xbps-install font-cozette
+```
+
 **If you're on Arch**, [ifreund] made [an AUR package] for the .otb! Install it
 using your AUR helper of choice:
 
