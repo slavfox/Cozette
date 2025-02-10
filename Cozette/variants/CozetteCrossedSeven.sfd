@@ -22,7 +22,7 @@ OS2Version: 1
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: -2082812035
-ModificationTime: 1735604900
+ModificationTime: 1739225888
 PfmFamily: 49
 TTFWeight: 500
 TTFWidth: 5
@@ -120,11 +120,12 @@ DisplaySize: 13
 AntiAlias: 1
 FitToEm: 0
 WidthSeparation: 307
-WinInfo: 0 16 12
+WinInfo: 117904 16 12
+OnlyBitmaps: 1
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 524288 262144 174762 0 -1048576 174762 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 1114112 4
+BeginChars: 1114112 5
 
 StartChar: seven
 Encoding: 55 55 0
@@ -155,8 +156,15 @@ Width: 1890
 Flags: HW
 LayerCount: 2
 EndChar
+
+StartChar: u1CCF7
+Encoding: 118007 118007 4
+Width: 945
+Flags: W
+LayerCount: 2
+EndChar
 EndChars
-BitmapFont: 13 3599 10 3 1
+BitmapFont: 13 5 10 3 1
 BDFStartProperties: 42
 FONT 1 "-slavfox-Cozette-Medium-R-Normal--13-120-75-75-M-60-ISO10646-1"
 COMMENT 0 "(c) 2020-2024 Slavfox"
@@ -210,5 +218,7 @@ BDFChar: 2 8327 6 1 4 -2 2
 n.=MC5QCca
 BDFChar: 3 65303 12 4 8 0 7
 p]qERGT]7:
+BDFChar: 4 118007 6 0 5 0 7
+r.O]Y6u482
 EndBitmapFont
 EndSplineFont
