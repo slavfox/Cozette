@@ -22,7 +22,7 @@ OS2Version: 1
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: -2082812035
-ModificationTime: 1739225928
+ModificationTime: 1739301737
 PfmFamily: 49
 TTFWeight: 500
 TTFWidth: 5
@@ -120,11 +120,11 @@ DisplaySize: 13
 AntiAlias: 1
 FitToEm: 0
 WidthSeparation: 307
-WinInfo: 129792 16 16
+WinInfo: 129024 16 16
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 524288 262144 174762 0 -1048576 174762 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 1114112 4019
+BeginChars: 1114112 4031
 
 StartChar: uni0000
 Encoding: 0 0 0
@@ -35597,8 +35597,92 @@ Width: 1024
 Flags: HW
 LayerCount: 2
 EndChar
+
+StartChar: u1F8B0
+Encoding: 129200 129200 4019
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: u1F8B1
+Encoding: 129201 129201 4020
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: u1F8B3
+Encoding: 129203 129203 4021
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: u1F8B4
+Encoding: 129204 129204 4022
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: u1F8B5
+Encoding: 129205 129205 4023
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: u1F8B7
+Encoding: 129207 129207 4024
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: u1F8B6
+Encoding: 129206 129206 4025
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: u1F8B8
+Encoding: 129208 129208 4026
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: u1F8B9
+Encoding: 129209 129209 4027
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: u1F8BA
+Encoding: 129210 129210 4028
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: u1F8BB
+Encoding: 129211 129211 4029
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: u1F8B2
+Encoding: 129202 129202 4030
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
 EndChars
-BitmapFont: 13 4020 10 3 1
+BitmapFont: 13 4031 10 3 1
 BDFStartProperties: 42
 FONT 1 "-slavfox-Cozette-Medium-R-Normal--13-120-75-75-M-60-ISO10646-1"
 COMMENT 0 "(c) 2020-2024 Slavfox"
@@ -43682,6 +43766,30 @@ BDFChar: 4017 129986 6 0 5 0 7
 r!7t#"S`8l
 BDFChar: 4018 129987 6 0 5 5 7
 p]U?l
+BDFChar: 4019 129200 6 1 4 0 5
+nA(]Y&.egA
+BDFChar: 4020 129201 6 1 4 0 6
+i"-H]TYU$s
+BDFChar: 4021 129203 6 1 5 0 7
+E,]dkE$,/U
+BDFChar: 4022 129204 6 0 6 -1 7
+rr2?BK&5qprVuou
+BDFChar: 4023 129205 6 0 6 -1 7
+rr2?*Wp]<CrVuou
+BDFChar: 4024 129207 6 0 6 -1 7
+rpK4BWlFK+rVuou
+BDFChar: 4025 129206 6 0 6 -1 7
+rr2?ZK(eX3rVuou
+BDFChar: 4026 129208 6 1 5 1 5
+i4u9&+92BA
+BDFChar: 4027 129209 6 1 5 1 5
+3#JSZ+92BA
+BDFChar: 4028 129210 6 1 5 1 5
++@)kB2uipY
+BDFChar: 4029 129211 6 1 5 1 5
++:tKehuE`W
+BDFChar: 4030 129202 6 1 5 0 6
++:rdZTR]9-
 BDFRefChar: 1999 1944 0 0 N
 BDFRefChar: 2000 1943 0 0 N
 BDFRefChar: 2001 1941 0 0 N
