@@ -35871,7 +35871,7 @@ Flags: HW
 LayerCount: 2
 EndChar
 EndChars
-BitmapFont: 13 4058 10 3 1
+BitmapFont: 13 4059 10 3 1
 BDFStartProperties: 42
 FONT 1 "-slavfox-Cozette-Medium-R-Normal--13-120-75-75-M-60-ISO10646-1"
 COMMENT 0 "(c) 2020-2024 Slavfox"
@@ -43993,8 +43993,8 @@ BDFChar: 4036 9219 6 1 4 -2 8
 i.0a9huHSM+Abl7
 BDFChar: 4037 9220 6 1 4 -2 8
 i.0a9huI^=+<Vd,
-BDFChar: 4038 9221 6 1 4 -2 8
-i.0a9huFlr:gbsW
+BDFChar: 4038 9221 6 1 4 -3 8
+i.0a9huFlr:f&8G
 BDFChar: 4039 9222 6 1 4 -2 8
 5bR&.TE%eb?r0Z"
 BDFChar: 4040 9223 6 1 4 -2 8
@@ -44004,11 +44004,11 @@ BDFChar: 4041 9232 6 1 4 -2 8
 BDFChar: 4042 9233 6 1 4 -2 8
 ^n@?n^]5Kb+<YV'
 BDFChar: 4043 9234 6 1 4 -2 8
-^n@?n^]7aR+@'lG
+^n@?n^]5KR&0Pol
 BDFChar: 4044 9235 6 1 4 -2 8
 ^n@?n^]7aR+:qo\
 BDFChar: 4045 9236 6 1 4 -2 8
-^n@?n^]72-E"EQ\
+^n@?n^]6&bE"EQ\
 BDFChar: 4046 9237 6 1 4 -2 8
 OO14nO8r*R?r0Z"
 BDFChar: 4047 9238 6 1 4 -2 8
