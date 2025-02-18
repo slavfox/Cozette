@@ -120,7 +120,7 @@ DisplaySize: 13
 AntiAlias: 1
 FitToEm: 0
 WidthSeparation: 307
-WinInfo: 65340 27 7
+WinInfo: 12236 28 7
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 524288 262144 174762 0 -1048576 174762 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
@@ -31566,7 +31566,7 @@ Flags: HW
 LayerCount: 2
 EndChar
 EndChars
-BitmapFont: 13 3660 10 3 1
+BitmapFont: 13 3684 10 3 1
 BDFStartProperties: 42
 FONT 1 "-slavfox-Cozette-Medium-R-Normal--13-120-75-75-M-60-ISO10646-1"
 COMMENT 0 "(c) 2020-2024 Slavfox"
@@ -38422,8 +38422,8 @@ BDFChar: 3403 12523 12 2 10 0 7
 ,QK(i,QK(i,QL5_70&&B
 BDFChar: 3404 12524 12 3 9 0 7
 J:N0%KS5`N
-BDFChar: 3405 12525 12 2 10 0 7
-s+#WMJ:N0#J:N0#s+#WM
+BDFChar: 3405 12525 12 2 9 0 7
+s+,`PJV!iP
 BDFChar: 3406 12526 12 3 9 0 5
 rdo_)#VZ5Y
 BDFChar: 3407 12527 12 2 10 0 7
@@ -38930,8 +38930,56 @@ BDFChar: 3657 65438 6 1 2 7 8
 5_&h7
 BDFChar: 3658 65439 6 1 3 6 8
 5bL@B
-BDFChar: -1 65377 6 1 4 0 3
-@$$IX
+BDFChar: -1 19975 12 2 10 0 8
+s*tX\&-*dP&HEsS+TOe.L&_2R
+BDFChar: -1 20013 12 2 10 0 8
+#QXmTLk(;3s+#oU#QP,1#QOi)
+BDFChar: -1 20154 12 3 9 0 8
+&.fBa&1AqpJcGcN
+BDFChar: -1 20870 12 2 10 0 8
+s+#oULk,MUJ:N0#J:N0#K)blO
+BDFChar: -1 20998 12 2 10 0 8
++ojn/J:N+L&HEsS+TOe.L&_2R
+BDFChar: -1 21306 12 2 9 0 8
+s+$i.Lm4Warr<$!
+BDFChar: -1 21315 12 2 10 0 8
+IfK`S#QXmT#QP,1#QP,1#QOi)
+BDFChar: -1 22303 12 2 10 0 8
+#QP,1#QT>S#QP,1#QP,1s*t(L
+BDFChar: -1 22823 12 2 10 0 8
+#QP,1#QXmT#QPP='EB<W5l^lb
+BDFChar: -1 23567 12 2 10 0 8
+#QP,1#QQ=S.KE$?Lk#a20E;(Q
+BDFChar: -1 24066 12 2 10 0 8
+#QXmT#QT>S8H;<^8H;B`#QOi)
+BDFChar: -1 24180 12 2 10 0 8
+5QH96KE+4:,QK(is*t4P"98E%
+BDFChar: -1 26085 12 3 9 0 8
+rdo`Rrdo`RrVuou
+BDFChar: -1 26178 12 2 10 0 8
+iW-04U&aY4T`D9Hi;e]7!rr<$
+BDFChar: -1 26376 12 2 9 0 8
+59W6759W<YL&_2R
+BDFChar: -1 26408 12 2 10 0 8
+#QP,1s*u'h)uqGg8H=Qs#QOi)
+BDFChar: -1 26449 12 1 10 0 8
++FkSbpV7o%,_0ocC4Mt-,6.]D
+BDFChar: -1 27700 12 2 10 0 8
+#QP,1#lsAn/-%."8H=Qs0E;(Q
+BDFChar: -1 28779 12 3 9 0 8
+&.k"fOsh_HJcGcN
+BDFChar: -1 29983 12 2 10 0 8
+8-"-iL]@\\IfK`S#QP,1s*t(L
+BDFChar: -1 30010 12 2 10 0 8
+p].LJW.=[DW;rmtq#GsG"onW'
+BDFChar: -1 30334 12 2 10 0 8
+s*t@T#QT>S5lcB75lcB75l^lb
+BDFChar: -1 31186 12 1 10 0 8
+nGjk#ofsZ#,=$35BRle,/cYkO
+BDFChar: -1 37329 12 2 10 0 8
+#QPP=+opGL#QT>S8H:4?s*t(L
+BDFChar: -1 12306 12 0 11 0 8
+5MuMA!!#7A!WW9%!WW9%!WW3#
 BDFRefChar: 1999 1944 0 0 N
 BDFRefChar: 2000 1943 0 0 N
 BDFRefChar: 2001 1941 0 0 N
