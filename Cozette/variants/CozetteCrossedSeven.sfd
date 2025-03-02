@@ -22,7 +22,7 @@ OS2Version: 1
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: -2082812035
-ModificationTime: 1739225888
+ModificationTime: 1740874609
 PfmFamily: 49
 TTFWeight: 500
 TTFWidth: 5
@@ -114,18 +114,19 @@ MATH:RadicalKernAfterDegree: -1137
 MATH:RadicalDegreeBottomRaisePercent: 60
 MATH:MinConnectorOverlap: 40
 Encoding: UnicodeFull
+Compacted: 1
 UnicodeInterp: none
 NameList: AGL with PUA
 DisplaySize: 13
 AntiAlias: 1
 FitToEm: 0
 WidthSeparation: 307
-WinInfo: 117904 16 12
+WinInfo: 0 16 12
 OnlyBitmaps: 1
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 524288 262144 174762 0 -1048576 174762 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 1114112 5
+BeginChars: 1114112 10
 
 StartChar: seven
 Encoding: 55 55 0
@@ -139,21 +140,21 @@ EndChar
 StartChar: uni2077
 Encoding: 8311 8311 1
 Width: 1024
-Flags: HW
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uni2087
 Encoding: 8327 8327 2
 Width: 1024
-Flags: HW
+Flags: W
 LayerCount: 2
 EndChar
 
 StartChar: uniFF17
 Encoding: 65303 65303 3
 Width: 1890
-Flags: HW
+Flags: W
 LayerCount: 2
 EndChar
 
@@ -163,8 +164,42 @@ Width: 945
 Flags: W
 LayerCount: 2
 EndChar
+
+StartChar: u1E0A7
+Encoding: 123047 123047 5
+Width: 2048
+LayerCount: 2
+EndChar
+
+StartChar: u1F0A7
+Encoding: 127143 127143 6
+Width: 945
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: u1F0B7
+Encoding: 127159 127159 7
+Width: 945
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: u1F0C7
+Encoding: 127175 127175 8
+Width: 945
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: u1F0D7
+Encoding: 127191 127191 9
+Width: 945
+Flags: W
+LayerCount: 2
+EndChar
 EndChars
-BitmapFont: 13 5 10 3 1
+BitmapFont: 13 11 10 3 1
 BDFStartProperties: 42
 FONT 1 "-slavfox-Cozette-Medium-R-Normal--13-120-75-75-M-60-ISO10646-1"
 COMMENT 0 "(c) 2020-2024 Slavfox"
@@ -220,5 +255,15 @@ BDFChar: 3 65303 12 4 8 0 7
 p]qERGT]7:
 BDFChar: 4 118007 6 0 5 0 7
 r.O]Y6u482
+BDFChar: 5 123047 6 0 0 0 0
+z
+BDFChar: 6 127143 6 1 5 -2 8
+pk\-if\#uOLoC(K
+BDFChar: 7 127159 6 1 5 -2 8
+pk\-if\#ttLtMJ&
+BDFChar: 8 127175 6 1 5 -2 8
+pk\-if\#uOLtMJ&
+BDFChar: 9 127191 6 1 5 -2 8
+pk\-if\#uOW7^kF
 EndBitmapFont
 EndSplineFont
