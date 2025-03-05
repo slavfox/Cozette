@@ -22,7 +22,7 @@ OS2Version: 1
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: -2082812035
-ModificationTime: 1741156440
+ModificationTime: 1741193116
 PfmFamily: 49
 TTFWeight: 500
 TTFWidth: 5
@@ -120,11 +120,11 @@ DisplaySize: 13
 AntiAlias: 1
 FitToEm: 0
 WidthSeparation: 307
-WinInfo: 8448 16 9
+WinInfo: 128128 16 9
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 524288 262144 174762 0 -1048576 174762 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 1114112 4703
+BeginChars: 1114112 4711
 
 StartChar: uni0000
 Encoding: 0 0 0
@@ -40385,8 +40385,64 @@ Width: 1024
 Flags: W
 LayerCount: 2
 EndChar
+
+StartChar: u1F4A3
+Encoding: 128163 128163 4703
+Width: 1890
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: u1F3AE
+Encoding: 127918 127918 4704
+Width: 1890
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: u1F4BE
+Encoding: 128190 128190 4705
+Width: 1890
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: u1F4BF
+Encoding: 128191 128191 4706
+Width: 1890
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: u1F4C0
+Encoding: 128192 128192 4707
+Width: 1890
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: u1F4A4
+Encoding: 128164 128164 4708
+Width: 1890
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: u1F4C1
+Encoding: 128193 128193 4709
+Width: 1890
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: u1F4C2
+Encoding: 128194 128194 4710
+Width: 1890
+Flags: W
+LayerCount: 2
+EndChar
 EndChars
-BitmapFont: 13 4704 10 3 1
+BitmapFont: 13 4713 10 3 1
 BDFStartProperties: 42
 FONT 1 "-slavfox-Cozette-Medium-R-Normal--13-120-75-75-M-60-ISO10646-1"
 COMMENT 0 "(c) 2020-2024 Slavfox"
@@ -49838,6 +49894,26 @@ BDFChar: 4701 8451 6 0 5 0 7
 8@22)&.fN]
 BDFChar: 4702 8457 6 0 5 0 7
 >d.$E&.fBa
+BDFChar: 4703 128163 12 1 11 -2 9
+"s=5&#Tu<]4og'4s+(&urIFouHN650
+BDFChar: 4704 127918 12 1 10 0 7
+1B;oT?@\##hSB0,s1i&n
+BDFChar: -1 127934 12 0 0 0 0
+z
+BDFChar: -1 128060 12 0 0 0 0
+z
+BDFChar: 4705 128190 12 1 10 -2 8
+rrD&/ikXKfs1nZMJ3\WM^Hd<7s1eU7
+BDFChar: 4706 128191 12 1 11 -2 8
+%KJA:6pO/UO!'<&SfhQ/6pNV[%KHJ/
+BDFChar: 4707 128192 12 1 11 -2 8
+%KJA:6pO/UO!'<&SfhQ/6pNV[%KHJ/
+BDFChar: 4708 128164 12 1 11 -2 8
+!T3r#!'gO7*<69$#QW3O>QB9S^]4?7
+BDFChar: 4709 128193 12 1 11 -1 7
+GQ<BsK>@C-J09@bJ09@bJ%u$a
+BDFChar: 4710 128194 12 1 11 -1 7
+DubmuJH2>#O<C2]TKp;CIfKHK
 BDFRefChar: 1999 1944 0 0 N
 BDFRefChar: 2000 1943 0 0 N
 BDFRefChar: 2001 1941 0 0 N
