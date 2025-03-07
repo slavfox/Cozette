@@ -120,7 +120,7 @@ DisplaySize: 13
 AntiAlias: 1
 FitToEm: 0
 WidthSeparation: 307
-WinInfo: 8960 16 9
+WinInfo: 127056 16 17
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 524288 262144 174762 0 -1048576 174762 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
@@ -40624,7 +40624,7 @@ Flags: W
 LayerCount: 2
 EndChar
 EndChars
-BitmapFont: 13 4737 10 3 1
+BitmapFont: 13 4738 10 3 1
 BDFStartProperties: 42
 FONT 1 "-slavfox-Cozette-Medium-R-Normal--13-120-75-75-M-60-ISO10646-1"
 COMMENT 0 "(c) 2020-2024 Slavfox"
@@ -49895,7 +49895,7 @@ pt2OtW7^mtLoC(K
 BDFChar: 4611 127145 6 1 5 -2 8
 pt2Odkh,[_LoC(K
 BDFChar: 4612 127146 6 1 5 -2 8
-ppdidW7^mtLoC(K
+pk[STf\#uOLoC(K
 BDFChar: 4613 127147 6 1 5 -2 8
 prM[_W7^mtLoC(K
 BDFChar: 4614 127148 6 1 5 -2 8
@@ -49923,7 +49923,7 @@ pt2OtW7^mDLtMJ&
 BDFChar: 4625 127161 6 1 5 -2 8
 pt2Odkh,[/LtMJ&
 BDFChar: 4626 127162 6 1 5 -2 8
-ppdidW7^mDLtMJ&
+pk[STf\#ttLtMJ&
 BDFChar: 4627 127163 6 1 5 -2 8
 prM[_W7^mDLtMJ&
 BDFChar: 4628 127164 6 1 5 -2 8
@@ -49953,7 +49953,7 @@ pt2OtW7^mtLtMJ&
 BDFChar: 4640 127177 6 1 5 -2 8
 pt2Odkh,[_LtMJ&
 BDFChar: 4641 127178 6 1 5 -2 8
-ppdidW7^mtLtMJ&
+pk[STf\#uOLtMJ&
 BDFChar: 4642 127179 6 1 5 -2 8
 prM[_W7^mtLtMJ&
 BDFChar: 4643 127180 6 1 5 -2 8
@@ -49983,7 +49983,7 @@ pt2OtW7^mtW7^kF
 BDFChar: 4655 127193 6 1 5 -2 8
 pt2Odkh,[_W7^kF
 BDFChar: 4656 127194 6 1 5 -2 8
-ppdidW7^mtW7^kF
+pk[STf\#uOW7^kF
 BDFChar: 4657 127195 6 1 5 -2 8
 prM[_W7^mtW7^kF
 BDFChar: 4658 127196 6 1 5 -2 8
