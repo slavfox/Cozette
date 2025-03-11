@@ -22,7 +22,7 @@ OS2Version: 1
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: -2082812035
-ModificationTime: 1741652382
+ModificationTime: 1741706879
 PfmFamily: 49
 TTFWeight: 500
 TTFWidth: 5
@@ -120,11 +120,11 @@ DisplaySize: 13
 AntiAlias: 1
 FitToEm: 0
 WidthSeparation: 307
-WinInfo: 9280 16 15
+WinInfo: 12864 16 16
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 524288 262144 174762 0 -1048576 174762 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 1114112 4989
+BeginChars: 1114112 4997
 
 StartChar: uni0000
 Encoding: 0 0 0
@@ -42387,8 +42387,64 @@ Width: 1890
 Flags: W
 LayerCount: 2
 EndChar
+
+StartChar: uni037E
+Encoding: 894 894 4989
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: tonos
+Encoding: 900 900 4990
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: dieresistonos
+Encoding: 901 901 4991
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: anoteleia
+Encoding: 903 903 4992
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: franc
+Encoding: 8355 8355 4993
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: lozenge
+Encoding: 9674 9674 4994
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: f_l
+Encoding: 64258 64258 4995
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni25EF
+Encoding: 9711 9711 4996
+Width: 1890
+Flags: W
+LayerCount: 2
+EndChar
 EndChars
-BitmapFont: 13 4989 10 3 1
+BitmapFont: 13 4998 10 3 1
 BDFStartProperties: 42
 FONT 1 "-slavfox-Cozette-Medium-R-Normal--13-120-75-75-M-60-ISO10646-1"
 COMMENT 0 "(c) 2020-2024 Slavfox"
@@ -51543,7 +51599,7 @@ BDFChar: 4552 117925 6 0 5 0 6
 BDFChar: 4553 117926 6 0 5 -3 4
 $kOOH=I=Vl
 BDFChar: 4554 117927 6 0 5 -3 4
-^`X0oaM\47
+^`X0oBOh7!
 BDFChar: 4555 117928 6 0 5 -3 4
 $kOOH5a[(T
 BDFChar: 4556 117929 6 0 5 -3 4
@@ -52412,6 +52468,22 @@ BDFChar: 4987 9422 12 1 11 -2 8
 *ro]a5X:GSMBIQpKHPpj5X8_m*rl9@
 BDFChar: 4988 9423 12 1 11 -2 8
 *ro]a5X:qaJfo^hL`i<45X8_m*rl9@
+BDFChar: 4989 894 6 2 3 -2 5
+^q]pM^q`3c
+BDFChar: 4990 900 6 3 4 6 7
+5_&h7
+BDFChar: 4991 901 6 2 4 6 9
++@#q"
+BDFChar: 4992 903 6 2 4 3 5
+5i=m-
+BDFChar: 4993 8355 6 1 5 0 7
+GX+N55k%$(
+BDFChar: 4994 9674 6 1 5 -1 7
++<XKWLepnj+92BA
+BDFChar: 4995 64258 6 1 5 0 8
+0MkU8:f'tb=9&=$
+BDFChar: 4996 9711 12 1 11 -2 8
+*ro]a5X9iBJ09@bJ09@b5X8_m*rl9@
 BDFRefChar: 1999 1944 0 0 N
 BDFRefChar: 2000 1943 0 0 N
 BDFRefChar: 2001 1941 0 0 N
