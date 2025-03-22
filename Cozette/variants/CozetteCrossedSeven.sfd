@@ -120,12 +120,12 @@ DisplaySize: 13
 AntiAlias: 1
 FitToEm: 0
 WidthSeparation: 307
-WinInfo: 12848 16 12
+WinInfo: 9328 16 12
 OnlyBitmaps: 1
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 524288 262144 174762 0 -1048576 174762 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 1114112 22
+BeginChars: 1114112 26
 
 StartChar: seven
 Encoding: 55 55 0
@@ -281,8 +281,36 @@ Width: 1890
 Flags: W
 LayerCount: 2
 EndChar
+
+StartChar: uni247A
+Encoding: 9338 9338 22
+Width: 1890
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni2484
+Encoding: 9348 9348 23
+Width: 1890
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni2498
+Encoding: 9368 9368 24
+Width: 1890
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni248E
+Encoding: 9358 9358 25
+Width: 1890
+Flags: W
+LayerCount: 2
+EndChar
 EndChars
-BitmapFont: 13 22 10 3 1
+BitmapFont: 13 26 10 3 1
 BDFStartProperties: 42
 FONT 1 "-slavfox-Cozette-Medium-R-Normal--13-120-75-75-M-60-ISO10646-1"
 COMMENT 0 "(c) 2020-2024 Slavfox"
@@ -372,5 +400,13 @@ BDFChar: 20 12978 12 1 11 -2 8
 *ro]a5X;ZKLnKs)M'0&G5X8_m*rl9@
 BDFChar: 21 12988 12 1 11 -2 8
 *ro]a5X:g3W1^bqM'.Wt5X8_m*rl9@
+BDFChar: 22 9338 12 1 11 -2 8
++Fmfa5sU#EKHQ<uKHQ'n83fF*+FjFl
+BDFChar: 23 9348 12 1 11 -2 8
++Fm6Q8O/[dMBIs&MBId!?9gb@+FjFl
+BDFChar: 24 9368 12 1 10 0 7
+:&mT\_>lt(:&mZ^7)7m!
+BDFChar: 25 9358 12 2 9 0 7
+p]qERGT]@@
 EndBitmapFont
 EndSplineFont
