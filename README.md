@@ -292,6 +292,7 @@ Cozette includes contributions from:
 - [yoshiyoshyosh]
 - [bluetoad07]
 - [PhMajerus]
+- [theridane]
 - [estradiol enantate]
 
 # License & Acknowledgements
@@ -330,6 +331,7 @@ Cozette's builds use [bdfscale](https://github.com/philj56/bdfscale) by [philj56
 [sungodmoth]: https://github.com/sungodmoth
 [bluetoad07]: https://github.com/bluetoad07
 [PhMajerus]: https://github.com/PhMajerus
+[theridane]: https://github.com/theridane
 [estradiol enantate]: https://en.wikipedia.org/wiki/Estradiol_enantate
 [port]: https://cgit.freebsd.org/ports/tree/x11-fonts/cozette
 [bufferline.nvim]: https://github.com/akinsho/bufferline.nvim
