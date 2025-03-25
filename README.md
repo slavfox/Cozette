@@ -156,6 +156,23 @@ will want to use CozetteVector there. In applications that do support bitmap
 fonts, you will want to use the normal, bitmap Cozette (unless it's too
 small for you, in which case, CozetteVector scales better).
 
+#### VSCode Letter Spacing
+
+Sometimes the font might render without proper space betweening the characters (font size set to 13):
+
+![vscode-before-letterspacing](https://github.com/user-attachments/assets/a26eab50-a92e-4a9d-b72f-bbdfcd8b7be7)
+
+To fix this you need to set (in your settings):
+- terminal.integrated.letterSpacing to 1
+
+![vscode-settings-fix-incorrect-letterspacing](https://github.com/user-attachments/assets/1936c07a-f45b-4476-8d49-bd489ff9b9ae)
+
+After that your terminal should look like this (font size set to 13):
+
+![vscode-after-letterspacing](https://github.com/user-attachments/assets/dbd9e722-8503-45cd-aac3-c8fcc9fc2c1e)
+
+_Note: VSCode also provides the option editor.letterSpacing which adjusts the spacing for the file editor._
+
 #### Kitty
 
 **[4e554c4c](https://github.com/4e554c4c) made [an AUR package for `kitty` patched to support bitmap fonts](https://aur.archlinux.org/packages/kitty-bitmap/).**
