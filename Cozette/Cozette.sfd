@@ -22,7 +22,7 @@ OS2Version: 1
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: -2082812035
-ModificationTime: 1743345133
+ModificationTime: 1743375891
 PfmFamily: 49
 TTFWeight: 500
 TTFWidth: 5
@@ -120,11 +120,11 @@ DisplaySize: 13
 AntiAlias: 1
 FitToEm: 0
 WidthSeparation: 307
-WinInfo: 128576 16 20
+WinInfo: 9584 16 20
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 524288 262144 174762 0 -1048576 174762 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 1114112 5335
+BeginChars: 1114112 5348
 
 StartChar: uni0000
 Encoding: 0 0 0
@@ -4092,8 +4092,6 @@ Encoding: 8594 8594 440
 Width: 1024
 Flags: W
 LayerCount: 2
-Fore
-Validated: 1
 EndChar
 
 StartChar: arrowdown
@@ -45219,8 +45217,99 @@ Width: 1890
 Flags: W
 LayerCount: 2
 EndChar
+
+StartChar: uni2299
+Encoding: 8857 8857 5335
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni21A1
+Encoding: 8609 8609 5336
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: uni29D6
+Encoding: 10710 10710 5337
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni237B
+Encoding: 9083 9083 5338
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni238D
+Encoding: 9101 9101 5339
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni25FB
+Encoding: 9723 9723 5340
+Width: 1024
+Flags: HW
+LayerCount: 2
+EndChar
+
+StartChar: uni25FC
+Encoding: 9724 9724 5341
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni23BE
+Encoding: 9150 9150 5342
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni23BF
+Encoding: 9151 9151 5343
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni23C9
+Encoding: 9161 9161 5344
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni23CA
+Encoding: 9162 9162 5345
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni23CB
+Encoding: 9163 9163 5346
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: uni23CC
+Encoding: 9164 9164 5347
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
 EndChars
-BitmapFont: 13 5335 10 3 1
+BitmapFont: 13 5348 10 3 1
 BDFStartProperties: 42
 FONT 1 "-slavfox-Cozette-Medium-R-Normal--13-120-75-75-M-60-ISO10646-1"
 COMMENT 0 "(c) 2020-2025 Slavfox"
@@ -55936,6 +56025,32 @@ BDFChar: 5333 128528 12 1 11 -2 8
 *rmF65X:GSOW]/sJ0:I,5X6HB*rl9@
 BDFChar: 5334 128760 12 1 11 1 6
 %KI(@J&'TBJ&!dh
+BDFChar: 5335 8857 6 1 5 1 5
+E/:HKDu]k<
+BDFChar: 5336 8609 6 1 5 0 6
++K06%W,NjZ
+BDFChar: 5337 10710 6 1 5 0 6
+pkV`h:l+lH
+BDFChar: 5338 9083 6 1 6 0 7
+#RCuh&<L9B
+BDFChar: 5339 9101 6 1 5 0 6
+E)9A-:f,dE
+BDFChar: 5340 9723 6 1 5 1 5
+pkX`^p](9o
+BDFChar: 5341 9724 6 1 5 1 5
+q"XXZp](9o
+BDFChar: 5342 9150 6 3 5 -1 8
+i.-?.J:N0#J:IV"
+BDFChar: 5343 9151 6 3 5 -1 8
+J:N0#J:N0#JD^D-
+BDFChar: 5344 9161 6 1 5 -1 8
+p`L\%+<VdL+<UXa
+BDFChar: 5345 9162 6 1 5 -1 8
++<VdL+<VdL+SYp:
+BDFChar: 5346 9163 6 1 3 -1 8
+i#j-b+<VdL+<UXa
+BDFChar: 5347 9164 6 1 3 -1 8
++<VdL+<VdL+Q*5"
 BDFRefChar: 1999 1944 0 0 N
 BDFRefChar: 2000 1943 0 0 N
 BDFRefChar: 2001 1941 0 0 N
