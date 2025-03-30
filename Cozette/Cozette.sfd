@@ -22,7 +22,7 @@ OS2Version: 1
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: -2082812035
-ModificationTime: 1743277643
+ModificationTime: 1743345133
 PfmFamily: 49
 TTFWeight: 500
 TTFWidth: 5
@@ -120,11 +120,11 @@ DisplaySize: 13
 AntiAlias: 1
 FitToEm: 0
 WidthSeparation: 307
-WinInfo: 10160 16 20
+WinInfo: 128576 16 20
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 524288 262144 174762 0 -1048576 174762 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 1114112 5332
+BeginChars: 1114112 5335
 
 StartChar: uni0000
 Encoding: 0 0 0
@@ -45198,8 +45198,29 @@ Width: 1024
 Flags: W
 LayerCount: 2
 EndChar
+
+StartChar: openbullet
+Encoding: 9702 9702 5332
+Width: 1024
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: u1F610
+Encoding: 128528 128528 5333
+Width: 1890
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: u1F6F8
+Encoding: 128760 128760 5334
+Width: 1890
+Flags: W
+LayerCount: 2
+EndChar
 EndChars
-BitmapFont: 13 5332 10 3 1
+BitmapFont: 13 5335 10 3 1
 BDFStartProperties: 42
 FONT 1 "-slavfox-Cozette-Medium-R-Normal--13-120-75-75-M-60-ISO10646-1"
 COMMENT 0 "(c) 2020-2025 Slavfox"
@@ -55909,6 +55930,12 @@ BDFChar: 5330 13261 12 1 11 0 7
 U4Atg_Z7RS_Z6E]U4B8:
 BDFChar: 5331 10186 6 2 4 -3 9
 5X7S"5X=6m5X7S"5QCca
+BDFChar: 5332 9702 6 1 5 1 5
+E/9=+Du]k<
+BDFChar: 5333 128528 12 1 11 -2 8
+*rmF65X:GSOW]/sJ0:I,5X6HB*rl9@
+BDFChar: 5334 128760 12 1 11 1 6
+%KI(@J&'TBJ&!dh
 BDFRefChar: 1999 1944 0 0 N
 BDFRefChar: 2000 1943 0 0 N
 BDFRefChar: 2001 1941 0 0 N
