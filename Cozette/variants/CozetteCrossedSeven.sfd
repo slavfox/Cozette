@@ -349,10 +349,11 @@ EndChar
 StartChar: uni33FA
 Encoding: 13306 13306 31
 Width: 1890
+Flags: W
 LayerCount: 2
 EndChar
 EndChars
-BitmapFont: 13 32 10 3 1
+BitmapFont: 13 33 10 3 1
 BDFStartProperties: 42
 FONT 1 "-slavfox-Cozette-Medium-R-Normal--13-120-75-75-M-60-ISO10646-1"
 COMMENT 0 "(c) 2020-2024 Slavfox"
@@ -450,14 +451,14 @@ BDFChar: 24 9368 12 1 10 0 7
 :&mT\_>lt(:&mZ^7)7m!
 BDFChar: 25 9358 12 2 9 0 7
 p]qERGT]@@
-BDFChar: 26 12998 12 2 10 -1 7
-kC=h.-\+U8kC>sN7"@gY$%N!U
-BDFChar: 27 13151 12 2 11 -1 8
-!W_82+oj!@7"F?K7t<i)7t:t4
+BDFChar: 26 12998 12 1 10 -1 7
+o=tu('>PeWo=uP869mq("Mb!;
+BDFChar: 27 13151 12 1 11 -1 8
+!<DZ*&HEK[,!b]a,JZPE6biku
 BDFChar: 28 13161 12 1 11 -1 8
 !.\=i7"E7l8O-QH8\djsks,<C
-BDFChar: 29 13286 12 2 10 0 7
-kC=h.,_/C8jFBXK7t=!X
+BDFChar: 29 13286 12 1 10 0 7
+pV7J.'L4%]oKXZe8&.MX
 BDFChar: 30 13296 12 1 11 0 7
 ?/S-o`?7b1>p)]]8`8hU
 BDFChar: 31 13306 12 1 11 0 7
