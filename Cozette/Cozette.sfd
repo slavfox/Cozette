@@ -22,7 +22,7 @@ OS2Version: 1
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 0
 CreationTime: -2082812035
-ModificationTime: 1743870979
+ModificationTime: 1743965184
 PfmFamily: 49
 TTFWeight: 500
 TTFWidth: 5
@@ -120,11 +120,11 @@ DisplaySize: 13
 AntiAlias: 1
 FitToEm: 0
 WidthSeparation: 307
-WinInfo: 8672 16 20
+WinInfo: 127792 16 20
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 524288 262144 174762 0 -1048576 174762 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-BeginChars: 1114112 5582
+BeginChars: 1114112 5592
 
 StartChar: uni0000
 Encoding: 0 0 0
@@ -46946,8 +46946,78 @@ Width: 1024
 Flags: W
 LayerCount: 2
 EndChar
+
+StartChar: uni231A
+Encoding: 8986 8986 5582
+Width: 1890
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: u1F513
+Encoding: 128275 128275 5583
+Width: 1890
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: u1F4E8
+Encoding: 128232 128232 5584
+Width: 1890
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: u1F4E5
+Encoding: 128229 128229 5585
+Width: 1890
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: u1F4E4
+Encoding: 128228 128228 5586
+Width: 1890
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: u1F480
+Encoding: 128128 128128 5587
+Width: 1890
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: u1F47B
+Encoding: 128123 128123 5588
+Width: 1890
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: u1FA9F
+Encoding: 129695 129695 5589
+Width: 1890
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: u1F34E
+Encoding: 127822 127822 5590
+Width: 1890
+Flags: W
+LayerCount: 2
+EndChar
+
+StartChar: u1F34F
+Encoding: 127823 127823 5591
+Width: 1890
+Flags: W
+LayerCount: 2
+EndChar
 EndChars
-BitmapFont: 13 5583 10 3 1
+BitmapFont: 13 5592 10 3 1
 BDFStartProperties: 42
 FONT 1 "-slavfox-Cozette-Medium-R-Normal--13-120-75-75-M-60-ISO10646-1"
 COMMENT 0 "(c) 2020-2025 Slavfox"
@@ -58157,6 +58227,26 @@ BDFChar: 5580 8924 6 1 5 0 6
 p]).=J7'2o
 BDFChar: 5581 8925 6 1 5 0 6
 p]/)`#Va$o
+BDFChar: 5582 8986 12 3 9 -2 8
+3&ilcP+$tj3&ikt
+BDFChar: 5583 128275 12 1 10 -1 8
+"+UM>"@*)TrW)otrW)otrW)ot
+BDFChar: 5584 128232 12 1 11 0 6
+5N)$=.%oZE.\O"R5MuMA
+BDFChar: 5585 128229 12 1 11 -2 8
+%KHh9)Z]Edb$`.q^gQ]jNZ`ips53kW
+BDFChar: 5586 128228 12 1 11 -2 8
+"98c/&HM^db$`M&^gQ]jNZ`ips53kW
+BDFChar: 5587 128128 12 1 11 -2 8
+*ro]a5X:e]]:cF%KHP0J+Fkql*rl9@
+BDFChar: 5588 128123 12 1 11 -2 8
+%KI(@+Frb8J07TPAACGq5X8=7C;9fL
+BDFChar: 5589 129695 12 1 11 -2 8
+s58PQKHPpjKHU<QKHPpjKHPpjs53kW
+BDFChar: 5590 127822 12 1 11 -2 9
+2ujou$ii/8J&)*Bs5<q8s58CBJ&"-r
+BDFChar: 5591 127823 12 1 11 -2 9
+2ujou$ii/8:-a=PJ09@bJ07*B6pNha
 BDFRefChar: 1999 1944 0 0 N
 BDFRefChar: 2000 1943 0 0 N
 BDFRefChar: 2001 1941 0 0 N
