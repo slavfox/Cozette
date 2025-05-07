@@ -10,14 +10,24 @@
       in {
         devShells = {
           default = pkgs.mkShellNoCC {
-            packages = with pkgs.python312Packages; [ black mypy isort ruff ];
+            packages = with pkgs; [
+              # BitsNPicas GUI wrapped with java
+              self.packages.${system}.bitsnpicas-bin
+              # FontForge GUI
+              fontforge-gtk
+              # Python tools
+              python312Packages.black
+              python312Packages.mypy
+              python312Packages.isort
+              python312Packages.ruff
+            ];
           };
         };
         packages = rec {
           # BitsNPicas needs to be fetched here since `nix build` is sandboxed
           # and does not have internet access
           bitsnpicas = pkgs.stdenvNoCC.mkDerivation rec {
-            pname = "BitsNPicas";
+            pname = "bitsnpicas";
             version = "2.1";
             src = pkgs.fetchFromGitHub {
               owner = "kreativekorp";
@@ -38,6 +48,12 @@
             '';
           };
 
+          # Shell script to run the BitsNPicas GUI
+          bitsnpicas-bin = pkgs.writeShellScriptBin "bitsnpicas" ''
+            ${pkgs.zulu23}/bin/java -jar ${bitsnpicas}/BitsNPicas.jar $@
+          '';
+
+          # Derivation to build and install cozette
           cozette = pkgs.stdenvNoCC.mkDerivation {
             pname = "cozette";
             version = "1.28.0";
