@@ -55,7 +55,7 @@ def wrap_text(src: str, width=79) -> Sample:
         ):
             idx += len(h)
         else:
-            running_w += 1 if charwidth(src[idx]) != "W" else 2
+            running_w += 1 if charwidth(src[idx]) not in "FW" else 2
             idx += 1
     for idx in reversed(linebreaks):
         src = src[:idx].rstrip() + "\n" + src[idx:].lstrip()
@@ -104,7 +104,7 @@ def save_sample(
             "-fa",
             fnt,
             "-geometry",
-            f"{sample.width}x{sample.height - 1}+100+100",
+            f"{sample.width}x{sample.height}+100+100",
             "-dc",
             "-cu",
             "-cn",
